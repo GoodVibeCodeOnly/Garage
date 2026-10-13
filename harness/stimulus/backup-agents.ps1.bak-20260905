@@ -1,0 +1,158 @@
+# backup-agents.ps1
+# Snapshots the irreplaceable hand-crafted agent state to OneDrive (which syncs to cloud).
+# Excludes bulk that's re-downloadable (PDFs, match_history, league raw data, caches).
+# Keeps the last 14 snapshots.
+
+$ErrorActionPreference = 'Continue'
+
+$HomebaseRoot = 'C:\Users\Damon\Documents\Homebase'
+$ClaudeRoot   = 'C:\Users\Damon\.claude'
+$BackupRoot   = 'C:\Users\Damon\OneDrive\Backups\agents'
+$KeepCount    = 14
+
+$Stamp = Get-Date -Format 'yyyy-MM-dd_HHmmss'
+$Staging = Join-Path $env:TEMP "agent-backup-$Stamp"
+$ZipPath = Join-Path $BackupRoot "agents-$Stamp.zip"
+$LogPath = Join-Path $BackupRoot 'backup.log'
+
+if (-not (Test-Path $BackupRoot)) {
+    New-Item -ItemType Directory -Path $BackupRoot -Force | Out-Null
+}
+
+function Log($msg) {
+    $line = "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')  $msg"
+    Add-Content -Path $LogPath -Value $line -Encoding utf8
+}
+
+# Rate-limit: skip if a successful backup ran in the last $MinHours hours.
+# Pass -Force to bypass (e.g. when invoked manually via the .bat).
+$MinHours = 6
+if (-not $args.Contains('-Force')) {
+    $recent = Get-ChildItem -Path $BackupRoot -Filter 'agents-*.zip' -ErrorAction SilentlyContinue |
+              Sort-Object LastWriteTime -Descending | Select-Object -First 1
+    if ($recent -and ((Get-Date) - $recent.LastWriteTime).TotalHours -lt $MinHours) {
+        Log "skipped ($Stamp): last backup $([math]::Round(((Get-Date) - $recent.LastWriteTime).TotalHours, 1))h ago"
+        exit 0
+    }
+}
+
+# Single-instance guard: only one backup may run at a time. Concurrent
+# invocations (double-clicking the .bat mid-run, or multiple windows) now exit
+# cleanly instead of colliding on the staging tree and the same zip file.
+# The mutex auto-releases when this process exits.
+$script:BackupMutex = New-Object System.Threading.Mutex($false, 'HomebaseAgentBackup')
+if (-not $script:BackupMutex.WaitOne(0)) {
+    Log "skipped ($Stamp): another backup already running"
+    exit 0
+}
+
+Log "=== backup start: $Stamp ==="
+
+# Sweep staging trees abandoned by earlier runs that were killed mid-copy
+# (a terminated task never reaches its own cleanup step, and each orphan is
+# ~7 GB in %TEMP%). Anything matching the pattern is ours and disposable.
+Get-ChildItem -Path $env:TEMP -Directory -Filter 'agent-backup-*' -ErrorAction SilentlyContinue |
+    Where-Object { $_.FullName -ne $Staging } |
+    ForEach-Object {
+        Remove-Item -Path $_.FullName -Recurse -Force -ErrorAction SilentlyContinue
+        Log "swept stale staging: $($_.Name)"
+    }
+
+# Pre-flight: a run needs ~7 GB staging + ~8.5 GB zip. On a nearly-full drive
+# it fills C: to zero bytes, tar fails, and the half-written zip is junk.
+# Refuse to start below a margin instead of taking the whole disk down.
+$MinFreeGB = 25
+$freeGB = [math]::Round((Get-PSDrive C).Free / 1GB, 1)
+if ($freeGB -lt $MinFreeGB) {
+    Log "skipped ($Stamp): only $freeGB GB free on C: (need $MinFreeGB GB)"
+    exit 0
+}
+
+# Exclusions: bulk re-downloadable assets and caches.
+# Robocopy excludes by /XD (dirs) and /XF (files).
+$ExcludeDirs = @(
+    'pdfs',                    # D&D legal sourcebooks — re-downloadable
+    'match_history',           # Athena match data — Riot API
+    'league',                  # Riot pipeline raw data
+    'Castle Whiterock',        # published module — re-purchasable
+    '__pycache__',
+    'node_modules',
+    '.venv',
+    'venv',
+    'cache',                   # ~/.claude/cache
+    'shell-snapshots',         # ~/.claude/shell-snapshots
+    'file-history',            # ~/.claude/file-history (rotates anyway)
+    'plugins',                 # ~/.claude/plugins — re-installable from marketplace
+    'Inbox'                    # transient handoff folder
+)
+$ExcludeFiles = @(
+    '*.pyc', '*.log', '*.tmp', 'scheduled_tasks.lock',
+    'D&D.zip',                 # 488MB sourcebook archive — recoverable
+    'agents-*.zip'             # backup snapshots themselves — never back up backups
+)
+
+# Build staging tree with robocopy (incremental, fast).
+$StagingHomebase = Join-Path $Staging 'Homebase'
+$StagingClaude   = Join-Path $Staging 'dot-claude'
+New-Item -ItemType Directory -Path $StagingHomebase -Force | Out-Null
+New-Item -ItemType Directory -Path $StagingClaude   -Force | Out-Null
+
+$rcArgs = @('/E', '/R:1', '/W:1', '/NFL', '/NDL', '/NJH', '/NJS', '/NP')
+# Backup snapshots are excluded by name (agents-*.zip, above) rather than by
+# excluding the whole Homebase\backup folder — so the fixed backup tooling is
+# captured in its own snapshots. Archive zips now live in OneDrive\Backups,
+# outside the copy roots, so they're never swept regardless.
+$xdArgs = @('/XD') + $ExcludeDirs
+$xfArgs = @('/XF') + $ExcludeFiles
+
+Log "copying Homebase -> staging"
+& robocopy $HomebaseRoot $StagingHomebase @rcArgs @xdArgs @xfArgs *> $null
+$rcHomebase = $LASTEXITCODE
+
+Log "copying .claude -> staging"
+& robocopy $ClaudeRoot $StagingClaude @rcArgs @xdArgs @xfArgs *> $null
+$rcClaude = $LASTEXITCODE
+
+# Robocopy exit codes 0-7 are success; 8+ are real failures.
+if ($rcHomebase -ge 8) { Log "WARN: robocopy Homebase exit $rcHomebase" }
+if ($rcClaude   -ge 8) { Log "WARN: robocopy .claude exit $rcClaude" }
+
+# Compress staging tree into a dated zip in OneDrive.
+# Use bsdtar (ships in Windows 10/11 at System32\tar.exe) rather than
+# Compress-Archive: the .claude\projects transcript paths exceed MAX_PATH (260),
+# which .NET's Compress-Archive cannot open ("Could not find a part of the
+# path"). bsdtar/libarchive handles long paths and writes a real .zip via -a.
+Log "compressing -> $ZipPath"
+$tar = Join-Path $env:WINDIR 'System32\tar.exe'
+try {
+    if (Test-Path $tar) {
+        & $tar -a -c -f $ZipPath -C $Staging '.'
+        if ($LASTEXITCODE -ne 0) { throw "tar exited $LASTEXITCODE" }
+    } else {
+        Compress-Archive -Path (Join-Path $Staging '*') -DestinationPath $ZipPath -CompressionLevel Optimal -Force
+    }
+    $sizeMB = [math]::Round((Get-Item $ZipPath).Length / 1MB, 1)
+    Log "wrote $ZipPath ($sizeMB MB)"
+} catch {
+    Log "ERROR: compress failed: $_"
+}
+
+# Clean up staging.
+Remove-Item -Path $Staging -Recurse -Force -ErrorAction SilentlyContinue
+
+# Rotate: keep the most recent $KeepCount snapshots.
+$snapshots = Get-ChildItem -Path $BackupRoot -Filter 'agents-*.zip' |
+             Sort-Object LastWriteTime -Descending
+if ($snapshots.Count -gt $KeepCount) {
+    $toDelete = $snapshots | Select-Object -Skip $KeepCount
+    foreach ($f in $toDelete) {
+        try {
+            Remove-Item -Path $f.FullName -Force
+            Log "rotated out: $($f.Name)"
+        } catch {
+            Log "WARN: could not delete $($f.Name): $_"
+        }
+    }
+}
+
+Log "=== backup end ==="

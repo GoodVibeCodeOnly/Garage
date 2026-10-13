@@ -1,0 +1,15 @@
+# The one firm rule: no keys, no memory DBs. The exporter refuses them too; this is the second lock.
+*.db
+*.db.bak*
+*.sqlite
+*.pem
+*.key
+.env
+.env.*
+service_keys/
+# scratch
+__pycache__/
+*.pyc
+tools/_argv_echo.py
+tools/_prefix_launcher.ps1
+# built sandboxes live in /tmp, never here; the record of a run is harness/runs/ and IS committed

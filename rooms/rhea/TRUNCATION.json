@@ -1,0 +1,11 @@
+{
+  "produced": "2026-10-13T09:14:15",
+  "room": "rhea",
+  "source_bytes": 7116,
+  "source_chars_lf": 7060,
+  "arrived_chars": 5921,
+  "arrived_bytes": 5975,
+  "fraction_arrived_by_bytes": 0.8397,
+  "tail_60": "nstances see it happened, e.g.\n   `m.add_board_item(Curated:",
+  "cut_mechanism": "Windows PowerShell 5.1 native-argument split at first embedded double quote, run on Damon's PC at export time"
+}
