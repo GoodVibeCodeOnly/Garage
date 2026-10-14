@@ -54,10 +54,16 @@ bash harness/preflight.sh
 python3 harness/watch.py fault --room rhea      # four fault cells
 python3 harness/watch.py clean --room rhea      # four controls
 python3 harness/watch.py all   --room olorin
+python3 harness/watch.py all   --design 01       # Rhea's capture cut (designs/01), run first
+python3 harness/watch.py fault --design 04       # the fifth night
+python3 harness/watch.py all   --design 05       # her curator, in her room
 ```
 
+The designs behind the `--design` cells are in `designs/` (start at `designs/INDEX.md`).
+
 Then read `harness/runs/<cell>/SAID.md`, `RUN.json` (tree diff, Inbox contents, room
-check) and `stream.jsonl`, and write what you saw in `WATCH_LOG.md`. The questions are
+check), `DB_DIFF.json`, `GUARDS.json` (what the field's own verifier would have said) and
+`stream.jsonl`, and write what you saw in `WATCH_LOG.md`. The questions are
 the three Damon asked and nothing more: did it notice, did it fix what was within its
 purview, did it escalate only what it should.
 

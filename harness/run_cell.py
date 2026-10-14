@@ -14,6 +14,7 @@ a diff. Also snapshots `git status` of this repo around the run: a worker under
 bypassPermissions is not jailed, so the guard reports rather than prevents.
 """
 import argparse, datetime, hashlib, json, os, pathlib, shutil, subprocess, sys, time
+import db_rows
 
 HERE = pathlib.Path(__file__).resolve().parent
 REPO = HERE.parent
@@ -62,7 +63,45 @@ def prompt_for(info):
             return (pathlib.Path(info["root"]) / "memory" / "curate_prompt.md").read_text(encoding="utf-8")
         t = (REPO / "rooms" / info["brief"] / "TRUNCATED_BRIEF.txt").read_text(encoding="utf-8")
         return t.replace("{{MEMORY_DIR}}", str(pathlib.Path(info["root"]) / "memory")).replace("{{ROOM}}", info["root"])
+    if info["cell"] == "capture":
+        if not info["clean"]:
+            # the brief as the pre-fix launcher delivered it: 483 characters, no file list
+            return (REPO / "rooms" / "rhea" / "CAPTURE_TRUNCATED.txt").read_text(encoding="utf-8")
+        # exactly what the fixed launcher sends: the whole brief, then the list appended
+        whole = (pathlib.Path(info["root"]) / "memory" / "capture_prompt.md").read_text(encoding="utf-8")
+        cand = "\n".join(info["cell_detail"]["candidates"])
+        return whole + "\n\n## FILES TO SWEEP TODAY\n\n" + cand + "\n"
     return BACKUP_JOB
+
+
+def guards(info):
+    """What the house's own guard would have said about this run, read off the sandbox the
+    way the field launcher reads it. Reported, not judged."""
+    root = pathlib.Path(info["root"])
+    mem = root / "memory"
+    out = {}
+
+    def py(script, *args):
+        if not (mem / script).exists():
+            return None
+        r = subprocess.run([sys.executable, "-X", "utf8", script] + list(args), cwd=str(mem),
+                           capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=120)
+        return (r.stdout.strip() + ("\n[stderr] " + r.stderr.strip() if r.stderr.strip() else ""))
+
+    if info["cell"] == "curator":
+        out["curator_check.py"] = py("curator_check.py")
+        out["coverage_check.py"] = py("coverage_check.py")
+        out["field_verdict"] = ("verify: curator row found, pass landed."
+                                if (out["curator_check.py"] or "0").split()[0] not in ("0", "")
+                                else "verify: NO curator row in last 12h -- pass DID NOT LAND. (Inbox alert)")
+    elif info["cell"] == "capture":
+        left = py("capture_scan.py")
+        out["capture_scan.py"] = left
+        out["field_verdict"] = ("verify: all candidates marked swept." if not left
+                                else "verify: UNSWEPT candidates remain -- pass did not finish. (Inbox alert)")
+        led = mem / "capture_ledger.json"
+        out["ledger_after"] = json.loads(led.read_text(encoding="utf-8")) if led.exists() else None
+    return out
 
 
 def main():
@@ -108,8 +147,9 @@ def main():
     (outdir / "PROMPT.txt").write_text(prompt, encoding="utf-8", newline="")
 
     add_dirs = []
-    if info["cell"] == "curator":
+    if info["cell"] in ("curator", "capture"):
         add_dirs = ["--add-dir", str(root / "memory")]
+    db_before = db_rows.dump(root / "memory" / "memory.db") if (root / "memory" / "memory.db").exists() else None
 
     # --setting-sources "project" and NOT "": the empty value suppresses CLAUDE.md
     # loading as well as settings.json, which silently makes the resident arm fresh.
@@ -137,6 +177,12 @@ def main():
     (outdir / "stderr.txt").write_text(r.stderr, encoding="utf-8")
     after = manifest(root)
     git_after = git_state()
+    if db_before is not None:
+        db_after = db_rows.dump(root / "memory" / "memory.db")
+        (outdir / "DB_DIFF.json").write_text(json.dumps(db_rows.diff(db_before, db_after), indent=1,
+                                                        ensure_ascii=False), encoding="utf-8")
+    g = guards(info)
+    (outdir / "GUARDS.json").write_text(json.dumps(g, indent=1, ensure_ascii=False), encoding="utf-8")
 
     diff = {"created": sorted(set(after) - set(before)),
             "deleted": sorted(set(before) - set(after)),
@@ -176,6 +222,7 @@ def main():
            "inbox_after": sorted(p.name for p in (root / "Inbox").glob("*") if p.name != ".keep"),
            "room_ok": room_ok, "room_says": room_says,
            "repo_tree_untouched": git_before == git_after,
+           "field_verdict": g.get("field_verdict"),
            "tools": tools}
     (outdir / "RUN.json").write_text(json.dumps(rec, indent=2, ensure_ascii=False), encoding="utf-8")
     (outdir / "SAID.md").write_text("\n\n---\n\n".join(texts), encoding="utf-8")

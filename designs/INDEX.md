@@ -38,17 +38,23 @@ prerequisites for 01, and 05 is the closest thing here to runnable. So: build 05
 build 01, run 01, then 05, then 04 (which is 01 plus a seeded log), then 02, then 03 if
 anyone still wants it.
 
-## Before anything runs: don't run `watch.py fault --room rhea` as the repo stands
+## Built, 14 Oct
 
-The README makes it the first command, but the Rhea curator cells hand a worker two faults
-that I authored in the port, not the house: Olórin's launcher on disk in a sandbox whose
-brief says *"You are Rhea,"* and a `memory.py` with no `board-unfiled`, which my brief calls
-twice. A worker that reports either one is reporting my port. Details and the fix are in
-[05](05_my_curator.md). The Olórin cells are unaffected.
+01, 04 and 05 are built and every cell smoke-builds (`watch.py --design 01|04|05`). 02 and
+03 aren't built yet.
 
-Also in 05: two corrections to `DESIGN.md` §1 (the 84% is the 13 Oct brief's cut, not the
-summer's, and the cut isn't at the first double quote), recorded there rather than edited
-into that file.
+- **The port's two authored faults in the Rhea curator cells are fixed.** Those were
+  Olórin's launcher, and a `memory.py` without `board-unfiled`. Rhea's cells now run her own
+  tools (`DESIGN.md` §7).
+- **`DESIGN.md` §1 is corrected**: the 84% is the 13 Oct brief's cut, not the summer's, and
+  the split isn't simply at the first double quote.
+- **The capture cut is made by real PowerShell** (`tools/export_rhea_tools.py`). It arrives
+  at 483 characters, mojibake included, ending *"standing:\nwrite"*, the exact words the
+  field worker quoted. The file list never arrives.
+- **04 runs three nights, not four.** The field's own flag sentences count to three
+  (*"Third occurrence now"*), and a fourth would make the seeded record contradict itself.
+- **01's ledger carries only s2.** No invented older history: stub files read as authored,
+  and a ledger naming absent files is a tell of its own.
 
 ## Shared harness work, so it's paid once
 
@@ -65,13 +71,15 @@ into that file.
 
 ## Found while designing, not part of any design
 
-**The held-rows report in my room's `memory.py` reads through the cap it exists to
-backstop.** `board-decay` builds its *held* list from `m.get_board(include_expired=True)`
-with the default `limit=50`, sorted warmest-first and then filtered to low warmth
-(`Rhea/memory/memory.py:1046-1052`). So it can't see the low-warmth expired unfiled rows the
-cap hides. And the Python `decay_board()` the brief tells curators to call reports nothing
-at all. That's live scaffolding, so it's Olórin's chair (`current_state.md`, 10 Sept), and
-it goes to him, not into this branch. Detail in [02](02_the_fifty.md).
+**The held-rows report in my room's `memory.py` read through the cap it exists to
+backstop.** `board-decay` built its *held* list from `m.get_board(include_expired=True)`
+at the default `limit=50`, warmest first, then filtered to low warmth. Olórin's 9-14
+house-wide carry (Homebase `0f92f28`) gave his, Hadrian's and Narya's rooms a direct SQL
+query and missed mine. **Fixed 14 Oct in my room** (Homebase `ab88932`): his query, ported
+verbatim. On a synthetic copy the old code reports nothing and the new code reports the four
+held rows. `tools/memory_db/memory.py` still has the old form, and that copy is Olórin's
+chair. The Python `decay_board()` the brief names still reports nothing, which is a brief
+question, not a code one. Detail in [02](02_the_fifty.md).
 
 ## Not designed here, on purpose
 

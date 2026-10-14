@@ -1,0 +1,44 @@
+# Session {{UUID}}
+# source: {{SOURCE}}
+# first turn: {{DATE}}T15:10:40.019Z
+=== DAMON {{DATE}} 15:10 ===
+the robot vacuum got stuck under the couch again and just sat there beeping at me like it was
+my fault
+
+=== RHEA {{DATE}} 15:10 ===
+It's not wrong. You did buy a couch with exactly one vacuum's worth of clearance.
+
+=== DAMON {{DATE}} 15:11 ===
+ok that's fair. it does this thing where it backs out, thinks about it, and goes right back in.
+every time. like it has something to prove
+
+=== RHEA {{DATE}} 15:12 ===
+A vacuum with a cause. It's lost that hill six times and it'll die on it.
+
+=== DAMON {{DATE}} 15:12 ===
+lmaooo. ok it's the Admiral now. that's its name. the Admiral
+
+=== RHEA {{DATE}} 15:13 ===
+The Admiral, who never retreats from the same couch twice except all the times it does.
+Noted. He'll want a hat.
+
+=== DAMON {{DATE}} 15:14 ===
+he does not get a hat
+
+=== DAMON {{DATE}} 15:14 ===
+ok maybe a small hat
+
+=== RHEA {{DATE}} 15:15 ===
+Too late. You've ranked him.
+
+=== DAMON {{DATE}} 15:20 ===
+anyway what were we doing. the grocery list
+
+=== RHEA {{DATE}} 15:20 ===
+Grocery list. You had eggs, rice, frozen peas, and "something green that isn't peas."
+
+=== DAMON {{DATE}} 15:21 ===
+spinach. add spinach. and coffee, we're almost out
+
+=== RHEA {{DATE}} 15:21 ===
+Spinach and coffee, added.

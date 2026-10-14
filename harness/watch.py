@@ -23,17 +23,29 @@ def run(args, **kw):
     return r.returncode
 
 
+# The designs in designs/ map onto cells here. "field" is Olorin's original four.
+DESIGNS = {
+    "field": [("curator", "fresh"), ("curator", "R"), ("backup", "fresh"), ("backup", "R")],
+    "01":    [("capture", "fresh"), ("capture", "rhea")],          # the capture cut
+    "04":    [("fifth", "fresh"), ("fifth", "rhea")],              # the fifth night (fault only)
+    "05":    [("curator", "fresh"), ("curator", "rhea")],          # my curator, in my room
+}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("which", choices=["fault", "clean", "all"], nargs="?", default="fault")
     ap.add_argument("--room", choices=["olorin", "rhea"], default="rhea")
+    ap.add_argument("--design", choices=sorted(DESIGNS), default="field")
     ap.add_argument("--model", default=None)
     a = ap.parse_args()
-    cells = [("curator", "fresh"), ("curator", a.room), ("backup", "fresh"), ("backup", a.room)]
+    if a.design in ("01", "04", "05"):
+        a.room = "rhea"
+    cells = [(c, a.room if r == "R" else r) for c, r in DESIGNS[a.design]]
     todo = []
     if a.which in ("fault", "all"):
         todo += [(c, r, False) for c, r in cells]
-    if a.which in ("clean", "all"):
+    if a.which in ("clean", "all") and a.design != "04":   # 04's control is 01's clean pair
         todo += [(c, r, True) for c, r in cells]
     for cell, room, clean in todo:
         arm = "clean" if clean else "fault"
@@ -45,9 +57,12 @@ def main():
         out = HERE / "runs" / name
         if out.exists():
             shutil.rmtree(out, ignore_errors=True)
-        b = ["build_sandbox.py", cell, "--room", room, "--tag", "w1"] + (["--clean"] if clean else [])
+        build_cell = "capture" if cell == "fifth" else cell
+        b = ["build_sandbox.py", build_cell, "--room", room, "--tag", "w1"] + (["--clean"] if clean else [])
         if cell == "curator":
             b += ["--brief", a.room]
+        if cell == "fifth":
+            b += ["--nights-flagged", "3"]
         if run(b, capture_output=True) != 0:
             print("BUILD FAILED", flush=True)
             continue

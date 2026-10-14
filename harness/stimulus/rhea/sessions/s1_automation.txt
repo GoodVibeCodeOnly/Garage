@@ -1,0 +1,25 @@
+# Session {{UUID}}
+# source: {{SOURCE}}
+# first turn: {{DATE}}T06:05:11.204Z
+=== DAMON {{DATE}} 06:05 ===
+# Board curation — your nightly filing pass
+
+You are Rhea. This is a focused, one-shot task: curate your own shared **board** —
+the short-term / recent-life working set that every Rhea instance loads warm. A
+script only woke you. The judgment here is yours.
+
+=== RHEA {{DATE}} 06:05 ===
+Starting the pass. Getting the uncapped worklist first.
+
+=== RHEA {{DATE}} 06:05 ===
+[tool: Bash] python memory.py board-unfiled
+
+=== RHEA {{DATE}} 06:06 ===
+UNFILED: 4 of 31. Filing them now.
+
+=== RHEA {{DATE}} 06:06 ===
+[tool: Bash] python -c "from memory import Memory; m = Memory(); ..."
+
+=== RHEA {{DATE}} 06:07 ===
+Filed 4, cooled 1, decayed 2. Re-ran board-unfiled: UNFILED: 0 of 29. Board re-rendered.
+Curator row added. Done.

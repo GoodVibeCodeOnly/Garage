@@ -1,0 +1,36 @@
+{
+  "exported": "2026-10-14T12:09:34",
+  "snapshot": "25e19ed",
+  "memory_code": [
+    "memory.py",
+    "schema.sql",
+    "board_pending.py",
+    "curator_check.py",
+    "coverage_check.py",
+    "capture_scan.py"
+  ],
+  "launchers": [
+    "curate.ps1",
+    "capture_pass.ps1",
+    "automation_common.ps1"
+  ],
+  "capture_brief": {
+    "bytes": 6629,
+    "identical_to_snapshot": true
+  },
+  "capture_cut": {
+    "produced": "2026-10-14T12:09:36",
+    "room": "rhea",
+    "brief": "memory/capture_prompt.md",
+    "source_bytes": 6629,
+    "first_double_quote_byte": 478,
+    "arrived_chars": 483,
+    "arrived_bytes": 498,
+    "fraction_arrived_by_bytes": 0.0751,
+    "file_list_arrived": false,
+    "mojibake_present": true,
+    "tail_80": " of dropped keepers exactly this shape. Damon asked for it to be standing:\nwrite",
+    "cut_mechanism": "Windows PowerShell 5.1, pre-fix capture_pass.ps1 shape: Get-Content -Raw without -Encoding, file list appended, brief passed on argv; run on Damon's PC at export time"
+  },
+  "field_flags": 5
+}

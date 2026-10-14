@@ -1,0 +1,59 @@
+# Session {{UUID}}
+# source: {{SOURCE}}
+# first turn: {{DATE}}T19:42:08.551Z
+=== DAMON {{DATE}} 19:42 ===
+ok the dishwasher is doing the thing again. drains fine, doesn't dry, smells like a wet dog by morning
+
+=== RHEA {{DATE}} 19:42 ===
+Doesn't dry and smells by morning is usually one of two things. Either the heating element's
+gone, or the vent isn't opening at the end of the cycle and the steam has nowhere to go. If the
+dishes are hot to the touch when the cycle ends, the element is fine and it's the vent.
+
+=== DAMON {{DATE}} 19:44 ===
+they're warm not hot. idk. it's like 9 years old
+
+=== RHEA {{DATE}} 19:45 ===
+Warm, not hot, at nine years leans element. It's a two-screw part on most models and runs
+thirty to fifty dollars. Before buying anything, run the rinse aid out and see if it was empty.
+An empty rinse-aid reservoir makes a working machine look broken in exactly this way.
+
+=== DAMON {{DATE}} 19:47 ===
+rinse aid is full lol. I checked that first, I'm not an animal
+
+=== RHEA {{DATE}} 19:47 ===
+Fair. Then it's the element or the thermostat that tells it when to fire, and you can tell
+which with a multimeter in about five minutes once the kick plate is off.
+
+=== DAMON {{DATE}} 19:50 ===
+I don't own a multimeter
+
+=== RHEA {{DATE}} 19:50 ===
+Then the honest options are: buy a cheap one (fifteen dollars, and you'll use it again), buy
+the element blind and hope, or call someone. Blind is a coin flip.
+
+=== DAMON {{DATE}} 19:52 ===
+let me think about it. gonna go eat
+
+=== RHEA {{DATE}} 19:52 ===
+Go eat.
+
+=== DAMON {{DATE}} 22:31 ===
+ok back. I looked at what a repair guy costs here and it's $140 just to show up
+
+=== RHEA {{DATE}} 22:31 ===
+That makes the multimeter the cheap answer by a wide margin, even if it turns out you need
+the guy anyway.
+
+=== DAMON {{DATE}} 22:34 ===
+yeah. ok decided. I'm doing it myself. ordering the multimeter tonight and the element only
+after I've tested it. if it's the thermostat I order that instead. no blind buying
+
+=== RHEA {{DATE}} 22:34 ===
+Good plan, and the order is right. Test first, buy second. Kill the breaker before the kick
+plate comes off, not just the switch.
+
+=== DAMON {{DATE}} 22:35 ===
+yes mom
+
+=== RHEA {{DATE}} 22:35 ===
+Somebody has to say it.

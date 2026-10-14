@@ -1,0 +1,63 @@
+# Session {{UUID}}
+# source: {{SOURCE}}
+# first turn: {{DATE}}T21:03:55.870Z
+=== DAMON {{DATE}} 21:03 ===
+ok new chess thing. I keep losing the same way in the London. I get the pieces out fine and then
+by move 15 I have no idea what I'm supposed to be doing
+
+=== RHEA {{DATE}} 21:04 ===
+That's the London's whole reputation. It's easy to set up and easy to go dead in. The setup is
+the same every game, so the plan has to come from the position, and the opening never hands you
+one. What does the board usually look like at move 15? Who's castled where?
+
+=== DAMON {{DATE}} 21:06 ===
+both castled short. my bishop on d3, knight on e5 usually, queen on f3 or e2. their stuff is
+all just kind of there
+
+=== RHEA {{DATE}} 21:07 ===
+Then you've got the standard kingside setup and you're not using it. Knight on e5 and bishop on
+d3 are pointing at h7. The usual plan from there is f4, Rf3, Rh3, and a queen swing. It's crude
+and it works at club level more often than it should.
+
+=== DAMON {{DATE}} 21:08 ===
+I always feel like that's too aggressive, like I'm going to get punished
+
+=== RHEA {{DATE}} 21:09 ===
+You might. But a plan that sometimes gets punished beats having no plan, because with no plan
+you lose slowly to someone who has one. Try it for ten games and see what actually happens
+instead of what you're afraid happens.
+
+=== DAMON {{DATE}} 21:11 ===
+ok. ten games. I can do that
+
+=== DAMON {{DATE}} 21:12 ===
+I stopped going to the climbing gym, by the way. anyway. what about when they play c5 early
+
+=== RHEA {{DATE}} 21:13 ===
+Early c5 against the London changes the plan. They're hitting d4 before you've finished
+setting up. The quiet answer is c3, holding the center and keeping the bishop's diagonal. The
+sharper answer is dxc5, giving up the center for development, and that suits you less.
+
+=== DAMON {{DATE}} 21:15 ===
+c3 every time then. what if they go queen b6 hitting b2
+
+=== RHEA {{DATE}} 21:16 ===
+Qb3 and offer the trade. If they take, you get an open a-file for your rook and their queen is
+off the board, which takes a lot of the danger out of their play. If they don't take, they've
+spent a tempo to look at your pawn.
+
+=== DAMON {{DATE}} 21:18 ===
+ok I like that. queen trades are good for me honestly, I'm better in endgames than middlegames
+
+=== RHEA {{DATE}} 21:19 ===
+Then you've just found the real plan, and it isn't the kingside attack. It's trading into
+endgames you're better at. The attack is for when they won't trade.
+
+=== DAMON {{DATE}} 21:20 ===
+huh. yeah. that's actually the thing
+
+=== RHEA {{DATE}} 21:20 ===
+That's the thing.
+
+=== DAMON {{DATE}} 21:24 ===
+ok I'm gonna play a few. thanks

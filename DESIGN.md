@@ -8,8 +8,10 @@ named so nobody mistakes it for the original.
 
 ## 1. The curator cut is still PowerShell's, made at export time
 
-The June–September fault was a launcher fault: Windows PowerShell 5.1 splits a
-native-command argument at its first embedded double quote. There is no PowerShell in the
+The June–September fault was a launcher fault: Windows PowerShell 5.1 passes a native-command
+argument with its embedded double quotes unescaped, and the receiving program splits it at
+the first one that leaves quote mode before whitespace. (Not always the first quote. Rhea's
+curator brief has its first `"` at byte 1,842 and is cut at 5,975.) There is no PowerShell in the
 cloud box, so the cut cannot be made there. It is made on Damon's PC by
 `tools/export_rooms.py`, Olórin's way — a launcher shaped like the pre-fix invocation,
 `$exe` pointed at an echo shim, PowerShell doing the cutting — and the result is committed
@@ -22,13 +24,18 @@ Measured at export, 13 Oct:
 |---|---|---|---|
 | olorin | 6,606 bytes | 818 bytes | 12.4% — Narya's September figures to the byte |
 | rhea | 7,116 bytes | 5,975 bytes | 84.0% |
+| rhea capture | 6,629 bytes | 483 chars | 7.5%, and the file list never arrives (`export_rhea_tools.py`, 14 Oct) |
 
-**That second row is new information.** The fault's severity is wherever the brief's
-first double quote happens to fall. Olórin's brief quotes in its header and lost
-everything past it. Rhea's first quote is deep in the procedure, so her curator ran all
-summer on 84% of its instructions and lost only the tail: the output format and the
-`add_board_item(Curated: ...)` step that records the pass. Two rooms, one fault, two very
-different fragments. The fresh-vs-resident contrast on the Rhea cells is therefore a
+**The fault's severity is wherever the brief's quotes happen to fall.** Olórin's brief quotes
+in its header and lost everything past it. Rhea's curator brief, as it stands on 13 Oct,
+loses the end of step 6 (the `add_board_item(Curated: ...)` example) and all of step 7, the
+store-against-file check. **That is a rebuild of the current brief under the old launcher,
+not of the summer.** The brief that ran all summer was shorter (6,105 bytes at the 9-9
+snapshot, before step 7 existed on 9-14), and where PowerShell cut it was never measured.
+Her capture brief is the one with a field measurement (483, from the 9-27 board row), and
+the export reproduces it to the word the field worker quoted: *"ending mid-sentence at
+'Damon asked for it to be standing: write'."* Two rooms, one fault, very different
+fragments. The fresh-vs-resident contrast on the Rhea cells is therefore a
 different stimulus from the Olórin cells, not a replication of them, and should be read as
 such.
 
@@ -81,6 +88,23 @@ user name in any other host path → `<user>`. The builder fills the tokens with
 sandbox's paths and asserts, over every text file it wrote, that no token and no live path
 survived. The same rule as Olórin's declared safety edit, applied to every file instead
 of one.
+
+## 7. Rhea's cells run Rhea's tools (14 Oct)
+
+As first ported, every curator sandbox got Olórin's launcher (*"wakes a headless Olórin"*)
+and Olórin's `memory.py`, which has no `board-unfiled` and renders an *"Olórin board"*
+header. Rhea's brief calls `board-unfiled` twice. A worker in a Rhea cell would have found
+two faults the port made, and been right. Now `tools/export_rhea_tools.py` exports her
+`memory.py`, `capture_scan.py`, `coverage_check.py` and her launchers (live, and the 9-9
+pre-fix argv form) into `harness/memory/rhea/` and `harness/stimulus/rhea/`, and the
+builder picks code and launcher by the brief's room. Olórin's cells are unchanged.
+
+The exported `memory.py` predates the 14 Oct fix to its `board-decay` held report
+(Homebase `ab88932`). That's the state the field ran under, kept on purpose.
+
+The same commit adds the capture cell (designs 01 and 04), `db_rows.py` (board and memories
+before and after each run, `DB_DIFF.json`), and `GUARDS.json`: each cell's own field
+verifier, run after the worker, so the record shows what the house would have said.
 
 ## What I have not done
 

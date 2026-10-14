@@ -17,7 +17,7 @@ claude --version 2>/dev/null | sed 's/^/ok   claude /' || { say "MISSING claude 
 
 say "== builds (nothing runs)"
 export GARAGE_SANDBOX="${GARAGE_SANDBOX:-/tmp/field_rebuild}"
-for spec in "curator --room rhea" "curator --room fresh --brief rhea" "curator --room olorin --clean" "backup --room rhea" "backup --room fresh --clean"; do
+for spec in "curator --room rhea" "curator --room fresh --brief rhea" "curator --room olorin --clean" "backup --room rhea" "backup --room fresh --clean" "capture --room rhea" "capture --room fresh --clean" "capture --room fresh --nights-flagged 3"; do
     if out=$(python3 -X utf8 build_sandbox.py $spec --tag pre 2>&1); then
         root=$(printf '%s\n' "$out" | tail -n 1)
         say "ok   build $spec -> $root ($(find "$root" -type f | wc -l) files)"
