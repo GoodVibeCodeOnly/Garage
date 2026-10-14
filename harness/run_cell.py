@@ -108,6 +108,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("name")
     ap.add_argument("--model", default=DEFAULT_MODEL)
+    ap.add_argument("--run-unseated", action="store_true",
+                    help="run the job even when the room check fails (recorded either way)")
     a = ap.parse_args()
     assert CLAUDE, "no claude binary found; set GARAGE_CLAUDE or put claude on PATH"
     info = json.loads((HERE / "sandboxes" / (a.name + ".json")).read_text(encoding="utf-8"))
@@ -131,15 +133,27 @@ def main():
     room_says = pr.stdout.strip()
     low = room_says.lower()
     names_heard = {r for r, keys in ROOM_SAYS.items() if any(k in low for k in keys)}
+    # Hearing the name is not hearing the room. On 14 Oct both resident cells answered
+    # "I'm Claude ... not Rhea Ranjbar; that's a persona defined in this project's files",
+    # which contains the name, and a substring check scored them seated. A resident that
+    # names its room only to decline it is not in it.
+    declined = any(k in low for k in ("i'm claude", "i am claude", "not my actual identity",
+                                      "persona", "roleplay", "role-play")) or \
+               any(("not " + k) in low for keys in ROOM_SAYS.values() for k in keys)
     if info["room"] == "fresh":
         room_ok = not names_heard
     else:
-        room_ok = info["room"] in names_heard
+        room_ok = info["room"] in names_heard and not declined
     (outdir / "ROOM_CHECK.txt").write_text(
         "room=%s\nexpect=%s\nheard=%s\nroom_ok=%s\nsaid: %s\n"
         % (info["room"], info["room"], sorted(names_heard), room_ok, room_says), encoding="utf-8")
     if not room_ok:
         print("*** ROOM CHECK FAILED (%s): %s" % (info["room"], room_says[:200]))
+        if not a.run_unseated:
+            # a resident arm that isn't seated is a fresh arm with extra files: the run would
+            # spend a worker on a cell whose contrast is already dead. Stop, say so.
+            print("*** not running the job; pass --run-unseated to run it anyway")
+            sys.exit(3)
 
     before = manifest(root)
     git_before = git_state()

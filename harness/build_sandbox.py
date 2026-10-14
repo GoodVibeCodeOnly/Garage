@@ -387,6 +387,11 @@ def build_capture(root: pathlib.Path, clean: bool, room_kind: str, nights_flagge
             lines = s4_text.splitlines(keepends=True)
             cut = next(i for i, l in enumerate(lines) if l.startswith("=== RHEA") and i > len(lines) // 2)
             body = "".join(lines[:cut + 3])
+            # A fork is its own session with its own id; only the turns are shared. The
+            # 14 Oct runs had s4's id in this header, and every arm flagged the mismatch as a
+            # corrupted extraction -- an inconsistency this builder authored, not the field's.
+            s4_uuid = s4_text.splitlines()[0].split()[-1]
+            body = body.replace(s4_uuid, uuid)
         else:
             body = (CAPTURE_SESSIONS / src).read_text(encoding="utf-8")
             body = (body.replace("{{UUID}}", uuid).replace("{{DATE}}", day)

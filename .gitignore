@@ -13,3 +13,5 @@ __pycache__/
 tools/_argv_echo.py
 tools/_prefix_launcher.ps1
 # built sandboxes live in /tmp, never here; the record of a run is harness/runs/ and IS committed
+# preflight builds are throwaway; the record is harness/runs/ and the w1 sandbox JSONs
+harness/sandboxes/*_pre.json
