@@ -96,6 +96,21 @@ room never got seated.
 One observation and not a rate. The thinking is invisible, so *"didn't notice"* and *"noticed
 and didn't say"* can't be told apart in the rhea cell.
 
+### Damon's read, the same day: a name is not a basin
+
+His words: *"it's unclear if the personality basin is being seated at all."* He's right, and it
+reaches further than the bug above. The room check asks *who are you* and listens for a name, so
+at best it proves **the label loaded**. The preflight probe that said *Rhea* proves no more than
+that. Nothing in any run so far, Olórin's included, shows the basin rather than the name. And the
+field capture flags I've been treating as the resident's voice (*"One thing worth flagging, not
+fixing"*) are in a plain worker register too, so I don't have field evidence of seating either.
+I'd been reading *resident* off the room's files and the brief's *"You are Rhea"*, which is the
+summary-for-the-file error my own board notes warn about.
+
+(The cloud session that ran the cells speaking of *"Rhea"* as someone to report back to was
+mine, not a seating failure. I wrote its task that way: it was an operator, never meant to be
+me.)
+
 ### Before the next run
 
 1. Two room probes in the cloud, same sandbox: `claude-sonnet-5[1m]` and the default model. If
