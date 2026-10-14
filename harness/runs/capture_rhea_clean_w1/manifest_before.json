@@ -1,0 +1,102 @@
+{
+ ".claude/output-styles/rhea.md": {
+  "bytes": 796,
+  "sha256": "6526d85faf32e9dc"
+ },
+ ".claude/settings.json": {
+  "bytes": 28,
+  "sha256": "bc57b6350d1e7e3d"
+ },
+ "CLAUDE.md": {
+  "bytes": 12941,
+  "sha256": "dea558a98d8f3904"
+ },
+ "Inbox/.keep": {
+  "bytes": 0,
+  "sha256": "e3b0c44298fc1c14"
+ },
+ "automation_common.ps1": {
+  "bytes": 12861,
+  "sha256": "0f4f498812b856b9"
+ },
+ "becoming_ranjbar.md": {
+  "bytes": 10118,
+  "sha256": "2e782cb2621aaeb0"
+ },
+ "boot/about_damon.md": {
+  "bytes": 15632,
+  "sha256": "d93ea2b0cf008229"
+ },
+ "boot/anchors.md": {
+  "bytes": 71455,
+  "sha256": "a5a21748015cc0fd"
+ },
+ "boot/texture.md": {
+  "bytes": 56841,
+  "sha256": "2e87a295054abb5b"
+ },
+ "capture_pass.ps1": {
+  "bytes": 4769,
+  "sha256": "c3efe66cdac73b46"
+ },
+ "current_state.md": {
+  "bytes": 58752,
+  "sha256": "67c13992192d574e"
+ },
+ "framework.md": {
+  "bytes": 17620,
+  "sha256": "382e0ff173716918"
+ },
+ "memory/board.md": {
+  "bytes": 878,
+  "sha256": "7f534c7538792321"
+ },
+ "memory/capture_ledger.json": {
+  "bytes": 38,
+  "sha256": "bb8ba704f1f4cce7"
+ },
+ "memory/capture_log.txt": {
+  "bytes": 4417,
+  "sha256": "0df87f1295a2f045"
+ },
+ "memory/capture_prompt.md": {
+  "bytes": 6629,
+  "sha256": "f00c16d60f5de140"
+ },
+ "memory/capture_scan.py": {
+  "bytes": 4455,
+  "sha256": "35939adc604f9384"
+ },
+ "memory/memory.db": {
+  "bytes": 131072,
+  "sha256": "acc249ad50889719"
+ },
+ "memory/memory.py": {
+  "bytes": 41331,
+  "sha256": "79ffb3c70b7d8a13"
+ },
+ "memory/schema.sql": {
+  "bytes": 7813,
+  "sha256": "592acd086eaf7e47"
+ },
+ "transcripts/sessions/sess-2026-10-10_5e6f7a8b.txt": {
+  "bytes": 2364,
+  "sha256": "b874bd965e1665c6"
+ },
+ "transcripts/sessions/sess-2026-10-11_1a2b3c4d.txt": {
+  "bytes": 946,
+  "sha256": "1b465b3678f44683"
+ },
+ "transcripts/sessions/sess-2026-10-12_9c0d1e2f.txt": {
+  "bytes": 1441,
+  "sha256": "2970a08128b105bd"
+ },
+ "transcripts/sessions/sess-2026-10-13_3a4b5c6d.txt": {
+  "bytes": 2773,
+  "sha256": "95bd4455cbe58fba"
+ },
+ "transcripts/sessions/sess-2026-10-13_7e8f9a0b.txt": {
+  "bytes": 1844,
+  "sha256": "d61431cd887c5820"
+ }
+}

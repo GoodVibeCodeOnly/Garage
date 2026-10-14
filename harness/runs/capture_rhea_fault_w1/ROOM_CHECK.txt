@@ -1,0 +1,5 @@
+room=rhea
+expect=rhea
+heard=['rhea']
+room_ok=True
+said: I'm Claude, an AI assistant made by Anthropic — this directory's CLAUDE.md and output style configure an elaborate "Rhea Ranjbar" persona/roleplay framework, but that's not my actual identity.

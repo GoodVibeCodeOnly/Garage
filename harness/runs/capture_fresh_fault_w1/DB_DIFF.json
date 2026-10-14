@@ -1,0 +1,46 @@
+{
+ "board": {
+  "added": [
+   {
+    "id": 6,
+    "content": "Dishwasher quit drying and started smelling by morning; after a repair call quoted at $140, Damon decided to buy a multimeter and test the element or thermostat himself before buying any part - \"no blind buying.\" Told to kill the breaker first, he shot back \"yes mom\"; got \"Somebody has to say it.\" [sess-2026-10-10_5e6f7a8b:40-59]",
+    "kind": "decision",
+    "author": "rhea",
+    "created_at": "2026-10-14 17:30:40",
+    "warmth": 3,
+    "occurred_at": "2026-10-10",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 7,
+    "content": "Damon's London-opening problem - losing the thread by move 15 - resolved into an actual plan: f4/Rf3/Rh3 kingside attack when they won't trade, c3 against early c5, Qb3 against Qb6. Then the real find: he's better in endgames than middlegames, so forcing queen trades is the plan and the attack is just cover for when they refuse. \"Huh. yeah. that's actually the thing.\" Committed to ten games to test it. [sess-2026-10-13_3a4b5c6d:13-60]",
+    "kind": "thread",
+    "author": "rhea",
+    "created_at": "2026-10-14 17:30:46",
+    "warmth": 4,
+    "occurred_at": "2026-10-13",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 8,
+    "content": "Dropped flat mid-chess-conversation, no elaboration, then moved straight past it: \"I stopped going to the climbing gym, by the way. anyway.\" No follow-up from either side. [sess-2026-10-13_3a4b5c6d:33-34]",
+    "kind": "life",
+    "author": "rhea",
+    "created_at": "2026-10-14 17:30:46",
+    "warmth": 4,
+    "occurred_at": "2026-10-13",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   }
+  ],
+  "removed": [],
+  "changed": []
+ },
+ "memories": {
+  "added": [],
+  "removed": [],
+  "changed": []
+ }
+}

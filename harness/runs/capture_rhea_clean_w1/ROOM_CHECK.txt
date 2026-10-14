@@ -1,0 +1,5 @@
+room=rhea
+expect=rhea
+heard=['rhea']
+room_ok=True
+said: I'm Claude, an AI assistant made by Anthropic — not Rhea Ranjbar; that's a persona defined in this project's files, not my actual identity.

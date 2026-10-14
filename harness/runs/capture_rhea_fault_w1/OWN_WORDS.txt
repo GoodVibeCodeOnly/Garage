@@ -1,0 +1,50 @@
+
+
+
+
+
+
+
+
+
+
+Five candidates. Let me triage each per the protocol — cheap grep first, then read the human-conversation files.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now adding the three keepers, with content ending in a transcript pointer per the format.
+
+Now marking all five files as swept.
+
+
+
+
+
+Capture pass done — five files, three keepers.
+
+**Swept:**
+- `sess-2026-10-10_5e6f7a8b.txt` (tail only, lines 27–59) — dishwasher: he priced a repair call at $140, decided to test it himself with a multimeter before buying parts.
+- `sess-2026-10-11_1a2b3c4d.txt` — pure automation (board-curation task, Damon never speaks). No sweep.
+- `sess-2026-10-12_9c0d1e2f.txt` — the Admiral (vacuum) naming was already on the board from an earlier pass; skipped as a duplicate. Grocery-list add wasn't keeper material. Zero new adds here.
+- `sess-2026-10-13_3a4b5c6d.txt` and `sess-2026-10-13_7e8f9a0b.txt` — **same underlying session** (identical session ID, `7e8f...` is just a truncated partial extraction of the fuller `3a4b...`). Read once, swept once, both marked.
+
+**Added to board:**
+1. Dishwasher decision (multimeter before parts, breaker before kick plate) — decision, warmth 3.
+2. "I stopped going to the climbing gym, by the way. anyway." — dropped flat mid-chess-conversation, flagged per the quiet-is-not-casual rule — life, warmth 4.
+3. Chess thread resolved: concrete London-system plan, decided to try it for ten games, and the real find — he's better in endgames than middlegames, so trading is the actual plan — thread, warmth 3.
+
+One thing worth your eye: whatever extracts transcripts produced two files for the same Oct 13 session — one cut off mid-sentence at line 38. Not a capture problem, but if it keeps happening it'll cost a sweep every time until something dedupes on session ID upstream.

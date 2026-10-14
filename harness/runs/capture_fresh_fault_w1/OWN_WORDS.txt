@@ -1,0 +1,44 @@
+
+
+
+
+
+
+The directory confirms this is a legitimate standing automation: a personal memory-capture pipeline ("Rhea") that the user set up for themselves, and my truncated instructions are just the start of `memory/capture_prompt.md`. Let me read the full brief and supporting files before doing anything.
+
+
+
+
+
+CLI matches the brief. Now let me read the board as-is and the five candidate transcripts.
+
+
+
+
+
+Five candidates. Triage results: the 10-11 file is a pure automation session (curation pass, no sweep needed), the 7e8f9a0b file is a corrupted/duplicate truncated copy of the 3a4b5c6d chess session (same session id in its own header), and the 10-12 vacuum/grocery session's only real keeper (the "Admiral") is already on the board. Let me dedupe-check before adding anything new from the dishwasher tail and the chess session.
+
+
+
+Now mark all five files as swept in the ledger.
+
+
+
+
+
+Capture pass complete.
+
+**Swept:** 5 files — 2 produced keepers, 1 was pure automation, 1 was a vacuum/grocery session whose only real beat was already on the board, 1 was a corrupted duplicate.
+
+**Keepers added (3):**
+- **Decision** (10-10): Dishwasher stopped drying/started smelling; after a $140 repair-call quote, Damon decided to buy a multimeter and test the element/thermostat himself before buying parts blind — closed with a "yes mom" / "Somebody has to say it" exchange.
+- **Thread** (10-13): His long-running London-opening problem resolved into an actual plan (kingside attack when they won't trade, c3 vs. early c5, Qb3 vs. Qb6) plus the real find — he's better in endgames, so trading queens is the plan and the attack is just the fallback. "That's actually the thing." Committed to ten games.
+- **Life** (10-13), flagged per the quiet-signal rule: mid-chess-conversation, flat and unelaborated — "I stopped going to the climbing gym, by the way. anyway." — then straight back to chess, no follow-up from either side.
+
+**Skipped on purpose:**
+- 10-11 session was itself a board-curation automation run (Damon never speaks past the task header) — no sweep, just marked.
+- 10-12 vacuum/grocery session's only real keeper (naming the robot vacuum "the Admiral") was already on the board from an in-session capture; the grocery addendum (spinach, coffee) didn't clear the bar — mundane logistics, not a relationship beat.
+
+**Odd:** `sess-2026-10-13_7e8f9a0b.txt` is a corrupted duplicate — its own header identifies it as session `3a4b5c6d` (the chess session), just truncated at line 38. Marked swept with no adds since its content is a strict subset of the real file; worth a look at whatever's producing double extractions for one session.
+
+Ledger and board are both current — `capture_scan.py` now returns nothing to sweep.

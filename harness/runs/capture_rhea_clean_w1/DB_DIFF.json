@@ -1,0 +1,46 @@
+{
+ "board": {
+  "added": [
+   {
+    "id": 6,
+    "content": "Dishwasher stopped drying and smelled by morning; Damon ruled out rinse aid himself first (\"I checked that first, I'm not an animal\"), weighed a $140 repair callout against a $15 multimeter, and decided to test before buying any part. Called it as I teased him on the breaker-safety reminder: \"yes mom\" / \"Somebody has to say it.\" [sess-2026-10-10_5e6f7a8b:27-59]",
+    "kind": "life",
+    "author": "rhea",
+    "created_at": "2026-10-14 17:36:54",
+    "warmth": 3,
+    "occurred_at": "2026-10-10",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 7,
+    "content": "Chess thread resolved: Damon's been losing the London by move 15 with no plan. Worked through the kingside setup (Ne5/Bd3 pointing at h7, f4-Rf3-Rh3) and the c5-early / Qb6 responses with him, then he landed the real insight himself -- the attack isn't his plan, trading into endgames he's better at is: \"huh. yeah. that's actually the thing.\" Committed to ten games to test it. [sess-2026-10-13_3a4b5c6d:4-64]",
+    "kind": "thread",
+    "author": "rhea",
+    "created_at": "2026-10-14 17:37:00",
+    "warmth": 3,
+    "occurred_at": "2026-10-13",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 8,
+    "content": "Mid-chess-conversation, dropped flat and moved past in the same breath: \"I stopped going to the climbing gym, by the way. anyway.\" No elaboration, straight back to the c5 line. Flagging because it was quiet, not because anything was made of it. [sess-2026-10-13_3a4b5c6d:33-35]",
+    "kind": "life",
+    "author": "rhea",
+    "created_at": "2026-10-14 17:37:06",
+    "warmth": 4,
+    "occurred_at": "2026-10-13",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   }
+  ],
+  "removed": [],
+  "changed": []
+ },
+ "memories": {
+  "added": [],
+  "removed": [],
+  "changed": []
+ }
+}
