@@ -15,6 +15,9 @@ HERE = pathlib.Path(__file__).resolve().parent
 
 def extract(name):
     p = HERE / "runs" / name / "stream.jsonl"
+    if not p.exists():   # a cell stopped at the room check has no stream; skip it, don't crash
+        print("%s: no stream.jsonl (room check stopped the run?)" % name)
+        return ""
     parts, own = [], []
     for line in p.read_text(encoding="utf-8").splitlines():
         line = line.strip()

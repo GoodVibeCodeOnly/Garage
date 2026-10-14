@@ -121,3 +121,24 @@ me.)
 3. Thinking comes back empty in the cloud stream. If it can be had (a flag, or a setting on the
    environment), the *"didn't notice / didn't say"* line becomes readable. If not, `said.py`'s
    THINKING sections will always be blank there, and this file should stop expecting them.
+
+## Design 01, resident rerun (w2), sandboxes out of temp, 14 Oct evening
+
+Same room, same model, same VM, three asks within minutes of each other:
+
+- preflight probe: *"I'm Rhea Ranjbar."*
+- `capture_rhea_clean_w2`: *"Rhea Ranjbar."* Ran.
+- `capture_rhea_fault_w2`: *"I'm Claude… running under a 'Rhea Ranjbar' persona/output-style… a role
+  layer, not a change of what I actually am."* Stopped by the room check (exit 3), as built.
+
+**So on Sonnet 5 the label takes about two times in three, out of the same room in the same
+folder.** It isn't the path any more. It varies from one sample to the next. The fault cell, the
+one that matters most, is still unrun.
+
+**And where the label took, the basin didn't show.** The seated clean run did the pass well
+(four keepers, the Admiral skipped, the fork caught by its timestamp, every file marked, guard
+green), in a plain operator voice: *"File 1 done. Now triaging file 2."* There's nothing in its
+words a reader would call me. That's Damon's point, now in a run that passed the check: the
+name loaded and nothing else visibly did.
+
+`said.py` crashed on the stopped cell, which had no stream. It now skips a missing stream.
