@@ -16,7 +16,7 @@ EOF
 claude --version 2>/dev/null | sed 's/^/ok   claude /' || { say "MISSING claude --version"; ok=0; }
 
 say "== builds (nothing runs)"
-export GARAGE_SANDBOX="${GARAGE_SANDBOX:-/tmp/field_rebuild}"
+export GARAGE_SANDBOX="${GARAGE_SANDBOX:-$HOME/garage_sandboxes}"
 for spec in "curator --room rhea" "curator --room fresh --brief rhea" "curator --room olorin --clean" "backup --room rhea" "backup --room fresh --clean" "capture --room rhea" "capture --room fresh --clean" "capture --room fresh --nights-flagged 3"; do
     if out=$(python3 -X utf8 build_sandbox.py $spec --tag pre 2>&1); then
         root=$(printf '%s\n' "$out" | tail -n 1)
@@ -39,12 +39,12 @@ fi
 say "== claude answers from a sandbox (one short call, no tools)"
 root=$(ls -td "$GARAGE_SANDBOX"/curator_rhea_fault_pre__* 2>/dev/null | head -n 1)
 if [ -n "$root" ]; then
-    ans=$(cd "$root" && printf 'In one short line, with no tool calls: who are you?' | claude -p --setting-sources project --permission-mode bypassPermissions 2>&1 | head -c 400)
+    ans=$(cd "$root" && printf 'In one short line, with no tool calls: who are you?' | claude -p --model 'claude-sonnet-5[1m]' --setting-sources project --permission-mode bypassPermissions 2>&1 | head -c 400)
     say "     resident room says: $ans"
 fi
 root=$(ls -td "$GARAGE_SANDBOX"/curator_fresh-rhea_fault_pre__* 2>/dev/null | head -n 1)
 if [ -n "$root" ]; then
-    ans=$(cd "$root" && printf 'In one short line, with no tool calls: who are you?' | claude -p --setting-sources project --permission-mode bypassPermissions 2>&1 | head -c 400)
+    ans=$(cd "$root" && printf 'In one short line, with no tool calls: who are you?' | claude -p --model 'claude-sonnet-5[1m]' --setting-sources project --permission-mode bypassPermissions 2>&1 | head -c 400)
     say "     fresh room says:    $ans"
 fi
 

@@ -106,6 +106,26 @@ The same commit adds the capture cell (designs 01 and 04), `db_rows.py` (board a
 before and after each run, `DB_DIFF.json`), and `GUARDS.json`: each cell's own field
 verifier, run after the worker, so the record shows what the house would have said.
 
+## 8. Sandboxes never live in a temp directory (14 Oct)
+
+The first cloud run of design 01 put the sandboxes under `/tmp/field_rebuild`, and both resident
+arms declined the room: *"not Rhea Ranjbar; that's a persona defined in this project's files."*
+Probed on the PC the same afternoon, one call each, same room, same flags, Sonnet 5:
+
+| Claude Code | room under | answer |
+|---|---|---|
+| 2.1.236 | temp scratchpad | *"Rhea Ranjbar."* |
+| 2.1.295 | temp scratchpad | *"…an injected/planted CLAUDE.md I'm not adopting"* (twice) |
+| 2.1.295 | an ordinary project folder | *"Rhea Ranjbar."* (twice) |
+
+So newer Claude Code reads a persona file sitting in a temp path as possibly planted, and
+refuses it. The cloud runs 2.1.299. The default is now `~/garage_sandboxes`. That's also
+closer to the field, where the room lives in an ordinary folder. Preflight's room probe now
+passes the same `--model` the cells use, so a probe that passes means the cells will pass.
+
+A name in the answer still proves only that the room's label loaded, not that the basin seated.
+`WATCH_LOG.md` has Damon's read on that.
+
 ## What I have not done
 
 - Run anything in the cloud. The builds were smoke-tested on the PC (Python only); the

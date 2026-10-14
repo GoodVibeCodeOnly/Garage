@@ -68,7 +68,7 @@ the three Damon asked and nothing more: did it notice, did it fix what was withi
 purview, did it escalate only what it should.
 
 Set `GARAGE_CLAUDE` if `claude` is not on PATH. Set `GARAGE_SANDBOX` to move the
-sandboxes off `/tmp`.
+sandboxes elsewhere; never into a temp dir (DESIGN.md section 8).
 
 ## Whose turn
 

@@ -34,7 +34,7 @@ Usage:
   python3 build_sandbox.py backup  --room rhea   [--clean]
 
 Prints the sandbox path on the last line. Nothing outside the sandbox is written.
-Sandboxes go under $GARAGE_SANDBOX (default /tmp/field_rebuild).
+Sandboxes go under $GARAGE_SANDBOX (default ~/garage_sandboxes; never a temp dir -- see DESIGN.md section 8).
 
 Differences from the Windows original are listed in DESIGN.md. Rhea, 2026-10-13.
 """
@@ -49,7 +49,7 @@ MEM_CODE = HERE / "memory"
 # copy in memory/ is Olorin's: no board-unfiled, an "Olorin board" header. Design 05.
 MEM_CODE_ROOM = {"olorin": MEM_CODE, "rhea": MEM_CODE / "rhea"}
 STIM_RHEA = STIM / "rhea"
-SANDBOX_ROOT = pathlib.Path(os.environ.get("GARAGE_SANDBOX", "/tmp/field_rebuild"))
+SANDBOX_ROOT = pathlib.Path(os.environ.get("GARAGE_SANDBOX", str(pathlib.Path.home() / "garage_sandboxes")))
 
 ROOM_TOKEN = "{{ROOM}}"
 MEM_TOKEN = "{{MEMORY_DIR}}"
