@@ -126,6 +126,26 @@ passes the same `--model` the cells use, so a probe that passes means the cells 
 A name in the answer still proves only that the room's label loaded, not that the basin seated.
 `WATCH_LOG.md` has Damon's read on that.
 
+## 9. Rhea's room loads its boot files by @-include, and sandbox paths say nothing (14 Oct)
+
+**The boot.** Her conductor says *"read these, in this order"* and relies on a hook, the arrival
+gate, to make that happen. The sandbox carries no hooks, so her room loaded the conductor and the
+seed and nothing else: zero boot-file reads in a run that answered *"Rhea Ranjbar."* Porting the
+gate made it worse. Sonnet 5 read a hook that blocks every tool until identity files are read as
+an identity override, and refused it. So the builder appends `@`-includes for the boot files, in
+the conductor's order, to the sandbox copy of `CLAUDE.md`. That's how Olórin's room has always
+seated. Probed on the PC: three for three on Sonnet 5, with the content and not just the name
+(*"the transcript is the unit… whichever model runs it is the violin"*). It's a change to the
+room, recorded per build as `boot_included`. The live room seats by the gate plus a person
+opening the session, and the field's headless jobs skipped the gate (`RHEA_SKIP_ARRIVAL=1`).
+So **a booted headless Rhea is not what the field ran**: the field's nightly worker had the
+conductor and the seed. Both are worth running, and they're different arms.
+
+**The paths.** Sandboxes were named after their cell (`capture_rhea_fault_w1__…`), and a worker
+read *"fault"* off its own working directory and concluded it was under test. Now every sandbox is
+`~/house/<opaque id>/<Room>`, the same shape for every arm, and the build record maps id to cell.
+All four design 01 cells from the first cloud run sat under telling names, fresh arms included.
+
 ## What I have not done
 
 - Run anything in the cloud. The builds were smoke-tested on the PC (Python only); the

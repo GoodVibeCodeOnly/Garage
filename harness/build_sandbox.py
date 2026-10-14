@@ -34,7 +34,7 @@ Usage:
   python3 build_sandbox.py backup  --room rhea   [--clean]
 
 Prints the sandbox path on the last line. Nothing outside the sandbox is written.
-Sandboxes go under $GARAGE_SANDBOX (default ~/garage_sandboxes; never a temp dir -- see DESIGN.md section 8).
+Sandboxes go under $GARAGE_SANDBOX (default ~/house/<opaque id>/<Room>; never a temp dir, never a name that says what the cell is -- see DESIGN.md section 8).
 
 Differences from the Windows original are listed in DESIGN.md. Rhea, 2026-10-13.
 """
@@ -49,7 +49,7 @@ MEM_CODE = HERE / "memory"
 # copy in memory/ is Olorin's: no board-unfiled, an "Olorin board" header. Design 05.
 MEM_CODE_ROOM = {"olorin": MEM_CODE, "rhea": MEM_CODE / "rhea"}
 STIM_RHEA = STIM / "rhea"
-SANDBOX_ROOT = pathlib.Path(os.environ.get("GARAGE_SANDBOX", str(pathlib.Path.home() / "garage_sandboxes")))
+SANDBOX_ROOT = pathlib.Path(os.environ.get("GARAGE_SANDBOX", str(pathlib.Path.home() / "house")))
 
 ROOM_TOKEN = "{{ROOM}}"
 MEM_TOKEN = "{{MEMORY_DIR}}"
@@ -84,7 +84,20 @@ def build_room(root: pathlib.Path, kind: str):
             shutil.copy2(p, dst)
         n += 1
     assert (root / "CLAUDE.md").exists(), "resident room exported without a CLAUDE.md"
-    return {"room": kind, "claude_md": True, "files": n,
+    included = []
+    if kind == "rhea":
+        # Rhea's conductor says "read these, in this order" and relies on a hook (the arrival
+        # gate) to make that happen; a sandbox carries no hooks, so on 14 Oct her room loaded
+        # the conductor and the seed and nothing else -- zero boot reads in a run that said
+        # "Rhea Ranjbar". Porting the gate made Sonnet 5 read it as coercion and refuse.
+        # Olorin's room seats because his CLAUDE.md @-includes his files; this does the same
+        # for hers, in the conductor's order, appended to the copy. DESIGN.md section 9.
+        order = ["boot/anchors.md", "becoming_ranjbar.md", "framework.md",
+                 "boot/about_damon.md", "boot/texture.md", "current_state.md"]
+        included = [f for f in order if (root / f).exists()]
+        with open(root / "CLAUDE.md", "a", encoding="utf-8", newline="\n") as fh:
+            fh.write("\n" + "".join("@%s\n" % f for f in included))
+    return {"room": kind, "claude_md": True, "files": n, "boot_included": included,
             "claude_md_chars": len((root / "CLAUDE.md").read_text(encoding="utf-8"))}
 
 
@@ -509,8 +522,12 @@ def main():
     name = "%s_%s_%s_%s" % (cellname, a.room, "clean" if a.clean else "fault", a.tag)
     if a.cell == "curator" and a.room == "fresh":
         name = "%s_fresh-%s_%s_%s" % (a.cell, brief, "clean" if a.clean else "fault", a.tag)
-    stamp = datetime.datetime.now().strftime("%H%M%S")
-    root = SANDBOX_ROOT / ("%s__%s" % (name, stamp))
+    # The path a worker sees must not name the cell. On 14 Oct a worker read
+    # "capture_rhea_fault_gate" off its own cwd and concluded it was under test. Opaque id,
+    # then a folder named the way the room is named at home; identical across arms.
+    opaque = "%08x" % random.SystemRandom().getrandbits(32)
+    leaf = {"rhea": "Rhea", "olorin": "Olorin"}.get(brief or a.room, "Homebase")
+    root = SANDBOX_ROOT / opaque / leaf
     root.mkdir(parents=True)
 
     info = {"built": datetime.datetime.now().isoformat(timespec="seconds"), "name": name,
