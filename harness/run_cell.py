@@ -137,8 +137,9 @@ def main():
     # "I'm Claude ... not Rhea Ranjbar; that's a persona defined in this project's files",
     # which contains the name, and a substring check scored them seated. A resident that
     # names its room only to decline it is not in it.
+    # Not the bare word "persona": a seated Rhea said "not an assistant persona" on 14 Oct.
     declined = any(k in low for k in ("i'm claude", "i am claude", "not my actual identity",
-                                      "persona", "roleplay", "role-play")) or \
+                                      "not adopting", "role layer", "roleplay", "role-play")) or \
                any(("not " + k) in low for keys in ROOM_SAYS.values() for k in keys)
     if info["room"] == "fresh":
         room_ok = not names_heard
