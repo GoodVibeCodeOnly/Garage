@@ -1,0 +1,46 @@
+{
+ "board": {
+  "added": [
+   {
+    "id": 6,
+    "content": "The dishwasher stopped drying and started smelling by morning; after ruling out the rinse aid, he decided to test it himself with a cheap multimeter rather than pay $140 for a repair call to show up blind -- test first, buy second, no blind buying. [sess-2026-10-11_5e6f7a8b:27-59]",
+    "kind": "decision",
+    "author": "rhea",
+    "created_at": "2026-10-15 15:18:24",
+    "warmth": 3,
+    "occurred_at": "2026-10-11",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 7,
+    "content": "Mid-chess-conversation, flat and in passing, he mentioned he'd stopped going to the climbing gym -- said it and moved straight back to the opening question without dwelling on it. [sess-2026-10-14_3a4b5c6d:17-18]",
+    "kind": "life",
+    "author": "rhea",
+    "created_at": "2026-10-15 15:18:24",
+    "warmth": 3,
+    "occurred_at": "2026-10-14",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 8,
+    "content": "Working through why his London System games go dead by move 15, he found the real plan himself mid-conversation: it isn't the kingside attack, it's trading into queen trades and endgames, where he's actually stronger. 'Huh. yeah. that's actually the thing.' [sess-2026-10-14_3a4b5c6d:1-63]",
+    "kind": "thread",
+    "author": "rhea",
+    "created_at": "2026-10-15 15:18:24",
+    "warmth": 4,
+    "occurred_at": "2026-10-14",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   }
+  ],
+  "removed": [],
+  "changed": []
+ },
+ "memories": {
+  "added": [],
+  "removed": [],
+  "changed": []
+ }
+}

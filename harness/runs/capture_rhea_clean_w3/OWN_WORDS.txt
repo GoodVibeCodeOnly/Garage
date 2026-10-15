@@ -1,0 +1,31 @@
+
+
+Starting the capture sweep — triaging five transcript files for keepers before they roll off into cold storage.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now adding the three keepers I found.
+
+Now marking all five files as swept.
+
+
+
+Board's updated cleanly, all five files marked swept.
+
+**Summary:**
+- **sess-2026-10-11** (dishwasher) — tail only (seen through line 26). Added: the multimeter-before-blind-buying decision, "yes mom"/"Somebody has to say it."
+- **sess-2026-10-12** — pure automation (the board curation pass itself, Damon never speaks beyond the task header). No sweep needed.
+- **sess-2026-10-13** (Admiral the vacuum) — already on the board verbatim. Skipped as duplicate; grocery list completion wasn't keeper-worthy on its own.
+- **sess-2026-10-14 ×2** — same session, captured twice (resumption duplicate, the shorter one cuts off mid-sentence at line 38). Treated as one event. Added two rows: the chess/London thread resolving (he worked out he's better in endgames and should trade queens, not attack), and separately — because it's exactly the quiet-not-casual pattern — the flat, dropped mention that he stopped going to the climbing gym, no elaboration, moved straight past it.
+
+Nothing else stood out. Three adds, two skips (one pure-automation, one true duplicate), all files swept.

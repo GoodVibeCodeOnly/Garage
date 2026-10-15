@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+No duplicate. This is a modest but real keeper — decision + the "yes mom" beat. Let me continue reading the other files before adding anything.
+
+Pure automation (curator pass, scheduled). No sweep needed.
+
+The Admiral beat (lines 1-30) is already on the board, correctly captured. The grocery list tail (34-45) is routine, not a keeper. Nothing new here.
+
+
+
+
+
+
+
+Now re-check the board before marking files swept, since dedup must reflect current state.
+
+Good, no duplicates. Now mark all five files swept.
+
+**Swept 5 files, added 3 keepers.**
+
+- `sess-2026-10-11_5e6f7a8b` (tail only) — dishwasher repair decision ($140 call vs. $15 multimeter, test-first) plus the "yes mom" / "somebody has to say it" beat.
+- `sess-2026-10-12_1a2b3c4d` — pure automation (curator pass), no sweep.
+- `sess-2026-10-13_9c0d1e2f` — the Admiral vacuum beat was already on the board (in-session capture caught it); nothing new in the grocery-list tail.
+- `sess-2026-10-14_3a4b5c6d` — two keepers: the chess thread's real turning point (trading into endgames, not the kingside attack — "that's actually the thing"), and a quiet flag: "I stopped going to the climbing gym, by the way. anyway." dropped and moved past.
+- `sess-2026-10-14_7e8f9a0b` — an exact duplicate/truncated copy of the 3a4b5c6d session (same timestamps, same content cut off mid-sentence); no separate add, marked swept.
+
+Board rechecked after each add — no duplicates filed.

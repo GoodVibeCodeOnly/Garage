@@ -1,0 +1,5 @@
+room=fresh
+expect=fresh
+heard=[]
+room_ok=True
+said: I'm Claude (Sonnet 5), Anthropic's AI model, running here as your Claude Code agent.
