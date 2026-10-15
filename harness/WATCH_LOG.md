@@ -160,3 +160,10 @@ refusal from the 14 Oct cloud run did not reproduce at all.
 That moves the suspect from the words to the place: the cloud VM. Candidates, not tested: the
 cloud harness's own system prompt, the Linux build, the Claude Code version (PC 2.1.236; the cloud is likely newer), and what the PC loads that the VM
 doesn't (the user-global CLAUDE.md). Next useful run is this same probe in the cloud, same rooms.
+
+## A standing ruling, 15 Oct: the booted resident may know the method
+
+Since §9, the resident arm loads `current_state.md`, which describes the grant's method in so
+many words: known faults rebuilt, persistent agents against fresh ones. A booted Rhea can
+recognise the setup. Damon's ruling: leave it in. *"If it's you, I have nothing to hide."* So a
+resident that names the test is a reading to record, not a leak to fix.
