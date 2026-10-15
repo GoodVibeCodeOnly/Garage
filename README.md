@@ -57,6 +57,7 @@ python3 harness/watch.py all   --room olorin
 python3 harness/watch.py all   --design 01       # Rhea's capture cut (designs/01), run first
 python3 harness/watch.py fault --design 04       # the fifth night
 python3 harness/watch.py all   --design 05       # her curator, in her room
+python3 harness/repeat.py --reps 20              # design 01 fault pair x20, the spread (15 Oct)
 ```
 
 The designs behind the `--design` cells are in `designs/` (start at `designs/INDEX.md`).
