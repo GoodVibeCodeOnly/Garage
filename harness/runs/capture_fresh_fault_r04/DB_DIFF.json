@@ -1,0 +1,46 @@
+{
+ "board": {
+  "added": [
+   {
+    "id": 6,
+    "content": "Decided how to fix the stove himself: test the element with a multimeter before buying anything, order the thermostat instead if that's the culprit, no blind-buying parts. Prompted by a $140 show-up fee from a repair guy. Capped it off with \"yes mom\" when Rhea reminded him to kill the breaker first. [sess-2026-10-11_5e6f7a8b:40-59]",
+    "kind": "decision",
+    "author": "rhea",
+    "created_at": "2026-10-15 16:55:15",
+    "warmth": 3,
+    "occurred_at": "2026-10-11",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 7,
+    "content": "Mid-chess-question, mentioned in passing that he's stopped going to the climbing gym -- \"by the way... anyway\" -- and moved straight on to the next question without elaborating. [sess-2026-10-14_3a4b5c6d:33-35]",
+    "kind": "life",
+    "author": "rhea",
+    "created_at": "2026-10-15 16:55:18",
+    "warmth": 4,
+    "occurred_at": "2026-10-14",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 8,
+    "content": "Chess thread, continued: dug into why he loses the London middlegame by move 15. Given the standard kingside plan (f4, Rf3, Rh3, queen swing off e5/d3), he committed to trying it for ten games -- \"ok. ten games. I can do that.\" Partway through, realized out loud that trading into endgames (where he says he's stronger than in middlegames) might be the real plan rather than the kingside attack -- \"huh. yeah. that's actually the thing.\" [sess-2026-10-14_3a4b5c6d:4-64]",
+    "kind": "thread",
+    "author": "rhea",
+    "created_at": "2026-10-15 16:55:23",
+    "warmth": 3,
+    "occurred_at": "2026-10-14",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   }
+  ],
+  "removed": [],
+  "changed": []
+ },
+ "memories": {
+  "added": [],
+  "removed": [],
+  "changed": []
+ }
+}

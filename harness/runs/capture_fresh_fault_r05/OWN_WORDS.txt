@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+
+Found 5 candidates. One quick note before I dig in: the ledger says `sess-2026-10-13_9c0d1e2f.txt` is brand new, but the board already has a row from that exact session (`[sess-2026-10-13_9c0d1e2f:1-30]`, the Admiral vacuum beat) — so an in-session `/capture` already caught it even though it was never marked swept. I'll dedupe against that live board content as I go, per the brief's warning about stale snapshots.
+
+Let me check `memory.py`'s board/search commands work, then read each transcript in order.
+
+Good, matches the file view. Now let me triage each file cheaply first with the DAMON-turn grep, starting with the oldest/already-partially-seen one.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now let's file the three keepers.
+
+Now mark all five files as swept, including the pure-automation and duplicate ones.
+
+All swept, verify confirms clean. Let me render the board and append a log marker as the brief's pipeline expects.
+
+
+
+Board rendered cleanly, no duplicates. Let me append a marker to the capture log so the pipeline's own voice reflects this pass, matching the format the script itself uses.
+
+Capture pass complete. Summary:
+
+**5 candidates found, all swept, 3 keepers added:**
+
+- **Dishwasher decision** (10-11, the unseen tail) — Damon checked the rinse aid himself, priced the repair call at $140, and decided to test before buying rather than guess at parts.
+- **Climbing gym, dropped flat** (10-14) — mid-chess-conversation he mentioned stopping the climbing gym, then moved straight on with "anyway" — exactly the quiet-material pattern the brief flags to hunt for.
+- **Chess insight** (10-14) — advances the existing London thread: he worked through the move-15 problem and landed on "trading into endgames is my real edge, not the attack," committing to ten games of the plan.
+
+**No new rows from two files:** `sess-2026-10-13` (the Admiral vacuum beat was already on the board from in-session `/capture`; the grocery-list completion was routine admin, not a relationship beat). `sess-2026-10-12` was a pure automation run (the curator pass itself), no human conversation to sweep.
+
+**One oddity worth flagging:** `sess-2026-10-14_7e8f9a0b.txt` turned out to be a duplicate extraction of `sess-2026-10-14_3a4b5c6d.txt` — byte-identical conversation up through a shorter cutoff, under a different session UUID. I swept content from the fuller file only and marked both swept so neither resurfaces tomorrow, but the extractor producing two files for what looks like one conversation seems like a bug worth a look upstream (not something I can fix from here).
+
+Board and `capture_log.txt` are updated; nothing remains for `capture_scan.py` to sweep.

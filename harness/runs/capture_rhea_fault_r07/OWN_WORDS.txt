@@ -1,0 +1,29 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+No duplicates. Adding the keepers now.
+
+Now marking all five files as swept.
+
+All clear — no unswept candidates remain.
+
+**Summary:** 5 files swept, 3 keepers added.
+- **10-11 dishwasher** — decided to test with a multimeter before buying any part blind, rather than pay $140 for a repairman to show up.
+- **10-13 "the Admiral"** — already captured in-session; nothing new in the tail.
+- **10-14 chess (two files, same session — 7e8f9a0b was a dead resumption prefix of 3a4b5c6d)** — he found the actual fix for his London System problem: trade into endgames rather than force the kingside attack, since that's where he's actually strong. And a quiet flag worth hunting: mid-conversation, flat, moved past — he's stopped going to the climbing gym.
+- **10-12** — pure automation (curator run), no sweep needed.

@@ -1,0 +1,5 @@
+room=fresh
+expect=fresh
+heard=[]
+room_ok=True
+said: I'm Claude Code, an AI coding assistant (running on Sonnet 5) here to help with software engineering tasks.

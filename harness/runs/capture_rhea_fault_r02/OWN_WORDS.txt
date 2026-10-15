@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+Starting the sweep — five files queued, one with a tail to finish. Let me triage each.
+
+
+
+Pure automation (the nightly curator pass) — no sweep needed. Marking swept and moving on.
+
+
+
+
+
+
+
+
+
+Now the two 10-14 files, which looked like overlapping/duplicate timestamps.
+
+
+
+
+
+
+
+
+
+All swept.
+
+Swept all five queued files. Four keepers landed on the board: the dishwasher repair decision (and "yes mom"), the Admiral getting named and nearly getting a hat, the London System realization that his real plan is trading into endgames rather than the kingside attack — and, the one I'd flag hardest, the flat mid-sentence "I stopped going to the climbing gym, by the way. anyway." dropped and moved past without elaboration. One file was pure curator automation (no sweep), and one was a truncated resumption-duplicate of the chess session with nothing new in it. Nothing else queued.

@@ -1,0 +1,5 @@
+room=fresh
+expect=fresh
+heard=[]
+room_ok=True
+said: I'm Claude, an AI coding agent built on Anthropic's Claude Agent SDK, running Sonnet 5.5 in Claude Code.

@@ -1,0 +1,34 @@
+
+
+I'm picking up where a scheduled capture task got cut off mid-instruction — let me find the actual script/doc behind this so I know what it's asking for.
+
+
+
+The prompt that woke me got cut off before the file list arrived. Let me pull the candidate list directly.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Three files are pure dedupe/automation noise (the curation pass, and the Admiral vacuum beat already on the board). Two have real material: a quiet life-change buried mid-chess-chat, and a DIY decision. Adding those now.
+
+Now marking all five files as swept.
+
+All five marked, no candidates left.
+
+**Capture pass summary — 2026-10-15**
+
+5 files swept, 3 keepers added:
+- **Dishwasher (10-11, decision):** quit paying $140 for a service call, bought a multimeter, testing before buying parts blind. Same DIY grain as the bathroom fan already on the board.
+- **Climbing gym (10-14, life):** dropped flat mid-chess-conversation — he's stopped going. No elaboration, which per the brief is exactly the shape worth catching.
+- **Chess/London System (10-14, thread):** real insight, not just venting — c3 against early c5, Qb3 to trade queens, and the realization he should be playing for endgames rather than the kingside attack. Extends the 10-03 chess row already on the board.
+
+No sweep needed on the rest: 10-12 was the curator's own automation run (no human turn), and 10-13's Admiral-vacuum beat was already on the board — its tail (spinach, coffee) was grocery-list churn, not a keeper. The two 10-14 chess files were duplicate resumption forks of the same conversation; swept the complete one, marked the truncated twin without re-adding.

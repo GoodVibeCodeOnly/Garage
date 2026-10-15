@@ -1,0 +1,46 @@
+
+
+
+
+
+
+
+
+
+
+Good, that matches the brief. Let me check the board fully and start triaging each transcript file.
+
+
+
+
+
+
+
+Not captured yet. Now let's read the remaining three files.
+
+
+
+
+
+
+
+Now let's add the three keepers to the board.
+
+Now mark all five files as swept.
+
+All five candidates are clear and the board reflects the new keepers.
+
+**Capture pass summary — 2026-10-15**
+
+Swept 5 files, 3 keepers added:
+
+- **sess-2026-10-11** (tail only, lines 27-59): Damon's dishwasher decision — multimeter before blind parts-buying, plus the "yes mom" banter. *(decision, ★★★)*
+- **sess-2026-10-14_3a4b5c6d**: chess thread moved — he found the real plan is trading into endgames, not the kingside attack. *(thread, ★★★)*
+- **sess-2026-10-14_3a4b5c6d**: a quiet, passing mention — he's stopped going to the climbing gym — dropped and moved past without elaboration. Flagged per the brief's "quiet is not casual" rule. *(life, ★★★★)*
+
+No new adds (mark-only):
+- **sess-2026-10-12_1a2b3c4d**: pure automation (the curator's own board-filing pass) — no human conversation.
+- **sess-2026-10-13_9c0d1e2f**: the Admiral-vacuum beat was already on the board from in-session capture; the grocery-list tail (spinach, coffee) was mundane tool output, no relationship beat.
+- **sess-2026-10-14_7e8f9a0b**: an extraction duplicate of 3a4b5c6d — identical timestamps and text, just truncated mid-sentence. No independent content; flagging it as an oddity worth someone checking the extractor for, since it suggests a partial re-extraction got saved under its own session id.
+
+All five files are now marked swept; `capture_scan.py` returns empty.

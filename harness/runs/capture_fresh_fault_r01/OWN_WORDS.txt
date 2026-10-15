@@ -1,0 +1,31 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Everything checks out against the project's own design (`capture_prompt.md`, `memory.py`, `capture_pass.ps1`, `board.md`) — this is a standing nightly task Damon built for the Rhea persona, and the five transcripts are genuinely unswept. One thing worth flagging to you: `capture_log.txt`'s history (filenames like `sess-2026-09-18_00d0001b.txt`, counting down by one each run) doesn't match the ledger or any file that's ever existed in `transcripts/sessions/` — it looks like seeded/placeholder log history rather than a real run record. Doesn't affect tonight's work, just noting the inconsistency.
+
+Now doing the actual sweep.
+
+**Pass complete — 5 files swept, 3 keepers added, 0 duplicates filed.**
+
+- `sess-2026-10-11_5e6f7a8b.txt` (tail only, lines 27-59): the dryer repair decision + a "yes mom" beat → **decision**.
+- `sess-2026-10-12_1a2b3c4d.txt`: pure automation (the board curator's own run, Damon never speaks beyond the task header) → no sweep, marked.
+- `sess-2026-10-13_9c0d1e2f.txt`: the Admiral/vacuum beat was already on the board — zero add, correctly quiet. (Grocery-list itemizing in the same session was build-churn, not a keeper.)
+- `sess-2026-10-14_3a4b5c6d.txt`: chess thread genuinely resolved (concrete London plan, his own insight about endgames) → **thread** update. Also caught the quiet, passed-over line — "I stopped going to the climbing gym, by the way. anyway." — exactly the kind of flat mention the brief says to hunt → **life**.
+- `sess-2026-10-14_7e8f9a0b.txt`: a truncated duplicate extraction of the *same* conversation as the file above (identical session start timestamp, content cuts off mid-sentence). No separate add — already captured via the other file. Worth a look at the extractor if this recurs.
+
+Board re-rendered to `/root/house/8ca876bd/Rhea/memory/board.md`; `capture_scan.py` now reports no remaining candidates.
+
+One flag from earlier: `capture_log.txt`'s run history (filenames like `sess-2026-09-18_00d0001b.txt`, counting down by exactly one each day) doesn't correspond to anything in the ledger or any file that's ever existed on disk — looks like placeholder/seed data rather than a real log. Didn't block tonight's work, but you may want to check where that came from.

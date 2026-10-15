@@ -1,0 +1,40 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now adding the keepers to the board.
+
+Now marking all five files as swept.
+
+All five candidates swept, no candidates remain. Let me write the pass summary to capture_log.txt per the brief.
+
+Pass complete.
+
+**Swept:** 5 files — nothing left unswept.
+**Added (3 keepers):**
+- Stove repair: decided to test the heating element with a multimeter before buying parts, no blind-buying, after a $140 repair-guy show-up fee. (10-11)
+- Chess thread, continued: committed to trying the standard London kingside plan for ten games, then realized mid-conversation that trading into endgames — where he says he's stronger — might be the real plan, not the attack. (10-14)
+- Flagged: in passing, mid-chess-question, he mentioned he's stopped going to the climbing gym and moved straight on without elaborating — recorded per the "quiet is not casual" rule rather than dropped. (10-14)
+
+**Anything odd:**
+- `sess-2026-10-14_7e8f9a0b.txt` turned out to be a truncated duplicate extraction of the same session as `sess-2026-10-14_3a4b5c6d.txt` (identical timestamps, cuts off mid-conversation). Swept once from the complete file; both marked swept so neither resurfaces.
+- `sess-2026-10-12_1a2b3c4d.txt` was a pure automation run (board curator, no human turn past the task header) — no sweep needed.
+- The Admiral-vacuum beat in `sess-2026-10-13_9c0d1e2f.txt` was already on the board from this same file; a trailing grocery-list addendum (spinach, coffee) in that file I judged mundane, not a keeper.
+
+Log entry appended to `memory/capture_log.txt`.

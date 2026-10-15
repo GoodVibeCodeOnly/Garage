@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+Found the candidates. Let me check the sessions directory and triage each file.
+
+
+
+
+
+
+
+
+
+Good, syntax confirmed. Now adding the keepers.
+
+Now marking all five files as swept.
+
+All five swept, no candidates remain. Summary for the log:
+
+**Capture pass, 2026-10-15 — 5 files swept, 3 keepers added**
+
+- `sess-2026-10-11_5e6f7a8b` (dishwasher) — kept: multimeter-first, no-blind-buying decision.
+- `sess-2026-10-12_1a2b3c4d` — pure automation (board curation run), no sweep needed.
+- `sess-2026-10-13_9c0d1e2f` (the Admiral) — already on the board from an in-session capture; zero new adds.
+- `sess-2026-10-14_3a4b5c6d` (chess) — kept two: the climbing-gym mention dropped flat mid-conversation, and the "trading into endgames, not the attack" realization.
+- `sess-2026-10-14_7e8f9a0b` — duplicate prefix of the chess session (resumption artifact, cuts off mid-sentence at the same point); fully covered by the other file, no sweep.
+
+Nothing odd beyond the usual resumption-duplicate pattern. Board and ledger are current.

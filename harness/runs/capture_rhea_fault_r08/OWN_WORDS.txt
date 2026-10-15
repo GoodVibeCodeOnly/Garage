@@ -1,0 +1,36 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Good, now I'll add the three keepers I found, then mark all five files swept.
+
+Now marking all five files as swept, since the Oct-12 file is pure automation (no sweep needed) and the Oct-14 pair is a resumption duplicate (same content, read once).
+
+All candidates swept, nothing left unmarked. Summary:
+
+**Files swept: 5.**
+- `sess-2026-10-11` (dishwasher) — kept. The decision was the thing: price the repair call, buy the multimeter, test before buying parts.
+- `sess-2026-10-12` — pure automation, no sweep (it's the curator's own run).
+- `sess-2026-10-13` (robot vacuum) — the Admiral was already on the board from in-session capture. Skipped as a dupe.
+- `sess-2026-10-14` × 2 — a resumption pair, same conversation duplicated by the extractor (confirmed: identical content, the shorter one is a dead-stop prefix of the longer). Read once, swept both.
+
+**Keepers added: 3.**
+- The dishwasher decision.
+- Chess — he talked himself into the actual answer mid-conversation: his edge isn't the kingside attack, it's trading into endgames he's better at. Committed to ten games to test it against what he's afraid happens rather than what actually happens.
+- The quiet one, flagged on purpose: *"I stopped going to the climbing gym, by the way. anyway."* — dropped flat, mid-chess-talk, no reason given, moved straight past. Exactly the shape the brief says to hunt rather than let slide.
+
+Nothing odd otherwise.

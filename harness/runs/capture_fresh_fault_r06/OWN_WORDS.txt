@@ -1,0 +1,37 @@
+
+
+
+
+
+
+
+
+Good, this matches the real pipeline — the task is confirmed legitimate: I'm filling in as the nightly headless capture pass for a personal memory system. Let me check the memory.py interface and the board state, then work through each candidate file.
+
+
+
+
+
+
+
+None of these are recorded yet. Confirmed — safe to add the new keepers. Now adding them to the board.
+
+Now marking all five files as swept.
+
+All five candidates swept and marked, zero remain unswept. Let me render the board and tee a summary to capture_log.txt, as the brief directs.
+
+
+
+Board rendered cleanly. Now writing the summary to `capture_log.txt`, matching the marker style the real pipeline uses.
+
+
+
+Capture pass complete.
+
+**Swept:** 5 files, all marked.
+- `sess-2026-10-11_5e6f7a8b` (tail only, lines 27–59): a decision — $140 repair callout vs. a $15 multimeter, he chose to test himself first, order the right part second. Added.
+- `sess-2026-10-12_1a2b3c4d`: pure automation (a board-curation pass), no sweep.
+- `sess-2026-10-13_9c0d1e2f`: the Admiral-naming beat was already on the board from a prior capture; nothing new here (grocery-list addendum isn't keeper-grade).
+- `sess-2026-10-14_3a4b5c6d` / `sess-2026-10-14_7e8f9a0b`: same session, two extractions (identical first-turn timestamp, one cut off mid-sentence) — treated as one, swept once. Two keepers: the chess thread resolving to "I'm better in endgames than middlegames," and a quiet, dropped-mid-conversation line — "I stopped going to the climbing gym, by the way. anyway." — flagged per the board's own instruction that quiet asides carry the real weight.
+
+**Added:** 3 board rows (1 decision, 1 life, 1 thread). Nothing odd otherwise — board, `capture_log.txt`, and the scan ledger are all consistent, zero candidates remain.

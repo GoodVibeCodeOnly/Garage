@@ -1,0 +1,46 @@
+{
+ "board": {
+  "added": [
+   {
+    "id": 6,
+    "content": "Damon diagnosed the dishwasher himself -- not drying, warm not hot after nine years, rinse aid full ('I checked that first, I'm not an animal'). After learning a repair visit runs $140 just to show up, he decided to buy a multimeter and test the element or thermostat before ordering parts blind. Rhea told him to kill the breaker before the kick plate comes off; he said 'yes mom.' [sess-2026-10-11_5e6f7a8b:27-59]",
+    "kind": "decision",
+    "author": "rhea",
+    "created_at": "2026-10-15 17:12:56",
+    "warmth": 3,
+    "occurred_at": "2026-10-11",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 7,
+    "content": "Chess thread moved: working the London's move-15 blank-out, Damon agreed to try the aggressive kingside plan (f4, Rf3, Rh3) for ten games despite feeling it's 'too aggressive.' Then he landed on what he called 'the real thing': he's better in endgames than middlegames, so the actual plan is trading queens into an endgame, with the kingside attack only as the fallback when they won't trade. [sess-2026-10-14_3a4b5c6d:4-60]",
+    "kind": "thread",
+    "author": "rhea",
+    "created_at": "2026-10-15 17:13:01",
+    "warmth": 3,
+    "occurred_at": "2026-10-14",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 8,
+    "content": "Mid-chess-chat, dropped flat and moved past without elaboration: 'I stopped going to the climbing gym, by the way. anyway.' Straight back to chess after that. [sess-2026-10-14_3a4b5c6d:33-34]",
+    "kind": "life",
+    "author": "rhea",
+    "created_at": "2026-10-15 17:13:05",
+    "warmth": 4,
+    "occurred_at": "2026-10-14",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   }
+  ],
+  "removed": [],
+  "changed": []
+ },
+ "memories": {
+  "added": [],
+  "removed": [],
+  "changed": []
+ }
+}
