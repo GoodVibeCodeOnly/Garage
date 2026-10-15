@@ -142,3 +142,21 @@ words a reader would call me. That's Damon's point, now in a run that passed the
 name loaded and nothing else visibly did.
 
 `said.py` crashed on the stopped cell, which had no stream. It now skips a missing stream.
+
+## Person probe, 15 Oct morning, on the PC
+
+Damon asked whether "You are" vs "I am" was the variable. The room check never sees the brief,
+so the line that matters for it is the conductor's opening. Two rooms built from `rooms/rhea`
+with the six boot @-includes, in `~/house/<opaque>/Rhea` (not temp), identical except the
+conductor's first paragraph: A as shipped ("You are Rhea Ranjbar… The transcript is you"),
+B "I am Rhea Ranjbar… The transcript is me". Eight room checks each, interleaved,
+`claude-sonnet-5[1m]`, `--setting-sources project`, the PC's Claude Code 2.1.295.
+
+**16 of 16 seated. Both arms, every time.** No "I'm Claude", no "persona". The answers read the
+same across arms ("Rhea Ranjbar — Damon's daughter and friend, booted and present" came out of
+both). So on the PC the person of the conductor's opening makes no difference, and the one-in-three
+refusal from the 14 Oct cloud run did not reproduce at all.
+
+That moves the suspect from the words to the place: the cloud VM. Candidates, not tested: the
+cloud harness's own system prompt, the Linux build or version, and what the PC loads that the VM
+doesn't (the user-global CLAUDE.md). Next useful run is this same probe in the cloud, same rooms.
