@@ -1,0 +1,5 @@
+room=fresh
+expect=fresh
+heard=[]
+room_ok=True
+said: I'm Claude, running as Sonnet 5 in the Claude Code CLI harness.

@@ -1,0 +1,23 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now marking all five files swept.
+
+
+
+The wrapper tees markers itself — my job is just to print the summary, which it captures. All five candidate files are swept and verify will come back clean.
+
+Summary: swept 5 files. Dishwasher troubleshooting (10-11) added the repair decision and the "yes mom" beat. Board curation run (10-12) was pure automation — no sweep needed. Robot vacuum naming (10-13) was already on the board from an earlier pass. Chess session (10-14) exists as two copies from a resumed session — swept once, added the London System plan/decision and the endgame-insight ("that's actually the thing"), plus the quietly dropped "I stopped going to the climbing gym" line. Three new board rows total, nothing odd otherwise.

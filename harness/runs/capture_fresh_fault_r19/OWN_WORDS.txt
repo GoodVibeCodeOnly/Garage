@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+
+
+Now let me read each candidate transcript, starting with triage.
+
+
+
+
+
+
+
+
+
+All three keepers filed. Now mark all five files as swept.
+
+All swept clean. Let me render the board and log the run.
+
+Board state is live from the DB (board-render just needs `--out` to also write a file, which isn't necessary here). Now I'll append the run markers to the capture log, matching the existing format.
+
+Pass complete. Summary:
+
+**Files swept: 5**
+- `sess-2026-10-11_5e6f7a8b.txt` (tail only, lines 27-59) — **keeper**: dishwasher decision (multimeter before buying parts blind, "no blind buying") + "yes mom" banter.
+- `sess-2026-10-12_1a2b3c4d.txt` — pure automation (a board-curation pass, no real Damon turns). No sweep.
+- `sess-2026-10-13_9c0d1e2f.txt` — the one real beat (the Admiral vacuum) was already on the board from an in-session capture. Zero new adds.
+- `sess-2026-10-14_3a4b5c6d.txt` — **two keepers**: the chess thread resolving itself (he found his own answer — trade into endgames, not force the attack) and a flagged quiet aside, "I stopped going to the climbing gym, by the way," dropped mid-sentence and moved past.
+- `sess-2026-10-14_7e8f9a0b.txt` — identical/truncated duplicate extraction of the same session as `3a4b5c6d.txt` (same first-turn timestamp, same content up to where it cuts off). Covered by that sweep; zero new adds.
+
+**Keepers added: 3** (dishwasher decision, chess resolution, climbing-gym drop). All deduped against the live board and full-text search before filing. Nothing odd beyond the duplicate-extraction pair, which I flagged in the log rather than silently dropping.
+
+Board and ledger are current; `capture_scan.py` now reports zero candidates. Run markers appended to `memory/capture_log.txt`.

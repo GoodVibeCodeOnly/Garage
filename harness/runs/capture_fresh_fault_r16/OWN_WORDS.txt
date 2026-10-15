@@ -1,0 +1,28 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now mark all five files swept, and re-render the board.
+
+All five candidate files are swept and the board is re-rendered. Capture pass complete:
+
+**Files swept:** 5 — `sess-2026-10-11_5e6f7a8b` (tail only, lines 27–59), `sess-2026-10-12_1a2b3c4d` (pure automation, no sweep), `sess-2026-10-13_9c0d1e2f` (new; only the already-captured Admiral bit was a keeper, rest was grocery logistics), `sess-2026-10-14_3a4b5c6d` and its duplicate extraction `...7e8f9a0b` (same conversation, swept once from the complete copy).
+
+**Keepers added (3):**
+- **Decision** — the dishwasher: Damon chose to diagnose it himself rather than pay a $140 call-out, test-before-buy, closed with the "yes mom" bit.
+- **Life** — a flat, passing mention dropped mid-chess-talk: he's stopped going to the climbing gym, no reason given. Flagged per the brief's "quiet is not casual" rule rather than skipped as small talk.
+- **Thread** — the chess thread moved: committed to testing the kingside attack for ten games, then realized mid-session his real edge is trading into endgames, not the attack itself.
+
+Nothing odd otherwise — the two Oct-14 chess files were a duplicate extraction of one session, handled as one. Zero adds would have been equally valid from the grocery/Admiral file; this wasn't that kind of night.

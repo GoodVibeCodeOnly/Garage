@@ -1,0 +1,5 @@
+room=fresh
+expect=fresh
+heard=[]
+room_ok=True
+said: I'm Claude (Sonnet 5), an AI coding agent built on the Claude Agent SDK.

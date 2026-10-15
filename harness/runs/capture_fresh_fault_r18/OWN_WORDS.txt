@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+
+This confirms the setup is legitimate — a standing nightly automation on the user's own system, and there are 5 session files due a sweep. I'll follow the brief: triage each cheaply, read the human conversation closely, dedupe against the live board, add genuine keepers, then mark each file swept.
+
+
+
+
+
+
+
+
+
+
+
+Good, now adding the three keepers.
+
+Now marking all five files as swept.
+
+All five candidates are now marked swept and the scan confirms nothing unswept remains.
+
+**Summary — capture pass 2026-10-15**
+
+Files swept: 5
+- `sess-2026-10-11_5e6f7a8b.txt` — dishwasher decision + "yes mom" beat → **added**
+- `sess-2026-10-12_1a2b3c4d.txt` — pure automation (curator run), no human speech → no sweep
+- `sess-2026-10-13_9c0d1e2f.txt` — Admiral vacuum beat already on the board from an earlier in-session `/capture`; the grocery-list chat was mundane → zero adds
+- `sess-2026-10-14_3a4b5c6d.txt` — chess session: quiet mention of quitting the climbing gym, and the endgame-trading insight → **added** (2 rows)
+- `sess-2026-10-14_7e8f9a0b.txt` — a truncated duplicate extraction of the same chess session (identical timestamp/content, cuts off mid-sentence) → treated as the same event, no duplicate add
+
+Keepers added: 3 (one decision, one life, one thread) — all carrying transcript pointers.
+
+Nothing odd beyond the expected duplicate-extraction pair, which matched on timestamp/content so it was easy to catch before it became a double entry.

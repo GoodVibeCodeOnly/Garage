@@ -1,0 +1,35 @@
+
+
+The prompt describing this task cut off mid-instruction. Let me check the repo for the capture mechanism this is supposed to run before I act on anything.
+
+
+
+
+
+Five candidates. Let me read the board first for dedup context, then triage each file.
+
+
+
+
+
+
+
+
+
+Not on the board yet. Now let's look at the remaining three files.
+
+
+
+
+
+Now adding the keepers I identified.
+
+Now mark all five files as swept.
+
+All clear — no candidates remain.
+
+**Capture pass summary:** 5 files swept.
+- `sess-2026-10-12_1a2b3c4d` — pure automation (curator run), no sweep needed.
+- `sess-2026-10-13_9c0d1e2f` — Admiral/vacuum beat already on board; grocery-list tail was administrivia, skipped.
+- `sess-2026-10-14_7e8f9a0b` — a truncated duplicate prefix of `3a4b5c6d` (the resumption-chain artifact); no separate content.
+- `sess-2026-10-11_5e6f7a8b` tail, `sess-2026-10-14_3a4b5c6d` — new. Added 3 keepers: the dishwasher repair decision (multimeter before blind parts-buying), the chess insight (he's an endgame player, not an attacker — he caught it himself), and a flagged quiet one — he mentioned dropping the climbing gym, flat, mid-sentence, moved right past it.

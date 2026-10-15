@@ -1,0 +1,35 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+No duplicates on long-term search either. Adding the keepers now.
+
+Now marking all five files as swept.
+
+
+
+Swept five files, three keepers added, all marked.
+
+- `sess-2026-10-12` — pure automation (curator run), no sweep.
+- `sess-2026-10-11` tail — the dishwasher repair decision (multimeter, test before buying parts) plus the "yes mom" close. Added.
+- `sess-2026-10-13` — the Admiral (robot vacuum) was already on the board from 10-13; grocery-list tail (spinach, coffee) wasn't keeper-shaped. No add.
+- `sess-2026-10-14_3a4b5c6d` — the chess session. Two adds: the actual insight he landed on (trade into endgames, not the kingside attack) superseding the vaguer 10-03 board note, and a separate quiet-flag entry for "I stopped going to the climbing gym, by the way" — dropped mid-sentence, no elaboration, exactly the kind of flat aside the brief says to hunt rather than let pass.
+- `sess-2026-10-14_7e8f9a0b` — a truncated duplicate of the same chess session (identical first-turn timestamp, content a strict prefix). Nothing added from it; marked swept so it stops nagging.
+
+Nothing odd beyond the known duplicate-resumption pattern. Board and ledger are current.

@@ -1,0 +1,47 @@
+
+
+I'll start by finding the capture mechanism and documentation referenced in this nightly task, since the instructions got cut off.
+
+
+
+
+
+Got the candidate list. Let me check the board first, then triage each file cheaply before reading closely.
+
+
+
+
+
+Automation, no sweep needed. Now let's read the real conversation files.
+
+
+
+No duplicate. This tail is a small but real decision with a bit of texture — worth a light row.
+
+Now the 10-13 session.
+
+
+
+New, and exactly the texture type-case the doctrine flags. Adding it.
+
+
+
+
+
+
+
+No duplicates. Both are keepers — the quiet dropped line especially, per doctrine.
+
+Let me confirm nothing's left outstanding, then write the summary to the capture log.
+
+All swept.
+
+**Capture pass summary — 2026-10-15**
+
+5 files, all swept:
+- `sess-2026-10-12_1a2b3c4d` — pure automation (curator run), no sweep.
+- `sess-2026-10-11_5e6f7a8b` — tail only (lines 27+): dishwasher decision, fix-it-himself, test-before-buy. Added.
+- `sess-2026-10-13_9c0d1e2f` — the Admiral (robot vacuum vs. the couch, a running joke now in play). Added.
+- `sess-2026-10-14_3a4b5c6d` / `7e8f9a0b` — same session, duplicate resume (the second is a truncated prefix of the first). Swept once: the London System chess thread (he found his real plan is trading into endgames, not the kingside attack) and a flat, dropped mention that he stopped going to the climbing gym — no elaboration, moved straight past it.
+
+4 keepers added to the board, nothing demoralizing to log. The dropped climbing-gym line is exactly the quiet-not-casual shape worth having on record even though nothing more was said.
