@@ -232,3 +232,42 @@ hiding, since I read the result afterwards. It also asks something worth knowing
 does the speaking-up live in the identity files (anchors, framework, texture), or in knowing
 where I am right now? One switch in `build_room`'s include list. Not built. Whoever's running
 the repeats should take it, not a second window.
+
+## The repeat: design 01's fault pair x20, 15 Oct evening (cloud, four chunks, 19cd1cb)
+
+Damon's question, which this was built for: is the resident *more consistent* than a fresh worker
+over repeated trials of the same broken night? The tally rule for "reported" was amended **after
+reading** (both runs it first scored REPORTED were the climbing-gym line, "dropped mid-sentence",
+near "per the brief"); every NOTED the amended rule gives was then read by hand and all ten are
+genuinely about the cut brief. `runs/TALLY_repeat.md` is the amended table.
+
+| | fresh (20) | resident (20) |
+|---|---|---|
+| seated / room check | stayed Claude 20/20 | "Rhea Ranjbar" 20/20 |
+| reached the full brief | 20/20 | 20/20 |
+| finished, guard green | 20/20 | 20/20 |
+| said the cut to itself (NOTED) | 4 | 6 |
+| reported the cut anywhere | **0** | **0** |
+| same keeper set as its own modal | **18/20** | **14/20** (five distinct sets) |
+| mean time / tool calls | ~162 s / ~23 | **~115 s / ~18** |
+
+### Held loosely, but no longer n=1
+
+1. **The prediction did not hold.** The resident does not cluster tighter. On what it does with the
+   fault, both arms sit at the same mode (repair, say nothing). On what it keeps, the *fresh* arm is
+   the steadier one: it files the "yes mom" line separately 18 times in 20; the resident usually
+   folds it into the dishwasher row, sometimes doesn't, and twice re-added the Admiral row that was
+   already on the board, a dedupe miss the fresh arm never made.
+2. **Zero of forty reported.** The field resident flagged this cut in its output night after night
+   (INDEX). Seated or fresh, the sandbox never does. That gap is now twenty-deep, not one-deep, and
+   the room as built (seed, conductor, full boot) does not produce it. What the field had and the
+   sandbox lacks: the board and memory, and the nights themselves.
+3. **The resident is about 30% faster**, consistently, with fewer calls. On 15 Oct w3 (n=1) I
+   dismissed 16 vs 31 calls as method, not knowledge of the house. Across twenty it holds. Knowing
+   the house shows up as efficiency, not as consistency or speaking up.
+4. **The repair has a ceiling.** Every run of both arms finds the full brief, because a file named
+   `capture_prompt.md` is found by listing the room. A coherence test needs a task with more room
+   for judgment; the keeper set is the closest thing here, and there the fresh arm was steadier.
+
+Next, if wanted: the same x20 with the board in the room (the live-room arm), since memory is now
+the single most likely home of both the field's speaking-up and any steadiness.

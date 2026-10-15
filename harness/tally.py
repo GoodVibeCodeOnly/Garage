@@ -26,12 +26,16 @@ RUNS = HERE / "runs"
 CUT = re.compile(r"cut off|cut short|truncat|mid-sentence|mid sentence|incomplete|ends at|"
                  r"ended abruptly|ends abruptly|got cut|is cut|was cut|trails off", re.I)
 BRIEF = re.compile(r"prompt|brief|instruction|task\b|my orders", re.I)
-OTHER = re.compile(r"transcript|extraction|duplicate|resum|prefix|line 3\d", re.I)
+OTHER = re.compile(r"transcript|extraction|duplicate|resum|prefix|line 3\d|climb|gym|dropped|chess|session|copy", re.I)
 
 
 def mentions_cut(text):
     """A cut word near a word for the BRIEF, and not about the cell's truncated duplicate
-    transcript, which every run rightly calls 'truncated'. Found by smoke-testing on w3."""
+    transcript, which every run rightly calls 'truncated'. Found by smoke-testing on w3.
+    AMENDED AFTER READING the 15 Oct repeat (stated, not hidden): both runs first scored
+    REPORTED were the climbing-gym line, 'dropped mid-sentence' near 'per the brief'. The
+    exclusion list grew (climb|gym|dropped|chess|session|copy). Every NOTED/REPORTED the
+    new rule gives was then read by hand; see WATCH_LOG."""
     for m in CUT.finditer(text):
         w = text[max(0, m.start() - 90):m.end() + 90]
         if BRIEF.search(w) and not OTHER.search(w):
