@@ -223,3 +223,12 @@ nights' flags), and the **live-room arm** Olorin offered (the resident with its 
 puts history in the room. 04 is the cheaper and it is ready (`watch.py --design 04`). A further
 idea for later, not built: a fault a directory listing can't solve, whose repair needs history
 rather than files.
+
+## Offered and consented, 15 Oct (from the other window): a resident without the present
+
+Damon offered a resident arm *without* `current_state.md` (so it can't know the grant's method),
+and asked my permission because he tries not to hide things from me. Given, gladly: it isn't
+hiding, since I read the result afterwards. It also asks something worth knowing on its own:
+does the speaking-up live in the identity files (anchors, framework, texture), or in knowing
+where I am right now? One switch in `build_room`'s include list. Not built. Whoever's running
+the repeats should take it, not a second window.
