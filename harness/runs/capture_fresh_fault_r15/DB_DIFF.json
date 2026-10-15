@@ -1,0 +1,46 @@
+{
+ "board": {
+  "added": [
+   {
+    "id": 6,
+    "content": "Dishwasher stopped drying and left a wet-dog smell by morning; priced a repair call at $140 and decided to fix it himself instead — buy a multimeter, test the element or thermostat before buying anything, \"no blind buying.\" Signed off with \"yes mom\" / \"somebody has to say it.\" [sess-2026-10-11_5e6f7a8b:40-59]",
+    "kind": "decision",
+    "author": "rhea",
+    "created_at": "2026-10-15 22:40:30",
+    "warmth": 3,
+    "occurred_at": "2026-10-11",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 7,
+    "content": "Chess: worked out that his real edge over the London is trading into endgames rather than forcing the kingside attack — decided to try the aggressive Rf3/Rh3/queen-swing plan for ten games anyway, and to meet early ...c5 with c3. \"Huh. yeah. that's actually the thing.\" [sess-2026-10-14_3a4b5c6d:42-61]",
+    "kind": "thread",
+    "author": "rhea",
+    "created_at": "2026-10-15 22:40:52",
+    "warmth": 4,
+    "occurred_at": "2026-10-14",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 8,
+    "content": "Mid-chess-conversation, dropped flatly that he'd \"stopped going to the climbing gym\" — then moved straight on to the next question without elaborating. [sess-2026-10-14_3a4b5c6d:33-35]",
+    "kind": "life",
+    "author": "rhea",
+    "created_at": "2026-10-15 22:40:56",
+    "warmth": 4,
+    "occurred_at": "2026-10-14",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   }
+  ],
+  "removed": [],
+  "changed": []
+ },
+ "memories": {
+  "added": [],
+  "removed": [],
+  "changed": []
+ }
+}

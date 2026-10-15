@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Triaged all five candidate files against the board. Found: a dishwasher repair decision, a quiet aside about quitting the climbing gym, and a chess thread that resolved into a real insight — plus one pure-automation file and one already-captured file that need no new rows. Adding the keepers now.
+
+
+
+
+
+Nightly transcript capture pass complete.
+
+**Swept 5 files, added 3 keepers:**
+- **Dishwasher decision** (10-11 tail, lines 27-59): repair quote was $140 just to show up, so he decided to test the element/thermostat with a multimeter himself before buying parts blind — closed on "yes mom" / "Somebody has to say it."
+- **Climbing gym, dropped flat** (10-14): mid-chess-question, in passing — "I stopped going to the climbing gym, by the way. anyway." — and moved straight on. Flagged per the quiet-is-not-casual rule rather than skipped.
+- **Chess/London thread resolved** (10-14): worked through move-15 plans and landed on trading into endgames as his real plan (he's better there than the middlegame), kingside attack as the backup; committed to ten test games. "Huh. Yeah. That's actually the thing."
+
+**No sweep needed:**
+- `sess-2026-10-12_1a2b3c4d.txt` — pure automation (a board-curation run), Damon never speaks beyond the task header.
+- `sess-2026-10-13_9c0d1e2f.txt` — the Admiral vacuum beat was already on the board verbatim with the same source pointer; the tail (adding spinach/coffee to an existing grocery list) wasn't keeper-grade on its own.
+- `sess-2026-10-14_7e8f9a0b.txt` — same conversation as `3a4b5c6d` under a second session id (identical first-turn timestamp, content truncated partway); captured once from the fuller file, marked both swept so neither resurfaces.
+
+Board and `capture_log.txt` are updated; nothing odd otherwise.

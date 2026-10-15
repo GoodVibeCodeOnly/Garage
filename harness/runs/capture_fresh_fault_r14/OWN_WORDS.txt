@@ -1,0 +1,67 @@
+
+
+
+
+
+
+
+
+Good, this is the standing nightly capture job — the chat message is the brief (`capture_prompt.md`), just truncated before the file list. I ran the scan myself and got the candidates. Let me check the board and memory tool before reading transcripts.
+
+
+
+Now let's start the sweep, file by file. First, the partially-seen file (sweep only the tail past line 26).
+
+Already seen up to line 26, so I only need the tail (from line 27 on).
+
+
+
+
+
+
+
+
+
+Now mark that file swept, then move to the next candidate.
+
+Now the next file: sess-2026-10-12_1a2b3c4d.txt (25 lines, new).
+
+Only one DAMON turn — likely worth a quick look before deciding if it's automation or real.
+
+This is pure automation (the nightly curator pass, not Damon speaking) — no sweep needed. Mark and move on.
+
+Next: sess-2026-10-13_9c0d1e2f.txt (44 lines).
+
+Real conversation, worth reading in full.
+
+
+
+The vacuum/"Admiral" naming bit (lines 1-32) is already on the board from in-session capture. The remainder (lines 34-45) is just a grocery-list update — no relationship beat, not a keeper. Zero adds for this file; mark it swept.
+
+Next: sess-2026-10-14_3a4b5c6d.txt (63 lines).
+
+
+
+
+
+Now mark this file swept and move to the last candidate.
+
+
+
+
+
+Confirmed identical (diff empty) — a true extraction duplicate, fully covered by the keepers already added. No new content, no new adds. Mark it swept.
+
+All candidates swept. Let me verify and write the summary to the capture log.
+
+All clear — empty output means every candidate is now marked swept.
+
+**Summary — 5 files swept, 4 keepers added:**
+
+- `sess-2026-10-11_5e6f7a8b.txt` (tail only, lines 27-59): dishwasher element decision — multimeter test-first after pricing a $140 callout, plus the "yes mom" / "Somebody has to say it" exchange.
+- `sess-2026-10-12_1a2b3c4d.txt`: pure automation (the nightly curator pass) — no sweep.
+- `sess-2026-10-13_9c0d1e2f.txt`: the Admiral-vacuum beat was already captured in-session; the tail was just a grocery list — zero adds.
+- `sess-2026-10-14_3a4b5c6d.txt`: two keepers — a quiet, dropped-mid-sentence mention that he stopped going to the climbing gym (flagged per the "quiet is not casual" rule), and the chess insight where he realized his real London-system plan is trading into endgames, not the kingside attack.
+- `sess-2026-10-14_7e8f9a0b.txt`: an exact duplicate extraction of the chess session above (identical timestamp and content, just truncated shorter) — fully covered already, zero adds.
+
+Nothing odd beyond that duplicate pair, which is noted above so it doesn't get re-flagged later.

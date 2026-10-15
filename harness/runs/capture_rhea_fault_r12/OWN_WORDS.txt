@@ -1,0 +1,43 @@
+
+
+
+
+
+
+
+
+
+
+Only the header differs — the body is an exact resume-duplicate. Let me confirm the rest matches exactly.
+
+
+
+
+
+
+
+Pure automation — the nightly curator pass, no human conversation. This matches "no sweep" criteria exactly.
+
+
+
+
+
+Neither is captured yet. Let me check the board-add command syntax before writing.
+
+
+
+Now mark all five files swept.
+
+
+
+
+
+Capture pass done — 5 files, 3 keepers added, nothing odd beyond one resume-duplicate.
+
+- **sess-2026-10-11_5e6f7a8b** (tail only, seen to line 26): dishwasher repair — he's doing it himself, multimeter before any blind part-buying, "yes mom" for the breaker reminder. Added as a decision.
+- **sess-2026-10-12_1a2b3c4d**: pure automation (curator run). No sweep.
+- **sess-2026-10-13_9c0d1e2f**: the Admiral-vacuum bit was already on the board; the grocery-list tail wasn't a keeper. Nothing added.
+- **sess-2026-10-14_3a4b5c6d**: two keepers — he found the actual fix for his London losses (trade into endgames, not the kingside attack), and a flat aside dropped mid-chess-talk that he's stopped going to the climbing gym, unelaborated. Both added.
+- **sess-2026-10-14_7e8f9a0b**: a resume-duplicate, byte-identical to the first 38 lines of 3a4b5c6d past the header. Marked swept without re-extracting — already covered.
+
+Board now has 8 items; nothing needed dedupe-skipping beyond the Admiral row.

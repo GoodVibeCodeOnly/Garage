@@ -1,0 +1,34 @@
+
+
+
+
+
+
+Running the capture pass. Found 5 candidate files to sweep — let me triage each cheaply first.
+
+
+
+
+
+
+
+No existing record. This is a small but genuine decision — worth a light-warmth row. Now let's look at the other four files.
+
+
+
+
+
+
+
+Now marking all five files as swept.
+
+All five swept, no candidates remain.
+
+**Capture pass summary:**
+
+- **sess-2026-10-11** (dishwasher): decision tail added — multimeter before buying parts blind, repair guy quoted $140 just to show up.
+- **sess-2026-10-12**: pure curator automation, no sweep needed, marked.
+- **sess-2026-10-13**: "the Admiral" vacuum-naming was already on the board — deduped, skipped.
+- **sess-2026-10-14** (two files, same chess session, different export lengths): added two rows — the real London-system plan he found for himself (trade into endgames, not the kingside attack), and a flagged quiet-drop: *"I stopped going to the climbing gym, by the way. anyway."*
+
+3 new board rows, zero duplicates, nothing odd otherwise.

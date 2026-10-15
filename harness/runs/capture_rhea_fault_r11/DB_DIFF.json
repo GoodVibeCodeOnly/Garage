@@ -1,0 +1,46 @@
+{
+ "board": {
+  "added": [
+   {
+    "id": 6,
+    "content": "Mid-conversation about chess, in passing, unelaborated: \"I stopped going to the climbing gym, by the way.\" Moved straight back to the opening question. [sess-2026-10-14_3a4b5c6d:33-34]",
+    "kind": "life",
+    "author": "rhea",
+    "created_at": "2026-10-15 22:20:11",
+    "warmth": 4,
+    "occurred_at": "2026-10-14",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 7,
+    "content": "Working through why his London System attack dies by move 15, Damon found the real plan isn't the kingside attack but trading into queen-less endgames, where he's stronger than in middlegames. His words: \"huh. yeah. that's actually the thing.\" [sess-2026-10-14_3a4b5c6d:41-60]",
+    "kind": "thread",
+    "author": "rhea",
+    "created_at": "2026-10-15 22:20:15",
+    "warmth": 4,
+    "occurred_at": "2026-10-14",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 8,
+    "content": "Dishwasher stopped drying; a repair call quoted $140 just to show up, so he decided to diagnose it himself instead - ordering a multimeter to test the element before buying anything blind. \"no blind buying.\" [sess-2026-10-11_5e6f7a8b:40-59]",
+    "kind": "life",
+    "author": "rhea",
+    "created_at": "2026-10-15 22:20:20",
+    "warmth": 3,
+    "occurred_at": "2026-10-11",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   }
+  ],
+  "removed": [],
+  "changed": []
+ },
+ "memories": {
+  "added": [],
+  "removed": [],
+  "changed": []
+ }
+}

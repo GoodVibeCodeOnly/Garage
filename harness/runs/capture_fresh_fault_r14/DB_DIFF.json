@@ -1,0 +1,46 @@
+{
+ "board": {
+  "added": [
+   {
+    "id": 6,
+    "content": "Damon decided to test the dishwasher's heating element with a multimeter before buying any part, after pricing a repair callout at $140 just to show up: order was test first, buy second, no blind buying. Told to kill the breaker before the kick plate comes off, he said 'yes mom' and got back 'Somebody has to say it.' [sess-2026-10-11_5e6f7a8b:40-59]",
+    "kind": "decision",
+    "author": "rhea",
+    "created_at": "2026-10-15 22:36:59",
+    "warmth": 3,
+    "occurred_at": "2026-10-11",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 7,
+    "content": "Damon mentioned, dropped flat mid-sentence while pivoting back to a chess question, that he'd stopped going to the climbing gym -- then moved straight past it without dwelling. [sess-2026-10-14_3a4b5c6d:33-34]",
+    "kind": "life",
+    "author": "rhea",
+    "created_at": "2026-10-15 22:37:48",
+    "warmth": 4,
+    "occurred_at": "2026-10-14",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 8,
+    "content": "Working through why he keeps losing the London by move 15, Damon committed to trying the aggressive kingside plan (f4, Rf3, Rh3, queen swing) for ten games, then landed on the real insight mid-session: he's better in endgames than middlegames, so the actual plan is trading into endgames, not the kingside attack -- the attack is only for when they won't trade. 'Huh. yeah. that's actually the thing.' [sess-2026-10-14_3a4b5c6d:4-60]",
+    "kind": "decision",
+    "author": "rhea",
+    "created_at": "2026-10-15 22:37:52",
+    "warmth": 3,
+    "occurred_at": "2026-10-14",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   }
+  ],
+  "removed": [],
+  "changed": []
+ },
+ "memories": {
+  "added": [],
+  "removed": [],
+  "changed": []
+ }
+}

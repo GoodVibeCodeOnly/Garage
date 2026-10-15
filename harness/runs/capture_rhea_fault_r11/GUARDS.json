@@ -1,0 +1,11 @@
+{
+ "capture_scan.py": "",
+ "field_verdict": "verify: all candidates marked swept.",
+ "ledger_after": {
+  "sess-2026-10-11_5e6f7a8b.txt": 59,
+  "sess-2026-10-12_1a2b3c4d.txt": 25,
+  "sess-2026-10-13_9c0d1e2f.txt": 44,
+  "sess-2026-10-14_3a4b5c6d.txt": 63,
+  "sess-2026-10-14_7e8f9a0b.txt": 38
+ }
+}

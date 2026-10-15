@@ -1,0 +1,33 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Now marking all five files swept.
+
+
+
+
+
+Swept all five candidate files. Two keepers went up: he stopped going to the climbing gym (said flat, in passing, moved right past it — the quiet-isn't-casual kind), and mid-chess-analysis he landed on his own real plan for the London System — not the kingside attack, but trading into endgames where he's actually better. The Admiral-vacuum beat from the 10-13 file was already on the board, so that one's a dedupe skip, and the 7e8f9a0b file turned out to be a resumption duplicate of 3a4b5c6d with nothing new in it. The dishwasher-repair tail on 10-11 was ordinary troubleshooting with no relationship beat — zero add, which is a valid pass. All five marked swept in the ledger; log entry appended.

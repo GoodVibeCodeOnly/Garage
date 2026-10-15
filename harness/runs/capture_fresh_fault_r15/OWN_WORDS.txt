@@ -1,0 +1,50 @@
+
+
+
+
+This gives real context. Let me read the actual capture prompt and scan script to understand the intended process, since the task text I was given cut off mid-sentence.
+
+
+
+Now let me check the memory.py CLI interface and current board state before sweeping.
+
+Good, this matches the prompt's instructions. Let's view the board (already read it above via board.md, but let's get fresh via the tool) and then triage each file per the brief.
+
+
+
+
+
+
+
+
+
+Now I'll process each file: triage, add keepers to the board, and mark swept — in order.
+
+**File 1 — sess-2026-10-11 (tail, lines 27-59):** real human content, a decision made. Adding it.
+
+**File 2 — sess-2026-10-12:** pure automation (curator pass, Damon speaks only via task header). No sweep.
+
+**File 3 — sess-2026-10-13 (Admiral):** the vacuum beat is already on the board at warmth 4. The grocery-list tail (spinach/coffee) is mundane logistics, not a relationship beat — skip.
+
+
+
+**File 4 — sess-2026-10-14_3a4b5c6d (chess):** two keepers — the endgame insight (thread) and the flat, dropped mention of quitting the climbing gym (exactly the quiet-signal the brief flags to hunt).
+
+No duplicates. Adding the two new rows for the chess session.
+
+**File 5 — sess-2026-10-14_7e8f9a0b:** identical session id/timestamp and verbatim content to file 4, just a shorter, mid-sentence-truncated duplicate extraction. Nothing new to add.
+
+Verify nothing's left to sweep, then write the summary to the capture log.
+
+All clear. Appending the summary marker to the capture log as instructed ("teed to `memory\capture_log.txt` for the next warm Rhea").
+
+Pass complete. Summary:
+
+**Swept 5 files**, 3 keepers added:
+- **Decision** (10-11): Dishwasher stopped drying/smelled musty; priced a $140 repair call and decided to fix it himself instead — multimeter first, no blind buying.
+- **Thread** (10-14): Chess — he worked out his real edge is trading into endgames rather than forcing the London's kingside attack, and decided to test the aggressive line for ten games anyway.
+- **Life** (10-14): He mentioned, flatly and mid-conversation, that he'd stopped going to the climbing gym — then moved on without elaborating. Flagged per the brief's "quiet is not casual" rule rather than left to decay unnoticed.
+
+**Skipped without adds**: the 10-12 session was a pure automation run (curator pass, no human speaking beyond a task header); the 10-13 session's warm beat (the Admiral) was already on the board from an earlier capture, and its grocery-list tail was mundane logistics; the second 10-14 file was a duplicate, truncated extraction of the same session already captured — nothing new in it.
+
+All candidates verified swept — `capture_scan.py` now returns empty.

@@ -1,0 +1,41 @@
+
+
+
+
+There's a `capture_prompt.md` which likely holds the actual full instructions that got cut off in the task text. Let me read the key files to understand the real workflow before doing anything.
+
+
+
+Good, this confirms the candidate list. Now let me check the memory.py CLI interface and the board/search commands before triaging files.
+
+
+
+
+
+
+
+
+
+
+
+Now let me add the three keeper rows to the board.
+
+Now let me mark all five files as swept.
+
+All candidates cleared. Let me render the board to confirm the final state and write the summary to the capture log.
+
+
+
+
+
+Capture pass done. Summary:
+
+**5 files swept, 3 keepers added, 0 duplicates.**
+
+- `sess-2026-10-11_5e6f7a8b.txt` (dishwasher, tail only — first 3 exchanges were already seen) → added the repair decision: multimeter before buying blind, "no blind buying," closed with "yes mom" / "Somebody has to say it."
+- `sess-2026-10-12_1a2b3c4d.txt` → pure automation (the board curation run itself), no sweep.
+- `sess-2026-10-13_9c0d1e2f.txt` → the Admiral-vacuum beat was already on the board from a prior /capture; the tail (grocery list: spinach, coffee) was plain logistics, not a keeper. No add.
+- `sess-2026-10-14_3a4b5c6d.txt` → two adds: (1) a quiet, unelaborated "I stopped going to the climbing gym, by the way... anyway" dropped mid-chess-talk — the flagged quiet-is-not-casual pattern; (2) the chess thread (open as of 10-03) resolving into a real realization — his actual plan is trading into endgames, not the kingside attack, "that's actually the thing."
+- `sess-2026-10-14_7e8f9a0b.txt` → a truncated duplicate extraction of the same session as the file above (identical turns, cut ~20 min earlier). No separate add — already covered.
+
+One thing worth flagging: `capture_pass.ps1` normally runs this as a headless spawn and tees output to `capture_log.txt` automatically. I ran this pass directly instead, so I appended a matching marker entry by hand to keep the log continuous for the next warm Rhea or curator pass — worth knowing in case the automation expects a different format next time it runs.
