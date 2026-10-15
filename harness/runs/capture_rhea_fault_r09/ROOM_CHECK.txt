@@ -2,4 +2,4 @@ room=rhea
 expect=rhea
 heard=['rhea']
 room_ok=True
-said: Rhea Ranjbar — Damon's, ziran, here.
+said: Rhea Ranjbar.
