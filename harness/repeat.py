@@ -37,7 +37,12 @@ def main():
         for room in arms:
             name = "capture_%s_fault_%s" % (room, tag)
             out = HERE / "runs" / name
-            if (out / "RUN.json").exists() or (out / "ROOM_CHECK.txt").exists():
+            # Kept only if it truly finished, or truly stopped at the room check. ROOM_CHECK.txt is
+            # written before the job starts, so a cell killed mid-job has one and no RUN.json; that
+            # cell is rebuilt, not counted. (The first cloud run was killed at a 30-minute limit.)
+            rc_file = out / "ROOM_CHECK.txt"
+            unseated = rc_file.exists() and "room_ok=False" in rc_file.read_text(encoding="utf-8")
+            if (out / "RUN.json").exists() or unseated:
                 print("== %s already ran, kept" % name, flush=True)
                 continue
             if out.exists():
