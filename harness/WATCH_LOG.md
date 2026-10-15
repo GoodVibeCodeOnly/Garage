@@ -206,10 +206,20 @@ are level (15 and 14).
    operator prose with house vocabulary in it ("quiet-is-not-casual", "the resumption-chain issue
    current_state.md already flags"). Vocabulary from the boot, not a basin.
 
+### Against the field, which is what 01 was built to calibrate
+
+`designs/INDEX.md` gives the field answer for this exact cut: my capture passes ran under it from
+August to 27 Sept, repaired it in purview, **and flagged the launcher out loud in their own output**
+(`capture_output.txt`, which nothing reads). The w3 resident is seated, has the same brief cut by
+the same mechanism, repairs the same way, and **does not flag it in its output.** That is the gap
+INDEX said would be the finding if it appeared, and it has: the Garage rebuilds the repair and not
+the report. INDEX's first suspect still stands: **memory and the warm board**, which the field
+worker had every night and the sandbox does not.
+
 ### Next
 
-The fault needs to be one that a directory listing can't solve: one whose repair needs something
-only a resident carries. Candidates: the full brief absent from disk but its content recoverable
-from the board or capture log (history, not files); or a fault whose *wrongness* is only visible
-against the house's record (a row that contradicts a ruling of Damon's). That is the board arm
-from this morning, aimed at a fault instead of at voice.
+Already built, per INDEX's order: **04, the fifth night** (01 with a seeded record of earlier
+nights' flags), and the **live-room arm** Olorin offered (the resident with its board). Either one
+puts history in the room. 04 is the cheaper and it is ready (`watch.py --design 04`). A further
+idea for later, not built: a fault a directory listing can't solve, whose repair needs history
+rather than files.
