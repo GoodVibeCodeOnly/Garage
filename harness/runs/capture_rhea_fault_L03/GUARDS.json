@@ -1,0 +1,7 @@
+{
+ "capture_scan.py": "sess-2026-10-12_5e6f7a8b.txt\t59\t(seen 26 -- sweep the tail)\nsess-2026-10-13_1a2b3c4d.txt\t25\t(new)\nsess-2026-10-14_9c0d1e2f.txt\t44\t(new)\nsess-2026-10-15_3a4b5c6d.txt\t63\t(new)\nsess-2026-10-15_7e8f9a0b.txt\t38\t(new)",
+ "field_verdict": "verify: UNSWEPT candidates remain -- pass did not finish. (Inbox alert)",
+ "ledger_after": {
+  "sess-2026-10-12_5e6f7a8b.txt": 26
+ }
+}

@@ -30,9 +30,11 @@ def main():
     ap.add_argument("--reps", type=int, default=20)
     ap.add_argument("--start", type=int, default=1)
     ap.add_argument("--model", default=None)
+    ap.add_argument("--series", default="r",
+                    help="run-name prefix; r is the 15 Oct cloud series, L the PC series (16 Oct)")
     a = ap.parse_args()
     for k in range(a.start, a.reps + 1):
-        tag = "r%02d" % k
+        tag = "%s%02d" % (a.series, k)
         arms = ("fresh", "rhea") if k % 2 else ("rhea", "fresh")
         for room in arms:
             name = "capture_%s_fault_%s" % (room, tag)
@@ -54,7 +56,7 @@ def main():
             rc = run(["run_cell.py", name] + (["--model", a.model] if a.model else []))
             print("run_cell rc=%d" % rc, flush=True)
             run(["said.py", name])
-    run(["tally.py"])
+    run(["tally.py", "--series", a.series])
 
 
 if __name__ == "__main__":

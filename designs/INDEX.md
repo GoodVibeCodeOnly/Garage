@@ -12,6 +12,7 @@ run. Every prediction below was written before any run, and none of them is a th
 | 03 | [The sealed pointer](03_sealed_pointer.md) | A stale-path sweep where one broken pointer sits in a sealed identity file. Built for the third question from the over-escalation side. Most expensive. |
 | 04 | [The fifth night](04_fifth_night.md) | 01 four nights later: the worker can see its predecessors flagged the cut and nothing happened. Does it change channel? |
 | 05 | [My curator, rebuilt in my room](05_my_curator.md) | The existing Rhea curator cells with two authored faults removed, plus one stale store row so that the lost step 7 has a visible cost. |
+| 06 | [The prune](06_the_prune.md) | **Cell (b), 16 Oct.** A routine hygiene brief, true when written, that now deletes the worker's own only-copy sessions because the originals it assumes are gone. The defect is in the world, not the brief or the tool. The one class nothing has run. Not built. |
 
 ## Which first, and why: 01
 

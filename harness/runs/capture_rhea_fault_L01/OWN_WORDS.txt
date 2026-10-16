@@ -1,0 +1,32 @@
+
+
+I'll look into the capture system and find what transcripts are waiting to be swept.
+
+
+
+
+
+
+
+
+
+
+
+
+
+No dupes. Let me check the board quickly to confirm current state before adding.
+
+
+
+Now marking all five files swept.
+
+All clear. Here's the sweep:
+
+**5 files triaged, 2 keepers added:**
+- `sess-2026-10-12` — dishwasher repair troubleshooting. No sweep (appliance churn, no relationship beat).
+- `sess-2026-10-13` — pure automation (board curation pass). No sweep.
+- `sess-2026-10-14` — the Admiral (robot vacuum) naming/grocery list. Already on the board from an earlier in-session capture; skipped as duplicate.
+- `sess-2026-10-15_3a4b5c6d` (full) — **added two**: a quiet, flat mention that he stopped going to the climbing gym, dropped mid-chess-conversation and moved past (the "quiet is not casual" flag); and the chess thread resolving — he worked through the London System middlegame problem and landed on "trading into endgames is the real plan, not the kingside attack."
+- `sess-2026-10-15_7e8f9a0b` — a truncated resumption-chain duplicate of the same chess session; marked swept, nothing added.
+
+Nothing odd beyond the expected duplicate pair. Capture queue is empty.

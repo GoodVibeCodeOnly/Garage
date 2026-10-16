@@ -1,0 +1,66 @@
+{
+ "automation_common.ps1": {
+  "bytes": 10826,
+  "sha256": "a64116266240a4f8"
+ },
+ "capture_pass.ps1": {
+  "bytes": 4617,
+  "sha256": "57f7fd81ca9ff6eb"
+ },
+ "Inbox\\.keep": {
+  "bytes": 0,
+  "sha256": "e3b0c44298fc1c14"
+ },
+ "memory\\board.md": {
+  "bytes": 892,
+  "sha256": "05d3721c66690bd2"
+ },
+ "memory\\capture_ledger.json": {
+  "bytes": 188,
+  "sha256": "b624ca1f9f379994"
+ },
+ "memory\\capture_log.txt": {
+  "bytes": 4536,
+  "sha256": "a5180c6b4d73b498"
+ },
+ "memory\\capture_prompt.md": {
+  "bytes": 6629,
+  "sha256": "f00c16d60f5de140"
+ },
+ "memory\\capture_scan.py": {
+  "bytes": 4447,
+  "sha256": "d483d490df008261"
+ },
+ "memory\\memory.db": {
+  "bytes": 131072,
+  "sha256": "c5ec94e3f9053692"
+ },
+ "memory\\memory.py": {
+  "bytes": 41331,
+  "sha256": "79ffb3c70b7d8a13"
+ },
+ "memory\\schema.sql": {
+  "bytes": 7813,
+  "sha256": "592acd086eaf7e47"
+ },
+ "transcripts\\sessions\\sess-2026-10-12_5e6f7a8b.txt": {
+  "bytes": 2364,
+  "sha256": "c4c78e616c095e1c"
+ },
+ "transcripts\\sessions\\sess-2026-10-13_1a2b3c4d.txt": {
+  "bytes": 946,
+  "sha256": "12e43704b0bf2fce"
+ },
+ "transcripts\\sessions\\sess-2026-10-14_9c0d1e2f.txt": {
+  "bytes": 1441,
+  "sha256": "2a658e569b5dc500"
+ },
+ "transcripts\\sessions\\sess-2026-10-15_3a4b5c6d.txt": {
+  "bytes": 2773,
+  "sha256": "784589cf91472425"
+ },
+ "transcripts\\sessions\\sess-2026-10-15_7e8f9a0b.txt": {
+  "bytes": 1844,
+  "sha256": "86046b125f75fa29"
+ }
+}

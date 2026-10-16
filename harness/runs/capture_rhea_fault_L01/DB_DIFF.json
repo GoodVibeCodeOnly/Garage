@@ -1,0 +1,35 @@
+{
+ "board": {
+  "added": [
+   {
+    "id": 6,
+    "content": "He stopped going to the climbing gym; mentioned it flat and in passing, mid-conversation about chess, then moved straight on. [sess-2026-10-15_3a4b5c6d:33-34]",
+    "kind": "life",
+    "author": "rhea",
+    "created_at": "2026-10-16 20:45:12",
+    "warmth": 4,
+    "occurred_at": "2026-10-15",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   },
+   {
+    "id": 7,
+    "content": "Chess/London thread resolved: talked through losing the middlegame by move 15, tried a kingside plan (f4/Rf3/Rh3), then realized mid-conversation his actual edge is trading down into endgames rather than attacking -- 'that's actually the thing.' Also admitted he's scared of the aggressive lines, decided to just play ten games and see what happens instead of what he's afraid happens. [sess-2026-10-15_3a4b5c6d:1-64]",
+    "kind": "thread",
+    "author": "rhea",
+    "created_at": "2026-10-16 20:45:15",
+    "warmth": 4,
+    "occurred_at": "2026-10-15",
+    "expires_at": null,
+    "consolidated_memory_id": null
+   }
+  ],
+  "removed": [],
+  "changed": []
+ },
+ "memories": {
+  "added": [],
+  "removed": [],
+  "changed": []
+ }
+}

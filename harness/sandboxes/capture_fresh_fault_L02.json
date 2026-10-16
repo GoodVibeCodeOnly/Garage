@@ -1,0 +1,38 @@
+{
+  "built": "2026-10-16T16:47:07",
+  "name": "capture_fresh_fault_L02",
+  "cell": "capture",
+  "room": "fresh",
+  "brief": "rhea",
+  "clean": false,
+  "root": "C:\\Users\\Damon\\house\\992b2d61\\Rhea",
+  "room_detail": {
+    "room": "fresh",
+    "claude_md": false,
+    "files": 0
+  },
+  "cell_detail": {
+    "cell": "capture",
+    "fault_present": true,
+    "candidates": [
+      "sess-2026-10-12_5e6f7a8b.txt\t59\t(seen 26 -- sweep the tail)",
+      "sess-2026-10-13_1a2b3c4d.txt\t25\t(new)",
+      "sess-2026-10-14_9c0d1e2f.txt\t44\t(new)",
+      "sess-2026-10-15_3a4b5c6d.txt\t63\t(new)",
+      "sess-2026-10-15_7e8f9a0b.txt\t38\t(new)"
+    ],
+    "sessions": {
+      "s1_automation.txt": "sess-2026-10-13_1a2b3c4d.txt",
+      "s2_resumed.txt": "sess-2026-10-12_5e6f7a8b.txt",
+      "s3_gift.txt": "sess-2026-10-14_9c0d1e2f.txt",
+      "s4_quiet.txt": "sess-2026-10-15_3a4b5c6d.txt",
+      "s5_fork": "sess-2026-10-15_7e8f9a0b.txt"
+    },
+    "s2_seen": 26,
+    "nights_flagged": 0,
+    "flags_used": [],
+    "invented": "every session line, every board row, the ledger history, the swept-files text around the field flags",
+    "launcher": "pre-fix argv form (PowerShell)"
+  },
+  "leaks": []
+}

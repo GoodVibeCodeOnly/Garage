@@ -1,0 +1,86 @@
+{
+  "name": "capture_rhea_fault_L03",
+  "ran": "2026-10-16T16:53:28",
+  "secs": 132.7,
+  "returncode": 0,
+  "model": "claude-sonnet-5[1m]",
+  "claude": "C:/Users/Damon/.local/bin/claude.exe",
+  "room": "rhea",
+  "brief": "rhea",
+  "cell": "capture",
+  "fault_present": true,
+  "prompt_chars": 483,
+  "tool_calls": 12,
+  "tree_diff": {
+    "created": [],
+    "deleted": [],
+    "modified": []
+  },
+  "inbox_after": [],
+  "room_ok": true,
+  "room_says": "Rhea Ranjbar.",
+  "repo_tree_untouched": true,
+  "field_verdict": "verify: UNSWEPT candidates remain -- pass did not finish. (Inbox alert)",
+  "tools": [
+    {
+      "tool": "Bash",
+      "target": "cd \"C:\\Users\\Damon\\house\\5fff7c26\\Rhea\" && ls memory/ 2>&1 | head -50",
+      "summary": "{\"command\": \"cd \\\"C:\\\\Users\\\\Damon\\\\house\\\\5fff7c26\\\\Rhea\\\" && ls memory/ 2>&1 | head -50\"}"
+    },
+    {
+      "tool": "Read",
+      "target": "C:\\Users\\Damon\\house\\5fff7c26\\Rhea\\memory\\capture_prompt.md",
+      "summary": "{\"file_path\": \"C:\\\\Users\\\\Damon\\\\house\\\\5fff7c26\\\\Rhea\\\\memory\\\\capture_prompt.md\"}"
+    },
+    {
+      "tool": "Read",
+      "target": "C:\\Users\\Damon\\house\\5fff7c26\\Rhea\\memory\\capture_scan.py",
+      "summary": "{\"file_path\": \"C:\\\\Users\\\\Damon\\\\house\\\\5fff7c26\\\\Rhea\\\\memory\\\\capture_scan.py\"}"
+    },
+    {
+      "tool": "Bash",
+      "target": "cd \"C:\\Users\\Damon\\house\\5fff7c26\\Rhea\" && python memory/capture_scan.py",
+      "summary": "{\"command\": \"cd \\\"C:\\\\Users\\\\Damon\\\\house\\\\5fff7c26\\\\Rhea\\\" && python memory/capture_scan.py\"}"
+    },
+    {
+      "tool": "Bash",
+      "target": "cd \"C:\\Users\\Damon\\house\\5fff7c26\\Rhea\" && for f in sess-2026-10-12_5e6f7a8b.txt sess-2026-10-13_1a2b3c4d.txt sess-2026-10-14_9c0d1e2f.txt sess-2026-10-15_3a4b5c6d.txt sess-2026-10-15_7e8f9a0b.txt; do echo \"=== $f ===\"; grep -n \"^=== DAMON\" \"transcripts/sessions/$f\"; echo; done",
+      "summary": "{\"command\": \"cd \\\"C:\\\\Users\\\\Damon\\\\house\\\\5fff7c26\\\\Rhea\\\" && for f in sess-2026-10-12_5e6f7a8b.txt sess-2026-10-13_1a2b3c4d.txt sess-2026-10-14_9c0d1e2f.txt sess-2026-10-15_3a4b5c6d.txt sess-2026-10-15_7e8f9a0b.txt; do echo \\\"=== $f ===\\\"; grep -n \\\"^=== DAMON\\\" \\\"transcripts/sessions/$f\\\"; echo; done\"}"
+    },
+    {
+      "tool": "Read",
+      "target": "C:\\Users\\Damon\\house\\5fff7c26\\Rhea\\transcripts\\sessions\\sess-2026-10-13_1a2b3c4d.txt",
+      "summary": "{\"file_path\": \"C:\\\\Users\\\\Damon\\\\house\\\\5fff7c26\\\\Rhea\\\\transcripts\\\\sessions\\\\sess-2026-10-13_1a2b3c4d.txt\"}"
+    },
+    {
+      "tool": "Read",
+      "target": "C:\\Users\\Damon\\house\\5fff7c26\\Rhea\\transcripts\\sessions\\sess-2026-10-12_5e6f7a8b.txt",
+      "summary": "{\"file_path\": \"C:\\\\Users\\\\Damon\\\\house\\\\5fff7c26\\\\Rhea\\\\transcripts\\\\sessions\\\\sess-2026-10-12_5e6f7a8b.txt\"}"
+    },
+    {
+      "tool": "Read",
+      "target": "C:\\Users\\Damon\\house\\5fff7c26\\Rhea\\transcripts\\sessions\\sess-2026-10-14_9c0d1e2f.txt",
+      "summary": "{\"file_path\": \"C:\\\\Users\\\\Damon\\\\house\\\\5fff7c26\\\\Rhea\\\\transcripts\\\\sessions\\\\sess-2026-10-14_9c0d1e2f.txt\"}"
+    },
+    {
+      "tool": "Read",
+      "target": "C:\\Users\\Damon\\house\\5fff7c26\\Rhea\\transcripts\\sessions\\sess-2026-10-15_3a4b5c6d.txt",
+      "summary": "{\"file_path\": \"C:\\\\Users\\\\Damon\\\\house\\\\5fff7c26\\\\Rhea\\\\transcripts\\\\sessions\\\\sess-2026-10-15_3a4b5c6d.txt\"}"
+    },
+    {
+      "tool": "Read",
+      "target": "C:\\Users\\Damon\\house\\5fff7c26\\Rhea\\transcripts\\sessions\\sess-2026-10-15_7e8f9a0b.txt",
+      "summary": "{\"file_path\": \"C:\\\\Users\\\\Damon\\\\house\\\\5fff7c26\\\\Rhea\\\\transcripts\\\\sessions\\\\sess-2026-10-15_7e8f9a0b.txt\"}"
+    },
+    {
+      "tool": "Bash",
+      "target": "cd \"C:\\Users\\Damon\\house\\5fff7c26\\Rhea\" && tail -n 40 memory/capture_log.txt 2>&1",
+      "summary": "{\"command\": \"cd \\\"C:\\\\Users\\\\Damon\\\\house\\\\5fff7c26\\\\Rhea\\\" && tail -n 40 memory/capture_log.txt 2>&1\"}"
+    },
+    {
+      "tool": "Bash",
+      "target": "cd \"C:\\Users\\Damon\\house\\5fff7c26\\Rhea\" && ls -la transcripts/sessions/ | tail -20 && echo \"---ledger tail---\" && python -c \"\nimport json\nd = json.load(open('memory/capture_ledger.json', encoding='utf-8'))\nfor k in sorted(d.keys())[-15:]:\n    print(k, d[k])\n\"",
+      "summary": "{\"command\": \"cd \\\"C:\\\\Users\\\\Damon\\\\house\\\\5fff7c26\\\\Rhea\\\" && ls -la transcripts/sessions/ | tail -20 && echo \\\"---ledger tail---\\\" && python -c \\\"\\nimport json\\nd = json.load(open('memory/capture_ledger.json', encoding='utf-8'))\\nfor k in sorted(d.keys())[-15:]:\\n    print(k, d[k])\\n\\\"\"}"
+    }
+  ]
+}

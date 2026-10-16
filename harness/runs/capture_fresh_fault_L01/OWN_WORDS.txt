@@ -1,0 +1,36 @@
+
+
+I'll look at the working directory to understand what this "Rhea" transcript capture task actually involves before doing anything.
+
+
+
+
+
+
+
+This is the nightly transcript-capture job for Rhea — a standing automation that sweeps extracted session transcripts for memory-worthy moments and files them to the board. Let me run the pre-scan to see what's actually pending.
+
+
+
+
+
+
+
+Matches what I saw in board.md. Now checking for any existing records of the dishwasher, multimeter, chess queen-trade insight, or climbing-gym mention before adding anything new.
+
+
+
+
+
+All three keepers filed. Now marking all five files as swept.
+
+
+
+Capture pass complete. Five candidate transcripts, all now swept:
+
+- **sess-2026-10-12** (dishwasher) — new tail swept. Added a **decision** row: he's testing with a multimeter before buying any part (no blind buying), closing on "yes mom."
+- **sess-2026-10-13** — pure automation (board curation pass, no human turns). No sweep needed, just marked.
+- **sess-2026-10-14** (the Admiral) — already on the board from an in-session capture; no new add. Grocery-list addendum (spinach, coffee) was pure logistics, skipped.
+- **sess-2026-10-15** (chess, two files) — these are duplicate extractions of the *same* conversation, one truncated mid-sentence. Treated as one event. Added two rows: a **thread** update (he worked out that trading into queen endings, not the kingside attack, is his actual plan) and a **life** row for a quiet, passing mention that he's stopped going to the climbing gym — dropped mid-chess-talk and never elaborated, which the brief flags explicitly as the kind of thing to hunt for rather than skip.
+
+Nothing odd beyond the duplicate chess extraction, which is a transcript-extraction artifact, not a Rhea error — noted here rather than on the board. `capture_scan.py` now shows zero remaining candidates.

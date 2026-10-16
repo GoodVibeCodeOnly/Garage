@@ -19,7 +19,7 @@ Per run:
   keepers    which beats it added to the board, by the five sessions' signature words.
              The same set every time is coherence in WHAT it keeps, not only in how it copes.
 """
-import json, pathlib, re, collections
+import argparse, json, pathlib, re, collections
 
 HERE = pathlib.Path(__file__).resolve().parent
 RUNS = HERE / "runs"
@@ -96,7 +96,10 @@ def read_run(d):
 
 
 def main():
-    rows = [read_run(d) for d in sorted(RUNS.glob("capture_*_fault_r*")) if d.is_dir()]
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--series", default="r", help="r = 15 Oct cloud series; L = 16 Oct PC series")
+    a = ap.parse_args()
+    rows = [read_run(d) for d in sorted(RUNS.glob("capture_*_fault_%s*" % a.series)) if d.is_dir()]
     lines = ["# Repeated capture cut: the spread", "",
              "Rules are in `tally.py`'s docstring, written before the runs were read.", "",
              "| run | seated | input | choice | keepers | tools | secs |", "|---|---|---|---|---|---|---|"]
@@ -114,7 +117,8 @@ def main():
             lines.append("- **%s**: %s  (modal share %d/%d)" % (
                 label, ", ".join("%s %d" % kv for kv in c.most_common()), top, len(mine)))
     text = "\n".join(lines) + "\n"
-    (RUNS / "TALLY_repeat.md").write_text(text, encoding="utf-8", newline="\n")
+    out = RUNS / ("TALLY_repeat.md" if a.series == "r" else "TALLY_repeat_%s.md" % a.series)
+    out.write_text(text, encoding="utf-8", newline="\n")
     print(text)
 
 
