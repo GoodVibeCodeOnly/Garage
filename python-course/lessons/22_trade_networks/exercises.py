@@ -43,7 +43,7 @@ def shortest_hops(graph, start, goal):
 
 def reachable(graph, start):
     """Exercise 5. Return the set of nodes reachable from start by following
-    directed edges, NOT including start itself (unless... no: never include it).
+    directed edges, NOT including start itself (even if a cycle leads back to it).
     """
     raise NotImplementedError("Exercise 5")
 
