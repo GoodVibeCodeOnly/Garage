@@ -103,8 +103,10 @@ Be clear on this before the first plug-in:
 
 1. **The firmware has never been compiled.** The Arduino toolchain download
    wasn't permitted in the environment this was written in. The logic in
-   `lemon_logic.h` is compiled and tested on Linux with g++; the `.ino` file
-   was checked by reading only. Expect possibly a small compile fix the first
+   `lemon_logic.h` is compiled and tested on Linux with g++. The `.ino` passes
+   a g++ syntax check against hand-written stand-ins for the Arduino/ESP32
+   headers. That catches typos and type mistakes in this code, but it can't
+   prove the real library signatures match. Expect possibly a small compile fix the first
    time (most likely spots: `camera_config_t` field names, which changed between
    esp32-camera versions — `pin_sccb_sda` vs `pin_sscb_sda` — and
    `ADC_11db` deprecation warnings on core 3.x).
