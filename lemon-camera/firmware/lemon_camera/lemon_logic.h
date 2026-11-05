@@ -22,6 +22,18 @@ inline bool clockIsSane(time_t t) { return t >= kSaneEpoch; }
 inline uint8_t toBcd(int v) { return (uint8_t)(((v / 10) << 4) | (v % 10)); }
 inline int fromBcd(uint8_t b) { return ((b >> 4) & 0x0F) * 10 + (b & 0x0F); }
 
+// UTC epoch from calendar fields, without needing timegm() (not in every
+// libc). Howard Hinnant's days-from-civil algorithm.
+inline time_t utcFromFields(int y, int m, int d, int hh, int mm, int ss) {
+  y -= m <= 2;
+  const long era = (y >= 0 ? y : y - 399) / 400;
+  const long yoe = y - era * 400;
+  const long doy = (153L * (m + (m > 2 ? -3 : 9)) + 2) / 5 + d - 1;
+  const long doe = yoe * 365 + yoe / 4 - yoe / 100 + doy;
+  const long days = era * 146097 + doe - 719468;
+  return (time_t)days * 86400 + hh * 3600 + mm * 60 + ss;
+}
+
 // Sets the process time zone. Both the ESP32 (newlib) and Linux honour TZ.
 inline void useTimezone(const char* posixTz) {
   setenv("TZ", posixTz, 1);

@@ -89,22 +89,8 @@ static time_t rtcGetUtc() {
   uint8_t r[7];
   if (!rtcRead(0x02, r, 7)) return 0;
   if (r[0] & 0x80) return 0;  // VL: clock integrity not guaranteed
-  struct tm t = {};
-  t.tm_sec  = fromBcd(r[0] & 0x7F);
-  t.tm_min  = fromBcd(r[1] & 0x7F);
-  t.tm_hour = fromBcd(r[2] & 0x3F);
-  t.tm_mday = fromBcd(r[3] & 0x3F);
-  t.tm_mon  = fromBcd(r[5] & 0x1F) - 1;
-  t.tm_year = fromBcd(r[6]) + 100;  // 20xx
-  // timegm is not in every libc; do UTC conversion by hand via TZ-free math.
-  // Days from civil algorithm (Howard Hinnant), valid for 2000-2099.
-  int y = t.tm_year + 1900, m = t.tm_mon + 1, d = t.tm_mday;
-  y -= m <= 2;
-  int era = y / 400, yoe = y - era * 400;
-  int doy = (153 * (m + (m > 2 ? -3 : 9)) + 2) / 5 + d - 1;
-  int doe = yoe * 365 + yoe / 4 - yoe / 100 + doy;
-  long days = (long)era * 146097 + doe - 719468;
-  time_t epoch = (time_t)days * 86400 + t.tm_hour * 3600 + t.tm_min * 60 + t.tm_sec;
+  time_t epoch = utcFromFields(2000 + fromBcd(r[6]), fromBcd(r[5] & 0x1F), fromBcd(r[3] & 0x3F),
+                               fromBcd(r[2] & 0x3F), fromBcd(r[1] & 0x7F), fromBcd(r[0] & 0x7F));
   return clockIsSane(epoch) ? epoch : 0;
 }
 
