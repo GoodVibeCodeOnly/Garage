@@ -40,4 +40,4 @@ Every factual claim about a market, employer or pay rate has a link next to it. 
 - **Employer and pay details not researched:** IQVIA, Labcorp, Cisco, Lenovo, Bandwidth, NC Central and Durham County.
 - **Pay for AI-ops roles at remote-first companies and for entry-level technical writing.**
 - **Hard data on whether portfolios, temp-to-perm or annotation work lead to full-time jobs.** I found none, so those are marked UNVERIFIED where they come up.
-- **Accuracy of the research.** Most employer details came from search-result text and job aggregators, not full reads of each employer's site. Treat every posting as possibly closed until you've checked it on the employer's own page.
+- **Accuracy of the research.** The research environment couldn't open most sites directly, including bls.gov, governance.ai, hr.duke.edu, zapier.com and yearup.org. Most employer details therefore came from search-result text and job aggregators, not full reads of each employer's site. Treat every posting as possibly closed until you've checked it on the employer's own page.
