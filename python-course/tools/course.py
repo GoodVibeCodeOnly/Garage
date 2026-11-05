@@ -37,7 +37,7 @@ def run_pytest(target: pathlib.Path, solutions: bool = False, quiet: bool = Fals
     env["MPLBACKEND"] = "Agg"
     cmd = [sys.executable, "-m", "pytest", str(target)]
     if quiet:
-        cmd += ["-q", "--tb=no", "-rN"]
+        cmd += ["--tb=no"]
     return subprocess.call(cmd, cwd=COURSE, env=env)
 
 
@@ -45,7 +45,7 @@ def count(target: pathlib.Path, solutions: bool = False) -> tuple[int, int]:
     """(passed, total) for one lesson, without printing the details."""
     env = dict(os.environ, COURSE_SOLUTIONS="1" if solutions else "0", MPLBACKEND="Agg")
     out = subprocess.run(
-        [sys.executable, "-m", "pytest", str(target), "-q", "--tb=no", "-rN"],
+        [sys.executable, "-m", "pytest", str(target), "--tb=no"],
         cwd=COURSE, env=env, capture_output=True, text=True,
     ).stdout
     passed = failed = errors = 0
