@@ -30,7 +30,7 @@ SKILL = dict(zip(PLAYERS, skill))
 base = {"Venice": 0.0, "Ottomans": 0.05, "Byzantium": -0.35, "Mongols": 0.10, "Genoa": -0.02}
 patch_adj = {("Mongols", "1.3"): 0.25, ("Mongols", "1.4"): -0.15}
 map_adj = {("Byzantium", "Bosphorus"): 0.55, ("Mongols", "Steppe"): 0.15, ("Venice", "Adriatic"): 0.15}
-matchup_adj = {("Venice", "Ottomans"): 0.35}
+matchup_adj = {("Venice", "Ottomans"): 0.75}
 length = {"Mongols": -6, "Byzantium": 7}
 
 rows = []

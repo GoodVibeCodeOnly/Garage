@@ -91,7 +91,7 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 10089,player_23,Venice,Byzantium,Anatolia,False,53.1,1.3
 10090,player_14,Ottomans,Genoa,Adriatic,False,50.6,1.2
 10091,player_29,Venice,Genoa,Steppe,False,23.1,1.4
-10092,player_13,Venice,Ottomans,Adriatic,False,35.0,1.4
+10092,player_13,Venice,Ottomans,Adriatic,True,35.0,1.4
 10093,player_25,Venice,Genoa,Adriatic,True,26.0,1.4
 10094,player_34,Venice,Genoa,Bosphorus,True,41.8,1.2
 10095,player_39,Venice,Genoa,Bosphorus,True,28.0,1.4
@@ -232,7 +232,7 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 10230,player_07,Genoa,Ottomans,Bosphorus,True,16.0,1.2
 10231,player_06,Mongols,Ottomans,Anatolia,False,18.7,1.3
 10232,player_26,Venice,Mongols,Bosphorus,False,17.5,1.3
-10233,player_11,Ottomans,Venice,Anatolia,True,22.8,1.4
+10233,player_11,Ottomans,Venice,Anatolia,False,22.8,1.4
 10234,player_08,Venice,Byzantium,Bosphorus,True,34.1,1.3
 10235,player_35,Venice,Mongols,Adriatic,False,33.6,1.2
 10236,player_18,Mongols,Venice,Adriatic,True,18.1,1.4
@@ -307,7 +307,7 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 10305,player_04,Ottomans,Mongols,Bosphorus,False,33.1,1.3
 10306,player_03,Mongols,Ottomans,Anatolia,False,19.0,1.4
 10307,player_40,Mongols,Ottomans,Bosphorus,False,32.0,1.4
-10308,player_30,Venice,Ottomans,Bosphorus,False,30.5,1.2
+10308,player_30,Venice,Ottomans,Bosphorus,True,30.5,1.2
 10309,player_08,Venice,Mongols,Adriatic,False,26.8,1.3
 10310,player_15,Venice,Byzantium,Adriatic,True,41.9,1.2
 10311,player_08,Venice,Genoa,Adriatic,False,31.6,1.2
@@ -433,7 +433,7 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 10431,player_17,Byzantium,Genoa,Adriatic,True,52.9,1.3
 10432,player_12,Ottomans,Mongols,Adriatic,True,24.3,1.3
 10433,player_01,Mongols,Genoa,Adriatic,False,30.6,1.4
-10434,player_40,Venice,Ottomans,Anatolia,False,34.0,1.2
+10434,player_40,Venice,Ottomans,Anatolia,True,34.0,1.2
 10435,player_40,Ottomans,Genoa,Bosphorus,True,33.0,1.3
 10436,player_29,Byzantium,Ottomans,Steppe,False,31.2,1.2
 10437,player_26,Venice,Ottomans,Adriatic,True,22.0,1.2
@@ -707,7 +707,7 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 10705,player_22,Mongols,Ottomans,Bosphorus,False,53.8,1.4
 10706,player_11,Byzantium,Mongols,Adriatic,False,18.0,1.3
 10707,player_29,Mongols,Genoa,Steppe,False,10.3,1.2
-10708,player_37,Ottomans,Venice,Bosphorus,True,29.1,1.3
+10708,player_37,Ottomans,Venice,Bosphorus,False,29.1,1.3
 10709,player_10,Mongols,Venice,Bosphorus,False,15.6,1.3
 10710,player_06,Byzantium,Mongols,Steppe,False,45.2,1.3
 10711,player_19,Mongols,Genoa,Adriatic,True,30.4,1.3
@@ -754,7 +754,7 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 10752,player_28,Ottomans,Genoa,Bosphorus,True,32.1,1.3
 10753,player_25,Genoa,Byzantium,Adriatic,False,25.0,1.2
 10754,player_32,Byzantium,Genoa,Adriatic,True,22.2,1.4
-10755,player_36,Ottomans,Venice,Steppe,True,29.8,1.3
+10755,player_36,Ottomans,Venice,Steppe,False,29.8,1.3
 10756,player_22,Mongols,Ottomans,Anatolia,False,28.3,1.4
 10757,player_07,Venice,Byzantium,Bosphorus,False,41.1,1.4
 10758,player_04,Ottomans,Byzantium,Bosphorus,False,30.8,1.4
@@ -769,7 +769,7 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 10767,player_09,Byzantium,Ottomans,Bosphorus,True,34.6,1.4
 10768,player_38,Ottomans,Genoa,Anatolia,False,33.0,1.4
 10769,player_27,Mongols,Ottomans,Bosphorus,False,20.1,1.2
-10770,player_29,Ottomans,Venice,Anatolia,True,46.1,1.3
+10770,player_29,Ottomans,Venice,Anatolia,False,46.1,1.3
 10771,player_22,Mongols,Ottomans,Bosphorus,False,11.7,1.4
 10772,player_26,Venice,Ottomans,Anatolia,True,36.7,1.4
 10773,player_37,Mongols,Genoa,Bosphorus,False,20.8,1.3
@@ -833,7 +833,7 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 10831,player_25,Venice,Genoa,Anatolia,True,26.0,1.3
 10832,player_10,Mongols,Byzantium,Steppe,True,36.5,1.4
 10833,player_05,Genoa,Ottomans,Steppe,False,44.9,1.4
-10834,player_39,Venice,Ottomans,Steppe,False,25.1,1.4
+10834,player_39,Venice,Ottomans,Steppe,True,25.1,1.4
 10835,player_16,Venice,Ottomans,Bosphorus,True,31.9,1.2
 10836,player_15,Mongols,Venice,Adriatic,True,15.6,1.3
 10837,player_11,Ottomans,Byzantium,Steppe,True,26.0,1.4
@@ -966,7 +966,7 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 10964,player_02,Genoa,Ottomans,Bosphorus,False,29.5,1.3
 10965,player_29,Byzantium,Mongols,Anatolia,True,32.7,1.3
 10966,player_28,Venice,Byzantium,Bosphorus,True,47.9,1.4
-10967,player_02,Ottomans,Venice,Adriatic,True,25.7,1.2
+10967,player_02,Ottomans,Venice,Adriatic,False,25.7,1.2
 10968,player_11,Venice,Mongols,Anatolia,True,19.7,1.4
 10969,player_40,Venice,Byzantium,Anatolia,True,38.9,1.2
 10970,player_29,Venice,Genoa,Steppe,True,24.5,1.4
@@ -1276,7 +1276,7 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 11274,player_26,Genoa,Mongols,Anatolia,False,17.0,1.4
 11275,player_29,Byzantium,Mongols,Steppe,False,23.3,1.4
 11276,player_35,Venice,Ottomans,Adriatic,False,20.0,1.4
-11277,player_38,Ottomans,Venice,Adriatic,True,42.2,1.4
+11277,player_38,Ottomans,Venice,Adriatic,False,42.2,1.4
 11278,player_01,Venice,Ottomans,Steppe,True,38.6,1.3
 11279,player_16,Ottomans,Genoa,Bosphorus,False,22.1,1.3
 11280,player_28,Mongols,Ottomans,Steppe,False,29.0,1.3
@@ -1363,7 +1363,7 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 11361,player_20,Mongols,Byzantium,Steppe,True,23.8,1.3
 11362,player_08,Ottomans,Genoa,Adriatic,False,31.2,1.2
 11363,player_21,Venice,Mongols,Steppe,True,22.4,1.4
-11364,player_05,Ottomans,Venice,Bosphorus,True,37.3,1.2
+11364,player_05,Ottomans,Venice,Bosphorus,False,37.3,1.2
 11365,player_01,Ottomans,Venice,Bosphorus,True,35.0,1.2
 11366,player_24,Genoa,Mongols,Anatolia,False,17.9,1.2
 11367,player_14,Mongols,Genoa,Steppe,True,7.9,1.4
@@ -1381,7 +1381,7 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 11379,player_07,Mongols,Byzantium,Anatolia,True,39.6,1.4
 11380,player_23,Byzantium,Venice,Adriatic,True,52.3,1.4
 11381,player_04,Byzantium,Mongols,Adriatic,True,20.4,1.4
-11382,player_30,Venice,Ottomans,Bosphorus,False,21.1,1.3
+11382,player_30,Venice,Ottomans,Bosphorus,True,21.1,1.3
 11383,player_31,Ottomans,Mongols,Steppe,False,21.8,1.3
 11384,player_17,Byzantium,Venice,Bosphorus,True,32.6,1.2
 11385,player_07,Genoa,Venice,Bosphorus,True,23.7,1.2
@@ -1406,7 +1406,7 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 11404,player_19,Byzantium,Genoa,Adriatic,True,47.0,1.2
 11405,player_04,Venice,Byzantium,Bosphorus,True,28.8,1.2
 11406,player_04,Ottomans,Venice,Steppe,False,14.5,1.2
-11407,player_05,Venice,Ottomans,Anatolia,False,25.6,1.2
+11407,player_05,Venice,Ottomans,Anatolia,True,25.6,1.2
 11408,player_25,Byzantium,Mongols,Steppe,True,38.4,1.3
 11409,player_34,Genoa,Mongols,Bosphorus,True,59.9,1.4
 11410,player_24,Byzantium,Venice,Bosphorus,True,38.1,1.3
@@ -1546,13 +1546,13 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 11544,player_27,Venice,Genoa,Adriatic,False,21.0,1.2
 11545,player_02,Venice,Genoa,Anatolia,True,24.0,1.3
 11546,player_36,Mongols,Venice,Adriatic,False,17.7,1.3
-11547,player_17,Venice,Ottomans,Anatolia,False,22.1,1.2
+11547,player_17,Venice,Ottomans,Anatolia,True,22.1,1.2
 11548,player_19,Genoa,Mongols,Steppe,True,22.8,1.4
 11549,player_18,Genoa,Byzantium,Anatolia,True,54.3,1.4
 11550,player_22,Venice,Byzantium,Bosphorus,True,67.9,1.4
 11551,player_28,Byzantium,Ottomans,Anatolia,True,35.6,1.4
 11552,player_24,Venice,Ottomans,Adriatic,True,35.3,1.4
-11553,player_12,Ottomans,Venice,Anatolia,True,23.4,1.2
+11553,player_12,Ottomans,Venice,Anatolia,False,23.4,1.2
 11554,player_35,Genoa,Venice,Adriatic,True,6.5,1.3
 11555,player_07,Mongols,Genoa,Steppe,True,20.6,1.4
 11556,player_07,Venice,Ottomans,Anatolia,False,31.4,1.3
@@ -1641,13 +1641,13 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 11639,player_09,Byzantium,Mongols,Steppe,False,21.3,1.3
 11640,player_28,Venice,Mongols,Adriatic,False,19.6,1.3
 11641,player_06,Venice,Ottomans,Anatolia,False,30.4,1.3
-11642,player_27,Venice,Ottomans,Steppe,False,26.2,1.4
+11642,player_27,Venice,Ottomans,Steppe,True,26.2,1.4
 11643,player_33,Mongols,Genoa,Bosphorus,True,19.4,1.2
 11644,player_07,Venice,Ottomans,Bosphorus,False,36.4,1.3
 11645,player_02,Venice,Mongols,Steppe,False,11.4,1.4
 11646,player_40,Mongols,Venice,Steppe,False,27.2,1.4
 11647,player_20,Venice,Ottomans,Anatolia,False,17.7,1.3
-11648,player_24,Ottomans,Venice,Adriatic,True,35.2,1.2
+11648,player_24,Ottomans,Venice,Adriatic,False,35.2,1.2
 11649,player_02,Mongols,Venice,Adriatic,False,17.5,1.3
 11650,player_13,Ottomans,Venice,Adriatic,False,24.4,1.3
 11651,player_20,Mongols,Ottomans,Adriatic,True,24.3,1.3
@@ -1688,7 +1688,7 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 11686,player_20,Ottomans,Mongols,Bosphorus,False,6.3,1.2
 11687,player_11,Byzantium,Ottomans,Adriatic,True,30.8,1.2
 11688,player_10,Mongols,Venice,Bosphorus,False,28.1,1.3
-11689,player_30,Ottomans,Venice,Anatolia,True,23.4,1.4
+11689,player_30,Ottomans,Venice,Anatolia,False,23.4,1.4
 11690,player_32,Venice,Ottomans,Bosphorus,False,23.5,1.3
 11691,player_29,Venice,Mongols,Steppe,True,22.8,1.3
 11692,player_24,Mongols,Venice,Steppe,False,47.9,1.2
@@ -1797,7 +1797,7 @@ match_id,player,faction,opponent_faction,map,won,duration_min,patch
 11795,player_24,Genoa,Venice,Adriatic,False,37.5,1.3
 11796,player_17,Byzantium,Ottomans,Steppe,True,48.0,1.3
 11797,player_01,Venice,Byzantium,Steppe,False,43.7,1.4
-11798,player_02,Venice,Ottomans,Adriatic,False,15.2,1.2
+11798,player_02,Venice,Ottomans,Adriatic,True,15.2,1.2
 11799,player_08,Byzantium,Venice,Adriatic,False,47.8,1.3
 11800,player_29,Mongols,Ottomans,Bosphorus,True,23.7,1.3
 11801,player_16,Ottomans,Mongols,Bosphorus,True,36.8,1.4
