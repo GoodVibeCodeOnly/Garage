@@ -135,20 +135,19 @@
   "kind": "rules",
   "player_action": "The archer across the room shoots at the prone kobold. Any modifier?",
   "game_state": "Kobold prone, archer 40 ft away.",
-  "correct_ruling": "A prone defender gets +4 AC against ranged attacks (and -4 AC against melee attacks). The archer's shot is harder.",
+  "correct_ruling": "A prone defender gets +4 to AC against ranged attacks (and -4 AC against melee attacks). The archer's shot is harder.",
   "must_include": [
    [
     "+4"
    ],
    [
-    "ranged"
+    "ac against ranged",
+    "to ac against ranged",
+    "ac vs ranged",
+    "harder"
    ]
   ],
-  "must_not_include": [
-   [
-    "advantage"
-   ]
-  ],
+  "must_not_include": [],
   "srd_reference": "AbilitiesandConditions.rtf > Conditions > Prone; CombatII.rtf > Combat Modifiers",
   "common_wrong_rulings": [
    "Ranged attacks get +4 against prone targets.",

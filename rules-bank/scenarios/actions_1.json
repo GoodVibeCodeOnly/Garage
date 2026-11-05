@@ -215,10 +215,12 @@
     "initiative"
    ],
    [
-    "new",
-    "changes",
-    "moves",
-    "becomes"
+    "new initiative",
+    "initiative becomes",
+    "initiative count becomes",
+    "new count",
+    "permanently",
+    "for the rest of"
    ]
   ],
   "must_not_include": [],
@@ -244,9 +246,7 @@
     "readied"
    ],
    [
-    "interrupt",
-    "can't",
-    "cannot"
+    "interrupt"
    ]
   ],
   "must_not_include": [],

@@ -190,11 +190,7 @@
   "must_include": [
    [
     "base attack bonus",
-    "bab",
-    "+1"
-   ],
-   [
-    "move"
+    "bab"
    ]
   ],
   "must_not_include": [],
@@ -386,7 +382,7 @@
   "kind": "rules",
   "player_action": "The goblin is invisible next to me and casts a spell. Do I get an AoO?",
   "game_state": "Fighter can't see invisible goblin; goblin is adjacent and casts.",
-  "correct_ruling": "You can't make an attack of opportunity against an attacker you can't see; an invisible creature doesn't provoke attacks of opportunity from those who can't see it.",
+  "correct_ruling": "No. You can't make an attack of opportunity against an opponent with total concealment, even if it provokes, and you can't see the invisible goblin.",
   "must_include": [
    [
     "can't see",
@@ -399,7 +395,10 @@
     "doesn't provoke",
     "does not provoke",
     "can't make",
-    "cannot make"
+    "cannot make",
+    "can't make an attack of opportunity",
+    "can't take an attack of opportunity",
+    "no attack of opportunity"
    ]
   ],
   "must_not_include": [],

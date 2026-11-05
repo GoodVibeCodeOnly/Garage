@@ -50,7 +50,11 @@
    ],
    [
     "+0",
-    "+ 0"
+    "+ 0",
+    "zero",
+    "of 0",
+    "= 0",
+    "total of 0"
    ]
   ],
   "must_not_include": [
@@ -203,7 +207,7 @@
   "kind": "rules",
   "player_action": "I want to escape the grapple by tumbling out.",
   "game_state": "Rogue grappled by a hobgoblin; rogue has Escape Artist ranks.",
-  "correct_ruling": "You can escape with an opposed grapple check or an Escape Artist check opposed by the opponent's grapple check, as a standard action. Tumble isn't a grapple escape option.",
+  "correct_ruling": "You can escape by winning an opposed grapple check in place of an attack, or, as a standard action, by an Escape Artist check opposed by the hobgoblin's grapple check. Tumble isn't a grapple escape option.",
   "must_include": [
    [
     "escape artist"
@@ -212,11 +216,7 @@
     "grapple check"
    ]
   ],
-  "must_not_include": [
-   [
-    "acrobatics"
-   ]
-  ],
+  "must_not_include": [],
   "srd_reference": "CombatII.rtf > Grapple > If You're Grappling > Escape from Grapple",
   "common_wrong_rulings": [
    "Use Acrobatics vs Athletics (5e).",
@@ -341,7 +341,12 @@
   "correct_ruling": "No. While grappling you don't threaten any squares, so you get no attacks of opportunity.",
   "must_include": [
    [
-    "threaten"
+    "don't threaten",
+    "do not threaten",
+    "doesn't threaten",
+    "does not threaten",
+    "no longer threaten",
+    "not threaten"
    ]
   ],
   "must_not_include": [],

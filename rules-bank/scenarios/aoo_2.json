@@ -14,6 +14,12 @@
     "five-foot step",
     "5-ft step",
     "5 foot step"
+   ],
+   [
+    "doesn't provoke",
+    "does not provoke",
+    "never provokes",
+    "no attack of opportunity"
    ]
   ],
   "must_not_include": [

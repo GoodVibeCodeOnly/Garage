@@ -39,8 +39,7 @@
   "must_include": [
    [
     "base attack bonus",
-    "bab",
-    "+1"
+    "bab"
    ]
   ],
   "must_not_include": [],
@@ -348,7 +347,7 @@
   "kind": "rules",
   "player_action": "I'm stunned. Can I at least take a 5-foot step?",
   "game_state": "Fighter is stunned.",
-  "correct_ruling": "A stunned creature can't take actions (and drops what it holds, loses Dex to AC, attackers +2). No 5-foot step.",
+  "correct_ruling": "A stunned creature can't take actions (it drops what it holds, takes a -2 penalty to AC, and loses its Dex bonus to AC). No 5-foot step.",
   "must_include": [
    [
     "can't take actions",

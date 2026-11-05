@@ -48,7 +48,7 @@
   "kind": "rules",
   "player_action": "I have the ogre pinned. My friend wants to coup de grace it.",
   "game_state": "Fighter has ogre pinned.",
-  "correct_ruling": "Pinned isn't helpless, so a coup de grace isn't allowed; the ogre loses its Dex bonus against others and they get +4 on melee attacks against it.",
+  "correct_ruling": "Pinned isn't helpless, so a coup de grace isn't allowed; the ogre loses its Dex bonus to AC against others and they get +4 on attack rolls against it.",
   "must_include": [
    [
     "not helpless",

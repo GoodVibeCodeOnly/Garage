@@ -39,7 +39,7 @@
   "kind": "rules",
   "player_action": "I trip the ogre.",
   "game_state": "Medium fighter vs Large ogre, no Improved Trip, armed with a longsword.",
-  "correct_ruling": "Make a melee touch attack, then opposed checks: your Str (or Dex) vs the ogre's Str or Dex (whichever higher); Large gets +4 per size category difference (stability not relevant). If you lose, the ogre may immediately try to trip you in return.",
+  "correct_ruling": "Tripping is an unarmed melee touch attack, so without Improved Trip (and with a longsword, not a trip weapon) it provokes an attack of opportunity from the ogre. If it hits, make an opposed check: your Strength against the ogre's Strength or Dexterity (whichever is higher), with the Large ogre getting +4 for being one size larger. If you lose, the ogre may immediately try to trip you in return.",
   "must_include": [
    [
     "touch attack"
@@ -50,16 +50,11 @@
    ],
    [
     "trip you",
-    "react",
     "in return",
     "counter"
    ]
   ],
-  "must_not_include": [
-   [
-    "athletics"
-   ]
-  ],
+  "must_not_include": [],
   "srd_reference": "CombatII.rtf > Trip",
   "common_wrong_rulings": [
    "Trip isn't a combat option in 3.5.",
@@ -263,8 +258,7 @@
   "correct_ruling": "Aid another is a standard action; attack AC 10; on success your ally gets +2 on their next attack roll against that opponent (or +2 AC against that opponent's next attack).",
   "must_include": [
    [
-    "ac 10",
-    "10"
+    "ac 10"
    ],
    [
     "+2"

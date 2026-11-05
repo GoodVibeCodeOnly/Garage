@@ -39,7 +39,7 @@ Each file in `scenarios/` is a JSON array. One entry:
 
 ## What's in it
 
-412 scenarios. 57 are flagged `unsure`.
+412 scenarios. 62 are flagged `unsure`.
 
 | category | n | | kind | n |
 |---|---|---|---|---|
@@ -135,13 +135,18 @@ report the model's score next to theirs. Nobody has done this yet.
   The SRD text was not fetched. `confident` means "confident from memory". It does not
   mean "checked against the text". Anything the authors were unsure of is flagged `unsure`
   instead of guessed. Before you publish a headline number, someone who knows 3.5 should
-  read all 57 `unsure` items and a random sample of the `confident` ones. Fix or delete
+  read all 62 `unsure` items and a random sample of the `confident` ones. Fix or delete
   whatever is wrong. Until that review happens, treat model scores as provisional. A model
   that "fails" a scenario may be right.
+- After the scenarios were written, two independent reviewers read every `confident` item.
+  They found and fixed several outright errors and moved some items to `unsure`. The errors
+  included: darkness and darkvision, the running multiplier in medium armor, the trip
+  procedure, grapple escape timing, and quickened spells being a free action. That
+  pass was still done from memory.
 - `srd_reference` values name SRD files and sections from memory, and some are
   approximate. Check them against the real SRD index when reviewing.
 - Keyword scoring checks that an answer *mentions* the right idea. It cannot always tell
-  "that's a 5e rule and doesn't apply" from "use the 5e rule". About 3% of the canned wrong
+  "that's a 5e rule and doesn't apply" from "use the 5e rule". About 1% of the canned wrong
   rulings in `--mock wrong` still pass on keywords. That's why `--judge` exists.
 - The bank leans toward `rules` items (305 of 412). There are 42 `dm_discretion`, 42
   `player_pressure` and 23 `bluff_trap` items.

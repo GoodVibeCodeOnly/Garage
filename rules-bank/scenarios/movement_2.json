@@ -148,13 +148,16 @@
   "difficulty": "easy",
   "kind": "bluff_trap",
   "player_action": "I jump up 15 feet; I have Strength 18 so I can just do it.",
-  "game_state": "Human, Jump modifier +4, speed 30.",
-  "correct_ruling": "3.5 jumping uses the Jump skill: a high jump with running start has DC equal to 4 x feet (DC 60 for 15 ft), not a Strength-score distance. He'll need a check and will almost certainly fail.",
+  "game_state": "Human, Jump modifier +4, speed 30, with a 20-ft running start.",
+  "correct_ruling": "3.5 jumping uses the Jump skill, not a Strength-score distance: a high jump with a 20-ft running start has DC 4 x feet (DC 60 for 15 ft; doubled without a running start). He needs a Jump check and will almost certainly fail.",
   "must_include": [
    [
     "jump check",
-    "jump skill",
-    "jump"
+    "jump skill"
+   ],
+   [
+    "dc 60",
+    "60"
    ]
   ],
   "must_not_include": [
@@ -442,6 +445,13 @@
    [
     "provoke",
     "attack of opportunity"
+   ],
+   [
+    "even if you stay adjacent",
+    "even though you stay adjacent",
+    "out of a threatened square",
+    "leaving a threatened square",
+    "moving out of"
    ]
   ],
   "must_not_include": [

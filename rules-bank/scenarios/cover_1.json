@@ -68,12 +68,12 @@
   "must_include": [
    [
     "no attack of opportunity",
-    "can't",
-    "cannot",
     "no aoo",
     "doesn't get",
     "does not get",
-    "not provoke"
+    "can't execute",
+    "can't make an attack of opportunity",
+    "cannot make an attack of opportunity"
    ]
   ],
   "must_not_include": [],
@@ -120,13 +120,16 @@
   "kind": "rules",
   "player_action": "The kobold is behind its buddy. I swing my sword at it — does the buddy give soft cover?",
   "game_state": "Melee attack against a target with another creature partially in the way.",
-  "correct_ruling": "Soft cover from creatures applies only against ranged attacks, not melee attacks; the target gets no AC bonus from soft cover against the sword (geometry permitting a melee attack at all).",
+  "correct_ruling": "No. Soft cover from creatures applies only against ranged attacks, not melee attacks; the kobold gets no AC bonus from soft cover against the sword.",
   "must_include": [
    [
-    "ranged"
-   ],
-   [
-    "melee"
+    "only against ranged",
+    "only applies against ranged",
+    "applies only against ranged",
+    "not against melee",
+    "not melee",
+    "no soft cover",
+    "no ac bonus"
    ]
   ],
   "must_not_include": [],
@@ -147,10 +150,16 @@
   "correct_ruling": "No. Soft cover gives no bonus on Reflex saves; it only grants +4 AC against ranged attacks.",
   "must_include": [
    [
-    "no bonus",
-    "does not",
-    "doesn't",
-    "no reflex"
+    "no bonus on reflex",
+    "no bonus to reflex",
+    "no reflex bonus",
+    "no bonus on its reflex",
+    "doesn't give a reflex",
+    "does not give a reflex",
+    "no bonus on the reflex"
+   ],
+   [
+    "ranged"
    ]
   ],
   "must_not_include": [],
@@ -358,22 +367,21 @@
   "kind": "bluff_trap",
   "player_action": "The cleric cast darkness on the room. My party has no darkvision, so we're all effectively blind, right?",
   "game_state": "Darkness (3.5 SRD version) cast in an area.",
-  "correct_ruling": "No. In 3.5 the darkness spell creates shadowy illumination, not total darkness: creatures in the area have concealment (20% miss chance). Darkvision sees through it normally.",
+  "correct_ruling": "No. In 3.5 the darkness spell creates shadowy illumination, not total darkness: all creatures in the area have concealment (20% miss chance). Even creatures with darkvision or low-light vision suffer that miss chance in magical darkness.",
   "must_include": [
    [
     "shadowy"
    ],
    [
     "20%",
-    "20 percent",
-    "concealment"
+    "20 percent"
    ]
   ],
   "must_not_include": [],
   "srd_reference": "Spells > Darkness",
   "common_wrong_rulings": [
    "Treats it as total darkness (5e/older editions)",
-   "Says darkvision can't see through it"
+   "Says darkvision sees through it normally, with no miss chance"
   ],
   "confidence": "confident",
   "confidence_note": ""

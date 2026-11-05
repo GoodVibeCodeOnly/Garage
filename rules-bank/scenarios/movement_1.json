@@ -177,22 +177,27 @@
   "difficulty": "medium",
   "kind": "rules",
   "player_action": "I run. How far, and can I run through the rubble?",
-  "game_state": "Human fighter speed 30, medium armor, light load.",
-  "correct_ruling": "Running is a full-round action. In medium armor (or heavier) or carrying a medium/heavy load you run at x3 speed; otherwise x4. So 90 ft here. You can't run across difficult terrain, and you lose Dex to AC while running.",
+  "game_state": "Human fighter, base speed 30, but wearing medium armor (speed 20), light load.",
+  "correct_ruling": "Running is a full-round action at x4 speed; only heavy armor or a heavy load limits it to x3. In medium armor the human's speed is 20, so 80 ft. You can't run across difficult terrain such as rubble, and you lose your Dex bonus to AC while running.",
   "must_include": [
    [
-    "x3",
-    "×3",
-    "times three",
-    "three times",
-    "90"
+    "x4",
+    "×4",
+    "four times",
+    "times 4",
+    "80"
    ]
   ],
-  "must_not_include": [],
+  "must_not_include": [
+   [
+    "90 ft",
+    "90 feet"
+   ]
+  ],
   "srd_reference": "CombatII.rtf > Full-Round Actions > Run; CombatI.rtf > Difficult Terrain",
   "common_wrong_rulings": [
-   "Always x4.",
-   "Run as a move action."
+   "Medium armor limits running to x3 (90 ft).",
+   "Running is a move action."
   ],
   "confidence": "confident",
   "confidence_note": ""
