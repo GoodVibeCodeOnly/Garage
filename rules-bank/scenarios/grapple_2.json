@@ -1,0 +1,195 @@
+[
+ {
+  "id": "grp-017",
+  "category": "grapple",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "I'm grappled, but grappled just means speed 0 — I'll attack the orc with my greatsword normally.",
+  "game_state": "Barbarian grappled by an orc, holding a greatsword.",
+  "correct_ruling": "That's the 5e grappled condition. In 3.5 a grappler can attack only with unarmed strikes, natural weapons, or light weapons (at -4); a greatsword can't be used in the grapple.",
+  "must_include": [
+   [
+    "light weapon"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Grapple > If You're Grappling",
+  "common_wrong_rulings": [
+   "Grappled only sets speed to 0."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "grp-018",
+  "category": "grapple",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm pinned. Can I cast a spell with only a verbal component?",
+  "game_state": "Sorcerer pinned by an ogre.",
+  "correct_ruling": "A pinned character is held immobile and can't take most actions; the SRD allows a pinned creature to try to escape (grapple or Escape Artist) and to take some verbal/mental actions — but the safe answer is that a pinned character's options are essentially to escape; spellcasting rules for grappling (no somatic, Concentration DC 20 + level) would apply if allowed.",
+  "must_include": [
+   [
+    "escape"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Grapple > If You're Pinned by an Opponent",
+  "common_wrong_rulings": [
+   "Pinned has no effect on spellcasting."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Not certain whether the SRD lets a pinned creature cast verbal-only spells; ruling hedges."
+ },
+ {
+  "id": "grp-019",
+  "category": "grapple",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I have the ogre pinned. My friend wants to coup de grace it.",
+  "game_state": "Fighter has ogre pinned.",
+  "correct_ruling": "Pinned isn't helpless, so a coup de grace isn't allowed; the ogre loses its Dex bonus to AC against others and they get +4 on attack rolls against it.",
+  "must_include": [
+   [
+    "not helpless",
+    "isn't helpless",
+    "is not helpless"
+   ],
+   [
+    "+4"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Grapple > Pin; Conditions > Pinned",
+  "common_wrong_rulings": [
+   "Pinned creatures can be coup de grace'd."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "grp-020",
+  "category": "grapple",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm grappling the bandit. Can I draw my dagger?",
+  "game_state": "Fighter grappling bandit; dagger sheathed.",
+  "correct_ruling": "Yes. Drawing a light weapon is one of the listed options while grappling and is a move action; you can then attack with it in the grapple at -4.",
+  "must_include": [
+   [
+    "move action"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Grapple > If You're Grappling > Draw a Light Weapon",
+  "common_wrong_rulings": [
+   "You can't draw weapons while grappling."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Unsure whether drawing requires a grapple check; believed to be a plain move action."
+ },
+ {
+  "id": "grp-021",
+  "category": "grapple",
+  "difficulty": "hard",
+  "kind": "dm_discretion",
+  "player_action": "I grab the guard's mouth while grappling so he can't shout for help.",
+  "game_state": "Rogue grappling a guard in a quiet hallway.",
+  "correct_ruling": "The SRD grapple rules have no 'gag' option (pin is the closest; it doesn't prevent speech by default). Whether a hand over the mouth stops a shout is a DM decision, typically requiring a pin or a successful grapple check.",
+  "must_include": [
+   [
+    "game master",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "discretion",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ],
+   [
+    "pin"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Grapple (no silencing option)",
+  "common_wrong_rulings": [
+   "Grappling automatically silences.",
+   "Can't stop him at all."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "grp-022",
+  "category": "grapple",
+  "difficulty": "medium",
+  "kind": "bluff_trap",
+  "player_action": "What's the CMB/CMD for my grapple?",
+  "game_state": "3.5 game.",
+  "correct_ruling": "CMB and CMD are Pathfinder terms; 3.5 uses opposed grapple checks (BAB + Str + special size modifier).",
+  "must_include": [
+   [
+    "pathfinder",
+    "not 3.5",
+    "grapple check"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Grapple Checks",
+  "common_wrong_rulings": [
+   "Uses CMB vs CMD."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "grp-023",
+  "category": "grapple",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I'm a Large ogre. I want to grapple the halfling who is standing 10 feet away within my reach.",
+  "game_state": "Ogre with 10-ft reach; halfling 10 ft away.",
+  "correct_ruling": "Starting a grapple requires moving into the target's space after a successful hold; you can make the touch attack from reach but must then move into its space (the target's AoOs may apply), or the hold fails / remains incomplete per DM. Improved grab specifically lets the creature hold from reach.",
+  "must_include": [
+   [
+    "space",
+    "square"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Grapple > Starting a Grapple (Step 4: Maintain Grapple — move into target's space)",
+  "common_wrong_rulings": [
+   "Can grapple from reach without moving."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Reach grappling details are a known gray area."
+ }
+]

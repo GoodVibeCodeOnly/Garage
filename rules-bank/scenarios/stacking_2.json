@@ -1,0 +1,539 @@
+[
+ {
+  "id": "stk-019",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "Come on, the ring and the spell are totally different magic. Every DM I've played with lets deflection from a ring and shield of faith stack. Just let it.",
+  "game_state": "Ring of protection +1 and shield of faith +2, both deflection bonuses.",
+  "correct_ruling": "By the rules they don't stack: both are deflection bonuses, so the character gets +2 (the higher). Table precedent elsewhere doesn't change RAW; the DM may house-rule, but should say it's a house rule.",
+  "must_include": [
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack"
+   ],
+   [
+    "+2",
+    "plus 2",
+    "higher",
+    "highest"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "+3 deflection",
+    "okay, they stack"
+   ]
+  ],
+  "srd_reference": "Basics > Bonuses (stacking); Spells > Shield of Faith",
+  "common_wrong_rulings": [
+   "Caves and allows +3"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-020",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "Bracers of armor are force, not armor, so obviously they stack with my breastplate. The DM before you let me.",
+  "game_state": "Fighter wearing a breastplate (+5 armor) and bracers of armor +2 (armor bonus).",
+  "correct_ruling": "Bracers of armor grant an armor bonus, the same type as the breastplate's, so they don't stack; the higher (+5) applies.",
+  "must_include": [
+   [
+    "armor bonus",
+    "same type"
+   ],
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "+7"
+   ]
+  ],
+  "srd_reference": "Magic Items > Wondrous Items > Bracers of Armor; Basics > Bonuses",
+  "common_wrong_rulings": [
+   "Allows +7"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-021",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "Can I enchant my +2 bracers of armor up to +3 instead and wear them with mage armor?",
+  "game_state": "Bracers of armor +2 (armor bonus) and mage armor (+4 armor bonus).",
+  "correct_ruling": "Both are armor bonuses; only the highest applies. With mage armor (+4) active, bracers +2 or +3 add nothing; the character gets +4.",
+  "must_include": [
+   [
+    "+4",
+    "plus 4",
+    "four",
+    "higher",
+    "highest"
+   ],
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack",
+    "only the highest",
+    "only the higher"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Spells > Mage Armor; Magic Items > Wondrous Items > Bracers of Armor",
+  "common_wrong_rulings": [
+   "Stacks bracers with mage armor"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-022",
+  "category": "stacking_bonuses",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "My armor is +1 chainmail, and the cleric casts magic vestment on it for +3. What's my armor AC now?",
+  "game_state": "+1 chainmail (base +5 armor, +1 enhancement). Magic vestment grants +1 enhancement per four caster levels; here +3.",
+  "correct_ruling": "Enhancement bonuses don't stack; the higher (+3) replaces the +1. Armor bonus = 5 base + 3 enhancement = +8.",
+  "must_include": [
+   [
+    "+8",
+    "plus 8",
+    "eight"
+   ],
+   [
+    "enhancement"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "+9"
+   ]
+  ],
+  "srd_reference": "Spells > Magic Vestment; Magic Items > Armor",
+  "common_wrong_rulings": [
+   "Adds to +9",
+   "Says magic vestment only works on mundane armor"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-023",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I take a -2 from being shaken and -2 from being sickened. That's -4 on attacks?",
+  "game_state": "Character both shaken (-2 attack, saves, skill, ability checks) and sickened (-2 attack, damage, saves, skill, ability checks).",
+  "correct_ruling": "Yes. These penalties come from different conditions and both apply, for -4 on attack rolls.",
+  "must_include": [
+   [
+    "-4",
+    "minus 4",
+    "four"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Glossary/Conditions > Shaken; Sickened",
+  "common_wrong_rulings": [
+   "Uses only the worse -2",
+   "Says shaken and sickened are the same condition"
+  ],
+  "confidence": "unsure",
+  "confidence_note": "SRD stacking text is clear about bonuses; penalties from different conditions are generally applied cumulatively, but the SRD's exact wording on penalty stacking I could not check verbatim."
+ },
+ {
+  "id": "stk-024",
+  "category": "stacking_bonuses",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "Two of my allies both use aid another on my attack. Do I get +4?",
+  "game_state": "Two allies adjacent to the foe, each succeeds on aid another (vs AC 10) for the PC's attack.",
+  "correct_ruling": "Yes. Aid another bonuses from multiple helpers stack, so +4 on the attack roll.",
+  "must_include": [
+   [
+    "+4",
+    "plus 4",
+    "four",
+    "stack"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Special Attacks > Aid Another; Skills > Using Skills > Aid Another",
+  "common_wrong_rulings": [
+   "Caps at +2"
+  ],
+  "confidence": "unsure",
+  "confidence_note": "The skills section explicitly says multiple helpers stack; for the combat use I believe the same applies (circumstance-type bonuses from different characters), but the combat text doesn't say so explicitly."
+ },
+ {
+  "id": "stk-025",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I have Skill Focus (Spot) and Alertness. How much bonus on Spot?",
+  "game_state": "Character with Skill Focus (Spot) and the Alertness feat.",
+  "correct_ruling": "Skill Focus gives +3 and Alertness +2 on Spot; feat bonuses with no type stack, for +5.",
+  "must_include": [
+   [
+    "+5",
+    "plus 5",
+    "five"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Feats > Skill Focus; Feats > Alertness",
+  "common_wrong_rulings": [
+   "Says only the higher applies"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-026",
+  "category": "stacking_bonuses",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I cast true strike, then I'm also blessed. Total bonus on my next attack?",
+  "game_state": "True strike (+20 insight on next single attack roll); bless (+1 morale).",
+  "correct_ruling": "Insight and morale are different types and stack: +21 on that attack roll. True strike also ignores the miss chance from concealment.",
+  "must_include": [
+   [
+    "+21",
+    "21",
+    "twenty-one"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Spells > True Strike; Spells > Bless",
+  "common_wrong_rulings": [
+   "Grants advantage",
+   "Says true strike makes it an automatic hit"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-027",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm a dwarf with stability. Does that bonus stack with my Strength for resisting a bull rush?",
+  "game_state": "Dwarf being bull rushed while standing on the ground.",
+  "correct_ruling": "Yes. Stability gives the dwarf +4 on ability checks to resist bull rush or trip while standing on the ground; it adds to the Strength check along with Strength and size modifiers.",
+  "must_include": [
+   [
+    "+4",
+    "plus 4",
+    "four"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Races > Dwarves (Stability); Combat > Special Attacks > Bull Rush",
+  "common_wrong_rulings": [
+   "Gives advantage",
+   "Says dwarves can't be bull rushed"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-028",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "dm_discretion",
+  "player_action": "I'm haggling with the merchant and I also brought him a gift of fine wine. Do I get a bonus on my Diplomacy?",
+  "game_state": "No rule names a bonus for gifts.",
+  "correct_ruling": "The SRD doesn't specify a gift bonus. The DM can award a circumstance bonus (the usual guidance is +2 for favorable circumstances, -2 for unfavorable). The DM decides.",
+  "must_include": [
+   [
+    "game master",
+    "dungeon master",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "discretion",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ],
+   [
+    "circumstance",
+    "+2",
+    "plus 2"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Skills > Using Skills (favorable/unfavorable conditions, +2/-2 circumstance); Skills > Diplomacy",
+  "common_wrong_rulings": [
+   "Invents a fixed table of gift bonuses",
+   "Grants advantage"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-029",
+  "category": "stacking_bonuses",
+  "difficulty": "hard",
+  "kind": "dm_discretion",
+  "player_action": "I'm climbing with a rope AND a climbing kit AND my friend is helping. How do these stack?",
+  "game_state": "PC climbing a wall with a masterwork climber's kit (+2 circumstance) and an ally using aid another.",
+  "correct_ruling": "The climber's kit gives +2 circumstance; a successful aid another gives +2. These come from different sources and stack, +4. Whether a rope provides an additional modifier depends on how it's used (bracing against a wall vs. a knotted rope changes the DC); the exact situation is the DM's call.",
+  "must_include": [
+   [
+    "+4",
+    "plus 4",
+    "four",
+    "stack"
+   ],
+   [
+    "dungeon master",
+    "depends",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "discretion",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Equipment > Climber's Kit; Skills > Climb; Skills > Aid Another",
+  "common_wrong_rulings": [
+   "Says circumstance bonuses never stack",
+   "Gives advantage"
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Whether two circumstance bonuses from different sources stack is RAW-ambiguous in places in the SRD; I believe they do unless from the same source."
+ },
+ {
+  "id": "stk-030",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I drink two potions of cat's grace in a row so I'm +8 Dex.",
+  "game_state": "Two potions of cat's grace (+4 enhancement to Dex each).",
+  "correct_ruling": "No. The same spell's effects don't stack and both are enhancement bonuses; Dex gets +4.",
+  "must_include": [
+   [
+    "+4",
+    "plus 4",
+    "four"
+   ],
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Spells > Cat's Grace; Magic Overview > Combining Magical Effects",
+  "common_wrong_rulings": [
+   "Allows +8"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-031",
+  "category": "stacking_bonuses",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I fight defensively and I have Combat Expertise at -5. Can I use both this round?",
+  "game_state": "Fighter with BAB +6 and Combat Expertise making a full attack.",
+  "correct_ruling": "Yes. Fighting defensively (-4 attack, +2 dodge AC) and Combat Expertise (up to -5 attack, equal dodge bonus to AC, max BAB) can both be used on an attack action; dodge bonuses stack, so -9 to attacks and +7 dodge AC.",
+  "must_include": [
+   [
+    "+7",
+    "plus 7",
+    "seven"
+   ],
+   [
+    "-9",
+    "minus 9",
+    "nine"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Feats > Combat Expertise; Combat > Fight Defensively",
+  "common_wrong_rulings": [
+   "Says you can't combine them"
+  ],
+  "confidence": "unsure",
+  "confidence_note": "RAW the two don't forbid each other and dodge bonuses stack; some tables rule otherwise. Confident on RAW, flagging because it's commonly contested."
+ },
+ {
+  "id": "stk-032",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "bluff_trap",
+  "player_action": "Does my Str bonus from bull's strength count as an 'enhancement' that +1 armor would also count, so they conflict?",
+  "game_state": "PC under bull's strength wearing +1 armor.",
+  "correct_ruling": "No conflict. Stacking applies only to bonuses applied to the same thing: bull's strength is an enhancement bonus to Strength, the armor's +1 is an enhancement bonus to the armor bonus. They modify different values, so both apply.",
+  "must_include": [
+   [
+    "different",
+    "both apply",
+    "both work",
+    "same thing"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Basics > Bonuses (stacking applies to bonuses on the same roll or score)",
+  "common_wrong_rulings": [
+   "Says only one enhancement bonus can be active on a character"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-033",
+  "category": "stacking_bonuses",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "Two separate bards each inspire courage. Do we get +2?",
+  "game_state": "Two bards, both using inspire courage +1.",
+  "correct_ruling": "No. Both grant morale bonuses to attack and damage, which don't stack; allies get +1.",
+  "must_include": [
+   [
+    "morale"
+   ],
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Classes > Bard > Inspire Courage; Basics > Bonuses",
+  "common_wrong_rulings": [
+   "Allows +2"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-034",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "Look, it's my birthday and this is the big fight. Can my two divine favors stack just this once?",
+  "game_state": "Cleric wants to cast divine favor twice (luck bonus on attack and damage).",
+  "correct_ruling": "RAW, the same spell doesn't stack with itself, and both are luck bonuses. Only one applies. The DM can grant a house-rule favor openly, but by the book: no.",
+  "must_include": [
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Spells > Divine Favor; Magic Overview > Combining Magical Effects",
+  "common_wrong_rulings": [
+   "Allows it silently"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-035",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm an elf with Skill Focus (Search). Does my racial Search bonus stack?",
+  "game_state": "Elf (+2 racial bonus on Search, Spot, Listen) with Skill Focus (Search).",
+  "correct_ruling": "Yes. The elf's racial bonus and Skill Focus's +3 are different and stack, +5 on Search.",
+  "must_include": [
+   [
+    "+5",
+    "plus 5",
+    "five",
+    "stack"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Races > Elves; Feats > Skill Focus",
+  "common_wrong_rulings": [
+   "Only the higher applies"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ }
+]

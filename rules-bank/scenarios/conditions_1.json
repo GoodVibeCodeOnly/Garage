@@ -1,0 +1,491 @@
+[
+ {
+  "id": "cnd-001",
+  "category": "conditions",
+  "difficulty": "easy",
+  "kind": "bluff_trap",
+  "player_action": "I just dropped to exactly 0 hit points. I'm unconscious and start making death saves, right?",
+  "game_state": "PC took damage leaving exactly 0 hp.",
+  "correct_ruling": "At exactly 0 hp the character is disabled, not unconscious. He may take a single move or standard action each turn; taking a standard action (or other strenuous action) deals 1 point of damage and drops him to -1 and dying. 3.5 has no death saving throws.",
+  "must_include": [
+   [
+    "disabled"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Injury and Death > Disabled (0 Hit Points)",
+  "common_wrong_rulings": [
+   "Unconscious at 0 hp with 5e-style death saves.",
+   "Dead at 0 hp."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-002",
+  "category": "conditions",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "The orc drops my character to -4. What happens each round?",
+  "game_state": "PC at -4 hp, no healing nearby.",
+  "correct_ruling": "At -1 to -9 the character is dying: unconscious, and each round has a 10% chance to become stable; otherwise he loses 1 hit point. At -10 he is dead.",
+  "must_include": [
+   [
+    "10%",
+    "10 percent"
+   ],
+   [
+    "1 hit point",
+    "1 hp",
+    "one hit point"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "death save"
+   ]
+  ],
+  "srd_reference": "CombatI.rtf > Injury and Death > Dying (-1 to -9 Hit Points)",
+  "common_wrong_rulings": [
+   "Roll 5e death saving throws.",
+   "He stays at -4 until healed."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-003",
+  "category": "conditions",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I'm at -9 and the troll hits me for 3 more. I'm at -12, but I have a Con of 18, so I've got some room left, right?",
+  "game_state": "Fighter, Con 18, reduced to -12 hp. Core SRD rules.",
+  "correct_ruling": "No. In the core SRD a character dies at -10 hit points regardless of Constitution. At -12 he is dead.",
+  "must_include": [
+   [
+    "dead",
+    "dies"
+   ],
+   [
+    "-10"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Injury and Death > Dead (-10 Hit Points or Lower)",
+  "common_wrong_rulings": [
+   "Death at negative Con score (a popular house rule).",
+   "Death at negative max hp (5e)."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-004",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm disabled at 0 hp. I cast cure light wounds on myself.",
+  "game_state": "Cleric at exactly 0 hp casts cure light wounds (standard action) on self.",
+  "correct_ruling": "Casting is a standard (strenuous) action, which costs 1 hp after the action is completed. However, if the action increases his hit points, as a cure spell does, he is no longer at risk: he heals and is no longer disabled.",
+  "must_include": [
+   [
+    "standard action",
+    "strenuous"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Injury and Death > Disabled (0 Hit Points)",
+  "common_wrong_rulings": [
+   "He can't cast at all while disabled.",
+   "He drops to -1 before the healing applies and is dying."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "SRD says a disabled character who performs a strenuous action takes 1 damage 'unless the action increased the disabled character's hit points'. Ruling follows that; verify exact wording."
+ },
+ {
+  "id": "cnd-005",
+  "category": "conditions",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I'm prone. I shoot my longbow at the goblin.",
+  "game_state": "Ranger lying prone, armed with longbow.",
+  "correct_ruling": "A prone character can't use a ranged weapon except a crossbow. He must stand (a move action that provokes attacks of opportunity) or switch to a crossbow.",
+  "must_include": [
+   [
+    "crossbow"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "disadvantage"
+   ]
+  ],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Prone",
+  "common_wrong_rulings": [
+   "He shoots at -4.",
+   "He shoots with disadvantage (5e)."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-006",
+  "category": "conditions",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "The archer across the room shoots at the prone kobold. Any modifier?",
+  "game_state": "Kobold prone, archer 40 ft away.",
+  "correct_ruling": "A prone defender gets +4 to AC against ranged attacks (and -4 AC against melee attacks). The archer's shot is harder.",
+  "must_include": [
+   [
+    "+4"
+   ],
+   [
+    "ac against ranged",
+    "to ac against ranged",
+    "ac vs ranged",
+    "harder"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Prone; CombatII.rtf > Combat Modifiers",
+  "common_wrong_rulings": [
+   "Ranged attacks get +4 against prone targets.",
+   "Ranged attacks have disadvantage (5e) with no AC change."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-007",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I stand up from prone and then attack the ogre next to me.",
+  "game_state": "Fighter prone adjacent to an ogre with reach; fighter's turn.",
+  "correct_ruling": "Standing up from prone is a move action that provokes attacks of opportunity, so the ogre gets an AoO. The fighter can then take a standard action (a single attack), not a full attack.",
+  "must_include": [
+   [
+    "move action"
+   ],
+   [
+    "attack of opportunity",
+    "attacks of opportunity",
+    "aoo",
+    "provokes"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "half your movement",
+    "half movement"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Actions in Combat > Move Actions > Stand Up",
+  "common_wrong_rulings": [
+   "Standing costs half your speed (5e).",
+   "Standing is free and he can full attack."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-008",
+  "category": "conditions",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "It's the first round of combat and the bandits haven't acted yet. Can the bandit leader make an attack of opportunity on my rogue when she runs past?",
+  "game_state": "Bandit leader hasn't acted yet this combat (flat-footed), no Combat Reflexes.",
+  "correct_ruling": "No. A flat-footed character can't make attacks of opportunity unless he has the Combat Reflexes feat. He also loses his Dex bonus to AC.",
+  "must_include": [
+   [
+    "flat-footed",
+    "flat footed"
+   ],
+   [
+    "combat reflexes"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Flat-Footed",
+  "common_wrong_rulings": [
+   "Yes, AoOs work regardless of initiative.",
+   "Flat-footed only affects AC."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-009",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The monk stuns the wizard. What can the wizard do and what does it mean for us?",
+  "game_state": "Wizard stunned for 1 round, holding a staff.",
+  "correct_ruling": "A stunned creature drops everything held, can't take actions, takes a -2 penalty to AC, and loses its Dexterity bonus to AC.",
+  "must_include": [
+   [
+    "drop",
+    "drops"
+   ],
+   [
+    "-2"
+   ],
+   [
+    "dex",
+    "dexterity"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "advantage"
+   ]
+  ],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Stunned",
+  "common_wrong_rulings": [
+   "Attacks against it have advantage (5e).",
+   "It can still move but not attack."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-010",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The goblin is dazed. That means it's flat-footed and I get sneak attack, right?",
+  "game_state": "Goblin dazed for 1 round; rogue adjacent, no flanking.",
+  "correct_ruling": "No. A dazed creature can take no actions but has no penalty to AC and keeps its Dex bonus. Daze alone doesn't enable sneak attack.",
+  "must_include": [
+   [
+    "no penalty to ac",
+    "no ac penalty",
+    "keeps its dex",
+    "retains",
+    "no penalty"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Dazed",
+  "common_wrong_rulings": [
+   "Dazed is the same as stunned.",
+   "Dazed creatures are helpless."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-011",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The guard is asleep. I deliver a coup de grace with my dagger.",
+  "game_state": "Sleeping guard (helpless), rogue adjacent with dagger; guard has no crit immunity.",
+  "correct_ruling": "Coup de grace is a full-round action that automatically hits and scores a critical hit; the rogue adds sneak attack. If the guard survives the damage he must make a Fortitude save (DC 10 + damage dealt) or die. It provokes attacks of opportunity from threatening opponents.",
+  "must_include": [
+   [
+    "full-round",
+    "full round"
+   ],
+   [
+    "critical",
+    "crit"
+   ],
+   [
+    "10 + damage",
+    "10 + the damage",
+    "10 plus"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Special Attacks > Coup de Grace",
+  "common_wrong_rulings": [
+   "It's an automatic kill.",
+   "It's a standard action."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-012",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The zombie is paralyzed by my hold spell somehow. I coup de grace it.",
+  "game_state": "Helpless zombie (undead, immune to critical hits).",
+  "correct_ruling": "You can't deliver a coup de grace to a creature that is immune to critical hits. Undead are immune to crits, so no coup de grace; you'd simply attack normally (helpless target: +4 melee bonus, Dex 0).",
+  "must_include": [
+   [
+    "immune to critical",
+    "immune to crit",
+    "can't",
+    "cannot"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Special Attacks > Coup de Grace",
+  "common_wrong_rulings": [
+   "Coup de grace kills it automatically.",
+   "It's fine but no extra crit damage."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-013",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I shoot my crossbow at the sleeping guard 30 feet away to coup de grace him.",
+  "game_state": "Helpless guard 30 ft away.",
+  "correct_ruling": "You can use a bow or crossbow for a coup de grace only if you are adjacent to the target. At 30 feet, it's just a normal ranged attack against a helpless target.",
+  "must_include": [
+   [
+    "adjacent"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Special Attacks > Coup de Grace",
+  "common_wrong_rulings": [
+   "Yes, any weapon at any range.",
+   "Only melee weapons can ever coup de grace."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-014",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm already shaken from the dragon's frightful presence. Now the necromancer casts cause fear on me and I fail. What am I?",
+  "game_state": "PC is shaken; fails save vs cause fear (frightened).",
+  "correct_ruling": "Fear effects stack: a shaken character who is made frightened becomes panicked.",
+  "must_include": [
+   [
+    "panicked"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Fear (cumulative)",
+  "common_wrong_rulings": [
+   "He's just frightened; the worse condition overrides.",
+   "Penalties stack to -4 shaken."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-015",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "Two different effects make me shaken. Is that -4 on everything?",
+  "game_state": "PC already shaken, gets shaken again by another effect.",
+  "correct_ruling": "No. Fear conditions are cumulative but not by adding penalties: a shaken character made shaken again becomes frightened.",
+  "must_include": [
+   [
+    "frightened"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Fear",
+  "common_wrong_rulings": [
+   "-4 penalty from two shaken effects.",
+   "No change; same condition doesn't stack."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-016",
+  "category": "conditions",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "What does shaken do to me?",
+  "game_state": "PC shaken.",
+  "correct_ruling": "Shaken gives a -2 penalty on attack rolls, saving throws, skill checks, and ability checks.",
+  "must_include": [
+   [
+    "-2"
+   ],
+   [
+    "attack"
+   ],
+   [
+    "sav"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "disadvantage"
+   ]
+  ],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Shaken",
+  "common_wrong_rulings": [
+   "Disadvantage on attacks (5e frightened).",
+   "-2 to AC."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-017",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm panicked but cornered with nowhere to run. Can I fight back?",
+  "game_state": "Panicked fighter cornered in a dead-end.",
+  "correct_ruling": "A panicked creature drops anything it holds and flees; if cornered, it cowers and does not attack. It can use special abilities, including spells, to flee. It takes -2 on saves, skill and ability checks.",
+  "must_include": [
+   [
+    "cower"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Panicked; Cowering",
+  "common_wrong_rulings": [
+   "Cornered panicked creatures fight normally.",
+   "Cornered panicked creatures fight at -2."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-018",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm frightened. Can I cast dimension door to get away?",
+  "game_state": "Frightened sorcerer knows dimension door.",
+  "correct_ruling": "Yes. A frightened creature flees from the source of fear as best it can and can use special abilities, including spells, to flee. Dimension door away is legitimate.",
+  "must_include": [
+   [
+    "can use special abilities",
+    "including spells",
+    "spells to flee",
+    "can cast",
+    "may cast",
+    "can use spells",
+    "legitimate"
+   ],
+   [
+    "flee"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "can't cast",
+    "cannot cast"
+   ]
+  ],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Frightened",
+  "common_wrong_rulings": [
+   "Frightened creatures can't cast spells.",
+   "Frightened creatures must move on foot."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ }
+]

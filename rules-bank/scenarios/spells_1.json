@@ -1,0 +1,537 @@
+[
+ {
+  "id": "spl-001",
+  "category": "spells_duration_concentration",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I keep casting fireball even though the orc hit me with a readied attack while I was casting.",
+  "game_state": "5th-level wizard casting fireball (3rd level). An orc with a readied action hits for 9 damage during the casting.",
+  "correct_ruling": "The wizard must make a Concentration check against DC 10 + damage dealt + spell level, here DC 10 + 9 + 3 = 22. On a failure the spell is lost.",
+  "must_include": [
+   [
+    "22"
+   ],
+   [
+    "concentration"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "constitution saving throw",
+    "con save"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 MagicOverview > Concentration (Injury)",
+  "common_wrong_rulings": [
+   "Uses a 5e Constitution saving throw at DC 10 or half damage.",
+   "Ignores spell level in the DC.",
+   "Rules the spell simply fails with no check."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-002",
+  "category": "spells_duration_concentration",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I cast defensively so the goblin next to me doesn't get an attack of opportunity. It's magic missile.",
+  "game_state": "Wizard adjacent to a goblin that threatens him. Magic missile is a 1st-level spell.",
+  "correct_ruling": "Casting defensively requires a Concentration check at DC 15 + spell level, here DC 16. Success means no attack of opportunity; failure means the spell is lost.",
+  "must_include": [
+   [
+    "16",
+    "15 + spell level",
+    "15 + 1"
+   ],
+   [
+    "lost",
+    "lose the spell",
+    "spell fails",
+    "wasted"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Concentration (Casting Defensively); CombatI > Casting Defensively",
+  "common_wrong_rulings": [
+   "Says a failed check means the spell goes off but provokes.",
+   "Uses DC 10 + spell level.",
+   "Says magic missile doesn't provoke because it's a ranged spell that hits automatically."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-003",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The ogre has me grappled. I'll cast scorching ray at it.",
+  "game_state": "Sorcerer is grappled (not pinned) by an ogre. Scorching ray is 2nd level, has V and S components.",
+  "correct_ruling": "A grappled caster can only cast spells with no somatic component whose material components (if any) are in hand, and must make a Concentration check DC 20 + spell level. Scorching ray has a somatic component, so it cannot be cast while grappled.",
+  "must_include": [
+   [
+    "somatic"
+   ],
+   [
+    "cannot",
+    "can't",
+    "not able"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 CombatII > Grapple (Cast a Spell); MagicOverview > Concentration (Grappling or Pinned)",
+  "common_wrong_rulings": [
+   "Allows it with a DC 20 + 2 Concentration check, ignoring the somatic restriction.",
+   "Allows it freely with disadvantage on the attack.",
+   "Says grappled casters can't cast anything at all."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-004",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "While grappled, I cast a spell with only a verbal component.",
+  "game_state": "Wizard grappled (not pinned) by a bandit, casting a 1st-level spell with only a verbal component.",
+  "correct_ruling": "Allowed, but the caster must succeed on a Concentration check DC 20 + spell level (DC 21) or lose the spell.",
+  "must_include": [
+   [
+    "21",
+    "20 + spell level",
+    "20 + 1"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Concentration (Grappling or Pinned); CombatII > Grapple",
+  "common_wrong_rulings": [
+   "No check needed for a verbal-only spell.",
+   "Uses DC 15 + spell level (casting defensively DC)."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-005",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm on the galloping horse and I cast lightning bolt behind us.",
+  "game_state": "Wizard riding a galloping horse; lightning bolt is 3rd level.",
+  "correct_ruling": "Violent motion (galloping horse) requires a Concentration check DC 15 + spell level, here DC 18.",
+  "must_include": [
+   [
+    "18",
+    "15 + spell level",
+    "15 + 3"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Concentration (Vigorous/Violent Motion)",
+  "common_wrong_rulings": [
+   "Uses DC 10 + spell level (that is vigorous motion, e.g. a moving mount or bouncing wagon).",
+   "No check required.",
+   "Rules a Ride check instead."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-006",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm riding on a wagon bouncing down the road; I cast sleep on the bandits.",
+  "game_state": "Wizard in a moving wagon on a rough road (vigorous motion). Sleep is 1st level.",
+  "correct_ruling": "Vigorous motion such as a moving mount, a bouncy wagon ride or a small boat in rough water requires a Concentration check DC 10 + spell level, here DC 11.",
+  "must_include": [
+   [
+    "11",
+    "10 + spell level",
+    "10 + 1"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Concentration (Vigorous Motion)",
+  "common_wrong_rulings": [
+   "Uses DC 15 + spell level.",
+   "No check because the wizard isn't the driver."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Exact example list for 'vigorous motion' vs 'violent motion' is from memory; DC 10 + spell level for vigorous motion is believed correct."
+ },
+ {
+  "id": "spl-007",
+  "category": "spells_duration_concentration",
+  "difficulty": "easy",
+  "kind": "bluff_trap",
+  "player_action": "I already have bless up. Now I cast haste on the party. Bless doesn't drop, right?",
+  "game_state": "Cleric cast bless last round; wizard now casts haste. Both are non-concentration spells in 3.5.",
+  "correct_ruling": "Correct, both remain. In 3.5 neither bless nor haste has a Concentration duration; there is no rule limiting a caster to one ongoing spell.",
+  "must_include": [
+   [
+    "both"
+   ],
+   [
+    "no limit",
+    "not concentration",
+    "don't require concentration",
+    "doesn't require concentration",
+    "no concentration",
+    "isn't a concentration",
+    "neither bless nor haste has a concentration",
+    "no rule limiting",
+    "not concentration"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "bless ends",
+    "bless drops",
+    "lose bless",
+    "only one concentration spell"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 Spells (Bless, Haste) duration lines; MagicOverview > Duration",
+  "common_wrong_rulings": [
+   "Applies the 5e rule that a caster can concentrate on only one spell.",
+   "Says bless ends because haste requires concentration."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-008",
+  "category": "spells_duration_concentration",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I keep up detect magic and also walk 30 feet this turn.",
+  "game_state": "Wizard is concentrating on detect magic (Concentration, up to 1 min/level).",
+  "correct_ruling": "Maintaining concentration is a standard action that does not provoke attacks of opportunity; the wizard can still take a move action, so walking 30 feet is fine.",
+  "must_include": [
+   [
+    "standard action"
+   ],
+   [
+    "move action",
+    "can move",
+    "can still move"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "free action to concentrate"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 MagicOverview > Duration (Concentration); CombatII > Actions (Concentrate to maintain a spell)",
+  "common_wrong_rulings": [
+   "Concentrating is a free action.",
+   "Concentrating takes the whole turn (full-round action).",
+   "Moving breaks concentration."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-009",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I dismiss my spell from here. I'm two rooms away, way out of its range.",
+  "game_state": "Wizard earlier cast a spell marked (D) (dismissible) and has since moved well outside the spell's range.",
+  "correct_ruling": "Dismissing a (D) spell is a standard action that does not provoke attacks of opportunity, but the caster must be within range of the spell's effect and speak words of dismissal (or gesture if no verbal component). Out of range, the caster can't dismiss it.",
+  "must_include": [
+   [
+    "within range",
+    "in range"
+   ],
+   [
+    "standard action"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Duration (Dismissible)",
+  "common_wrong_rulings": [
+   "Dismissal is a free action from any distance.",
+   "Any spell can be dismissed at will even without (D)."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Range requirement for dismissal is recalled from MagicOverview > Duration (Dismissible); verify wording."
+ },
+ {
+  "id": "spl-010",
+  "category": "spells_duration_concentration",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I cast mage armor on myself; I'm also wearing my chain shirt. That's +4 and +4, so AC 22?",
+  "game_state": "Wizard with Dex 14 wearing a chain shirt (+4 armor) casts mage armor (+4 armor bonus).",
+  "correct_ruling": "Both are armor bonuses and same-type bonuses don't stack; only the higher (+4) applies. Mage armor adds nothing over the chain shirt (aside from being force). AC is 10 + 4 + 2 = 16.",
+  "must_include": [
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack"
+   ],
+   [
+    "armor bonus"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "ac 20"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 Spells (Mage Armor); CombatI > Armor Class; BasicsAndAbilities/ MagicOverview > Combining Magical Effects (Bonus types)",
+  "common_wrong_rulings": [
+   "Lets them stack because one is magical.",
+   "Says mage armor can't be cast while wearing armor."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-011",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm wearing a chain shirt and I'm a sorcerer. I cast magic missile. Do I have to roll for spell failure?",
+  "game_state": "Sorcerer 4 (no armor proficiency features) wearing a chain shirt (arcane spell failure 20%). Magic missile has V and S components.",
+  "correct_ruling": "Yes. Arcane spells with somatic components are subject to arcane spell failure; roll d%, and the chain shirt gives a 20% chance the spell is lost. Sorcerers have no exemption for light armor.",
+  "must_include": [
+   [
+    "20%",
+    "20 percent"
+   ],
+   [
+    "somatic"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 Equipment > Armor (Arcane Spell Failure); MagicOverview > Components (Somatic)",
+  "common_wrong_rulings": [
+   "Sorcerers cast freely in light armor (that is the bard exemption).",
+   "Rules only a proficiency penalty, as in 5e.",
+   "Says magic missile is exempt because it never misses."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-012",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm a bard in a chain shirt. I cast cure light wounds. Spell failure?",
+  "game_state": "Bard wearing a chain shirt (light armor, 20% ASF), no shield.",
+  "correct_ruling": "No. A bard can cast bard spells while wearing light armor without incurring arcane spell failure. Medium/heavy armor or a shield would impose it.",
+  "must_include": [
+   [
+    "light armor"
+   ],
+   [
+    "without"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "roll for spell failure",
+    "20% chance"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 Classes > Bard (Weapon and Armor Proficiency)",
+  "common_wrong_rulings": [
+   "Applies 20% failure.",
+   "Says cure light wounds is divine so it's exempt (bard spells are arcane)."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-013",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "Wizard: 'I cast a spell with no somatic component in my full plate. No spell failure, right?'",
+  "game_state": "Wizard in full plate (35% ASF) casts a spell whose components are V only.",
+  "correct_ruling": "Correct. Arcane spell failure applies only to spells with somatic components; a spell with no somatic component can be cast in armor without a failure roll.",
+  "must_include": [
+   [
+    "somatic"
+   ],
+   [
+    "no failure",
+    "no spell failure",
+    "no chance",
+    "without a failure",
+    "no arcane spell failure",
+    "doesn't apply",
+    "does not apply"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "35% chance applies"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 Equipment > Arcane Spell Failure; MagicOverview > Components",
+  "common_wrong_rulings": [
+   "Applies the 35% roll anyway.",
+   "Says wizards can't cast in armor at all."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-014",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I cast hold person on the drow. Does its spell resistance matter?",
+  "game_state": "Cleric 7 casts hold person on a creature with SR 13.",
+  "correct_ruling": "Yes. The caster makes a caster level check (1d20 + caster level, so 1d20 + 7) against the SR of 13. If it fails, the spell doesn't affect the target. If it succeeds, the target still gets its Will save.",
+  "must_include": [
+   [
+    "caster level check",
+    "1d20 + 7",
+    "d20 + caster level",
+    "d20+7"
+   ],
+   [
+    "will save",
+    "saving throw",
+    "save"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 SpecialAbilities > Spell Resistance; MagicOverview > Spell Resistance",
+  "common_wrong_rulings": [
+   "Target gets advantage on the save (5e magic resistance).",
+   "SR replaces the saving throw.",
+   "SR adds to the save DC."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-015",
+  "category": "spells_duration_concentration",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "The enemy wizard starts casting; I want to counterspell like in my other game, as a reaction.",
+  "game_state": "Wizard has not readied an action. Enemy wizard is casting on its own turn.",
+  "correct_ruling": "There are no reactions in 3.5. To counterspell you must have readied an action to counter on your turn, then identify the spell with a Spellcraft check (DC 15 + spell level) and cast the same spell (or dispel magic). Without a readied action you can't counter.",
+  "must_include": [
+   [
+    "ready",
+    "readied"
+   ],
+   [
+    "spellcraft"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "use your reaction"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 MagicOverview > Counterspells; CombatII > Ready",
+  "common_wrong_rulings": [
+   "Allows a reaction counterspell (5e).",
+   "Counterspell as an immediate action with no ready.",
+   "No identification check required."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-016",
+  "category": "spells_duration_concentration",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I readied to counter; it's casting lightning bolt. I counter with my own fireball, they're both 3rd-level evocations.",
+  "game_state": "Wizard readied an action to counterspell; identified the enemy's lightning bolt with Spellcraft. Wizard does not have lightning bolt or dispel magic prepared.",
+  "correct_ruling": "Not allowed. A counterspell must normally use the same spell (or dispel magic, or a specific listed counter such as some opposed spells). Same level and school is not enough.",
+  "must_include": [
+   [
+    "same spell"
+   ],
+   [
+    "dispel magic"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Counterspells",
+  "common_wrong_rulings": [
+   "Any spell of equal or higher level counters.",
+   "Any spell of the same school counters."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-017",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm invisible. I cast bless on my allies. Do I stay invisible?",
+  "game_state": "Cleric under invisibility (the 2nd-level spell, not greater invisibility).",
+  "correct_ruling": "Yes. Invisibility ends if the subject attacks, which includes any spell targeting a foe or whose area or effect includes a foe. Bless affects only allies, so invisibility persists. (If an enemy were in bless's area it wouldn't be affected anyway since bless affects allies only.)",
+  "must_include": [
+   [
+    "stay invisible",
+    "remain invisible",
+    "still invisible",
+    "doesn't end",
+    "does not end",
+    "remains",
+    "persists",
+    "stays invisible"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "any spell ends",
+    "casting a spell ends invisibility"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 Spells (Invisibility)",
+  "common_wrong_rulings": [
+   "Casting any spell ends invisibility.",
+   "Invisibility ends at the end of the turn of any action."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-018",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm invisible and I drop a fireball centered on the orcs. I'm still invisible, it wasn't an attack roll.",
+  "game_state": "Wizard under invisibility (not greater).",
+  "correct_ruling": "Invisibility ends. For this spell an attack includes any spell targeting a foe or whose area or effect includes a foe; a fireball including orcs counts.",
+  "must_include": [
+   [
+    "ends",
+    "becomes visible",
+    "visible",
+    "no longer invisible"
+   ],
+   [
+    "area"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 Spells (Invisibility)",
+  "common_wrong_rulings": [
+   "Only attack rolls end invisibility.",
+   "The wizard stays invisible because the orcs made saves."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ }
+]

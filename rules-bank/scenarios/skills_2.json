@@ -1,0 +1,130 @@
+[
+ {
+  "id": "skl-021",
+  "category": "skills_checks",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I use Diplomacy on the hostile orc chief in the middle of combat — one round to make him friendly.",
+  "game_state": "Combat ongoing; orc chief hostile.",
+  "correct_ruling": "Changing an attitude with Diplomacy generally takes 1 full minute. A rushed attempt as a full-round action is possible at a -10 penalty.",
+  "must_include": [
+   [
+    "1 minute",
+    "one minute",
+    "full minute"
+   ],
+   [
+    "-10",
+    "−10",
+    "penalty of 10",
+    "10 penalty"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 SkillsI.rtf > Diplomacy > Action",
+  "common_wrong_rulings": [
+   "Diplomacy as a standard action with no penalty",
+   "Diplomacy impossible in combat"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "skl-022",
+  "category": "skills_checks",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I move silently at full speed past the sleeping guards.",
+  "game_state": "Rogue speed 30 ft.",
+  "correct_ruling": "Moving up to half speed has no penalty; moving more than half speed and up to full speed imposes -5 on Move Silently. Running or charging is practically impossible (-20).",
+  "must_include": [
+   [
+    "-5",
+    "−5",
+    "penalty of 5",
+    "5 penalty"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 SkillsII.rtf > Move Silently",
+  "common_wrong_rulings": [
+   "No penalty at full speed",
+   "Full speed impossible while sneaking"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "skl-023",
+  "category": "skills_checks",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I take 10 on Use Magic Device to activate this wand in a quiet library.",
+  "game_state": "Rogue, not threatened, using a wand of cure light wounds.",
+  "correct_ruling": "No. The Use Magic Device skill text says you can't take 10 on it; taking 20 is also unavailable in practice, because a natural 1 on an activation attempt can lock you out of the item for 24 hours.",
+  "must_include": [
+   [
+    "can't take 10",
+    "cannot take 10",
+    "can not take 10",
+    "not allowed",
+    "can't be used with take 10",
+    "can't take 10"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 SkillsII.rtf > Use Magic Device > Special",
+  "common_wrong_rulings": [
+   "Allowing take 10 out of combat"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "skl-024",
+  "category": "skills_checks",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I keep trying to pick the lock until I get it.",
+  "game_state": "No time pressure, no consequence for failure.",
+  "correct_ruling": "Allowed: Open Lock can be retried, so with no threat or penalty for failure the rogue can take 20, taking 20 times the normal time (20 full-round actions).",
+  "must_include": [
+   [
+    "take 20",
+    "taking 20"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 SkillsI.rtf > Taking 20; SkillsII.rtf > Open Lock",
+  "common_wrong_rulings": [
+   "Only one attempt allowed",
+   "Take 20 takes 1 round"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "skl-025",
+  "category": "skills_checks",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "Climbing a knotted rope against a wall is easy, so DC 5 — and I can climb at full speed.",
+  "game_state": "Fighter climbing a knotted rope against a wall.",
+  "correct_ruling": "A knotted rope with a wall to brace against is DC 0. Normal climbing is at one-quarter speed as a move action; accelerated climbing (half speed) is at -5.",
+  "must_include": [
+   [
+    "quarter",
+    "1/4",
+    "one-fourth"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 SkillsI.rtf > Climb",
+  "common_wrong_rulings": [
+   "Full speed climbing",
+   "Half speed as the default"
+  ],
+  "confidence": "unsure",
+  "confidence_note": "DC 0 for knotted rope with wall recalled from the Climb DC table; scored point (quarter speed) is confident."
+ }
+]

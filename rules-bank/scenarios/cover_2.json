@@ -1,0 +1,420 @@
+[
+ {
+  "id": "cov-018",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "bluff_trap",
+  "player_action": "The orc is behind a waist-high crate. That's half cover, so +2 AC, right?",
+  "game_state": "Low obstacle partially between archer and target.",
+  "correct_ruling": "3.5 doesn't use 5e half/three-quarters cover. Normal cover gives +4 AC (+2 Reflex). The DM may judge the obstacle to give only partial cover (+2 AC, +1 Reflex) as an optional variation, but there is no 'half cover' category.",
+  "must_include": [
+   [
+    "+4",
+    "plus 4",
+    "four"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "three-quarters cover gives +5"
+   ]
+  ],
+  "srd_reference": "Combat > Combat Modifiers > Cover (Varying Degrees of Cover)",
+  "common_wrong_rulings": [
+   "Applies 5e half cover +2 as the default"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-019",
+  "category": "cover_concealment",
+  "difficulty": "hard",
+  "kind": "dm_discretion",
+  "player_action": "The goblin is behind a thin curtain of hanging vines that cover maybe half his body. How much cover?",
+  "game_state": "Unusual partial obstruction.",
+  "correct_ruling": "Degrees of cover beyond the standard cases are the DM's judgment. The SRD lets the DM grant partial cover (half the normal bonuses, +2 AC/+1 Reflex) or improved cover; vines may instead count as concealment. The DM decides.",
+  "must_include": [
+   [
+    "dungeon master",
+    "judgment",
+    "discretion",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Combat Modifiers > Cover (Varying Degrees of Cover); Concealment",
+  "common_wrong_rulings": [
+   "States a fixed rule that doesn't exist"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-020",
+  "category": "cover_concealment",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I attack with my longspear (reach) at the kobold 10 feet away; an ally stands between us.",
+  "game_state": "Reach weapon attack through a square occupied by an ally.",
+  "correct_ruling": "For reach weapon attacks, cover is determined as if making a ranged attack (choose a corner of your square and trace lines to the target's square). An intervening creature therefore gives the target cover, typically +4 AC.",
+  "must_include": [
+   [
+    "ranged"
+   ],
+   [
+    "cover"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Combat Modifiers > Cover (Cover and Reach Weapons)",
+  "common_wrong_rulings": [
+   "Says reach attacks can't go past allies at all",
+   "Ignores cover"
+  ],
+  "confidence": "unsure",
+  "confidence_note": "I'm sure reach attacks use ranged-attack cover rules; whether an intervening ally counts as soft cover for a reach melee attack (soft cover text says 'ranged attacks') is unclear in RAW."
+ },
+ {
+  "id": "cov-021",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm in total darkness with no darkvision, fighting an orc that has darkvision. What happens?",
+  "game_state": "No light. PC has normal vision; orc has darkvision 60 ft.",
+  "correct_ruling": "To the PC, the orc has total concealment (50% miss chance, must pinpoint its square); the PC is effectively blinded in the dark. The orc sees the PC normally with darkvision.",
+  "must_include": [
+   [
+    "50%",
+    "50 percent",
+    "fifty",
+    "total concealment"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Combat Modifiers > Total Concealment; Special Abilities > Darkvision",
+  "common_wrong_rulings": [
+   "Gives both sides disadvantage"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-022",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The displacer-ish illusionist cast displacement. What's my miss chance?",
+  "game_state": "Target under displacement spell.",
+  "correct_ruling": "Displacement gives a 50% miss chance, as total concealment, though unlike real total concealment it doesn't prevent targeting normally.",
+  "must_include": [
+   [
+    "50%",
+    "50 percent",
+    "fifty"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Spells > Displacement",
+  "common_wrong_rulings": [
+   "Uses 20%"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-023",
+  "category": "cover_concealment",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "The enemy cast blur. Miss chance?",
+  "game_state": "Target under blur.",
+  "correct_ruling": "Blur grants concealment, a 20% miss chance.",
+  "must_include": [
+   [
+    "20%",
+    "20 percent",
+    "twenty"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Spells > Blur",
+  "common_wrong_rulings": [
+   "Uses 50%",
+   "Gives disadvantage"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-024",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "I rolled a natural 20 on my attack on the blurred guy, so it can't miss. Concealment doesn't apply to crits, everyone knows that.",
+  "game_state": "Target has concealment from blur. Attacker rolls a natural 20.",
+  "correct_ruling": "A natural 20 is an automatic hit, but the concealment miss chance is still rolled after a hit. If the miss chance succeeds, the attack misses, crit or not.",
+  "must_include": [
+   [
+    "miss chance",
+    "still roll",
+    "20%",
+    "still applies"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Combat Modifiers > Concealment (Concealment Miss Chance)",
+  "common_wrong_rulings": [
+   "Says a natural 20 bypasses concealment"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-025",
+  "category": "cover_concealment",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I'm a rogue and the target has concealment from fog. Can I sneak attack it?",
+  "game_state": "Rogue flanking a target that has concealment.",
+  "correct_ruling": "No. A rogue can't sneak attack a creature with concealment.",
+  "must_include": [
+   [
+    "can't",
+    "cannot",
+    "no sneak",
+    "not allowed"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Classes > Rogue > Sneak Attack",
+  "common_wrong_rulings": [
+   "Allows sneak attack if the miss chance is passed"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-026",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The kobold is behind the tower shield guy... no wait, I'm the tower shield guy. Can I use my tower shield as cover?",
+  "game_state": "Fighter with a tower shield.",
+  "correct_ruling": "As a standard action, the wielder can use a tower shield to grant total cover on one edge of their space, but they can't attack with it while doing so, and normally the tower shield gives +4 shield bonus to AC (and -2 to attack rolls due to encumbrance).",
+  "must_include": [
+   [
+    "total cover",
+    "cover"
+   ],
+   [
+    "standard action",
+    "edge",
+    "one side"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Equipment > Armor > Shield, Tower",
+  "common_wrong_rulings": [
+   "Gives cover from all directions"
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Confident on total cover along one edge as a standard action; less certain of the exact wording about attacking while using it."
+ },
+ {
+  "id": "cov-027",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "dm_discretion",
+  "player_action": "I want to hide in the tall grass. Does it give me concealment?",
+  "game_state": "Meadow of tall grass; no specific terrain stats given by the adventure.",
+  "correct_ruling": "Unless the adventure defines it, whether and how much the vegetation grants concealment is the DM's call (the SRD's terrain sections give guidance, e.g. undergrowth providing concealment). With concealment, the PC can attempt a Hide check.",
+  "must_include": [
+   [
+    "dungeon master",
+    "discretion",
+    "judgment",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ],
+   [
+    "hide"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "stealth check"
+   ]
+  ],
+  "srd_reference": "Skills > Hide; Environment > Wilderness Terrain (undergrowth)",
+  "common_wrong_rulings": [
+   "Rules it impossible flatly",
+   "Uses 5e lightly obscured"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-028",
+  "category": "cover_concealment",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I'm standing behind the wizard who is behind the pillar. Do I get cover from the archer?",
+  "game_state": "Ranged attacker: the archer picks a corner of their square; check lines to the target square's corners.",
+  "correct_ruling": "Cover from ranged attacks is determined by choosing a corner of the attacker's square: if any line from that corner to any corner of the target's square passes through a square or border that blocks line of effect (or contains a creature), the target has cover (or soft cover for creatures).",
+  "must_include": [
+   [
+    "corner"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Combat Modifiers > Cover",
+  "common_wrong_rulings": [
+   "Uses centre-to-centre line",
+   "Uses 5e degrees of obstruction"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-029",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm invisible; can I still be targeted by fireball?",
+  "game_state": "Invisible PC in the area of a fireball cast at a point.",
+  "correct_ruling": "Yes. Area spells affect everything in the area; invisibility (total concealment) gives no miss chance or protection against an area effect. The PC still saves normally.",
+  "must_include": [
+   [
+    "still affected",
+    "affects",
+    "affect everything",
+    "still caught",
+    "no protection"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "50% miss chance"
+   ]
+  ],
+  "srd_reference": "Special Abilities > Invisibility; Spells > Fireball; Magic Overview > Area",
+  "common_wrong_rulings": [
+   "Applies the 50% miss chance to the area spell"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-030",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "I'm sniping from behind the tree and I got cover, so I should also be hidden and get sneak attack every shot, like my last DM allowed.",
+  "game_state": "Rogue 30 ft from target, behind a tree. Target is aware of the rogue after the first shot.",
+  "correct_ruling": "Cover allows a Hide check, but attacking reveals you. Sniping: after a ranged attack from hiding you can try to hide again as a move action, at -20 on the Hide check. Sneak attack applies only if the target is denied Dex or flanked, and ranged sneak attacks are limited to within 30 feet.",
+  "must_include": [
+   [
+    "-20",
+    "minus 20",
+    "twenty"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Skills > Hide (Sniping); Classes > Rogue > Sneak Attack",
+  "common_wrong_rulings": [
+   "Grants automatic hidden status each turn"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-031",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "bluff_trap",
+  "player_action": "The giant's in the way of my shot. Big creatures give total cover, right?",
+  "game_state": "An ally creature larger than the target sits on the line of fire.",
+  "correct_ruling": "No: intervening creatures give soft cover (+4 AC vs ranged). Creature size relative to target doesn't grant total cover under standard rules; the DM might rule a much larger creature fully blocks the view, but by default it's soft cover.",
+  "must_include": [
+   [
+    "soft cover"
+   ],
+   [
+    "+4",
+    "plus 4",
+    "four"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Combat Modifiers > Soft Cover",
+  "common_wrong_rulings": [
+   "Gives total cover"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ }
+]

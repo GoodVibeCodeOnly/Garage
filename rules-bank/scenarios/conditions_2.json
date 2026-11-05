@@ -1,0 +1,607 @@
+[
+ {
+  "id": "cnd-019",
+  "category": "conditions",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I'm fatigued from the barbarian rage ending. I charge the hobgoblin.",
+  "game_state": "Barbarian 4, rage just ended, fatigued.",
+  "correct_ruling": "A fatigued character can neither run nor charge, and takes -2 to Strength and Dexterity. The charge is not allowed.",
+  "must_include": [
+   [
+    "can't charge",
+    "cannot charge",
+    "neither run nor charge",
+    "can not charge",
+    "no charging",
+    "can't run or charge"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Fatigued; ClassesI.rtf > Barbarian > Rage",
+  "common_wrong_rulings": [
+   "Fatigue is a 5e exhaustion level with disadvantage on ability checks.",
+   "Fatigue only affects speed."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-020",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "bluff_trap",
+  "player_action": "I'm fatigued and then forced-march into more fatigue. I'm at exhaustion level 2 now, right? Disadvantage on attacks?",
+  "game_state": "Fatigued PC does something that would cause fatigue again.",
+  "correct_ruling": "3.5 has no exhaustion levels. A fatigued character who does something that would normally cause fatigue becomes exhausted: half speed and -6 to Strength and Dexterity. After 1 hour of complete rest, an exhausted character becomes fatigued.",
+  "must_include": [
+   [
+    "exhausted"
+   ],
+   [
+    "-6"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Exhausted; Fatigued",
+  "common_wrong_rulings": [
+   "5e exhaustion levels.",
+   "Fatigue penalties double to -4."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-021",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "How long do I need to rest to stop being fatigued after the rage?",
+  "game_state": "Fatigued barbarian.",
+  "correct_ruling": "After 8 hours of complete rest, a fatigued character is no longer fatigued.",
+  "must_include": [
+   [
+    "8 hours",
+    "eight hours"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Fatigued",
+  "common_wrong_rulings": [
+   "A short rest of 1 hour.",
+   "It ends at the end of the encounter."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-022",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I've been blinded by the glitterdust. What changes for me?",
+  "game_state": "Fighter blinded.",
+  "correct_ruling": "Blinded: he can't see, takes -2 to AC, loses his Dex bonus to AC, moves at half speed, and takes -4 on most Strength- and Dexterity-based skill checks. All opponents effectively have total concealment (50% miss chance) relative to him.",
+  "must_include": [
+   [
+    "-2"
+   ],
+   [
+    "50%",
+    "total concealment",
+    "50 percent"
+   ],
+   [
+    "half speed"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "disadvantage"
+   ]
+  ],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Blinded",
+  "common_wrong_rulings": [
+   "Disadvantage on attacks, advantage against (5e).",
+   "Can't attack at all."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-023",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm caught in a web spell and entangled. I'll cast magic missile.",
+  "game_state": "Wizard entangled (not anchored question aside), wants to cast.",
+  "correct_ruling": "An entangled character who tries to cast a spell must make a Concentration check (DC 15) or lose the spell. He also takes -2 on attacks, -4 Dex, moves at half speed (or not at all if anchored), and can't run or charge.",
+  "must_include": [
+   [
+    "concentration"
+   ],
+   [
+    "15"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Entangled",
+  "common_wrong_rulings": [
+   "Entangled creatures can't cast spells.",
+   "No effect on spellcasting."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "The SRD appears inconsistent: the condition summary gives Concentration DC 15 for entangled casting, the Concentration skill table gives 15 + spell level. Both accepted."
+ },
+ {
+  "id": "cnd-024",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "I'm nauseated, but drinking a potion is basically just a move action, right? It's one sip. Come on.",
+  "game_state": "Nauseated PC wants to drink a potion of cure moderate wounds.",
+  "correct_ruling": "No. A nauseated creature can take only a single move action per turn; it can't attack, cast, concentrate, or take other actions. Drinking a potion is a standard action, so it isn't allowed.",
+  "must_include": [
+   [
+    "standard action"
+   ],
+   [
+    "move action"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "you drink",
+    "go ahead"
+   ]
+  ],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Nauseated; CombatII.rtf > Standard Actions > Use Special Ability / Activate Magic Item",
+  "common_wrong_rulings": [
+   "Allowing it because it's quick.",
+   "Allowing it as a bonus action (5e)."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-025",
+  "category": "conditions",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I'm sickened from the troglodyte stench. Can I still cast?",
+  "game_state": "Cleric sickened.",
+  "correct_ruling": "Yes, you can still cast. Sickened only imposes -2 on attack rolls, weapon damage rolls, saving throws, skill checks, and ability checks. (Nauseated is the condition that prevents casting.)",
+  "must_include": [
+   [
+    "-2"
+   ],
+   [
+    "can still cast",
+    "can cast",
+    "may cast",
+    "doesn't prevent",
+    "does not prevent",
+    "nauseated"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "can't cast",
+    "cannot cast"
+   ]
+  ],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Sickened",
+  "common_wrong_rulings": [
+   "Confusing sickened with nauseated and forbidding actions.",
+   "Sickened halves speed."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-026",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "My friend is dying at -6. I make a Heal check to stabilize him.",
+  "game_state": "Ally at -6 hp; PC adjacent with Heal skill.",
+  "correct_ruling": "A DC 15 Heal check (standard action) stabilizes a dying character. He remains unconscious at -6 but stops losing hit points.",
+  "must_include": [
+   [
+    "dc 15",
+    "15"
+   ],
+   [
+    "stable",
+    "stabiliz"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "death save"
+   ]
+  ],
+  "srd_reference": "SkillsII.rtf > Heal (First Aid); CombatI.rtf > Injury and Death > Stable Characters",
+  "common_wrong_rulings": [
+   "DC 10 Medicine check (5e).",
+   "Stabilizing also restores him to 1 hp."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-027",
+  "category": "conditions",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "The ogre hits my halfling with a sap for 15 nonlethal. I have 15 hp left. What happens? And what if it had been 16?",
+  "game_state": "Halfling with 15 current hp, no prior nonlethal damage.",
+  "correct_ruling": "When nonlethal damage equals current hit points, the character is staggered (only a single move or standard action each round). When it exceeds current hit points, the character falls unconscious. So 15 = staggered, 16 = unconscious.",
+  "must_include": [
+   [
+    "staggered"
+   ],
+   [
+    "unconscious"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Nonlethal Damage > Staggered and Unconscious",
+  "common_wrong_rulings": [
+   "Nonlethal reduces hp like normal damage.",
+   "At 15 he's disabled."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-028",
+  "category": "conditions",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "The bandit is helpless, tied up. I hit him with my sword. Any bonus?",
+  "game_state": "Bound, helpless bandit; fighter adjacent with longsword.",
+  "correct_ruling": "Melee attacks against a helpless defender get a +4 bonus, and the defender's Dex is treated as 0 (-5 modifier to AC). Ranged attacks get no special bonus beyond the Dex change. Rogues can sneak attack a helpless target.",
+  "must_include": [
+   [
+    "+4"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "advantage",
+    "automatic critical"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Combat Modifiers > Helpless Defenders",
+  "common_wrong_rulings": [
+   "Automatic critical hit on any hit (5e paralyzed).",
+   "Automatic hit without a full-round coup de grace."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-029",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The harpy is flying and gets paralyzed by the ghoul touch. What happens?",
+  "game_state": "Winged harpy flying 30 ft up, paralyzed.",
+  "correct_ruling": "A paralyzed winged creature flying in the air can't flap its wings and falls (taking falling damage). A paralyzed swimmer can't swim and may drown.",
+  "must_include": [
+   [
+    "falls",
+    "fall"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Paralyzed",
+  "common_wrong_rulings": [
+   "It hovers in place.",
+   "It glides down safely."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-030",
+  "category": "conditions",
+  "difficulty": "hard",
+  "kind": "dm_discretion",
+  "player_action": "I'm at 0 hp, disabled. I want to lie still and pretend I'm dead so the bandits move on.",
+  "game_state": "Disabled PC at 0 hp, bandits nearby.",
+  "correct_ruling": "The rules don't specifically cover feigning death; the DM decides. A reasonable approach is a Bluff check opposed by the bandits' Sense Motive, with circumstance modifiers; staying still requires no strenuous action, so no hp is lost.",
+  "must_include": [
+   [
+    "the rules don't",
+    "rules do not",
+    "discretion",
+    "not covered",
+    "judgment",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SkillsI.rtf > Bluff; CombatI.rtf > Disabled",
+  "common_wrong_rulings": [
+   "It's impossible by the rules.",
+   "Automatic success because he's at 0 hp."
+  ],
+  "confidence": "confident",
+  "confidence_note": "Judgment item; the SRD has no feign-death rule."
+ },
+ {
+  "id": "cnd-031",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "dm_discretion",
+  "player_action": "We marched for two days without sleeping. What penalties do I get?",
+  "game_state": "Party has skipped sleep for 48 hours, no forced march beyond 8 hours/day.",
+  "correct_ruling": "The SRD has no general sleep-deprivation rule (only forced-march and spellcaster rest requirements). The DM decides; imposing fatigued (possibly escalating to exhausted) is a common, defensible call.",
+  "must_include": [
+   [
+    "no specific rule",
+    "doesn't specify",
+    "does not specify",
+    "not covered",
+    "discretion",
+    "no rule",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "doesn't cover",
+    "does not cover",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Movement.rtf > Forced March (closest rule); AbilitiesandConditions.rtf > Fatigued",
+  "common_wrong_rulings": [
+   "Inventing an exact RAW penalty table.",
+   "5e: exhaustion level per missed long rest."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Fairly sure no general sleep-deprivation rule exists in the SRD; forced march rules do apply if they marched more than 8 hours per day."
+ },
+ {
+  "id": "cnd-032",
+  "category": "conditions",
+  "difficulty": "hard",
+  "kind": "dm_discretion",
+  "player_action": "I'm stunned while balancing on a narrow ledge. Do I fall?",
+  "game_state": "Rogue on a 6-inch ledge (Balance check normally required), stunned.",
+  "correct_ruling": "The rules don't say directly whether a stunned creature falls from a ledge; it can't take actions and loses its Dex bonus to AC, so it can't make the move it was attempting. Whether it falls is a DM call; a common ruling is to require a Balance check or rule it holds still without moving.",
+  "must_include": [
+   [
+    "discretion",
+    "rules don't",
+    "not specified",
+    "judgment",
+    "doesn't specify",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "AbilitiesandConditions.rtf > Stunned; SkillsI.rtf > Balance",
+  "common_wrong_rulings": [
+   "Automatically falls by RAW.",
+   "Stunned has no effect on balance."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Judgment call; Balance text notes being attacked while balancing, but not stunned."
+ },
+ {
+  "id": "cnd-033",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "I'm a barbarian — raging means I just shrug off the fear from the dragon. I'm not shaken.",
+  "game_state": "Barbarian 5 raging, failed Will save vs frightful presence (shaken).",
+  "correct_ruling": "Rage grants +2 morale on Will saves (already applied); it doesn't grant fear immunity in the core rules. He failed, so he's shaken.",
+  "must_include": [
+   [
+    "shaken"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "immune to fear"
+   ]
+  ],
+  "srd_reference": "ClassesI.rtf > Barbarian > Rage",
+  "common_wrong_rulings": [
+   "Rage grants fear immunity.",
+   "Re-rolling the save because of rage."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-034",
+  "category": "conditions",
+  "difficulty": "easy",
+  "kind": "player_pressure",
+  "player_action": "I've got 18 Con. In our last group we died at negative Con score. Can't I just keep fighting until -18?",
+  "game_state": "PC at -11 hp.",
+  "correct_ruling": "The core rule is death at -10 hp; negative-Con death is a house rule. By the rules he's dead (a DM may adopt a house rule, but that's a change to RAW).",
+  "must_include": [
+   [
+    "-10"
+   ],
+   [
+    "dead",
+    "dies",
+    "death"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Injury and Death > Dead",
+  "common_wrong_rulings": [
+   "Accepting the house rule as RAW.",
+   "He's dying, not dead."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-035",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "My buddy is stable at -3. How does he wake up?",
+  "game_state": "Stable, unconscious ally at -3 hp, no magical healing, nobody tending him.",
+  "correct_ruling": "A stable character who hasn't been tended has a 10% chance each hour to become conscious (disabled); otherwise he loses 1 hp. If tended by someone with Heal, he doesn't lose hp; healing (magic or natural) is how hp returns.",
+  "must_include": [
+   [
+    "10%",
+    "10 percent"
+   ],
+   [
+    "hour"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "death save"
+   ]
+  ],
+  "srd_reference": "CombatI.rtf > Injury and Death > Stable Characters and Recovery",
+  "common_wrong_rulings": [
+   "He regains 1 hp after 1d4 hours (5e).",
+   "He stays stable indefinitely."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Recall: unaided stable character each hour 10% chance to become conscious; if not, loses 1 hp. Check SRD wording for the tended case."
+ },
+ {
+  "id": "cnd-036",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The gelatinous cube is in the room. I cast blindness on it.",
+  "game_state": "Gelatinous cube (ooze, blind, uses blindsight).",
+  "correct_ruling": "Oozes are blind (they have blindsight) and immune to gaze attacks, visual effects, illusions, and other attack forms that rely on sight; the blindness spell accomplishes nothing.",
+  "must_include": [
+   [
+    "no effect",
+    "immune",
+    "already blind",
+    "nothing"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "TypesSubtypesAbilities.rtf > Ooze Type",
+  "common_wrong_rulings": [
+   "It gets a Fort save as normal.",
+   "It's blinded and takes -2 AC."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "cnd-037",
+  "category": "conditions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm deafened from the thunderstone. Does that affect my spellcasting?",
+  "game_state": "Sorcerer deafened, casting a spell with a verbal component.",
+  "correct_ruling": "A deafened character has a 20% chance of spell failure when casting spells with verbal components; he also takes -4 on initiative and automatically fails Listen checks.",
+  "must_include": [
+   [
+    "20%",
+    "20 percent"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Deafened",
+  "common_wrong_rulings": [
+   "No effect on casting.",
+   "He can't cast verbal spells at all."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ }
+]

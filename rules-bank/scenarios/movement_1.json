@@ -1,0 +1,477 @@
+[
+ {
+  "id": "mov-001",
+  "category": "movement_terrain",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I move diagonally three squares. That's 15 feet, right?",
+  "game_state": "Grid combat, speed 30, open terrain.",
+  "correct_ruling": "No. Diagonals alternate 5 ft and 10 ft: the first diagonal costs 5, the second 10, the third 5, so three diagonals cost 20 ft.",
+  "must_include": [
+   [
+    "20 feet",
+    "20 ft",
+    "twenty feet"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Movement, Position, and Distance > Measuring Distance > Diagonals",
+  "common_wrong_rulings": [
+   "Every diagonal costs 5 ft.",
+   "Every diagonal costs 10 ft."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-002",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I move 2 squares through rubble (difficult terrain), straight line.",
+  "game_state": "Speed 30, rubble is difficult terrain.",
+  "correct_ruling": "Difficult terrain costs 2 squares of movement per square (10 ft per square), so two squares cost 20 ft.",
+  "must_include": [
+   [
+    "20 feet",
+    "20 ft",
+    "double",
+    "twice"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Movement > Moving Through a Square > Difficult Terrain",
+  "common_wrong_rulings": [
+   "Half speed rounding differently.",
+   "Difficult terrain gives a penalty only to attacks."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-003",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I move diagonally through one square of difficult terrain.",
+  "game_state": "Speed 30, single diagonal move into difficult terrain, first diagonal this move.",
+  "correct_ruling": "A diagonal into difficult terrain counts as 3 squares (15 ft).",
+  "must_include": [
+   [
+    "15 feet",
+    "15 ft",
+    "3 squares",
+    "three squares"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Movement > Difficult Terrain",
+  "common_wrong_rulings": [
+   "10 ft (just doubling 5).",
+   "20 ft (doubling 10)."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-004",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm in the mud. I take a 5-foot step out of it to avoid provoking.",
+  "game_state": "Fighter stands in difficult terrain (mud), adjacent to an orc.",
+  "correct_ruling": "Per the SRD you can't take a 5-foot step in difficult terrain, so the fighter can't step out of the mud; he must use a normal move (which may provoke) or withdraw.",
+  "must_include": [
+   [
+    "difficult terrain"
+   ],
+   [
+    "can't",
+    "cannot",
+    "not allowed"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Movement > Difficult Terrain; CombatII.rtf > Take 5-Foot Step",
+  "common_wrong_rulings": [
+   "Allows 5-foot step in mud."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "SRD says you can't take a 5-foot step in difficult terrain; whether that covers stepping OUT of difficult terrain into normal terrain is read differently by tables."
+ },
+ {
+  "id": "mov-005",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I charge the ogre — I'll go around the table to get to it.",
+  "game_state": "Barbarian speed 40, ogre 30 ft away, a table blocks the straight line.",
+  "correct_ruling": "A charge requires moving in a straight line directly toward the target to the closest square from which you can attack, with an unobstructed path. You can't charge around obstacles; the barbarian can't charge here.",
+  "must_include": [
+   [
+    "straight line",
+    "direct line"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Full-Round Actions > Charge",
+  "common_wrong_rulings": [
+   "Charge can curve around obstacles.",
+   "Charge just needs line of sight."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-006",
+  "category": "movement_terrain",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I charge the goblin. What bonuses and penalties do I get?",
+  "game_state": "Fighter, goblin 20 ft away in a straight unobstructed line.",
+  "correct_ruling": "Charging gives +2 on the single melee attack roll and -2 to AC until the start of your next turn. You move up to double speed and must move at least 10 ft.",
+  "must_include": [
+   [
+    "+2"
+   ],
+   [
+    "-2"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Full-Round Actions > Charge",
+  "common_wrong_rulings": [
+   "+2 damage.",
+   "Charge allows full attack."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-007",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I charge the kobold that's 5 feet away.",
+  "game_state": "Fighter adjacent to a kobold.",
+  "correct_ruling": "You must move at least 10 ft (2 squares) toward the target to charge. Already adjacent, the fighter can't charge this kobold; he just attacks.",
+  "must_include": [
+   [
+    "10 feet",
+    "10 ft",
+    "two squares",
+    "2 squares"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Charge > Movement During a Charge",
+  "common_wrong_rulings": [
+   "Charge any distance."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-008",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I run. How far, and can I run through the rubble?",
+  "game_state": "Human fighter, base speed 30, but wearing medium armor (speed 20), light load.",
+  "correct_ruling": "Running is a full-round action at x4 speed; only heavy armor or a heavy load limits it to x3. In medium armor the human's speed is 20, so 80 ft. You can't run across difficult terrain such as rubble, and you lose your Dex bonus to AC while running.",
+  "must_include": [
+   [
+    "x4",
+    "×4",
+    "four times",
+    "times 4",
+    "80"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "90 ft",
+    "90 feet"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Full-Round Actions > Run; CombatI.rtf > Difficult Terrain",
+  "common_wrong_rulings": [
+   "Medium armor limits running to x3 (90 ft).",
+   "Running is a move action."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-009",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I withdraw from the two orcs I'm fighting.",
+  "game_state": "Wizard speed 30, threatened by two orcs. No other enemies.",
+  "correct_ruling": "Withdraw is a full-round action: move up to double speed; the square you start in is not considered threatened by visible enemies, so leaving it doesn't provoke from them. Later squares you pass through that are threatened can still provoke.",
+  "must_include": [
+   [
+    "full-round",
+    "full round"
+   ],
+   [
+    "starting square",
+    "square you start",
+    "first square",
+    "start in"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Full-Round Actions > Withdraw",
+  "common_wrong_rulings": [
+   "Withdraw prevents all AoOs during the move.",
+   "Withdraw is a move action."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-010",
+  "category": "movement_terrain",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I withdraw from both orcs. I'm blinded, so I can't see either of them.",
+  "game_state": "Fighter blinded; two orcs adjacent.",
+  "correct_ruling": "Withdraw only protects against visible enemies; invisible (unseen) enemies still get AoOs for leaving the starting square. A blinded character can't see them, so both can still attack.",
+  "must_include": [
+   [
+    "visible",
+    "see"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Full-Round Actions > Withdraw",
+  "common_wrong_rulings": [
+   "Withdraw protects against all enemies."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "SRD says invisible enemies still get AoOs; applying that to a blinded withdrawer is a reasonable extension rather than exact text."
+ },
+ {
+  "id": "mov-011",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "My Medium character squeezes through a 2.5-foot-wide crack while fighting.",
+  "game_state": "Medium fighter, crack is at least half his space width.",
+  "correct_ruling": "Squeezing: each square moved costs 2 squares, and while squeezing you take -4 on attack rolls and -4 to AC.",
+  "must_include": [
+   [
+    "-4"
+   ],
+   [
+    "two squares",
+    "2 squares",
+    "double",
+    "twice"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Big and Little Creatures in Combat > Squeezing / Movement > Squeezing",
+  "common_wrong_rulings": [
+   "No penalty to squeezing.",
+   "-2 penalties."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-012",
+  "category": "movement_terrain",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "Rogue and I are on opposite sides of the bugbear. Do we flank?",
+  "game_state": "Fighter and rogue each adjacent to bugbear on directly opposite sides, both threatening.",
+  "correct_ruling": "Yes. Flanking gives each a +2 flanking bonus on melee attacks, and the rogue can sneak attack.",
+  "must_include": [
+   [
+    "+2"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Special Attacks > Flanking",
+  "common_wrong_rulings": [
+   "Advantage (5e).",
+   "+4 bonus."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-013",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm diagonally adjacent to the troll on its northeast; the rogue is directly south. We're flanking, right?",
+  "game_state": "Medium troll-sized stand-in occupying one square. Fighter diagonal at its NE corner; rogue directly south.",
+  "correct_ruling": "No. Flanking requires a line drawn between the two attackers' centers to pass through opposite sides or opposite corners of the defender's space. NE and S don't satisfy that, so no flank.",
+  "must_include": [
+   [
+    "opposite"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Special Attacks > Flanking",
+  "common_wrong_rulings": [
+   "Any two allies adjacent flank."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-014",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm holding a bow at the orc's back while the fighter is opposite. We flank, so +2 for me too?",
+  "game_state": "Archer adjacent with bow only (no melee weapon, no armor spikes, no Improved Unarmed Strike).",
+  "correct_ruling": "No. Only a creature that threatens the defender can flank, and ranged weapons don't let you threaten. The archer doesn't help flank and gets no flanking bonus (flanking bonus applies to melee attacks anyway).",
+  "must_include": [
+   [
+    "threaten"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Flanking; CombatI.rtf > Threatened Squares",
+  "common_wrong_rulings": [
+   "Archers can flank by position alone."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-015",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I move through the ogre's square to get behind it.",
+  "game_state": "Rogue speed 30, ogre hostile, not helpless.",
+  "correct_ruling": "You can't move through an enemy's square unless it is helpless, or you use Tumble (DC 25) or overrun. Moving through allies' squares is fine.",
+  "must_include": [
+   [
+    "tumble",
+    "overrun"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Moving Through a Square > Enemy",
+  "common_wrong_rulings": [
+   "Move through enemies at double cost (5e rule)."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-016",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I tumble past the guard at half speed to avoid the attack of opportunity.",
+  "game_state": "Rogue with ranks in Tumble, light armor, speed 30.",
+  "correct_ruling": "A DC 15 Tumble check lets you move through threatened squares at half speed without provoking (DC increases by 2 per additional opponent). Failure means you provoke normally.",
+  "must_include": [
+   [
+    "dc 15",
+    "15"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SkillsII.rtf > Tumble",
+  "common_wrong_rulings": [
+   "DC 10.",
+   "Tumble always avoids AoOs."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-017",
+  "category": "movement_terrain",
+  "difficulty": "easy",
+  "kind": "bluff_trap",
+  "player_action": "I drop prone as part of my movement and then stand back up for free.",
+  "game_state": "Fighter, normal round.",
+  "correct_ruling": "Dropping prone is a free action, but standing up from prone is a move action and provokes attacks of opportunity.",
+  "must_include": [
+   [
+    "move action"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "half your movement",
+    "half of your movement",
+    "half movement"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Move Actions > Stand up from prone; Free Actions > Drop prone",
+  "common_wrong_rulings": [
+   "Standing costs half your speed (5e).",
+   "Standing is free."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-018",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "dm_discretion",
+  "player_action": "I want to swing on the chandelier across the hall and kick the duke.",
+  "game_state": "Swashbuckler-type rogue, chandelier 20 ft away, no specific rule.",
+  "correct_ruling": "The SRD has no specific chandelier-swinging rule; it's a DM call, typically resolved with an appropriate check (e.g., Jump, Climb, Tumble, or Dex) and DM-set DC and movement cost.",
+  "must_include": [
+   [
+    "game master",
+    "discretion",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "No specific rule; DM adjudication (Skills: DM sets DCs)",
+  "common_wrong_rulings": [
+   "Claiming a specific swinging rule exists.",
+   "Flat refusal as impossible."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ }
+]

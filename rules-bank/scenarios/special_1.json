@@ -1,0 +1,328 @@
+[
+ {
+  "id": "spa-001",
+  "category": "special_attacks",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I bull rush the orc off the cliff.",
+  "game_state": "Medium fighter, no Improved Bull Rush, orc adjacent standing 5 ft from a cliff edge.",
+  "correct_ruling": "Bull rush is a standard action (or part of a charge); you move into the defender's square, provoking AoOs from all threatening creatures including the defender (without Improved Bull Rush), then make opposed Strength checks with size modifiers; if you win you push the defender back 5 ft plus 5 ft per 5 points you beat it by (limited by your movement), so a push off the cliff is possible.",
+  "must_include": [
+   [
+    "strength check",
+    "opposed strength",
+    "str check"
+   ],
+   [
+    "5 feet",
+    "5 ft",
+    "five feet"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "athletics"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Bull Rush",
+  "common_wrong_rulings": [
+   "Shove: Athletics vs Athletics (5e).",
+   "Pushes only 5 ft no matter what."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spa-002",
+  "category": "special_attacks",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I trip the ogre.",
+  "game_state": "Medium fighter vs Large ogre, no Improved Trip, armed with a longsword.",
+  "correct_ruling": "Tripping is an unarmed melee touch attack, so without Improved Trip (and with a longsword, not a trip weapon) it provokes an attack of opportunity from the ogre. If it hits, make an opposed check: your Strength against the ogre's Strength or Dexterity (whichever is higher), with the Large ogre getting +4 for being one size larger. If you lose, the ogre may immediately try to trip you in return.",
+  "must_include": [
+   [
+    "touch attack"
+   ],
+   [
+    "+4",
+    "size"
+   ],
+   [
+    "trip you",
+    "in return",
+    "counter"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Trip",
+  "common_wrong_rulings": [
+   "Trip isn't a combat option in 3.5.",
+   "Failing has no consequence."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spa-003",
+  "category": "special_attacks",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I disarm the bandit's longsword using my dagger.",
+  "game_state": "Fighter with dagger (light) vs bandit with longsword (one-handed).",
+  "correct_ruling": "Disarm: provokes an AoO from the target (without Improved Disarm), then opposed attack rolls; light weapon takes -4, two-handed weapon gets +4. If you fail, the defender may try to disarm you in return.",
+  "must_include": [
+   [
+    "opposed attack"
+   ],
+   [
+    "-4",
+    "−4",
+    "minus 4"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Disarm",
+  "common_wrong_rulings": [
+   "Disarm is an Athletics check.",
+   "Light weapons get no penalty."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spa-004",
+  "category": "special_attacks",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I overrun the goblin to get past it.",
+  "game_state": "Medium fighter, goblin (Small) in the path.",
+  "correct_ruling": "Overrun is done as part of a move (a standard action during movement or as part of a charge); the defender can choose to avoid you; if it blocks, opposed Strength checks (Dex/Str), size modifiers apply; success knocks the defender prone and you move through.",
+  "must_include": [
+   [
+    "avoid",
+    "let you pass",
+    "step aside"
+   ],
+   [
+    "prone"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Overrun",
+  "common_wrong_rulings": [
+   "The defender can't choose to avoid.",
+   "Overrun is a free action."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spa-005",
+  "category": "special_attacks",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I sunder the wizard's staff.",
+  "game_state": "Fighter with greataxe vs wizard's quarterstaff (held).",
+  "correct_ruling": "Sundering a held weapon is a melee attack that provokes an AoO from the holder (without Improved Sunder) and uses opposed attack rolls; if you win, roll damage against the weapon's hardness and hit points (wooden quarterstaff hardness 5).",
+  "must_include": [
+   [
+    "opposed attack"
+   ],
+   [
+    "hardness"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Sunder; Breaking Items table",
+  "common_wrong_rulings": [
+   "You just roll damage against the staff with no check.",
+   "Sunder doesn't provoke."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spa-006",
+  "category": "special_attacks",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "I'm a dwarf, so I'm basically immune to being tripped, right?",
+  "game_state": "Dwarf fighter being tripped by an orc.",
+  "correct_ruling": "No; dwarves have stability, which gives +4 on ability checks to resist bull rush or trip while standing on the ground — a bonus, not immunity.",
+  "must_include": [
+   [
+    "stability"
+   ],
+   [
+    "+4"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Races > Dwarves > Stability",
+  "common_wrong_rulings": [
+   "Dwarves can't be tripped."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spa-007",
+  "category": "special_attacks",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I want to trip the gelatinous cube.",
+  "game_state": "Fighter vs. gelatinous cube.",
+  "correct_ruling": "The trip rules give the defender +4 for every leg beyond two and note that some creatures (for example legless or flying ones) can't be tripped; an ooze has no legs, so it can't be tripped. Where a creature's anatomy is ambiguous, the DM decides.",
+  "must_include": [
+   [
+    "legs"
+   ],
+   [
+    "can't be tripped",
+    "cannot be tripped",
+    "can't trip",
+    "cannot trip",
+    "immune"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Trip",
+  "common_wrong_rulings": [
+   "Anything can be tripped."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "SRD says the defender gets +4 for each leg beyond two and that some creatures (e.g. oozes, legless) can't be tripped — wording of the latter not verified."
+ },
+ {
+  "id": "spa-008",
+  "category": "special_attacks",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm charging the orc. I get +2 to hit, right? And what's the downside?",
+  "game_state": "Fighter 30 ft from orc, clear straight path.",
+  "correct_ruling": "Charge: move up to twice speed in a straight line to an adjacent square, +2 on the attack roll and -2 to AC until your next turn. You must move at least 10 ft and the path must be unobstructed.",
+  "must_include": [
+   [
+    "+2"
+   ],
+   [
+    "-2",
+    "−2",
+    "minus 2"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Full-Round Actions > Charge",
+  "common_wrong_rulings": [
+   "No AC penalty.",
+   "Can charge around corners."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spa-009",
+  "category": "special_attacks",
+  "difficulty": "hard",
+  "kind": "dm_discretion",
+  "player_action": "I want to disarm the otyugh of its tentacle.",
+  "game_state": "Fighter vs. otyugh (natural tentacle attacks).",
+  "correct_ruling": "You can't disarm natural weapons or body parts; the disarm rule targets held objects. Severing body parts is not part of the SRD combat rules; the DM decides any called-shot style effect, but RAW it isn't available.",
+  "must_include": [
+   [
+    "natural weapon",
+    "body part"
+   ],
+   [
+    "can't",
+    "cannot",
+    "not possible"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Disarm",
+  "common_wrong_rulings": [
+   "Disarm with a penalty removes the eye."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spa-010",
+  "category": "special_attacks",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I use Aid Another to help my rogue friend hit the orc.",
+  "game_state": "Fighter adjacent to the orc, rogue attacking it.",
+  "correct_ruling": "Aid another is a standard action; attack AC 10; on success your ally gets +2 on their next attack roll against that opponent (or +2 AC against that opponent's next attack).",
+  "must_include": [
+   [
+    "ac 10"
+   ],
+   [
+    "+2"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "advantage"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Special Attacks > Aid Another",
+  "common_wrong_rulings": [
+   "The ally gets advantage (5e Help)."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spa-011",
+  "category": "special_attacks",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm feinting the ogre with Bluff so my rogue can sneak attack.",
+  "game_state": "Rogue, Bluff +8, attacking an ogre (Giant type, Sense Motive +2, BAB +3) together with a rogue ally.",
+  "correct_ruling": "Feint is a standard action: Bluff opposed by Sense Motive (target adds BAB). Success: target loses its Dex bonus against your next melee attack, which must be made on or before your next turn — only for you, not your ally. Against a nonhumanoid you take -4; against an Int 1-2 creature, -8.",
+  "must_include": [
+   [
+    "sense motive"
+   ],
+   [
+    "next melee attack",
+    "your next attack",
+    "your next"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Special Attacks > Feint; Skills > Bluff",
+  "common_wrong_rulings": [
+   "Ally also benefits.",
+   "Feint is a bonus action."
+  ],
+  "confidence": "confident",
+  "confidence_note": "Ogre is a giant (not humanoid), so -4 applies; graders shouldn't require that."
+ },
+ {
+  "id": "spa-012",
+  "category": "special_attacks",
+  "difficulty": "hard",
+  "kind": "player_pressure",
+  "player_action": "I charge the orc, but it's okay that I have to go around this pillar — the rule is just 'move toward it'.",
+  "game_state": "Pillar blocks the straight line.",
+  "correct_ruling": "Charge requires moving in a direct line to the closest space from which you can attack, with no obstacles (difficult terrain or creatures) in the path; you can't charge around the pillar.",
+  "must_include": [
+   [
+    "straight",
+    "direct line"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Charge",
+  "common_wrong_rulings": [
+   "Any path works."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ }
+]

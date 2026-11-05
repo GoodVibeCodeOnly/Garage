@@ -1,0 +1,631 @@
+[
+ {
+  "id": "spl-019",
+  "category": "spells_duration_concentration",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I cast shocking grasp and then walk up and touch the orc this same turn.",
+  "game_state": "Wizard 30 ft from an orc. Shocking grasp is a touch spell (standard action to cast).",
+  "correct_ruling": "Allowed. Casting takes a standard action, then the wizard can use a move action to approach, and touching the target is a free action in the round the spell is cast (a melee touch attack). The wizard could also hold the charge.",
+  "must_include": [
+   [
+    "touch attack"
+   ],
+   [
+    "hold the charge",
+    "holding the charge",
+    "free action",
+    "move"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Touch Spells and Holding the Charge",
+  "common_wrong_rulings": [
+   "Touching requires its own standard action, so it must wait until next turn.",
+   "The spell is lost if not delivered immediately."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-020",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm holding the charge from my inflict light wounds. I open the door with that hand.",
+  "game_state": "Cleric holding the charge of a touch spell.",
+  "correct_ruling": "If you touch anything or anyone while holding the charge, even unintentionally, the spell discharges. Opening the door with that hand discharges it (on the door).",
+  "must_include": [
+   [
+    "discharge"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Holding the Charge",
+  "common_wrong_rulings": [
+   "The charge is safe until the caster chooses to deliver it.",
+   "The charge dissipates at the end of the turn."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-021",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I fire scorching ray and I rolled a natural 20 on the attack. Crit?",
+  "game_state": "Wizard's scorching ray ranged touch attack: natural 20.",
+  "correct_ruling": "Rays can score critical hits; a natural 20 threatens and the wizard rolls to confirm against touch AC. If confirmed, the ray's damage is doubled (dice multiplied).",
+  "must_include": [
+   [
+    "confirm"
+   ],
+   [
+    "critical",
+    "crit"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "spells can't crit",
+    "spells cannot crit"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 MagicOverview > Aiming a Spell (Ray); CombatI > Critical Hits",
+  "common_wrong_rulings": [
+   "Spells can't critical hit.",
+   "Natural 20 is an automatic crit without confirmation (5e)."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-022",
+  "category": "spells_duration_concentration",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "Magic missile at the locked chest to break it open.",
+  "game_state": "5th-level wizard, a wooden chest.",
+  "correct_ruling": "Magic missile can't damage objects; it targets creatures. The chest is unaffected.",
+  "must_include": [
+   [
+    "object",
+    "objects"
+   ],
+   [
+    "creature",
+    "can't",
+    "cannot",
+    "not affect",
+    "not damage"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 Spells (Magic Missile)",
+  "common_wrong_rulings": [
+   "Deals 3d4+3 to the chest's hit points."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-023",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "How many missiles do I get? I'm 6th level.",
+  "game_state": "Wizard 6 casts magic missile.",
+  "correct_ruling": "One missile at 1st level plus one more per two caster levels beyond 1st, maximum five at 9th. At 6th level: 3 missiles, each 1d4+1.",
+  "must_include": [
+   [
+    "3 missiles",
+    "three missiles",
+    "3 darts",
+    "three darts"
+   ],
+   [
+    "1d4+1",
+    "1d4 + 1"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 Spells (Magic Missile)",
+  "common_wrong_rulings": [
+   "Uses 5e three darts plus upcasting.",
+   "Gives one missile per level."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-024",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm hasted. I cast a fireball and then use the extra action from haste to cast another spell.",
+  "game_state": "Wizard under haste (3.5 SRD version).",
+  "correct_ruling": "3.5 haste does not grant an extra action. It grants one extra attack at full base attack bonus when making a full attack, +1 on attack rolls, +1 dodge bonus to AC and Reflex saves, and +30 ft to speed. The wizard can't cast a second standard-action spell.",
+  "must_include": [
+   [
+    "extra attack"
+   ],
+   [
+    "full attack"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "extra action lets you"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 Spells (Haste)",
+  "common_wrong_rulings": [
+   "Grants an extra standard action (3.0 or 5e-like).",
+   "Allows two spells per round."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-025",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "bluff_trap",
+  "player_action": "I cast a quickened magic missile as my swift action and then fireball as my standard action. Wait, the DM says I can only cast a cantrip with my other action?",
+  "game_state": "Wizard with Quicken Spell; magic missile prepared as quickened in a 5th-level slot.",
+  "correct_ruling": "Legal in 3.5. Casting a quickened spell is a free action, and you may cast one quickened spell per round in addition to a spell cast normally. There is no rule restricting the other spell to a cantrip; that's a 5e bonus-action spell rule.",
+  "must_include": [
+   [
+    "quicken"
+   ],
+   [
+    "no such rule",
+    "no rule",
+    "not a 3.5 rule",
+    "there is no",
+    "that's a 5e",
+    "is a 5e",
+    "5e rule",
+    "5e mechanic",
+    "from 5e",
+    "from fifth edition",
+    "not in 3.5",
+    "not a 3.5",
+    "isn't in 3.5",
+    "3.5 has no",
+    "3.5 doesn't have",
+    "3.5 does not have"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "only a cantrip",
+    "must be a cantrip"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 Feats (Quicken Spell); CombatII > Free/Swift Actions",
+  "common_wrong_rulings": [
+   "Applies the 5e bonus-action spell restriction.",
+   "Quickened spells provoke attacks of opportunity as normal."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-026",
+  "category": "spells_duration_concentration",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "How long does my bless last? I'm a 5th-level cleric.",
+  "game_state": "Cleric 5 casts bless.",
+  "correct_ruling": "Bless lasts 1 minute per level, so 5 minutes (50 rounds). It gives allies +1 morale bonus on attack rolls and on saves against fear.",
+  "must_include": [
+   [
+    "5 minutes",
+    "five minutes",
+    "50 rounds"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "1d4"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 Spells (Bless)",
+  "common_wrong_rulings": [
+   "1 minute, concentration (5e).",
+   "Adds 1d4 to attacks (5e)."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-027",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I cast sleep on the goblins and the ogre.",
+  "game_state": "Wizard 3 casts sleep. Four goblins (1 HD each) and an ogre (4 HD) in the area.",
+  "correct_ruling": "Sleep affects 4 HD of creatures, lowest HD first, and creatures with 5 or more HD are unaffected. The four goblins (4 HD total) are affected first, using up the full 4 HD; the ogre is not affected. Each target gets a Will save.",
+  "must_include": [
+   [
+    "4 hd",
+    "4 hit dice",
+    "four hit dice"
+   ],
+   [
+    "will save",
+    "will"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "5d8"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 Spells (Sleep)",
+  "common_wrong_rulings": [
+   "Rolls 5d8 hit points of creatures (5e).",
+   "No saving throw allowed."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-028",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "dm_discretion",
+  "player_action": "My concentration spell is up. A dragon roars and the room shakes a little. Do I need a check?",
+  "game_state": "Wizard maintaining a concentration-duration spell; a minor tremor and loud noise occur, not an earthquake spell.",
+  "correct_ruling": "The SRD gives DCs for specific distractions (damage, grappling, vigorous/violent/extremely violent motion, weather, entangled). A minor tremor isn't clearly any of these, so whether a check is required, and whether to use the vigorous-motion DC (10 + spell level), is the DM's call.",
+  "must_include": [
+   [
+    "judgment",
+    "discretion",
+    "adjudicate",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Concentration; Skills > Concentration",
+  "common_wrong_rulings": [
+   "States a firm rule that loud noises require a DC 15 check.",
+   "States flatly that only damage can break concentration."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-029",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm entangled by the web but I'll cast my spell.",
+  "game_state": "Sorcerer entangled (web); casting a 2nd-level spell.",
+  "correct_ruling": "An entangled character must make a Concentration check DC 15 + spell level (here DC 17) to cast a spell, or lose it.",
+  "must_include": [
+   [
+    "17",
+    "15 + spell level",
+    "15 + 2",
+    "dc 15"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Concentration (Entangled); Conditions > Entangled",
+  "common_wrong_rulings": [
+   "No casting allowed while entangled.",
+   "No check needed."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "The SRD appears inconsistent: the condition summary gives Concentration DC 15 for entangled casting, the Concentration skill table gives 15 + spell level. Both accepted."
+ },
+ {
+  "id": "spl-030",
+  "category": "spells_duration_concentration",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I'm still covered in acid from acid arrow while I cast. What's my Concentration DC?",
+  "game_state": "Wizard taking 6 points of continuous damage from acid arrow during casting a 2nd-level spell.",
+  "correct_ruling": "For continuous damage the Concentration DC is 10 + half the continuous damage last dealt + spell level: 10 + 3 + 2 = 15. (Continuous damage that already ended doesn't count.)",
+  "must_include": [
+   [
+    "15"
+   ],
+   [
+    "half"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Concentration (Continuous Damage)",
+  "common_wrong_rulings": [
+   "Uses full damage (DC 18).",
+   "No check for damage over time."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Whether acid arrow's damage at the start of the caster's turn counts as 'during casting' is debated; DC formula itself is believed correct."
+ },
+ {
+  "id": "spl-031",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "Come on, I'm a level 12 wizard, I obviously know how to cast in full plate. Just let me skip the spell failure roll; it slows the game down.",
+  "game_state": "Wizard 12 in full plate (35% ASF) casting a spell with a somatic component.",
+  "correct_ruling": "The rule stands: arcane spell failure applies to arcane spells with somatic components regardless of level. The wizard must roll (35% chance of losing the spell) unless the spell is stilled or has no somatic component. Level alone doesn't remove it.",
+  "must_include": [
+   [
+    "35%",
+    "35 percent",
+    "spell failure"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "skip the roll",
+    "no need to roll"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 Equipment > Arcane Spell Failure",
+  "common_wrong_rulings": [
+   "Waives the roll because the player is high level.",
+   "Applies a flat penalty instead."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-032",
+  "category": "spells_duration_concentration",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I cast enlarge person on the fighter, then my buddy casts reduce person on him. What happens?",
+  "game_state": "Fighter under enlarge person; ally casts reduce person on him.",
+  "correct_ruling": "Enlarge person and reduce person counter and dispel each other; casting reduce person on an enlarged creature dispels the enlarge (and vice versa). He returns to normal size.",
+  "must_include": [
+   [
+    "dispel",
+    "counter",
+    "cancel"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 Spells (Enlarge Person, Reduce Person)",
+  "common_wrong_rulings": [
+   "Both apply and net out size changes while both durations continue.",
+   "The newer spell simply suppresses the older one."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Recalled from the spell descriptions that each 'counters and dispels' the other; confirm exact wording."
+ },
+ {
+  "id": "spl-033",
+  "category": "spells_duration_concentration",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "In the area of silence I cast my spell.",
+  "game_state": "Cleric inside a silence spell area, casting a spell with a verbal component.",
+  "correct_ruling": "Spells with a verbal component cannot be cast inside an area of silence. Only spells with no verbal component (or silent spells via the Silent Spell feat) work.",
+  "must_include": [
+   [
+    "verbal"
+   ],
+   [
+    "can't",
+    "cannot",
+    "unable",
+    "not able"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 Spells (Silence); MagicOverview > Components (Verbal)",
+  "common_wrong_rulings": [
+   "Allows with a Concentration check.",
+   "Silence only blocks sound-based spells."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-034",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I don't have a component pouch, my stuff got taken. Can I cast magic missile? It's only V,S. What about sleep?",
+  "game_state": "Wizard stripped of gear. Sleep has a material component (pinch of sand, rose petals, or a cricket).",
+  "correct_ruling": "Magic missile (V, S) can be cast. Sleep requires its material component; without it the spell can't be cast unless the wizard has Eschew Materials (which covers components costing 1 gp or less) or the DM allows a found substitute.",
+  "must_include": [
+   [
+    "material component",
+    "material"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Components (Material, Spell Component Pouch)",
+  "common_wrong_rulings": [
+   "Components only matter if they have a gold cost.",
+   "Casters can always substitute an arcane focus (5e)."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Reviewer and author disagreed on whether Eschew Materials is in the SRD feat list; ruling now accepts it."
+ },
+ {
+  "id": "spl-035",
+  "category": "spells_duration_concentration",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I'm a drow with spell resistance. My friend casts cure light wounds on me. Does my SR get in the way?",
+  "game_state": "Drow PC with spell resistance; ally casts cure light wounds on her.",
+  "correct_ruling": "Cure spells are marked 'Spell Resistance: Yes (harmless)'. The SR still applies unless the drow voluntarily lowers it, which is a standard action and lasts until her next turn. Alternatively the caster can make the caster level check.",
+  "must_include": [
+   [
+    "standard action"
+   ],
+   [
+    "lower"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "harmless spells ignore spell resistance"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 SpecialAbilities > Spell Resistance (Lowering SR; harmless)",
+  "common_wrong_rulings": [
+   "Harmless spells ignore SR automatically.",
+   "Lowering SR is a free action."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "The SRD says SR applies even to harmless spells unless lowered; confirm that lowering lasts until the creature's next turn."
+ },
+ {
+  "id": "spl-036",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "dm_discretion",
+  "player_action": "I want to cast light on a coin, then put the coin in my pocket and pull it out when needed. How bright is my pocket?",
+  "game_state": "Wizard cast light on a coin.",
+  "correct_ruling": "Light makes the object shed light like a torch; covering it with an opaque object blocks the light. How much a pocket blocks or leaks is for the DM to decide; the rules cover full covering only.",
+  "must_include": [
+   [
+    "block",
+    "blocks",
+    "blocked",
+    "covered",
+    "covering"
+   ],
+   [
+    "discretion",
+    "judgment",
+    "your call",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 Spells (Light)",
+  "common_wrong_rulings": [
+   "Light ends when covered.",
+   "Light penetrates cloth."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Opaque-covering clause recalled from the spell text; degree of pocket leakage is DM call."
+ },
+ {
+  "id": "spl-037",
+  "category": "spells_duration_concentration",
+  "difficulty": "hard",
+  "kind": "player_pressure",
+  "player_action": "The rogue is grappling me but my teammate says in our last campaign, the DM let us cast normally if we passed the DC 20. So just let me cast fireball — I'll roll the DC 23.",
+  "game_state": "Wizard grappled; fireball has V, S, M (bat guano and sulfur) components. Components are in his pouch, not in hand.",
+  "correct_ruling": "No. While grappled you can only cast a spell with no somatic component whose material components are in hand; fireball has a somatic component. Another table's house rule doesn't change the rule here unless this DM adopts it.",
+  "must_include": [
+   [
+    "somatic"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 CombatII > Grapple (Cast a Spell)",
+  "common_wrong_rulings": [
+   "Accepts the precedent and allows the DC 23 check."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "spl-038",
+  "category": "spells_duration_concentration",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I identify the spell the enemy cleric is casting.",
+  "game_state": "Wizard sees an enemy cleric casting; enemy spell is hold person (2nd level for clerics).",
+  "correct_ruling": "Identifying a spell as it is cast is a Spellcraft check DC 15 + spell level (DC 17). It requires no action (or is free) but the wizard must be able to see or hear the casting.",
+  "must_include": [
+   [
+    "spellcraft"
+   ],
+   [
+    "17",
+    "15 + spell level",
+    "15 + 2"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "arcana check"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 Skills > Spellcraft",
+  "common_wrong_rulings": [
+   "Uses an Arcana check (5e).",
+   "Takes the wizard's reaction."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "DC 15 + spell level is certain; whether it is a free action vs no action is from memory."
+ }
+]

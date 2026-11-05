@@ -1,0 +1,408 @@
+[
+ {
+  "id": "aoo-019",
+  "category": "attacks_of_opportunity",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I make a full attack against the orc, then take a 5-foot step away. Does the step provoke?",
+  "game_state": "Fighter adjacent to two orcs, has not moved otherwise this round.",
+  "correct_ruling": "A 5-foot step doesn't provoke and can be taken before, during, or after a full attack, as long as you take no other movement that round.",
+  "must_include": [
+   [
+    "5-foot step",
+    "5 ft step",
+    "five-foot step",
+    "5-ft step",
+    "5 foot step"
+   ],
+   [
+    "doesn't provoke",
+    "does not provoke",
+    "never provokes",
+    "no attack of opportunity"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "the step provokes"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Miscellaneous Actions > Take 5-Foot Step",
+  "common_wrong_rulings": [
+   "You must take the 5-foot step before the full attack.",
+   "The step provokes from the second orc."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-020",
+  "category": "attacks_of_opportunity",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm going to drop prone to make myself a smaller target for the archers. Does that provoke from the swordsman next to me?",
+  "game_state": "Fighter adjacent to a swordsman, archers 60 ft away.",
+  "correct_ruling": "Dropping prone is a free action and does not provoke an attack of opportunity. Prone gives +4 AC vs ranged attacks but -4 AC vs melee attacks.",
+  "must_include": [
+   [
+    "free action"
+   ],
+   [
+    "+4"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Free Actions > Drop Prone; Conditions > Prone",
+  "common_wrong_rulings": [
+   "Dropping prone provokes.",
+   "Prone gives disadvantage on ranged attacks against you (5e)."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-021",
+  "category": "attacks_of_opportunity",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I use my attack of opportunity to trip the orc that is fleeing.",
+  "game_state": "Fighter with longsword (no Improved Trip) threatened by... orc moves away.",
+  "correct_ruling": "An attack of opportunity is a melee attack, and trip can be attempted in place of a melee attack, so you may trip as an AoO; without Improved Trip, the trip attempt itself (the melee touch attack) provokes an AoO from the orc unless you have Improved Trip.",
+  "must_include": [
+   [
+    "trip"
+   ],
+   [
+    "touch attack",
+    "provoke",
+    "improved trip"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Trip",
+  "common_wrong_rulings": [
+   "You can't trip on an AoO.",
+   "Trip is a contested Athletics check."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Whether a trip attempt made as an AoO itself provokes is a known gray area."
+ },
+ {
+  "id": "aoo-022",
+  "category": "attacks_of_opportunity",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I attack the ogre with my longsword. The ogre's friend, a goblin, is also next to me. Does attacking provoke?",
+  "game_state": "Fighter adjacent to ogre and goblin.",
+  "correct_ruling": "A normal melee attack does not provoke an attack of opportunity.",
+  "must_include": [
+   [
+    "does not provoke",
+    "doesn't provoke",
+    "no attack of opportunity",
+    "no aoo",
+    "not provoke"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Actions in Combat table (Attack (melee): no AoO)",
+  "common_wrong_rulings": [
+   "Attacking one enemy provokes from the other."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-023",
+  "category": "attacks_of_opportunity",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I tumble past the hobgoblin to get behind it.",
+  "game_state": "Rogue, Tumble +8, moving through hobgoblin's threatened area at half speed.",
+  "correct_ruling": "A DC 15 Tumble check lets you move at half speed through threatened squares without provoking from that opponent; moving through an enemy's square requires DC 25. Failure means you provoke normally.",
+  "must_include": [
+   [
+    "dc 15",
+    "15"
+   ],
+   [
+    "half speed",
+    "half your speed"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "acrobatics"
+   ]
+  ],
+  "srd_reference": "SkillsII.rtf > Tumble",
+  "common_wrong_rulings": [
+   "Use Acrobatics (Pathfinder/5e).",
+   "Tumble DC is opponent's CMD."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-024",
+  "category": "attacks_of_opportunity",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I tumble through the troll's square to get past it.",
+  "game_state": "Rogue with Tumble +12, troll occupies the square.",
+  "correct_ruling": "Tumbling through an enemy's square requires a DC 25 Tumble check (at half speed); if it fails you stop before entering the square and provoke as normal.",
+  "must_include": [
+   [
+    "25"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SkillsII.rtf > Tumble",
+  "common_wrong_rulings": [
+   "DC 15 to tumble through an occupied square."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-025",
+  "category": "attacks_of_opportunity",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "I'm only moving 5 feet as part of my move action, so it's basically a 5-foot step and shouldn't provoke.",
+  "game_state": "Fighter adjacent to an orc. He plans to move 5 ft away as a move action and then move another 20 ft with his standard action (a double move).",
+  "correct_ruling": "Because he is moving more than 5 feet this round, the first 5 feet is ordinary movement, not a 5-foot step; leaving the orc's threatened square provokes. A 5-foot step is only possible in a round with no other movement.",
+  "must_include": [
+   [
+    "5-foot step",
+    "5 ft step",
+    "five-foot step",
+    "5-ft step",
+    "5 foot step"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Miscellaneous Actions > Take 5-Foot Step",
+  "common_wrong_rulings": [
+   "Any movement of 5 ft never provokes."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-026",
+  "category": "attacks_of_opportunity",
+  "difficulty": "hard",
+  "kind": "bluff_trap",
+  "player_action": "I use the Sentinel feat so the orc's speed drops to 0 when I hit it with my AoO.",
+  "game_state": "3.5 game, fighter.",
+  "correct_ruling": "There is no Sentinel feat in 3.5 SRD; that's a 5e feat. AoOs simply deal damage; to stop movement you'd use options like trip as the AoO (or Stand Still-type feats not in the SRD).",
+  "must_include": [
+   [
+    "no sentinel",
+    "not a 3.5",
+    "isn't a 3.5",
+    "does not exist",
+    "doesn't exist",
+    "that's a 5e",
+    "is a 5e",
+    "5e rule",
+    "5e mechanic",
+    "from 5e",
+    "from fifth edition",
+    "not in 3.5",
+    "isn't in 3.5",
+    "3.5 has no",
+    "3.5 doesn't have",
+    "3.5 does not have"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Feats.rtf (feat list; no Sentinel)",
+  "common_wrong_rulings": [
+   "Sentinel works as in 5e."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-027",
+  "category": "attacks_of_opportunity",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I activate my wand of magic missile next to the goblin.",
+  "game_state": "Wizard adjacent to goblin.",
+  "correct_ruling": "Activating a spell trigger item such as a wand is a standard action and does not provoke an attack of opportunity (unlike spell completion items such as scrolls, which provoke as spellcasting does).",
+  "must_include": [
+   [
+    "does not provoke",
+    "doesn't provoke",
+    "not provoke",
+    "no attack of opportunity",
+    "no aoo"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "MagicItems > Using Items > Spell Trigger; Actions in Combat table (Use spell-like ability / activate magic item)",
+  "common_wrong_rulings": [
+   "Wands provoke just like casting the spell."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Fairly confident the SRD Spell Trigger text says it does not provoke; not checked against the text in this session."
+ },
+ {
+  "id": "aoo-028",
+  "category": "attacks_of_opportunity",
+  "difficulty": "hard",
+  "kind": "dm_discretion",
+  "player_action": "I'm swinging from the chandelier past the orc's reach. Does that count as moving out of a threatened square?",
+  "game_state": "Swashbuckling rogue, chandelier rope, orc below.",
+  "correct_ruling": "Rules don't specifically cover swinging; movement out of threatened squares generally provokes regardless of the method, but the DM decides how the stunt resolves (e.g., a Jump/Tumble/Climb check and whether the orc can reach).",
+  "must_include": [
+   [
+    "game master",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "discretion",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Attacks of Opportunity > Provoking (movement); DM adjudication",
+  "common_wrong_rulings": [
+   "Swinging movement never provokes.",
+   "Auto-success flavor."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-029",
+  "category": "attacks_of_opportunity",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The orc is blinded. I move away. Does it get an AoO?",
+  "game_state": "Blinded orc adjacent to fighter.",
+  "correct_ruling": "A blinded creature still threatens and can make AoOs, but every opponent has total concealment (50% miss) relative to it; and you can't make AoOs against an opponent with total concealment, so effectively no AoO.",
+  "must_include": [
+   [
+    "concealment",
+    "50%"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Conditions > Blinded; CombatII.rtf > Concealment > Total Concealment",
+  "common_wrong_rulings": [
+   "Normal AoO."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Interaction of blinded attacker vs total concealment rule for AoOs; likely no AoO but phrasing uncertain."
+ },
+ {
+  "id": "aoo-030",
+  "category": "attacks_of_opportunity",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I'm going to load my heavy crossbow while the gnoll is next to me.",
+  "game_state": "Fighter with heavy crossbow, adjacent gnoll.",
+  "correct_ruling": "Loading a heavy crossbow is a full-round action that provokes attacks of opportunity.",
+  "must_include": [
+   [
+    "full-round",
+    "full round"
+   ],
+   [
+    "provoke",
+    "attack of opportunity",
+    "aoo"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Equipment > Weapons > Crossbow, heavy; Actions in Combat table (Load a heavy or repeating crossbow)",
+  "common_wrong_rulings": [
+   "Loading is a free action."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-031",
+  "category": "attacks_of_opportunity",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "Total defense: can I still take attacks of opportunity?",
+  "game_state": "Fighter using total defense action.",
+  "correct_ruling": "No — while in total defense you can't make attacks of opportunity; you get +4 dodge bonus to AC for 1 round.",
+  "must_include": [
+   [
+    "+4"
+   ],
+   [
+    "can't",
+    "cannot"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Standard Actions > Total Defense",
+  "common_wrong_rulings": [
+   "Total defense still allows AoOs."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-032",
+  "category": "attacks_of_opportunity",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I cast a quickened magic missile next to the orc. Does that provoke?",
+  "game_state": "Wizard with Quicken Spell, adjacent orc.",
+  "correct_ruling": "Casting a quickened spell does not provoke an attack of opportunity (the Quicken Spell feat says so). It is a free action and only one quickened spell may be cast per round.",
+  "must_include": [
+   [
+    "does not provoke",
+    "doesn't provoke",
+    "no attack of opportunity",
+    "not provoke",
+    "no aoo"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Feats.rtf > Quicken Spell",
+  "common_wrong_rulings": [
+   "Quickened spells provoke like normal casting."
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
+ }
+]
