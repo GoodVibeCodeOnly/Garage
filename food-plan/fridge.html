@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fridge Door Sheet</title>
+<style>
+  @page { size: letter; margin: 0.4in; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #fff; color: #111; font: 13px/1.3 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .page { max-width: 7.7in; margin: 0 auto; padding: 12px 16px; }
+  h1 { font-size: 22px; margin: 0 0 2px; }
+  .sub { margin: 0 0 10px; color: #444; }
+  .goal { display: flex; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+  .goal div { flex: 1 1 140px; border: 2px solid #111; border-radius: 6px; padding: 6px 8px; font-weight: 700; text-align: center; }
+  .goal small { display: block; font-weight: 400; color: #444; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  section { border: 1px solid #999; border-radius: 6px; padding: 6px 8px; }
+  h2 { font-size: 14px; margin: 0 0 4px; text-transform: uppercase; letter-spacing: .04em; }
+  table { width: 100%; border-collapse: collapse; }
+  td { padding: 2px 0; vertical-align: top; border-bottom: 1px dotted #ccc; }
+  td.n { text-align: right; white-space: nowrap; color: #333; width: 1%; padding-left: 6px; }
+  ol, ul { margin: 0; padding-left: 18px; }
+  li { margin: 1px 0; }
+  .wide { grid-column: 1 / -1; }
+  .foot { margin-top: 8px; font-size: 11px; color: #555; }
+  @media (max-width: 560px) { .grid { grid-template-columns: 1fr; } }
+  @media print { .page { padding: 0; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>Hungry or not: eat something.</h1>
+  <p class="sub">Pick one. Under two minutes. Numbers are protein / fibre in grams.</p>
+
+  <div class="goal">
+    <div>~90 g protein<small>about 3 shakes' worth, spread out</small></div>
+    <div>~30 g fibre<small>beans + fruit does it</small></div>
+    <div>~13 cups to drink<small>pale yellow = good</small></div>
+  </div>
+
+  <div class="grid">
+    <section>
+      <h2>30 seconds, no appetite</h2>
+      <table>
+        <tr><td>Protein shake (sip it)</td><td class="n">30 / 1</td></tr>
+        <tr><td>Chicken from the container, 4 oz</td><td class="n">28 / 0</td></tr>
+        <tr><td>Kefir, 1 cup</td><td class="n">10 / 0</td></tr>
+        <tr><td>Chocolate milk, 1 cup</td><td class="n">8 / 1</td></tr>
+        <tr><td>Apple</td><td class="n">½ / 4½</td></tr>
+        <tr><td>Banana</td><td class="n">1 / 3</td></tr>
+        <tr><td>Handful of dry Cheerios</td><td class="n">5 / 4</td></tr>
+        <tr><td>Baby carrots</td><td class="n">½ / 2½</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>A minute or two</h2>
+      <table>
+        <tr><td>Two-meat sandwich (turkey + chicken)</td><td class="n">32 / 4</td></tr>
+        <tr><td>Chili dogs: 2 dogs in bread + ½ cup chili</td><td class="n">25 / 7½</td></tr>
+        <tr><td>½ can black beans, 1 min + hot sauce</td><td class="n">11 / 11</td></tr>
+        <tr><td>Beans + 2 oz chicken stirred in</td><td class="n">25 / 11</td></tr>
+        <tr><td>Lentil soup 1½ cups + 2 slices bread</td><td class="n">20 / 13</td></tr>
+        <tr><td>Chili, 1 cup in a mug</td><td class="n">14 / 7</td></tr>
+        <tr><td>Cheerios + chocolate milk</td><td class="n">13 / 5</td></tr>
+        <tr><td>Kefir + 1 cup frozen berries</td><td class="n">11 / 5</td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Every day, roughly</h2>
+      <ol>
+        <li>1 shake</li>
+        <li>1 meat thing (sandwich, chicken, dogs)</li>
+        <li>1 bean thing (beans, chili, lentil soup)</li>
+        <li>2 pieces of fruit</li>
+        <li>Milk or kefir somewhere</li>
+      </ol>
+      <p style="margin:4px 0 0">That's ~90 g protein and ~30 g fibre. No counting needed.</p>
+    </section>
+
+    <section>
+      <h2>How long it keeps (fridge)</h2>
+      <table>
+        <tr><td>Rotisserie chicken (fridge within 2 h)</td><td class="n">3–4 days</td></tr>
+        <tr><td>Opened deli meat</td><td class="n">3–5 days</td></tr>
+        <tr><td>Opened hot dogs (heat till steaming)</td><td class="n">1 week</td></tr>
+        <tr><td>Opened milk / chocolate milk</td><td class="n">~7 days</td></tr>
+        <tr><td>Opened can (beans, chili, soup)</td><td class="n">3–4 days</td></tr>
+        <tr><td>Frozen meat at 0°F</td><td class="n">safe; best in 1–6 mo</td></tr>
+      </table>
+      <p style="margin:4px 0 0">Sour smell or mould: toss it. When in doubt, throw it out.</p>
+    </section>
+
+    <section class="wide">
+      <h2>Not hungry?</h2>
+      <ul>
+        <li><b>Can't face food:</b> drink a shake slowly or a glass of chocolate milk.</li>
+        <li><b>Queasy:</b> something cold and plain: kefir, banana, dry cereal.</li>
+        <li><b>Hungry in the evening?</b> That's catch-up time: sandwich, chili dogs, whole can of soup.</li>
+        <li><b>Water:</b> a glass with every item on this sheet. Stimulants hide thirst.</li>
+      </ul>
+    </section>
+  </div>
+
+  <p class="foot">Figures are typical label / USDA FoodData Central values; check your label. Storage times: FoodSafety.gov Cold Storage Chart, USDA FSIS. Full details in food-plan/ on GitHub.</p>
+</div>
+</body>
+</html>
