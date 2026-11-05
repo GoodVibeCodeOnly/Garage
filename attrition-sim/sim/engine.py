@@ -618,7 +618,7 @@ def rest_between(state):
 
 def roll_encounter(state):
     offs, probs = zip(*state.opts["el_offsets"])
-    el = max(2, min(11, state.level + state.rng.choices(offs, weights=probs)[0]))
+    el = max(2, min(13, state.level + state.rng.choices(offs, weights=probs)[0]))
     comp = state.rng.choice(ENCOUNTERS[el])
     return el, [make_monster(m, i) for i, m in enumerate(comp)]
 

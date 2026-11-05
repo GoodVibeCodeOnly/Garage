@@ -155,4 +155,6 @@ ENCOUNTERS = {
     9: [["frost giant"], ["hill giant"] * 2, ["troll"] * 4, ["manticore"] * 4],
     10: [["stone giant"] * 2, ["frost giant", "hill giant"], ["ettin"] * 4],
     11: [["frost giant"] * 2, ["hill giant"] * 4],
+    12: [["frost giant", "frost giant", "hill giant", "hill giant"], ["stone giant"] * 4],
+    13: [["frost giant"] * 4],
 }
