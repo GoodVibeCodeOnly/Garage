@@ -109,3 +109,11 @@ top = df.sort_values("v3", ascending=False).head(15)[["OCC_TITLE", "emp", "wage"
 print("\nTop 15 occupations by v3 usage share:\n", top.round(4).to_string())
 top.round(5).to_csv(f"{out}/top15_v3.csv")
 df.round(6).to_csv(f"{out}/occupation_panel.csv")
+
+# finer split of the top of the distribution (deciles hide a turn above ~$150k)
+bands = pd.cut(df["wage"], [0, 40000, 60000, 80000, 103000, 125000, 150000, 200000, 240000])
+fb = df.groupby(bands, observed=True)[["emp_share", "v1", "v2", "v3"]].sum()
+for v in ["v1", "v2", "v3"]:
+    fb[f"intensity_{v}"] = fb[v] / fb["emp_share"]
+print("\nIntensity by median-wage band:\n", fb.round(3).to_string())
+fb.round(4).to_csv(f"{out}/intensity_by_wage_band.csv")

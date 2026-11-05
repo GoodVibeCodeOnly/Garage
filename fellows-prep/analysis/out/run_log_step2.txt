@@ -1,0 +1,45 @@
+occupations matched: 772 of 831; workers covered: 93%
+Spearman(human_rating_beta, v3 intensity) all occs = 0.49; among occs with any usage = 0.45
+Spearman(dv_rating_beta, v3 intensity) all occs = 0.48; among occs with any usage = 0.48
+
+Observed v3 intensity by quintile of predicted exposure (employment-weighted):
+    workers  exposure_lo  exposure_hi  usage  zero_usage_occs  intensity
+q                                                                      
+1    0.182        0.000        0.115  0.009            0.670      0.048
+2    0.188        0.115        0.250  0.051            0.382      0.253
+3    0.185        0.250        0.362  0.073            0.232      0.364
+4    0.186        0.362        0.501  0.202            0.206      1.007
+5    0.184        0.509        0.844  0.664            0.207      3.334
+
+High predicted exposure (top 20% of occs), lowest observed intensity:
+                                                                                                 OCC_TITLE        emp      wage  human_rating_beta  int_v3
+soc                                                                                                                                                      
+13-2011                                                                          Accountants and Auditors  1448290.0   81680.0               0.52     0.0
+41-3091  Sales Representatives of Services, Except Advertising, Insurance, Financial Services, and Travel  1189330.0   66260.0               0.57     0.0
+43-6013                                                 Medical Secretaries and Administrative Assistants   830760.0   44640.0               0.61     0.0
+41-3031                                      Securities, Commodities, and Financial Services Sales Agents   472300.0   78140.0               0.52     0.0
+13-2051                                                                 Financial and Investment Analysts   340580.0  101350.0               0.50     0.0
+13-1031                                                    Claims Adjusters, Examiners, and Investigators   305020.0   76790.0               0.49     0.0
+43-9041                                                     Insurance Claims and Policy Processing Clerks   229070.0   48450.0               0.51     0.0
+15-1253                                                   Software Quality Assurance Analysts and Testers   199800.0  102610.0               0.61     0.0
+29-2072                                                                       Medical Records Specialists   187910.0   50250.0               0.56     0.0
+43-4031                                                              Court, Municipal, and License Clerks   170010.0   47700.0               0.59     0.0
+43-6012                                                   Legal Secretaries and Administrative Assistants   154540.0   54140.0               0.76     0.0
+25-4022                                                      Librarians and Media Collections Specialists   131830.0   64320.0               0.50     0.0
+17-3011                                                                  Architectural and Civil Drafters   109550.0   64280.0               0.52     0.0
+43-5031                                                                   Public Safety Telecommunicators   101140.0   50730.0               0.59     0.0
+11-2032                                                                         Public Relations Managers    76060.0  138520.0               0.58     0.0
+
+Low predicted exposure (bottom 40%), highest observed intensity:
+                                                           OCC_TITLE      emp     wage  human_rating_beta  int_v3
+soc                                                                                                             
+27-2032                                              Choreographers   3430.0  55600.0               0.17   83.63
+51-2061                      Timing Device Assemblers and Adjusters    230.0  40790.0               0.00   76.37
+27-2011                                                      Actors  38800.0  48526.4               0.16   68.64
+49-9061                 Camera and Photographic Equipment Repairers   2010.0  49300.0               0.04   26.83
+51-7031                                          Model Makers, Wood    360.0  51850.0               0.15   20.62
+51-6052                     Tailors, Dressmakers, and Custom Sewers  16290.0  40860.0               0.07   12.42
+51-6061  Textile Bleaching and Dyeing Machine Operators and Tenders   5820.0  37320.0               0.12    8.99
+47-2053                              Terrazzo Workers and Finishers   1450.0  57260.0               0.02    4.44
+51-6062     Textile Cutting Machine Setters, Operators, and Tenders   8960.0  37940.0               0.14    4.28
+51-8013                                       Power Plant Operators  30720.0  99670.0               0.09    4.07
