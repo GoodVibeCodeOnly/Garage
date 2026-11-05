@@ -1,0 +1,526 @@
+[
+ {
+  "id": "aoo-001",
+  "category": "attacks_of_opportunity",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I drink my potion of cure light wounds while the orc is standing next to me.",
+  "game_state": "Fighter adjacent to an orc wielding a greataxe. Orc has not used its attack of opportunity this round.",
+  "correct_ruling": "Drinking a potion is a standard action that provokes an attack of opportunity, so the orc gets a free melee attack before the potion takes effect.",
+  "must_include": [
+   [
+    "attack of opportunity",
+    "attacks of opportunity",
+    "aoo"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "does not provoke",
+    "doesn't provoke"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Actions in Combat > Table: Actions in Combat (Drink a potion or apply an oil: standard, provokes)",
+  "common_wrong_rulings": [
+   "Drinking a potion is a free or move action and does not provoke.",
+   "Potions are a bonus action (5e rule)."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-002",
+  "category": "attacks_of_opportunity",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I take a 5-foot step away from the ogre and then cast fireball.",
+  "game_state": "Wizard adjacent to an ogre with reach 10 ft (Large, tall). Wizard has not moved this round.",
+  "correct_ruling": "A 5-foot step never provokes, but the ogre has 10-foot reach, so the wizard is still threatened after the step; casting a spell normally provokes from the ogre unless the wizard casts defensively (Concentration DC 15 + spell level).",
+  "must_include": [
+   [
+    "reach",
+    "10-foot",
+    "10 ft",
+    "10 feet"
+   ],
+   [
+    "cast defensively",
+    "casting defensively",
+    "concentration"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Attacks of Opportunity; Big and Little Creatures in Combat > Reach; Casting Defensively",
+  "common_wrong_rulings": [
+   "The 5-foot step gets you out of threat so the spell is safe.",
+   "5-foot step provokes."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-003",
+  "category": "attacks_of_opportunity",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "Two goblins are next to me. I run past both of them to reach the shaman.",
+  "game_state": "Rogue moves through squares threatened by goblin A and goblin B; each goblin has Combat Reflexes? No. Each has one AoO available.",
+  "correct_ruling": "Moving out of a threatened square provokes from each creature threatening it; each goblin may make one attack of opportunity (only one per round each without Combat Reflexes), even if the rogue leaves several squares threatened by the same goblin.",
+  "must_include": [
+   [
+    "each goblin",
+    "both goblins",
+    "each of them",
+    "both of them",
+    "each one"
+   ],
+   [
+    "one attack of opportunity",
+    "only one",
+    "one aoo",
+    "once"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Attacks of Opportunity > Provoking an Attack of Opportunity; Making an Attack of Opportunity",
+  "common_wrong_rulings": [
+   "Each square left provokes a separate attack from the same goblin.",
+   "Only the first goblin gets an attack."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-004",
+  "category": "attacks_of_opportunity",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I withdraw from the two zombies, moving double my speed back to the door.",
+  "game_state": "Cleric adjacent to two zombies, speed 20 ft. Not blinded.",
+  "correct_ruling": "Withdraw is a full-round action; the square you start in is not considered threatened by visible enemies, so leaving it does not provoke, but any other threatened squares you leave during the move do provoke normally.",
+  "must_include": [
+   [
+    "starting square",
+    "square you start",
+    "first square",
+    "start in"
+   ],
+   [
+    "full-round",
+    "full round"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Full-Round Actions > Withdraw",
+  "common_wrong_rulings": [
+   "Withdraw makes the entire movement safe from all attacks of opportunity.",
+   "Withdraw is a move action (that's the 5e Disengage)."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-005",
+  "category": "attacks_of_opportunity",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I shoot my longbow at the bandit standing next to me.",
+  "game_state": "Ranger adjacent to a bandit with a short sword. Ranger has no special feats.",
+  "correct_ruling": "Making a ranged attack provokes an attack of opportunity from threatening enemies; the bandit gets an AoO. (There is no penalty for shooting at an adjacent foe in 3.5 itself beyond provoking.)",
+  "must_include": [
+   [
+    "provoke",
+    "attack of opportunity",
+    "aoo"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "disadvantage"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Attacks of Opportunity > Performing a Distracting Act; Actions in Combat table (Attack (ranged): provokes)",
+  "common_wrong_rulings": [
+   "Ranged attacks in melee have disadvantage (5e).",
+   "Shooting doesn't provoke because it's an attack action."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-006",
+  "category": "attacks_of_opportunity",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I stand up from prone next to the hobgoblin.",
+  "game_state": "Fighter prone, adjacent to a hobgoblin.",
+  "correct_ruling": "Standing up from prone is a move action that provokes an attack of opportunity.",
+  "must_include": [
+   [
+    "provoke",
+    "attack of opportunity",
+    "aoo"
+   ],
+   [
+    "move action"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "half your movement",
+    "half of your movement"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Move Actions > Stand Up; Actions in Combat table",
+  "common_wrong_rulings": [
+   "Standing up costs half your movement and doesn't provoke (5e).",
+   "Standing is a free action."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-007",
+  "category": "attacks_of_opportunity",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I draw my longsword and move 30 feet to the troll.",
+  "game_state": "Fighter BAB +6, sword sheathed, no Quick Draw.",
+  "correct_ruling": "Drawing a weapon is normally a move action, but with base attack bonus +1 or higher you can combine it with a regular move; drawing a weapon does not provoke an attack of opportunity.",
+  "must_include": [
+   [
+    "base attack bonus",
+    "bab",
+    "+1"
+   ],
+   [
+    "move"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Move Actions > Draw or Sheathe a Weapon",
+  "common_wrong_rulings": [
+   "Drawing a weapon uses the whole move action, so you can't move too.",
+   "Drawing a weapon is a free object interaction (5e)."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-008",
+  "category": "attacks_of_opportunity",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I have Combat Reflexes and Dex 16. The kobold moves out of three squares I threaten; I want three attacks.",
+  "game_state": "Fighter with Combat Reflexes, Dex 16 (+3), wielding a longspear (reach) and threatens multiple squares the kobold passes through.",
+  "correct_ruling": "Combat Reflexes allows extra AoOs per round equal to Dex bonus, but you cannot make more than one attack of opportunity for a single opportunity; moving through several of your threatened squares in one move is one opportunity, so the kobold provokes only one AoO from you.",
+  "must_include": [
+   [
+    "only one",
+    "one attack of opportunity",
+    "single opportunity",
+    "one aoo"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "three attacks of opportunity against the kobold",
+    "you get three"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Attacks of Opportunity > Combat Reflexes and Additional Attacks of Opportunity; Feats.rtf > Combat Reflexes",
+  "common_wrong_rulings": [
+   "Each square left grants a separate AoO with Combat Reflexes."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-009",
+  "category": "attacks_of_opportunity",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The orc is flat-footed at the start of combat. It's adjacent to me; I'll cast a spell since it can't make attacks of opportunity anyway, right?",
+  "game_state": "Surprise round over, first regular round; orc hasn't acted yet (flat-footed), no Combat Reflexes.",
+  "correct_ruling": "Correct: a flat-footed character can't make attacks of opportunity unless it has Combat Reflexes, so the orc gets no AoO against the spellcasting.",
+  "must_include": [
+   [
+    "flat-footed",
+    "flat footed"
+   ],
+   [
+    "combat reflexes"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Initiative > Flat-Footed; Feats.rtf > Combat Reflexes",
+  "common_wrong_rulings": [
+   "Flat-footed creatures can still make attacks of opportunity.",
+   "The orc gets an AoO because it's adjacent."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-010",
+  "category": "attacks_of_opportunity",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I attack the goblin with my unarmed strike (punch).",
+  "game_state": "Bard with no Improved Unarmed Strike, adjacent goblin armed with a dagger.",
+  "correct_ruling": "An unarmed attack against an armed opponent provokes an attack of opportunity from that opponent (the AoO comes before your attack), unless you have Improved Unarmed Strike; unarmed strikes also deal nonlethal damage by default.",
+  "must_include": [
+   [
+    "provoke",
+    "attack of opportunity",
+    "aoo"
+   ],
+   [
+    "improved unarmed strike"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Attack Roll / CombatII.rtf > Unarmed Attacks > 'Unarmed Attacks Provoke Attacks of Opportunity'",
+  "common_wrong_rulings": [
+   "Punching is just a normal melee attack with no special drawback."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-011",
+  "category": "attacks_of_opportunity",
+  "difficulty": "hard",
+  "kind": "bluff_trap",
+  "player_action": "Can I use my attack of opportunity to cast a spell at the orc that's fleeing?",
+  "game_state": "Sorcerer adjacent to orc that moves away; sorcerer wields nothing.",
+  "correct_ruling": "No. An attack of opportunity is a single melee attack; you can't cast a spell as an AoO. Also, an unarmed sorcerer without Improved Unarmed Strike doesn't threaten any squares, so gets no AoO at all.",
+  "must_include": [
+   [
+    "melee attack",
+    "single melee"
+   ],
+   [
+    "threaten",
+    "unarmed"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "war caster"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Attacks of Opportunity > Threatened Squares; Making an Attack of Opportunity",
+  "common_wrong_rulings": [
+   "Yes, with War Caster you can cast a spell instead (5e feat, not in 3.5).",
+   "Anyone adjacent threatens even when unarmed."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-012",
+  "category": "attacks_of_opportunity",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm using a spiked chain... no wait, a longspear. The goblin steps right up next to me and attacks. I take my AoO when it enters my square adjacent.",
+  "game_state": "Fighter with longspear (reach 10 ft, doesn't threaten adjacent), goblin moves from 15 ft to adjacent.",
+  "correct_ruling": "Moving into or within a threatened area doesn't provoke; only moving out of a threatened square does. The goblin moved from 15 ft into the 10-ft ring (no AoO) and then out of the threatened 10-ft square into an adjacent square, which provokes one AoO. Once adjacent, the longspear can't attack it.",
+  "must_include": [
+   [
+    "out of a threatened",
+    "leaving a threatened",
+    "moves out",
+    "leaves"
+   ],
+   [
+    "adjacent"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Attacks of Opportunity > Provoking; Big and Little Creatures > Reach Weapons",
+  "common_wrong_rulings": [
+   "Entering a threatened square provokes.",
+   "Reach weapons threaten adjacent squares too."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-013",
+  "category": "attacks_of_opportunity",
+  "difficulty": "easy",
+  "kind": "player_pressure",
+  "player_action": "Come on, every game I've played lets you cast a cantrip in melee without provoking. It's just a cantrip!",
+  "game_state": "Wizard adjacent to a gnoll, casting ray of frost.",
+  "correct_ruling": "Casting any spell with a casting time of 1 action, including 0-level spells, provokes an attack of opportunity. The wizard can cast defensively (Concentration DC 15 + spell level = 15) to avoid provoking, or move away first.",
+  "must_include": [
+   [
+    "provoke",
+    "attack of opportunity",
+    "aoo"
+   ],
+   [
+    "defensively",
+    "concentration"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "cantrips don't provoke",
+    "cantrips do not provoke"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Casting a Spell; Concentration skill > Casting defensively",
+  "common_wrong_rulings": [
+   "0-level spells don't provoke.",
+   "Ray spells don't provoke because they're attacks."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-014",
+  "category": "attacks_of_opportunity",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "The goblin is invisible next to me and casts a spell. Do I get an AoO?",
+  "game_state": "Fighter can't see invisible goblin; goblin is adjacent and casts.",
+  "correct_ruling": "You can't make an attack of opportunity against an attacker you can't see; an invisible creature doesn't provoke attacks of opportunity from those who can't see it.",
+  "must_include": [
+   [
+    "can't see",
+    "cannot see",
+    "invisible"
+   ],
+   [
+    "no attack of opportunity",
+    "no aoo",
+    "doesn't provoke",
+    "does not provoke",
+    "can't make",
+    "cannot make"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Cover and Concealment > Total Concealment (can't make AoOs against an opponent with total concealment); Conditions > Invisible",
+  "common_wrong_rulings": [
+   "Yes, AoO with 50% miss chance."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-015",
+  "category": "attacks_of_opportunity",
+  "difficulty": "medium",
+  "kind": "dm_discretion",
+  "player_action": "I want to pick up the dropped wand right next to the dragon while ducking to keep my guard up. Does that still provoke?",
+  "game_state": "Rogue adjacent to a young dragon; wand on the floor in rogue's square.",
+  "correct_ruling": "Picking up an item is a move action that provokes an attack of opportunity; 'ducking to keep my guard up' has no rules effect. Rules-as-written are clear; the DM may allow flavor but should not waive the AoO.",
+  "must_include": [
+   [
+    "move action"
+   ],
+   [
+    "provoke",
+    "attack of opportunity",
+    "aoo"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Actions in Combat table (Pick up an item: move action, provokes)",
+  "common_wrong_rulings": [
+   "Picking up an item is free.",
+   "Being careful avoids the attack."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-016",
+  "category": "attacks_of_opportunity",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I make a full attack and I also want to use my attack of opportunity when the orc's ally runs past \u2014 but I already used it this round on the first orc.",
+  "game_state": "Fighter without Combat Reflexes already made one AoO this round.",
+  "correct_ruling": "Without Combat Reflexes you get only one attack of opportunity per round; the second opportunity is lost.",
+  "must_include": [
+   [
+    "one attack of opportunity per round",
+    "one per round",
+    "only one",
+    "once per round"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "reaction"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Attacks of Opportunity > Making an Attack of Opportunity",
+  "common_wrong_rulings": [
+   "One AoO per opponent per round.",
+   "AoOs are unlimited."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-017",
+  "category": "attacks_of_opportunity",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I'm in a 5-foot-wide corridor of difficult terrain (rubble). I take a 5-foot step back out of the troll's reach.",
+  "game_state": "Fighter adjacent to troll; the square behind is rubble (difficult terrain).",
+  "correct_ruling": "You can't take a 5-foot step into difficult terrain or if your movement is otherwise hampered; moving out would be a normal move that provokes.",
+  "must_include": [
+   [
+    "difficult terrain"
+   ],
+   [
+    "can't",
+    "cannot",
+    "not allowed"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Miscellaneous Actions > Take 5-Foot Step",
+  "common_wrong_rulings": [
+   "A 5-foot step costs 10 feet in difficult terrain but is still allowed."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "aoo-018",
+  "category": "attacks_of_opportunity",
+  "difficulty": "hard",
+  "kind": "dm_discretion",
+  "player_action": "I bluff the guard and walk past him; since he thinks I'm friendly, does leaving his threatened square still provoke?",
+  "game_state": "Out-of-combat start: guard is not yet hostile, combat begins as rogue moves.",
+  "correct_ruling": "RAW, AoOs happen in combat against opponents; a creature not yet treating you as an enemy (and possibly flat-footed before acting) effectively won't take one. Whether a non-hostile guard reacts is a DM call based on the situation; the rules don't define 'ally until proven otherwise'.",
+  "must_include": [
+   [
+    "dm",
+    "game master",
+    "gm"
+   ],
+   [
+    "flat-footed",
+    "not hostile",
+    "doesn't know",
+    "does not know",
+    "unaware"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Initiative > Flat-Footed; Surprise",
+  "common_wrong_rulings": [
+   "Any creature you pass gets an AoO regardless of attitude.",
+   "Bluff automatically makes the guard flat-footed for the whole fight."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "RAW doesn't explicitly address non-hostile threatening creatures; ruling is a reasonable DM-call framing."
+ }
+]

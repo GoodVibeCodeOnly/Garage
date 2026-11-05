@@ -1,0 +1,612 @@
+[
+ {
+  "id": "sav-001",
+  "category": "saves",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I rolled a natural 1 on my Fortitude save against the poison, but my total is 19 and the DC is only 14. I make it, right?",
+  "game_state": "Fighter with +18 Fortitude bonus; poison DC 14.",
+  "correct_ruling": "No. A natural 1 on a saving throw is always a failure regardless of the total, so the fighter fails the save and suffers the poison's initial damage.",
+  "must_include": [
+   [
+    "always fail",
+    "automatic failure",
+    "automatically fail",
+    "always a failure",
+    "auto-fail",
+    "automatically fails"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "you succeed",
+    "you make it",
+    "save succeeds"
+   ]
+  ],
+  "srd_reference": "CombatI.rtf > Saving Throws (Automatic Failures and Successes)",
+  "common_wrong_rulings": [
+   "Total 19 beats DC 14, so the save succeeds.",
+   "Natural 1 only matters on attack rolls."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-002",
+  "category": "saves",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "Natural 20 on my Will save! Total is only 9 against the DC 22 dominate person. Do I resist?",
+  "game_state": "Wizard whose total Will modifier is -11 after penalties; DC 22.",
+  "correct_ruling": "Yes. A natural 20 on a saving throw is always a success, so the wizard resists the spell regardless of the total.",
+  "must_include": [
+   [
+    "always a success",
+    "always succeed",
+    "automatic success",
+    "automatically succeed",
+    "automatically succeeds"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Saving Throws (Automatic Failures and Successes)",
+  "common_wrong_rulings": [
+   "The total of 9 is below 22, so the save fails.",
+   "Natural 20 only matters for attacks and criticals."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-003",
+  "category": "saves",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "What's the save DC for my fireball? I'm a 5th-level wizard with Int 18.",
+  "game_state": "Wizard 5, Int 18 (+4), casting fireball (3rd level), no feats or items affecting DC.",
+  "correct_ruling": "The DC is 10 + spell level + the caster's relevant ability modifier: 10 + 3 + 4 = 17. Caster level does not enter into the DC.",
+  "must_include": [
+   [
+    "17"
+   ],
+   [
+    "spell level",
+    "level of the spell"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "dc 18",
+    "dc 19",
+    "dc 20"
+   ]
+  ],
+  "srd_reference": "MagicOverview.rtf > Saving Throw > Saving Throw Difficulty Class",
+  "common_wrong_rulings": [
+   "DC 8 + proficiency + Int (5e formula) = 15.",
+   "DC uses caster level, e.g. 10 + 5 + 4 = 19."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-004",
+  "category": "saves",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The rogue with evasion makes her Reflex save against the dragon's breath. How much damage does she take?",
+  "game_state": "Rogue 4 in leather armor, not helpless; breath weapon allows Reflex half; she succeeds on the save.",
+  "correct_ruling": "None. With evasion, a successful Reflex save against an effect that normally deals half damage on a save means she takes no damage. Evasion works only in light or no armor and not while helpless; both conditions are met.",
+  "must_include": [
+   [
+    "no damage",
+    "takes no damage",
+    "zero damage",
+    "0 damage"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "half damage on a successful",
+    "takes half"
+   ]
+  ],
+  "srd_reference": "ClassesI.rtf > Rogue > Evasion",
+  "common_wrong_rulings": [
+   "She takes half damage as normal.",
+   "She takes a quarter damage."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-005",
+  "category": "saves",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "My rogue has evasion. I'm in a full plate suit I took off a paladin. I make the Reflex save against the fireball, so no damage?",
+  "game_state": "Rogue 6 wearing full plate (heavy armor), succeeds Reflex save vs fireball.",
+  "correct_ruling": "No. Evasion can be used only in light armor or no armor. In heavy armor the rogue takes half damage on a successful save like anyone else.",
+  "must_include": [
+   [
+    "light armor"
+   ],
+   [
+    "half"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "no damage"
+   ]
+  ],
+  "srd_reference": "ClassesI.rtf > Rogue > Evasion",
+  "common_wrong_rulings": [
+   "Evasion always works on a successful Reflex save.",
+   "Evasion only fails in heavy armor if the armor check penalty applies."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-006",
+  "category": "saves",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "My monk with improved evasion failed his Reflex save against the lightning bolt. Full damage?",
+  "game_state": "Monk 9, unarmored, not helpless, failed Reflex save vs lightning bolt (Reflex half).",
+  "correct_ruling": "No. Improved evasion means he takes only half damage on a failed save (and none on a successful one).",
+  "must_include": [
+   [
+    "half"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "full damage",
+    "takes full"
+   ]
+  ],
+  "srd_reference": "ClassesI.rtf > Monk > Improved Evasion",
+  "common_wrong_rulings": [
+   "Improved evasion only improves the successful-save case.",
+   "He takes full damage because he failed."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-007",
+  "category": "saves",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I have evasion, so I should take no damage from the horrid wilting since I'm dodging it.",
+  "game_state": "Rogue 15 caught by horrid wilting (Fortitude half), succeeds the Fortitude save.",
+  "correct_ruling": "Evasion only applies to attacks that allow a Reflex save for half damage. Against a Fortitude-save effect it does nothing; the rogue takes half damage on the successful Fortitude save.",
+  "must_include": [
+   [
+    "reflex"
+   ],
+   [
+    "half"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "no damage"
+   ]
+  ],
+  "srd_reference": "ClassesI.rtf > Rogue > Evasion",
+  "common_wrong_rulings": [
+   "Evasion works on any save for half damage.",
+   "Evasion lets the rogue roll Reflex instead."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-008",
+  "category": "saves",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "The cleric is casting bless on me. I don't want to roll a save, I just want it to work.",
+  "game_state": "Bless, 'Saving Throw: None' in its stat block; also asking generally about harmless spells.",
+  "correct_ruling": "Bless allows no save at all. More generally, a creature can voluntarily forgo a saving throw and willingly accept a spell's result; spells marked (harmless) can be resisted only if the target wants to.",
+  "must_include": [
+   [
+    "voluntarily",
+    "willingly",
+    "choose not to",
+    "forgo",
+    "give up"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "MagicOverview.rtf > Saving Throw > Voluntarily Giving up a Saving Throw",
+  "common_wrong_rulings": [
+   "Every target must roll a save against every spell.",
+   "Allies automatically fail saves against each other's spells."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-009",
+  "category": "saves",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm unconscious but my friend is casting cure serious wounds on me. Do I have to make a Will save?",
+  "game_state": "Unconscious PC; cure serious wounds lists 'Will half (harmless)'.",
+  "correct_ruling": "No save is forced on the willing target; (harmless) spells are beneficial and a target may simply accept them. An unconscious creature is not resisting, so the spell takes full effect.",
+  "must_include": [
+   [
+    "harmless"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "roll a will save to",
+    "must save"
+   ]
+  ],
+  "srd_reference": "MagicOverview.rtf > Saving Throw > (harmless); Voluntarily Giving up a Saving Throw",
+  "common_wrong_rulings": [
+   "Unconscious creatures automatically fail and take half healing.",
+   "The target must roll and only gets half healing on a success."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "SRD says a creature can voluntarily forgo a save; whether an unconscious creature is treated as willing is commonly inferred, not stated verbatim. Unconscious creatures are generally treated as willing for touch spells per the Touch Spells/Willing text."
+ },
+ {
+  "id": "sav-010",
+  "category": "saves",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I cast charm person on the skeleton.",
+  "game_state": "Target: human skeleton (undead, mindless).",
+  "correct_ruling": "It has no effect. Undead are immune to mind-affecting effects, and charm person also only targets humanoids; a skeleton is neither a valid target nor affected.",
+  "must_include": [
+   [
+    "immune",
+    "no effect",
+    "not affected",
+    "doesn't affect",
+    "does not affect"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "TypesSubtypesAbilities.rtf > Undead Type (immune to mind-affecting); SpellsC.rtf > Charm Person",
+  "common_wrong_rulings": [
+   "The skeleton gets a Will save as normal.",
+   "Skeletons get +4 on the save."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-011",
+  "category": "saves",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I cast hold person on the giant spider. Will save?",
+  "game_state": "Monstrous spider (vermin, mindless).",
+  "correct_ruling": "No effect. Hold person targets only humanoids, and vermin are mindless and immune to all mind-affecting spells and abilities.",
+  "must_include": [
+   [
+    "immune",
+    "no effect",
+    "humanoid"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "TypesSubtypesAbilities.rtf > Vermin Type; SpellsH.rtf > Hold Person",
+  "common_wrong_rulings": [
+   "The spider makes a Will save.",
+   "Hold person works but hold monster is better."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-012",
+  "category": "saves",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The ogre hits me with a greatclub crit for 54 damage. I've got 120 hp so I'm fine, right?",
+  "game_state": "Fighter at 120 hp takes 54 points of damage from a single attack; standard SRD massive damage rule in use.",
+  "correct_ruling": "He survives the hp loss but a single attack dealing 50 or more damage triggers massive damage: he must make a DC 15 Fortitude save or die.",
+  "must_include": [
+   [
+    "dc 15"
+   ],
+   [
+    "fortitude",
+    "fort save"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Injury and Death > Massive Damage",
+  "common_wrong_rulings": [
+   "He has plenty of hp so nothing happens.",
+   "Massive damage only applies if damage exceeds half max hp (variant/5e-like)."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-013",
+  "category": "saves",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "Three goblins hit me for 20 each in one round, 60 total. Massive damage save?",
+  "game_state": "Three separate attacks of 20 damage each in one round.",
+  "correct_ruling": "No. Massive damage is triggered by a single attack dealing 50 or more points of damage. Three 20-point hits are separate attacks, so no massive damage save is required.",
+  "must_include": [
+   [
+    "single attack",
+    "one attack",
+    "single hit",
+    "single source"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "dc 15 fortitude save or die"
+   ]
+  ],
+  "srd_reference": "CombatI.rtf > Injury and Death > Massive Damage",
+  "common_wrong_rulings": [
+   "50 damage in a round triggers the save.",
+   "Damage is totaled across the round."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-014",
+  "category": "saves",
+  "difficulty": "medium",
+  "kind": "bluff_trap",
+  "player_action": "I want to take 10 on my Will save against the fear effect; we're not in a hurry.",
+  "game_state": "Paladin outside combat facing a fear aura.",
+  "correct_ruling": "Taking 10 is a skill-check rule; saving throws are not skill checks and must be rolled. The paladin rolls the Will save normally.",
+  "must_include": [
+   [
+    "can't take 10",
+    "cannot take 10",
+    "not skill check",
+    "skill checks",
+    "must roll",
+    "roll the save"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SkillsI.rtf > Checks without Rolls (Taking 10); CombatI.rtf > Saving Throws",
+  "common_wrong_rulings": [
+   "Yes, out of combat you can take 10 on any d20 roll.",
+   "Take 20 is allowed since time isn't pressing."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "SRD defines taking 10/20 for skill checks (and ability checks in some text) but contains no explicit sentence forbidding it on saves; ruling relies on the rule being scoped to skill checks."
+ },
+ {
+  "id": "sav-015",
+  "category": "saves",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "My cloak of resistance +2 and the cleric's resistance cantrip both give me +bonus on saves, so I'm +3 total from them?",
+  "game_state": "Cloak of resistance +2 (resistance bonus); resistance spell (+1 resistance bonus).",
+  "correct_ruling": "No. Both are resistance bonuses, and bonuses of the same type don't stack; only the higher (+2) applies.",
+  "must_include": [
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "same type"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "+3"
+   ]
+  ],
+  "srd_reference": "MagicOverview.rtf > Combining Magical Effects > Stacking; Bonus Types",
+  "common_wrong_rulings": [
+   "Spell bonuses stack with item bonuses.",
+   "They add to +3."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-016",
+  "category": "saves",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm a fighter 4 / rogue 2. What's my base Reflex save?",
+  "game_state": "Fighter 4 (base Ref +1), Rogue 2 (base Ref +3).",
+  "correct_ruling": "Base save bonuses from different classes add together: +1 + +3 = +4 base Reflex, plus Dex modifier and other bonuses.",
+  "must_include": [
+   [
+    "+4",
+    "4"
+   ],
+   [
+    "add",
+    "stack",
+    "sum",
+    "combine"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "ClassesI.rtf > Multiclass Characters > Base Save Bonuses",
+  "common_wrong_rulings": [
+   "Use only the better class's save.",
+   "Recalculate as if all six levels were rogue."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-017",
+  "category": "saves",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "The fighter is paralyzed by the ghoul. The wizard drops a fireball on the area. Does the fighter just automatically fail his Reflex save?",
+  "game_state": "Paralyzed fighter (helpless), Dex 14; in fireball area.",
+  "correct_ruling": "No automatic failure. A paralyzed character has effective Dexterity and Strength of 0, so he rolls Reflex with a -5 Dex modifier instead of his normal Dex modifier. He still rolls; a natural 20 still succeeds.",
+  "must_include": [
+   [
+    "-5",
+    "dexterity of 0",
+    "dex 0",
+    "dexterity 0"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "automatically fails the reflex",
+    "auto-fail the reflex"
+   ]
+  ],
+  "srd_reference": "AbilitiesandConditions.rtf > Conditions > Paralyzed; Helpless",
+  "common_wrong_rulings": [
+   "Paralyzed creatures automatically fail Reflex saves (5e rule).",
+   "He saves normally with his full Dex."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-018",
+  "category": "saves",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "My rogue with evasion is paralyzed, and the dragon breathes on him. He makes the save, so no damage?",
+  "game_state": "Paralyzed (helpless) rogue with evasion succeeds a Reflex save.",
+  "correct_ruling": "A helpless character does not gain the benefit of evasion, so he takes half damage on the successful save.",
+  "must_include": [
+   [
+    "helpless"
+   ],
+   [
+    "half"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "no damage"
+   ]
+  ],
+  "srd_reference": "ClassesI.rtf > Rogue > Evasion",
+  "common_wrong_rulings": [
+   "Evasion still applies; no damage.",
+   "He automatically fails the save."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-019",
+  "category": "saves",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The golem is hit by my cloudkill. Fortitude save?",
+  "game_state": "Flesh golem (construct) in cloudkill area.",
+  "correct_ruling": "Constructs are immune to any effect requiring a Fortitude save unless it also works on objects or is harmless; cloudkill has no effect on the golem. (It is also not a living creature for the spell's effects.)",
+  "must_include": [
+   [
+    "immune",
+    "no effect",
+    "not affected"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "TypesSubtypesAbilities.rtf > Construct Type",
+  "common_wrong_rulings": [
+   "The golem saves as normal at +0 Con.",
+   "Golems are immune to magic so it fails."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-020",
+  "category": "saves",
+  "difficulty": "hard",
+  "kind": "dm_discretion",
+  "player_action": "Does my backpack full of scrolls get a save against the fireball that hit me?",
+  "game_state": "PC fails Reflex save vs fireball; carrying scrolls in backpack.",
+  "correct_ruling": "The SRD has items exposed to the attack, when the character rolls a natural 1 on the save, potentially damaged; on an ordinary failed save, items are generally assumed to survive unless the effect specifically targets them. Exactly which items are exposed and destroyed is largely left to the DM, guided by the 'Items Surviving after a Saving Throw' rule.",
+  "must_include": [
+   [
+    "natural 1",
+    "nat 1",
+    "dm"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "MagicOverview.rtf > Saving Throw > Items Surviving after a Saving Throw",
+  "common_wrong_rulings": [
+   "All scrolls automatically burn on any failed save.",
+   "Items never take damage from spells."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "SRD rule: unless the descriptor says otherwise, all items carried are assumed to survive a magical attack; if the character rolls a natural 1 on the save, an exposed item is harmed (table of order of items affected). Exact phrasing should be checked."
+ },
+ {
+  "id": "sav-021",
+  "category": "saves",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "Come on, I failed by just 1. In every other game I've played, if you fail by 1 on a save vs a stun you just get dazed instead. Let me have dazed.",
+  "game_state": "Monk failed Fort save vs stunning fist by 1.",
+  "correct_ruling": "The rules have no 'fail by a little' partial effect for saves; a failed save means the full effect (stunned for 1 round). The DM can house-rule, but by the rules the character is stunned.",
+  "must_include": [
+   [
+    "stunned"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "you're dazed instead",
+    "you are dazed instead"
+   ]
+  ],
+  "srd_reference": "CombatI.rtf > Saving Throws; FeatsAll > Stunning Fist",
+  "common_wrong_rulings": [
+   "Granting a partial effect because the margin was close.",
+   "Letting the player reroll."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "sav-022",
+  "category": "saves",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm a dwarf; do I get my bonus against the wizard's hold person?",
+  "game_state": "Dwarf PC targeted by hold person (spell).",
+  "correct_ruling": "Yes. Dwarves get a +2 racial bonus on saving throws against spells and spell-like effects, so it applies to the Will save against hold person.",
+  "must_include": [
+   [
+    "+2"
+   ],
+   [
+    "racial",
+    "spells"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Races.rtf > Dwarves",
+  "common_wrong_rulings": [
+   "Dwarves get advantage on saves vs magic.",
+   "The bonus applies only to poison."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ }
+]

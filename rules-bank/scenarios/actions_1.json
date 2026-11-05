@@ -1,0 +1,492 @@
+[
+ {
+  "id": "act-001",
+  "category": "turn_order_actions",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "Combat starts. I rolled a 15 on initiative, the orc rolled 15 too. Who goes first?",
+  "game_state": "Fighter Dex 14 (+2 init mod). Orc Dex 11 (+0 init mod). Both totals 15.",
+  "correct_ruling": "Ties on initiative go to the character with the higher total initiative modifier, so the fighter (+2) acts first. Only if modifiers also tie do the tied characters roll again.",
+  "must_include": [
+   [
+    "modifier",
+    "initiative bonus",
+    "dexterity"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "players win ties",
+    "player wins ties"
+   ]
+  ],
+  "srd_reference": "CombatI.rtf > Initiative > Initiative Checks",
+  "common_wrong_rulings": [
+   "Players always win ties.",
+   "Reroll immediately without checking modifiers.",
+   "Higher Dex score (not modifier) decides."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-002",
+  "category": "turn_order_actions",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "It's the first round, before I've acted. The rogue attacks me. Do I get my Dex bonus to AC?",
+  "game_state": "Wizard has not yet acted in the combat; no Uncanny Dodge. Rogue acts earlier in initiative.",
+  "correct_ruling": "No. Before a character's first regular turn in combat it is flat-footed and loses its Dexterity bonus to AC, so the rogue also gets sneak attack.",
+  "must_include": [
+   [
+    "flat-footed",
+    "flat footed"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Initiative > Flat-Footed",
+  "common_wrong_rulings": [
+   "Flat-footed only applies in a surprise round.",
+   "Flat-footed only matters if the attacker is hidden."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-003",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm flat-footed at the start of the fight. The goblin moves past me. I take my attack of opportunity.",
+  "game_state": "Fighter has not yet acted this combat; no Combat Reflexes. Goblin provokes by moving out of a threatened square.",
+  "correct_ruling": "A flat-footed character cannot make attacks of opportunity (unless it has Combat Reflexes). The fighter gets no AoO.",
+  "must_include": [
+   [
+    "can't make attacks of opportunity",
+    "cannot make attacks of opportunity",
+    "can't make an attack of opportunity",
+    "cannot make an attack of opportunity",
+    "no attack of opportunity",
+    "can't take an attack of opportunity",
+    "cannot take an attack of opportunity"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Initiative > Flat-Footed",
+  "common_wrong_rulings": [
+   "Flat-footed only affects AC.",
+   "AoOs are reactions and always available."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-004",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "In the surprise round I want to move up to the bandit and full attack.",
+  "game_state": "Party noticed the bandits; bandits did not notice the party. Surprise round. Fighter has BAB +6.",
+  "correct_ruling": "In a surprise round, aware combatants get only a single standard action or move action (plus free actions). No full attack and no move-plus-attack; the fighter can move OR attack once.",
+  "must_include": [
+   [
+    "standard action or a move action",
+    "standard or move",
+    "standard action or move action",
+    "one action",
+    "single action"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "full attack is allowed",
+    "you can full attack"
+   ]
+  ],
+  "srd_reference": "CombatI.rtf > Surprise > The Surprise Round",
+  "common_wrong_rulings": [
+   "Surprised enemies give a full round of actions.",
+   "Move plus attack in the surprise round."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-005",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I ready an action to shoot the first orc that comes through the door.",
+  "game_state": "Archer readies a standard action. Orc opens door and steps in on its turn.",
+  "correct_ruling": "The readied attack triggers and resolves just before the orc's triggering action. Afterward the archer's initiative moves to directly before the orc's in the order, and the archer does not get a regular action that round beyond the ready.",
+  "must_include": [
+   [
+    "before",
+    "prior to"
+   ],
+   [
+    "initiative"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Special Initiative Actions > Ready",
+  "common_wrong_rulings": [
+   "Readied action resolves after the trigger.",
+   "Archer keeps original initiative count."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-006",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I ready a full attack against anything that comes adjacent.",
+  "game_state": "Fighter BAB +11.",
+  "correct_ruling": "You can only ready a standard action, a move action, or a free action. A full attack is a full-round action and cannot be readied; you could ready a single attack.",
+  "must_include": [
+   [
+    "standard action",
+    "single attack",
+    "one attack"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "you can ready a full attack"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Special Initiative Actions > Ready",
+  "common_wrong_rulings": [
+   "Allows readying a full attack.",
+   "Readied actions get all iterative attacks."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-007",
+  "category": "turn_order_actions",
+  "difficulty": "easy",
+  "kind": "bluff_trap",
+  "player_action": "I attack with my longsword and then use my bonus action to drink a potion.",
+  "game_state": "Fighter, standard action available, move action available.",
+  "correct_ruling": "D&D 3.5 has no bonus action. Drinking a potion is a standard action that provokes an attack of opportunity, and the attack already used the fighter's standard action, so he cannot also drink the potion this round. He can attack and move, or drink and move.",
+  "must_include": [
+   [
+    "no bonus action",
+    "no such thing as a bonus action",
+    "doesn't have bonus actions",
+    "there are no bonus actions",
+    "not a 3.5",
+    "5e",
+    "fifth edition"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Actions in Combat > Standard Actions (Drink a potion)",
+  "common_wrong_rulings": [
+   "Allows a 5e bonus action.",
+   "Treats potion as a move or free action."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-008",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'll delay until after the cleric acts, then go.",
+  "game_state": "Rogue initiative 18, cleric 12. Rogue delays and acts after the cleric.",
+  "correct_ruling": "Delaying is allowed; the rogue acts after the cleric and its initiative count becomes the new count where it acted (just after the cleric) for the rest of combat. Delay sacrifices no action but the rogue's place in the order changes permanently.",
+  "must_include": [
+   [
+    "initiative"
+   ],
+   [
+    "new",
+    "changes",
+    "moves",
+    "becomes"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Special Initiative Actions > Delay",
+  "common_wrong_rulings": [
+   "Rogue returns to 18 next round.",
+   "Delaying costs a move action."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-009",
+  "category": "turn_order_actions",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I'm delaying. The ogre is about to attack the cleric \u2014 I want to jump in and act before the ogre's attack, like an interrupt.",
+  "game_state": "Rogue is delaying. It's the ogre's turn and the ogre has declared an attack.",
+  "correct_ruling": "Delay does not let you interrupt another creature's action. A delaying character can choose to act only between other creatures' turns; to interrupt you need a readied action. The rogue can act after the ogre's turn.",
+  "must_include": [
+   [
+    "ready",
+    "readied"
+   ],
+   [
+    "interrupt",
+    "can't",
+    "cannot"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Special Initiative Actions > Delay",
+  "common_wrong_rulings": [
+   "Delay works as an interrupt.",
+   "Delaying character can cut in mid-turn."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-010",
+  "category": "turn_order_actions",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I take a 5-foot step and then full attack.",
+  "game_state": "Fighter adjacent to nothing; enemy 10 feet away. No other movement this round.",
+  "correct_ruling": "Legal. A 5-foot step can be taken before, during or after other actions in a round in which you take no other movement, including with a full attack. It does not provoke.",
+  "must_include": [
+   [
+    "5-foot step",
+    "5 foot step",
+    "five-foot step"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "can't full attack after",
+    "cannot full attack after"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Miscellaneous Actions > Take 5-Foot Step",
+  "common_wrong_rulings": [
+   "Any movement prevents a full attack.",
+   "5-foot step is a move action."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-011",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I attack once, see the goblin drop, then decide to move 30 feet to the next one.",
+  "game_state": "Fighter BAB +6, speed 30. Has not moved yet this round.",
+  "correct_ruling": "Allowed. After the first attack of a would-be full attack, you may decide to take a move action instead of the remaining attacks, as long as you haven't already taken a move action this round. Effectively a standard attack plus move.",
+  "must_include": [
+   [
+    "move action",
+    "move instead",
+    "move"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Full-Round Actions > Full Attack (Deciding between an attack or a full attack)",
+  "common_wrong_rulings": [
+   "Committed to full attack once you swung.",
+   "Can move only 5 feet."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-012",
+  "category": "turn_order_actions",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I trade my standard action for a second move action.",
+  "game_state": "Wizard speed 30.",
+  "correct_ruling": "Legal: you may take a move action in place of a standard action, moving 60 ft total via two move actions (this is not the same as running).",
+  "must_include": [
+   [
+    "move action in place",
+    "instead of a standard",
+    "in place of a standard",
+    "two move actions",
+    "double move"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Action Types > Standard Action / Move Action",
+  "common_wrong_rulings": [
+   "Cannot trade standard for move.",
+   "Can trade move for standard."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-013",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "I didn't cast my spell this round because I only moved, so I should be able to trade my unused move action for a standard and cast two spells next round, right? It's only fair.",
+  "game_state": "Sorcerer; previous round took only a move action.",
+  "correct_ruling": "No. Unused actions do not carry over, and you can never trade a move action for a standard action. Each round you get one standard and one move (or a full-round action).",
+  "must_include": [
+   [
+    "don't carry over",
+    "do not carry over",
+    "not carry over",
+    "can't carry",
+    "cannot carry",
+    "no carrying",
+    "don't bank",
+    "can't bank",
+    "cannot be saved",
+    "can't save"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Action Types",
+  "common_wrong_rulings": [
+   "Lets actions bank between rounds."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-014",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I quicken a magic missile and also cast fireball this turn.",
+  "game_state": "9th-level wizard with Quicken Spell, magic missile prepared quickened in a 5th-level slot.",
+  "correct_ruling": "Legal: a quickened spell is cast as a free action (only one quickened spell per round), so the wizard can cast it plus fireball as a standard action. Casting a quickened spell doesn't provoke.",
+  "must_include": [
+   [
+    "free action",
+    "swift action"
+   ],
+   [
+    "one quickened",
+    "only one",
+    "one per round"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Feats.rtf > Quicken Spell",
+  "common_wrong_rulings": [
+   "No two spells in a round ever.",
+   "Quickened spells provoke."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "SRD 3.5 Quicken Spell text says free action; later errata/other sources treat it as swift. Both accepted."
+ },
+ {
+  "id": "act-015",
+  "category": "turn_order_actions",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I yell a warning to my party on the orc's turn.",
+  "game_state": "Paladin is not the active creature; it is the orc's turn.",
+  "correct_ruling": "Speaking is a free action, and the SRD allows speaking even when it isn't your turn. The DM may limit how much is said.",
+  "must_include": [
+   [
+    "free action"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Free Actions > Speak",
+  "common_wrong_rulings": [
+   "You can only speak on your turn."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-016",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "dm_discretion",
+  "player_action": "I want to give a 3-minute speech mid-combat to rally the villagers as a free action.",
+  "game_state": "Bard in round 2 of combat.",
+  "correct_ruling": "Speech is a free action, but the DM may limit how much you can say in a round (a round is 6 seconds); the length allowed is a DM call. A 3-minute speech can't fit in one round.",
+  "must_include": [
+   [
+    "dm",
+    "gm",
+    "game master",
+    "discretion"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Free Actions > Speak",
+  "common_wrong_rulings": [
+   "Unlimited speech is free.",
+   "Speech costs a standard action."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-017",
+  "category": "turn_order_actions",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I ready an action to cast dispel magic as a counterspell when the enemy wizard starts casting.",
+  "game_state": "Cleric 7 with dispel magic prepared; enemy wizard casting a spell within range. Cleric readied to counterspell.",
+  "correct_ruling": "Legal. To counterspell you ready an action targeting the caster; when they cast, you identify the spell (Spellcraft) and then can use dispel magic as a counterspell, which requires a dispel check rather than automatic success.",
+  "must_include": [
+   [
+    "ready",
+    "readied"
+   ],
+   [
+    "spellcraft",
+    "identify"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "MagicOverview.rtf > Counterspells; SpellsD-E.rtf > Dispel Magic",
+  "common_wrong_rulings": [
+   "Counterspell as a 5e reaction without readying.",
+   "Dispel magic counterspell is automatic."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-018",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "bluff_trap",
+  "player_action": "The kobold attacks me, I use my reaction to make an opportunity attack when it moves away.",
+  "game_state": "Fighter adjacent to kobold; kobold takes a 5-foot step away.",
+  "correct_ruling": "A 5-foot step does not provoke attacks of opportunity. Also 3.5 has no general 'reaction'; AoOs are limited by number per round (1 without Combat Reflexes).",
+  "must_include": [
+   [
+    "5-foot step",
+    "five-foot step",
+    "5 foot step"
+   ],
+   [
+    "doesn't provoke",
+    "does not provoke",
+    "no attack of opportunity",
+    "not provoke"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Miscellaneous Actions > Take 5-Foot Step",
+  "common_wrong_rulings": [
+   "Any movement out of reach provokes.",
+   "Uses 5e reaction framework."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ }
+]

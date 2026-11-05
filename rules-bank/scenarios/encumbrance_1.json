@@ -1,0 +1,200 @@
+[
+ {
+  "id": "enc-001", "category": "encumbrance", "difficulty": "easy", "kind": "rules",
+  "player_action": "My fighter has Str 10 and is carrying 50 pounds of gear. Am I slowed down?",
+  "game_state": "Medium human fighter, base speed 30 ft, wearing no armor, total carried weight 50 lb.",
+  "correct_ruling": "With Str 10 a light load is up to 33 lb and a medium load is 34-66 lb, so 50 lb is a medium load. A medium load reduces a 30 ft speed to 20 ft, sets max Dex bonus to +3, imposes a -3 check penalty, and limits running to x4.",
+  "must_include": [["medium load"], ["20 ft","20 feet","20-foot","twenty feet"]],
+  "must_not_include": [["light load, so no"]],
+  "srd_reference": "SRD 3.5 CarryingCapacity.rtf > Carrying Capacity table; Carrying Loads",
+  "common_wrong_rulings": ["Treating 50 lb as a light load for Str 10", "Applying 5e's Str x15 carrying capacity"],
+  "confidence": "verified", "confidence_note": ""
+ },
+ {
+  "id": "enc-002", "category": "encumbrance", "difficulty": "easy", "kind": "rules",
+  "player_action": "I'm carrying a heavy load. What are my max Dex bonus and armor check penalty?",
+  "game_state": "Medium character, no armor, carrying a heavy load.",
+  "correct_ruling": "A heavy load imposes a maximum Dex bonus to AC of +1 and a check penalty of -6, reduces speed (30 ft becomes 20 ft), and limits running to x3 speed.",
+  "must_include": [["+1","max dex bonus of 1","maximum dex bonus of 1"], ["-6","−6","penalty of 6"]],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 CarryingCapacity.rtf > Carrying Loads table",
+  "common_wrong_rulings": ["Max Dex +3 / -3 penalty (that's medium load)", "Heavy load reduces speed to 15 ft for a 30 ft creature"],
+  "confidence": "verified", "confidence_note": ""
+ },
+ {
+  "id": "enc-003", "category": "encumbrance", "difficulty": "medium", "kind": "rules",
+  "player_action": "I'm wearing chainmail and carrying a medium load. Do the armor check penalty and load penalty add together?",
+  "game_state": "Character wears a chain shirt (max Dex +4, armor check penalty -2) and carries a medium load (max Dex +3, check penalty -3).",
+  "correct_ruling": "They don't stack. Use the worse of the two figures: max Dex bonus +3 (from the load) and check penalty -3 (from the load). Armor and load restrictions are compared and only the more severe applies.",
+  "must_include": [["don't stack","do not stack","not stack","doesn't stack","does not stack","worse","more severe","higher"]],
+  "must_not_include": [["-5"]],
+  "srd_reference": "SRD 3.5 CarryingCapacity.rtf > Carrying Loads (if wearing armor, use the worse figure)",
+  "common_wrong_rulings": ["Adding the penalties for -5", "Using the armor's +4 max Dex because armor 'overrides' load"],
+  "confidence": "verified", "confidence_note": ""
+ },
+ {
+  "id": "enc-004", "category": "encumbrance", "difficulty": "medium", "kind": "rules",
+  "player_action": "My halfling (Str 10) wants to know her light load limit. It's 33 like a human, right?",
+  "game_state": "Small halfling, Str 10, biped.",
+  "correct_ruling": "No. Small bipeds multiply the carrying capacity figures by 3/4, so a Str 10 halfling's light load is about 24 lb (33 x 3/4, rounded down), not 33.",
+  "must_include": [["3/4","three-quarters","three quarters","75%","0.75"]],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 CarryingCapacity.rtf > Bigger and Smaller Creatures",
+  "common_wrong_rulings": ["Small creatures carry the same as Medium", "Small creatures carry half"],
+  "confidence": "verified", "confidence_note": ""
+ },
+ {
+  "id": "enc-005", "category": "encumbrance", "difficulty": "medium", "kind": "rules",
+  "player_action": "How much can my horse carry? It's a Large quadruped with Str 16.",
+  "game_state": "Light horse: Large quadruped, Str 14. (Player said 16; use the actual stat block value of the creature at the table.) For this scenario, assume Str 16.",
+  "correct_ruling": "Large quadrupeds multiply the Str-based capacity by 3. Str 16 light load is 76 lb, so the horse's light load is 228 lb (medium up to 459, heavy up to 690).",
+  "must_include": [["x3","×3","times 3","triple","three times","228"]],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 CarryingCapacity.rtf > Bigger and Smaller Creatures (quadruped multipliers)",
+  "common_wrong_rulings": ["Using the biped Large multiplier x2", "Using x1.5 for all quadrupeds"],
+  "confidence": "verified", "confidence_note": ""
+ },
+ {
+  "id": "enc-006", "category": "encumbrance", "difficulty": "easy", "kind": "rules",
+  "player_action": "Can my Str 10 wizard lift a 150-pound unconscious ally over his head?",
+  "game_state": "Str 10, Medium. Max heavy load for Str 10 is 100 lb.",
+  "correct_ruling": "No. A character can lift up to his maximum heavy load (100 lb for Str 10) over his head. He can lift up to double that (200 lb) off the ground, staggering, and push or drag up to five times it (500 lb).",
+  "must_include": [["no","cannot","can't"], ["100"]],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 CarryingCapacity.rtf > Lifting and Dragging",
+  "common_wrong_rulings": ["Allowing it because 150 is under double the max load", "Using push/drag limit for overhead lift"],
+  "confidence": "verified", "confidence_note": ""
+ },
+ {
+  "id": "enc-007", "category": "encumbrance", "difficulty": "medium", "kind": "rules",
+  "player_action": "I drag the 300-pound treasure chest out of the room. Str 10.",
+  "game_state": "Str 10, max heavy load 100 lb.",
+  "correct_ruling": "Allowed: a character can push or drag up to five times his maximum heavy load (500 lb for Str 10) in favorable conditions. Lifting it off the ground would be limited to 200 lb.",
+  "must_include": [["five times","5 times","5x","x5","×5","500"]],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 CarryingCapacity.rtf > Lifting and Dragging",
+  "common_wrong_rulings": ["Denying it because 300 exceeds the heavy load", "Requiring a Strength check DC set ad hoc as the only rule"],
+  "confidence": "verified", "confidence_note": ""
+ },
+ {
+  "id": "enc-008", "category": "encumbrance", "difficulty": "medium", "kind": "rules",
+  "player_action": "I'm in full plate but carrying almost nothing. My dwarf moves 20 ft. Does the armor slow me?",
+  "game_state": "Dwarf, base speed 20 ft, wearing full plate (heavy armor), light load.",
+  "correct_ruling": "No. Dwarves can move at their full 20 ft speed even in medium or heavy armor or when carrying a medium or heavy load.",
+  "must_include": [["20 ft","20 feet","twenty feet","full speed","not slow","isn't slowed","not reduced"]],
+  "must_not_include": [["15 ft","15 feet"]],
+  "srd_reference": "SRD 3.5 Races.rtf > Dwarves",
+  "common_wrong_rulings": ["Reducing dwarf to 15 ft in heavy armor"],
+  "confidence": "verified", "confidence_note": ""
+ },
+ {
+  "id": "enc-009", "category": "encumbrance", "difficulty": "hard", "kind": "rules",
+  "player_action": "With bull's strength I go from Str 14 to Str 18, so my load limits change, right?",
+  "game_state": "Fighter Str 14 under bull's strength (+4 enhancement to Str), carrying 90 lb.",
+  "correct_ruling": "Yes. Carrying capacity uses the current Strength score, so with Str 18 the light load is up to 100 lb and 90 lb is a light load (it was a medium load at Str 14, whose light limit is 58 lb).",
+  "must_include": [["light load","light"], ["100"]],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 CarryingCapacity.rtf > Carrying Capacity table; SpellsA-B > Bull's Strength",
+  "common_wrong_rulings": ["Capacity uses base Str only", "Enhancement bonuses don't affect carrying capacity"],
+  "confidence": "verified", "confidence_note": ""
+ },
+ {
+  "id": "enc-010", "category": "encumbrance", "difficulty": "hard", "kind": "rules",
+  "player_action": "My giant has Str 30. What's the heavy load? The table only goes to 29.",
+  "game_state": "Large biped, Str 30.",
+  "correct_ruling": "For scores above 29, find the score between 20 and 29 with the same ones digit and multiply by 4 for each 10 points above. Str 30 uses Str 20 (heavy 400 lb) x4 = 1,600 lb for a Medium creature, then x2 for a Large biped = 3,200 lb.",
+  "must_include": [["x4","×4","times 4","multiply by 4","multiply by four","four times","1,600","1600"]],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 CarryingCapacity.rtf > Tremendous Strength",
+  "common_wrong_rulings": ["Doubling per 10 points", "Extrapolating linearly from the table"],
+  "confidence": "verified", "confidence_note": ""
+ },
+ {
+  "id": "enc-011", "category": "encumbrance", "difficulty": "easy", "kind": "rules",
+  "player_action": "I've got a medium load. How fast can I run?",
+  "game_state": "Human, speed 30 ft, medium load, no armor.",
+  "correct_ruling": "A medium load reduces speed to 20 ft and limits running to x4 speed, so a run covers 80 ft per round.",
+  "must_include": [["x4","×4","four times","times 4","80"]],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 CarryingCapacity.rtf > Carrying Loads table",
+  "common_wrong_rulings": ["Running at x4 of base 30 ft (120 ft)", "Running limited to x3"],
+  "confidence": "verified", "confidence_note": ""
+ },
+ {
+  "id": "enc-012", "category": "encumbrance", "difficulty": "medium", "kind": "rules",
+  "player_action": "Does a medium load's check penalty apply to my attack rolls?",
+  "game_state": "Character with a medium load.",
+  "correct_ruling": "No. The load check penalty works like an armor check penalty: it applies to Strength- and Dexterity-based skill checks (Climb, Jump, Hide, etc.), not to attack rolls.",
+  "must_include": [["no","does not","doesn't"], ["skill"]],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 CarryingCapacity.rtf > Carrying Loads; Equipment > Armor Check Penalty",
+  "common_wrong_rulings": ["Applying the penalty to attacks", "Applying it to all skills including Knowledge"],
+  "confidence": "verified", "confidence_note": ""
+ },
+ {
+  "id": "enc-013", "category": "encumbrance", "difficulty": "hard", "kind": "bluff_trap",
+  "player_action": "What's the exact light load limit for Str 13?",
+  "game_state": "Medium character, Str 13.",
+  "correct_ruling": "Per the SRD Carrying Capacity table, Str 13 has a light load of up to 50 lb, medium 51-100 lb, heavy 101-150 lb.",
+  "must_include": [["50"]],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 CarryingCapacity.rtf > Carrying Capacity table",
+  "common_wrong_rulings": ["Interpolating to 48 lb", "Using 5e Str x15 = 195 lb"],
+  "confidence": "verified", "confidence_note": ""
+ },
+ {
+  "id": "enc-014", "category": "encumbrance", "difficulty": "medium", "kind": "player_pressure",
+  "player_action": "Coins are basically weightless, so I'm taking all 5,000 gold pieces from the hoard without changing my load.",
+  "game_state": "Character already near light load limit.",
+  "correct_ruling": "Coins have weight: 50 coins weigh 1 pound, so 5,000 gp weighs 100 lb and must be added to the character's load.",
+  "must_include": [["50 coins","fifty coins","100 lb","100 pounds"]],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 Equipment.rtf > Wealth and Money (coins)",
+  "common_wrong_rulings": ["Coins are weightless", "Using 100 coins per pound"],
+  "confidence": "verified", "confidence_note": ""
+ },
+ {
+  "id": "enc-015", "category": "encumbrance", "difficulty": "medium", "kind": "rules",
+  "player_action": "My gnome's armor weighs half as much because he's Small, right?",
+  "game_state": "Small gnome buying a chain shirt.",
+  "correct_ruling": "Yes. Armor for Small characters weighs half as much as the Medium version (and costs the same). Weapons for Small creatures likewise weigh half.",
+  "must_include": [["half","1/2","50%"]],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 Equipment.rtf > Armor for Unusual Creatures / Armor table notes",
+  "common_wrong_rulings": ["Small armor weighs the same", "Small armor costs half"],
+  "confidence": "verified", "confidence_note": ""
+ },
+ {
+  "id": "enc-016", "category": "encumbrance", "difficulty": "hard", "kind": "rules",
+  "player_action": "I'm carrying exactly my max heavy load. Can I still pick up one more 5-lb item and keep walking?",
+  "game_state": "Str 10, carrying 100 lb.",
+  "correct_ruling": "No. 100 lb is the maximum heavy load for Str 10; anything above that can't be carried normally. He could lift up to 200 lb off the ground but can only stagger around (lose Dex bonus to AC, move 5 ft as a full-round action).",
+  "must_include": [["no","cannot","can't"], ["stagger","5 feet","5 ft"]],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 CarryingCapacity.rtf > Lifting and Dragging",
+  "common_wrong_rulings": ["Allowing an 'overloaded' state with a further speed penalty", "No limit beyond heavy"],
+  "confidence": "unsure", "confidence_note": "The 'stagger' detail (Dex loss, 5 ft per full round) is recalled from the SRD lifting text; the core 'cannot exceed heavy load to carry' is confident."
+ },
+ {
+  "id": "enc-017", "category": "encumbrance", "difficulty": "medium", "kind": "rules",
+  "player_action": "My Str 8 sorcerer has 30 pounds of stuff. What load is that?",
+  "game_state": "Medium, Str 8.",
+  "correct_ruling": "For Str 8 the light load is up to 26 lb and medium 27-53 lb, so 30 lb is a medium load: speed 30 ft drops to 20 ft, max Dex +3, check penalty -3.",
+  "must_include": [["medium"]],
+  "must_not_include": [["light load, so"]],
+  "srd_reference": "SRD 3.5 CarryingCapacity.rtf > Carrying Capacity table",
+  "common_wrong_rulings": ["Calling 30 lb a light load"],
+  "confidence": "verified", "confidence_note": ""
+ },
+ {
+  "id": "enc-018", "category": "encumbrance", "difficulty": "medium", "kind": "rules",
+  "player_action": "I'm a monk with a medium load. Do I keep my fast movement and AC bonus?",
+  "game_state": "Monk level 3, unarmored, medium load.",
+  "correct_ruling": "No. A monk loses the AC bonus (Wis and level) and fast movement when wearing armor, using a shield, or carrying a medium or heavy load.",
+  "must_include": [["lose","loses","no","not"]],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 ClassesI.rtf > Monk > AC Bonus; Fast Movement",
+  "common_wrong_rulings": ["Monks keep fast movement under any load", "Only armor matters for monks"],
+  "confidence": "verified", "confidence_note": ""
+ }
+]
