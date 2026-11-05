@@ -61,7 +61,7 @@
   "kind": "rules",
   "player_action": "I take 10 on Use Magic Device to activate this wand in a quiet library.",
   "game_state": "Rogue, not threatened, using a wand of cure light wounds.",
-  "correct_ruling": "No. You can't take 10 (or take 20) on Use Magic Device; the skill's text specifically disallows it because magic is unpredictable.",
+  "correct_ruling": "No. The Use Magic Device skill text says you can't take 10 on it; taking 20 is also unavailable in practice, because a natural 1 on an activation attempt can lock you out of the item for 24 hours.",
   "must_include": [
    [
     "can't take 10",

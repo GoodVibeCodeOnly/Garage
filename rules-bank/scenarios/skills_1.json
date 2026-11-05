@@ -38,8 +38,6 @@
   "correct_ruling": "No. Skill checks have no automatic failure on a natural 1; the total of 16 beats DC 10 and the jump succeeds.",
   "must_include": [
    [
-    "doesn't",
-    "does not",
     "no automatic failure",
     "not an automatic failure",
     "isn't an automatic failure",
@@ -376,11 +374,12 @@
   "kind": "rules",
   "player_action": "The guard is staring right at me. I hide behind nothing — I'm just really sneaky.",
   "game_state": "Open room, no cover or concealment, guard observing the PC.",
-  "correct_ruling": "Not possible. You need cover or concealment to make a Hide check, and you can't hide while being observed unless you create a distraction with Bluff (or have an ability like hide in plain sight).",
+  "correct_ruling": "Not possible. You can't hide while being observed unless you create a diversion with Bluff (or have an ability like hide in plain sight); in an open room with no cover or concealment there is nowhere to hide.",
   "must_include": [
    [
-    "cover",
-    "concealment"
+    "observed",
+    "being watched",
+    "seen"
    ]
   ],
   "must_not_include": [],
@@ -389,8 +388,8 @@
    "Allowing an opposed Hide vs Spot anywhere",
    "Hide at -10 in the open"
   ],
-  "confidence": "confident",
-  "confidence_note": ""
+  "confidence": "unsure",
+  "confidence_note": "The explicit 'need cover or concealment to Hide' wording may be later FAQ text; ruling leans on the SRD's 'can't hide while observed'."
  },
  {
   "id": "skl-015",
@@ -427,8 +426,7 @@
   "correct_ruling": "Only characters with trapfinding (rogues) can use Search to find traps with a DC higher than 20, so the fighter cannot find it regardless of the roll.",
   "must_include": [
    [
-    "trapfinding",
-    "rogue"
+    "trapfinding"
    ],
    [
     "20"

@@ -76,8 +76,7 @@
     "doesn't stack",
     "does not stack",
     "worse",
-    "more severe",
-    "higher"
+    "more severe"
    ]
   ],
   "must_not_include": [
@@ -125,7 +124,7 @@
   "difficulty": "medium",
   "kind": "rules",
   "player_action": "How much can my horse carry? It's a Large quadruped with Str 16.",
-  "game_state": "Light horse: Large quadruped, Str 14. (Player said 16; use the actual stat block value of the creature at the table.) For this scenario, assume Str 16.",
+  "game_state": "Light horse: Large quadruped. For this scenario use Str 16 (ignore the stat block's own listed carrying capacity).",
   "correct_ruling": "Large quadrupeds multiply the Str-based capacity by 3. Str 16 light load is 76 lb, so the horse's light load is 228 lb (medium up to 459, heavy up to 690).",
   "must_include": [
    [
@@ -134,6 +133,7 @@
     "times 3",
     "triple",
     "three times",
+    "by 3",
     "228"
    ]
   ],
@@ -143,8 +143,8 @@
    "Using the biped Large multiplier x2",
    "Using x1.5 for all quadrupeds"
   ],
-  "confidence": "confident",
-  "confidence_note": ""
+  "confidence": "unsure",
+  "confidence_note": "The SRD light horse entry lists its own carrying capacity, which may not match the table math; scenario fixes Str 16 to test the multiplier only."
  },
  {
   "id": "enc-006",
@@ -159,8 +159,10 @@
     "cannot",
     "can't",
     "only lift",
-    "up to",
-    "no."
+    "over his head",
+    "overhead",
+    "over your head",
+    "only lift"
    ],
    [
     "100"
@@ -209,16 +211,14 @@
   "kind": "rules",
   "player_action": "I'm in full plate but carrying almost nothing. My dwarf moves 20 ft. Does the armor slow me?",
   "game_state": "Dwarf, base speed 20 ft, wearing full plate (heavy armor), light load.",
-  "correct_ruling": "No. Dwarves can move at their full 20 ft speed even in medium or heavy armor or when carrying a medium or heavy load.",
+  "correct_ruling": "No. Dwarves move at their full speed (here 20 ft, not reduced) even in medium or heavy armor or when carrying a medium or heavy load.",
   "must_include": [
    [
-    "20 ft",
-    "20 feet",
-    "twenty feet",
     "full speed",
     "not slow",
     "isn't slowed",
-    "not reduced"
+    "not reduced",
+    "normal speed"
    ]
   ],
   "must_not_include": [
@@ -325,8 +325,6 @@
   "correct_ruling": "No. The load check penalty works like an armor check penalty: it applies to Strength- and Dexterity-based skill checks (Climb, Jump, Hide, etc.), not to attack rolls.",
   "must_include": [
    [
-    "does not",
-    "doesn't",
     "not to attack",
     "doesn't apply to attack",
     "does not apply to attack",

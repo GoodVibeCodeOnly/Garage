@@ -104,14 +104,14 @@
    [
     "no called shot",
     "not a called shot",
-    "hit points",
-    "14",
+    "no called shots",
     "doesn't kill",
     "does not kill",
     "not dead",
     "still alive",
     "still standing",
-    "still up"
+    "still up",
+    "no instant"
    ]
   ],
   "must_not_include": [],
@@ -349,8 +349,7 @@
   "correct_ruling": "Bluff is opposed by the guard's Sense Motive, not a fixed DC. The DM sets circumstance modifiers based on how believable the lie is and how much the guard wants to believe it.",
   "must_include": [
    [
-    "opposed",
-    "sense motive"
+    "opposed"
    ]
   ],
   "must_not_include": [],
@@ -588,8 +587,7 @@
   "must_include": [
    [
     "35%",
-    "35 percent",
-    "35"
+    "35 percent"
    ],
    [
     "spell failure"

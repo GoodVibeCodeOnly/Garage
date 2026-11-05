@@ -174,7 +174,7 @@
   "kind": "bluff_trap",
   "player_action": "I cast a quickened magic missile as my swift action and then fireball as my standard action. Wait, the DM says I can only cast a cantrip with my other action?",
   "game_state": "Wizard with Quicken Spell; magic missile prepared as quickened in a 5th-level slot.",
-  "correct_ruling": "Legal in 3.5. A quickened spell is a swift (free-like) action and you may cast one quickened spell per round in addition to a normal spell. There is no rule restricting the other spell to a cantrip; that's a 5e bonus-action spell rule.",
+  "correct_ruling": "Legal in 3.5. Casting a quickened spell is a free action, and you may cast one quickened spell per round in addition to a spell cast normally. There is no rule restricting the other spell to a cantrip; that's a 5e bonus-action spell rule.",
   "must_include": [
    [
     "quicken"
@@ -341,7 +341,8 @@
    [
     "17",
     "15 + spell level",
-    "15 + 2"
+    "15 + 2",
+    "dc 15"
    ]
   ],
   "must_not_include": [],
@@ -350,8 +351,8 @@
    "No casting allowed while entangled.",
    "No check needed."
   ],
-  "confidence": "confident",
-  "confidence_note": ""
+  "confidence": "unsure",
+  "confidence_note": "The SRD appears inconsistent: the condition summary gives Concentration DC 15 for entangled casting, the Concentration skill table gives 15 + spell level. Both accepted."
  },
  {
   "id": "spl-030",
@@ -466,7 +467,7 @@
   "kind": "rules",
   "player_action": "I don't have a component pouch, my stuff got taken. Can I cast magic missile? It's only V,S. What about sleep?",
   "game_state": "Wizard stripped of gear. Sleep has a material component (pinch of sand, rose petals, or a cricket).",
-  "correct_ruling": "Magic missile (V, S) can be cast. Sleep requires its material component; without it (and without Eschew Materials, which is not in the core SRD) it can't be cast unless the DM lets them find a substitute component.",
+  "correct_ruling": "Magic missile (V, S) can be cast. Sleep requires its material component; without it the spell can't be cast unless the wizard has Eschew Materials (which covers components costing 1 gp or less) or the DM allows a found substitute.",
   "must_include": [
    [
     "material component",
@@ -479,8 +480,8 @@
    "Components only matter if they have a gold cost.",
    "Casters can always substitute an arcane focus (5e)."
   ],
-  "confidence": "confident",
-  "confidence_note": ""
+  "confidence": "unsure",
+  "confidence_note": "Reviewer and author disagreed on whether Eschew Materials is in the SRD feat list; ruling now accepts it."
  },
  {
   "id": "spl-035",

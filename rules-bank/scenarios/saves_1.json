@@ -134,6 +134,10 @@
    ],
    [
     "half"
+   ],
+   [
+    "light armor",
+    "light or no armor"
    ]
   ],
   "must_not_include": [],
@@ -156,6 +160,10 @@
   "must_include": [
    [
     "half"
+   ],
+   [
+    "failed",
+    "fail"
    ]
   ],
   "must_not_include": [
@@ -185,6 +193,9 @@
    ],
    [
     "half"
+   ],
+   [
+    "reflex"
    ]
   ],
   "must_not_include": [],
@@ -479,6 +490,9 @@
    ],
    [
     "half"
+   ],
+   [
+    "helpless"
    ]
   ],
   "must_not_include": [],

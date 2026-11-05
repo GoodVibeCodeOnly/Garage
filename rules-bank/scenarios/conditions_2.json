@@ -33,7 +33,7 @@
   "kind": "bluff_trap",
   "player_action": "I'm fatigued and then forced-march into more fatigue. I'm at exhaustion level 2 now, right? Disadvantage on attacks?",
   "game_state": "Fatigued PC does something that would cause fatigue again.",
-  "correct_ruling": "3.5 has no exhaustion levels. A fatigued character who does something that would normally cause fatigue becomes exhausted: half speed, -6 to Strength and Dexterity, can't run or charge. After 1 hour of complete rest, an exhausted character becomes fatigued.",
+  "correct_ruling": "3.5 has no exhaustion levels. A fatigued character who does something that would normally cause fatigue becomes exhausted: half speed and -6 to Strength and Dexterity. After 1 hour of complete rest, an exhausted character becomes fatigued.",
   "must_include": [
    [
     "exhausted"
@@ -130,8 +130,8 @@
    "Entangled creatures can't cast spells.",
    "No effect on spellcasting."
   ],
-  "confidence": "confident",
-  "confidence_note": ""
+  "confidence": "unsure",
+  "confidence_note": "The SRD appears inconsistent: the condition summary gives Concentration DC 15 for entangled casting, the Concentration skill table gives 15 + spell level. Both accepted."
  },
  {
   "id": "cnd-024",
