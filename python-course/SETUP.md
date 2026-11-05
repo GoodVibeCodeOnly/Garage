@@ -50,13 +50,14 @@ read exactly what they do.
   3  Run a lesson's worked example
   4  Show my progress across all lessons
   5  Verify the model solutions (sanity check)
+  6  Run my capstone pipeline (lesson 25)
 ```
 
 Option **2** opens the lesson in **IDLE**, the editor that ships with Python.
 In IDLE: edit, `Ctrl+S` to save, `F5` to run the file you're looking at.
 
 Shortcuts if you don't want the menu: `check.bat` (asks for a lesson number,
-tests it) and `progress.bat` (one line per lesson).
+tests it), `progress.bat` (one line per lesson) and `capstone.bat`.
 
 ### A better editor, when you want one (optional)
 

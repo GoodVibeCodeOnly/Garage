@@ -6,6 +6,7 @@ Usage without the menu:
     python tools/course.py example 07      # run lesson 07's worked example
     python tools/course.py open 07         # open lesson 07 files in IDLE
     python tools/course.py solutions       # check the model solutions (all should pass)
+    python tools/course.py capstone        # run your lesson 25 pipeline end to end
 """
 from __future__ import annotations
 
@@ -104,13 +105,20 @@ def cmd_example(number: str) -> int:
         print(f"No lesson numbered {number!r}.")
         return 1
     env = dict(os.environ, MPLBACKEND="Agg")
-    script = "run_capstone.py" if (lesson / "run_capstone.py").exists() and number.zfill(2) == "25" else "example.py"
+    script = "example.py"
     print(f"\nRunning {lesson.name}/{script}\n" + "-" * 60)
     code = subprocess.call([sys.executable, script], cwd=lesson, env=env)
     out = lesson / "output"
     if out.exists():
         print("-" * 60 + f"\nPictures/files written to: {out}")
     return code
+
+
+def cmd_capstone() -> int:
+    lesson = find("25")
+    env = dict(os.environ, MPLBACKEND="Agg")
+    print(f"\nRunning YOUR capstone pipeline ({lesson.name}/run_capstone.py)\n" + "-" * 60)
+    return subprocess.call([sys.executable, "run_capstone.py"], cwd=lesson, env=env)
 
 
 def cmd_open(number: str) -> int:
@@ -136,6 +144,7 @@ MENU = """
   3  Run a lesson's worked example
   4  Show my progress across all lessons
   5  Verify the model solutions (sanity check)
+  6  Run my capstone pipeline (lesson 25, once its tests pass)
   q  Quit
 """
 
@@ -156,8 +165,10 @@ def menu() -> None:
             cmd_progress()
         elif choice == "5":
             cmd_solutions()
+        elif choice == "6":
+            cmd_capstone()
         else:
-            print("Type 1-5, or q.")
+            print("Type 1-6, or q.")
         input("\nPress Enter to return to the menu...")
 
 
@@ -176,6 +187,8 @@ def main(argv: list[str]) -> int:
         return cmd_progress()
     if cmd == "solutions":
         return cmd_solutions()
+    if cmd == "capstone":
+        return cmd_capstone()
     print(__doc__)
     return 2
 

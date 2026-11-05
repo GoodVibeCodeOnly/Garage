@@ -7,6 +7,9 @@ expects. Each lesson is one sitting.
 **First time? Read [SETUP.md](SETUP.md).** It assumes nothing. After setup,
 everything runs from **`course.bat`** (double-click).
 
+Every model solution has been run against its tests: 25 lessons, 381
+automated checks, all passing.
+
 ## How each lesson works
 
 ```
@@ -24,6 +27,12 @@ The loop: open the lesson (menu option 2) → read the README → run the
 example (option 3), poke at it → write the exercises → check (option 1) →
 repeat until green → compare with the solution. Option 4 shows your
 progress across the whole course.
+
+**Translating terminal-speak.** Lesson text sometimes says "run
+`python example.py`". You never have to type that: it means menu option 3,
+or press **F5** in IDLE with `example.py` open. "Run the tests" means menu
+option 1 (or `check.bat`). Lesson 24 also mentions running pytest on a
+single file; that's optional terminal practice, never required.
 
 A failing test tells you which function, what it was given, what it
 expected and what you returned. Read the first failure, fix that, re-run.
@@ -98,6 +107,7 @@ don't skip them, they're where your hands learn what your eyes already know.
 ## Under the hood
 
 - `course.bat` → `tools/course.py` (the menu). `setup.bat` builds `.venv`.
+  `check.bat`, `progress.bat`, `capstone.bat` are one-click shortcuts.
 - `conftest.py` lets the same tests check your `exercises.py` or the model
   solution (`COURSE_SOLUTIONS=1`).
 - Synthetic datasets are deterministic: re-running a lesson's `make_data.py`
