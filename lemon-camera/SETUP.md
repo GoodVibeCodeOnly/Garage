@@ -168,6 +168,6 @@ You shouldn't need it.
 2. Has the PC's address changed? Compare the window's address with `config.h`.
 3. Is the battery flat? Look at the last `battery_v` in the log; charge it.
 4. Missed photos are not lost straight away: the camera keeps several days of
-   photos in its own memory (about 4–7, see README) and sends them, oldest
+   photos in its own memory (about 3–5, see README) and sends them, oldest
    first, the next time it reaches the PC. When its memory is full it drops
    the oldest.
