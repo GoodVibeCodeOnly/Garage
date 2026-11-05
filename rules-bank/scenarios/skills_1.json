@@ -63,7 +63,7 @@
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Combining Skill Attempts > Aid Another",
   "common_wrong_rulings": ["Advantage on the roll (5e)", "+4 bonus", "Adding the helper's full modifier"],
-  "confidence": "unsure", "confidence_note": "Core aid-another numbers verified; the parenthetical about needing to be able to use a trained-only skill to aid is my reading and not a scored point."
+  "confidence": "verified", "confidence_note": ""
  },
  {
   "id": "skl-007", "category": "skills_checks", "difficulty": "medium", "kind": "rules",

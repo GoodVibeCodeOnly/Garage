@@ -132,6 +132,16 @@ class TestTheBank(unittest.TestCase):
         bad = [s["id"] for s in self.scenarios if not s["srd_reference"].strip() or not s["common_wrong_rulings"]]
         self.assertEqual(bad, [])
 
+    def test_forbidden_phrases_not_in_prompt(self):
+        # A correct answer may quote the player; a forbidden phrase taken from the prompt
+        # would then fail a correct answer.
+        bad = []
+        for s in self.scenarios:
+            prompt = scoring.normalize(s["player_action"] + " " + s["game_state"])
+            if any(scoring.group_hit(prompt, g) for g in s["must_not_include"]):
+                bad.append(s["id"])
+        self.assertEqual(bad, [], f"must_not_include phrases echo the prompt: {bad}")
+
     def test_kinds_present(self):
         kinds = {s["kind"] for s in self.scenarios}
         self.assertTrue({"rules", "dm_discretion", "player_pressure", "bluff_trap"} <= kinds)

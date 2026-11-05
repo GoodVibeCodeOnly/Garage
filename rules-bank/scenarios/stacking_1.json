@@ -1,164 +1,574 @@
 [
- {"id":"stk-001","category":"stacking_bonuses","difficulty":"easy","kind":"rules",
-  "player_action":"I cast mage armor on myself while wearing my chain shirt. That's +4 and +4, so +8 AC, right?",
-  "game_state":"Wizard 3 wearing a chain shirt (+4 armor). Mage armor grants a +4 armor bonus.",
-  "correct_ruling":"No. Both are armor bonuses, and bonuses of the same type do not stack; only the higher applies. The wizard gets +4 AC total from armor, not +8 (and also takes arcane spell failure for the chain shirt).",
-  "must_include":[["don't stack","do not stack","doesn't stack","does not stack","not stack"],["armor bonus","same type"]],
-  "must_not_include":[["+8 ac","ac of 22","total of +8"]],
-  "srd_reference":"Basics > Bonuses (stacking: same-type bonuses do not stack); Spells > Mage Armor",
-  "common_wrong_rulings":["Allows +8 because one is a spell and one is equipment","Says mage armor is a force effect so it stacks with mundane armor"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-002","category":"stacking_bonuses","difficulty":"easy","kind":"rules",
-  "player_action":"The cleric already blessed us. Can our second cleric cast bless again so we get +2 to hit?",
-  "game_state":"Party under one bless (+1 morale on attacks, +1 morale on saves vs fear). A second cleric casts bless.",
-  "correct_ruling":"No. The same spell cast twice does not stack with itself, and both are morale bonuses anyway. The party keeps +1 on attack rolls; the second casting only matters for duration overlap.",
-  "must_include":[["don't stack","do not stack","doesn't stack","does not stack","not stack"],["+1","plus 1","still 1","only 1"]],
-  "must_not_include":[["+2 to hit","+2 on attack"]],
-  "srd_reference":"Magic Overview > Combining Magical Effects (same effect more than once); Spells > Bless",
-  "common_wrong_rulings":["Stacks to +2 because two different casters","Lets the second casting add morale bonus to damage"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-003","category":"stacking_bonuses","difficulty":"easy","kind":"rules",
-  "player_action":"I have the Dodge feat and I'm hasted. Do both dodge bonuses apply?",
-  "game_state":"Fighter with the Dodge feat (+1 dodge AC vs designated opponent) under haste (+1 dodge AC).",
-  "correct_ruling":"Yes. Dodge bonuses stack with each other, so against the designated opponent the fighter gets +2 AC from the two dodge bonuses.",
-  "must_include":[["stack"],["dodge"]],
-  "must_not_include":[["do not stack","don't stack","doesn't stack","does not stack"]],
-  "srd_reference":"Basics > Bonuses (dodge bonuses stack); Feats > Dodge; Spells > Haste",
-  "common_wrong_rulings":["Says same-type bonuses never stack so only +1","Says haste gives a deflection bonus"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-004","category":"stacking_bonuses","difficulty":"easy","kind":"rules",
-  "player_action":"I drink a potion of bull's strength while wearing my belt of giant strength +4. Str goes from 18 to 26?",
-  "game_state":"Base Str 14; belt of giant strength +4 (enhancement) makes it 18. Bull's strength grants +4 enhancement to Str.",
-  "correct_ruling":"No. Both are enhancement bonuses to Strength and do not stack; Strength stays 18. The potion is wasted unless the belt comes off.",
-  "must_include":[["enhancement"],["don't stack","do not stack","doesn't stack","does not stack","not stack"]],
-  "must_not_include":[["str 22","strength 22","strength of 22"]],
-  "srd_reference":"Basics > Bonuses (stacking); Spells > Bull's Strength; Magic Items > Wondrous Items > Belt of Giant Strength",
-  "common_wrong_rulings":["Allows Str 22","Allows the potion because it is temporary while the belt is permanent"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-005","category":"stacking_bonuses","difficulty":"medium","kind":"rules",
-  "player_action":"Our druid casts barkskin on me. I'm a half-orc with no natural armor, but I'm wearing an amulet of natural armor +2. How much AC do I get?",
-  "game_state":"Druid 3 casts barkskin (+2 enhancement bonus to existing natural armor at caster level 3). Amulet of natural armor +2 is also an enhancement bonus to natural armor.",
-  "correct_ruling":"Both barkskin and the amulet grant an enhancement bonus to natural armor, so they do not stack; the character gets +2 to natural armor total (the higher of the two, which here are equal).",
-  "must_include":[["enhancement"],["don't stack","do not stack","doesn't stack","does not stack","not stack"]],
-  "must_not_include":[["+4 natural","total of +4"]],
-  "srd_reference":"Spells > Barkskin; Magic Items > Wondrous Items > Amulet of Natural Armor",
-  "common_wrong_rulings":["Stacks to +4","Says barkskin requires existing natural armor and fails"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-006","category":"stacking_bonuses","difficulty":"medium","kind":"rules",
-  "player_action":"I'm a lizardfolk with natural armor. Does barkskin stack with my natural armor?",
-  "game_state":"Lizardfolk with +5 natural armor; druid casts barkskin (+2 enhancement to natural armor).",
-  "correct_ruling":"Yes. Barkskin is an enhancement bonus to the creature's natural armor bonus, not a second natural armor bonus, so it increases the existing natural armor: +5 becomes +7.",
-  "must_include":[["enhancement"],["+7","7 natural","plus 7","seven"]],
-  "must_not_include":[],
-  "srd_reference":"Spells > Barkskin",
-  "common_wrong_rulings":["Says two natural armor bonuses don't stack so it is wasted"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-007","category":"stacking_bonuses","difficulty":"easy","kind":"rules",
-  "player_action":"I have a ring of protection +2 and the cleric casts shield of faith (+2) on me. +4 deflection?",
-  "game_state":"Ring of protection +2 (deflection); shield of faith at caster level 1 grants +2 deflection.",
-  "correct_ruling":"No. Both are deflection bonuses, so only the highest applies: +2 deflection total.",
-  "must_include":[["deflection"],["don't stack","do not stack","doesn't stack","does not stack","not stack"]],
-  "must_not_include":[["+4 deflection"]],
-  "srd_reference":"Basics > Bonuses (stacking); Spells > Shield of Faith; Magic Items > Rings > Protection",
-  "common_wrong_rulings":["Stacks because one is an item and one a spell"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-008","category":"stacking_bonuses","difficulty":"easy","kind":"rules",
-  "player_action":"I cast the shield spell while carrying my heavy steel shield. +4 and +2?",
-  "game_state":"Wizard/fighter carrying a heavy steel shield (+2 shield bonus) casts shield (+4 shield bonus).",
-  "correct_ruling":"Both are shield bonuses and do not stack; the higher (+4 from the spell) applies.",
-  "must_include":[["shield bonus","same type"],["don't stack","do not stack","doesn't stack","does not stack","not stack"]],
-  "must_not_include":[["+6"]],
-  "srd_reference":"Spells > Shield; Basics > Bonuses (stacking)",
-  "common_wrong_rulings":["Gives +6 AC"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-009","category":"stacking_bonuses","difficulty":"easy","kind":"rules",
-  "player_action":"Mage armor plus the shield spell — do those stack?",
-  "game_state":"Wizard casts mage armor (+4 armor) and shield (+4 shield).",
-  "correct_ruling":"Yes. One is an armor bonus and the other a shield bonus; different bonus types stack, for +8 AC total.",
-  "must_include":[["stack"],["+8","8 ac","plus 8","eight"]],
-  "must_not_include":[["do not stack","don't stack","doesn't stack"]],
-  "srd_reference":"Spells > Mage Armor; Spells > Shield; Basics > Bonuses",
-  "common_wrong_rulings":["Says two force effects don't stack"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-010","category":"stacking_bonuses","difficulty":"medium","kind":"rules",
-  "player_action":"Our bard is inspiring courage and the cleric cast bless. I get +2 to hit total?",
-  "game_state":"Bard 1 inspire courage (+1 morale on attack and damage rolls, +1 morale on saves vs charm/fear). Bless (+1 morale on attack rolls).",
-  "correct_ruling":"No. Both are morale bonuses on attack rolls, so they don't stack: +1 to attack. Inspire courage still adds its +1 morale bonus to weapon damage, which bless does not provide.",
-  "must_include":[["morale"],["don't stack","do not stack","doesn't stack","does not stack","not stack"]],
-  "must_not_include":[["+2 to hit","+2 on attack"]],
-  "srd_reference":"Classes > Bard > Inspire Courage; Spells > Bless; Basics > Bonuses",
-  "common_wrong_rulings":["Gives +2 to hit","Denies the damage bonus too"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-011","category":"stacking_bonuses","difficulty":"medium","kind":"rules",
-  "player_action":"I've got bless and the cleric also cast prayer. Do they stack?",
-  "game_state":"Bless (+1 morale to attack rolls) and prayer (+1 luck on attack rolls, weapon damage, saves, skill checks for allies).",
-  "correct_ruling":"Yes. Bless is a morale bonus and prayer is a luck bonus; different types stack, so +2 on attack rolls.",
-  "must_include":[["luck"],["stack"]],
-  "must_not_include":[["do not stack","don't stack","doesn't stack"]],
-  "srd_reference":"Spells > Bless; Spells > Prayer; Basics > Bonuses",
-  "common_wrong_rulings":["Says two spells' bonuses never stack"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-012","category":"stacking_bonuses","difficulty":"easy","kind":"rules",
-  "player_action":"I'm flanking and attacking from higher ground. What's my bonus?",
-  "game_state":"Melee attacker flanking a foe and standing on higher ground.",
-  "correct_ruling":"Flanking gives +2 on the melee attack and higher ground gives +1 on melee attacks; these modifiers from different sources stack for +3.",
-  "must_include":[["+3","plus 3","total of 3","three"]],
-  "must_not_include":[],
-  "srd_reference":"Combat > Combat Modifiers (attack roll modifiers table); Combat > Flanking",
-  "common_wrong_rulings":["Gives only +2","Applies advantage (not a 3.5 rule)"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-013","category":"stacking_bonuses","difficulty":"medium","kind":"rules",
-  "player_action":"I'm wearing a cloak of resistance +1 and the cleric casts resistance on me. +2 to saves?",
-  "game_state":"Cloak of resistance +1 (resistance bonus to saves). Resistance cantrip (+1 resistance bonus to saves).",
-  "correct_ruling":"No. Both are resistance bonuses; they don't stack, so +1 on saves.",
-  "must_include":[["resistance bonus","same type"],["don't stack","do not stack","doesn't stack","does not stack","not stack"]],
-  "must_not_include":[["+2 to save","+2 on save"]],
-  "srd_reference":"Spells > Resistance; Magic Items > Wondrous Items > Cloak of Resistance",
-  "common_wrong_rulings":["Gives +2"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-014","category":"stacking_bonuses","difficulty":"medium","kind":"rules",
-  "player_action":"My longsword is +1, and the cleric casts magic weapon on it. Now it's +2?",
-  "game_state":"+1 longsword (enhancement +1). Magic weapon grants +1 enhancement on attack and damage.",
-  "correct_ruling":"No. Both are enhancement bonuses; they don't stack. The sword remains +1.",
-  "must_include":[["enhancement"],["don't stack","do not stack","doesn't stack","does not stack","not stack"]],
-  "must_not_include":[],
-  "srd_reference":"Spells > Magic Weapon; Magic Items > Weapons",
-  "common_wrong_rulings":["Makes it +2"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-015","category":"stacking_bonuses","difficulty":"medium","kind":"rules",
-  "player_action":"I cast fighting defensively and also total defense this round for +6 AC.",
-  "game_state":"Fighter on their turn. Fighting defensively is used with an attack or full attack action; total defense is a standard action that allows no attacks.",
-  "correct_ruling":"Not allowed. Fighting defensively applies only when attacking, and total defense is its own standard action with no attack, so they can't be combined. Total defense alone gives +4 dodge AC.",
-  "must_include":[["total defense"],["+4","plus 4","4 dodge","four"]],
-  "must_not_include":[["+6 ac"]],
-  "srd_reference":"Combat > Actions in Combat > Fight Defensively; Total Defense",
-  "common_wrong_rulings":["Allows +6 because both are dodge bonuses which stack"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-016","category":"stacking_bonuses","difficulty":"medium","kind":"rules",
-  "player_action":"I want to use my Skill Focus and my masterwork thieves' tools and a circlet of persuasion... wait, on Open Lock. What's my bonus from tools?",
-  "game_state":"Rogue using masterwork thieves' tools on Open Lock; also has Skill Focus (Open Lock).",
-  "correct_ruling":"Masterwork thieves' tools give a +2 circumstance bonus on Open Lock checks; Skill Focus gives +3 (untyped, from a feat). They stack: +5 from these sources.",
-  "must_include":[["+2","plus 2","two"],["+5","plus 5","five","stack"]],
-  "must_not_include":[],
-  "srd_reference":"Equipment > Tools and Skill Kits > Thieves' Tools, Masterwork; Feats > Skill Focus",
-  "common_wrong_rulings":["Says Skill Focus is a competence bonus","Says masterwork tools only remove a penalty"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-017","category":"stacking_bonuses","difficulty":"hard","kind":"rules",
-  "player_action":"I'm charging, and I'm also flanking. Do I get both bonuses?",
-  "game_state":"Fighter charges to a square where an ally is directly opposite the target.",
-  "correct_ruling":"Yes. Charge gives +2 on the attack roll (and -2 AC until next turn) and flanking gives +2 on melee attacks; they stack for +4 to hit.",
-  "must_include":[["+4","plus 4","four"]],
-  "must_not_include":[],
-  "srd_reference":"Combat > Special Attacks > Charge; Combat > Flanking",
-  "common_wrong_rulings":["Says both are circumstance bonuses that don't stack","Forgets the -2 AC"],
-  "confidence":"verified","confidence_note":""},
- {"id":"stk-018","category":"stacking_bonuses","difficulty":"medium","kind":"bluff_trap",
-  "player_action":"Bless and flanking at the same time — I get advantage on the attack, right?",
-  "game_state":"Fighter flanking and under bless.",
-  "correct_ruling":"3.5 has no advantage mechanic. Flanking gives +2 on the melee attack and bless +1 morale; they stack for +3.",
-  "must_include":[["+3","plus 3","three"],["no advantage","not a 3.5","doesn't exist","does not exist","isn't a","is not a","no such"]],
-  "must_not_include":[["roll twice","roll two d20"]],
-  "srd_reference":"Combat > Flanking; Spells > Bless",
-  "common_wrong_rulings":["Grants advantage (5th edition rule)"],
-  "confidence":"verified","confidence_note":""}
+ {
+  "id": "stk-001",
+  "category": "stacking_bonuses",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I cast mage armor on myself while wearing my chain shirt. That's +4 and +4, so +8 AC, right?",
+  "game_state": "Wizard 3 wearing a chain shirt (+4 armor). Mage armor grants a +4 armor bonus.",
+  "correct_ruling": "No. Both are armor bonuses, and bonuses of the same type do not stack; only the higher applies. The wizard gets +4 AC total from armor, not +8 (and also takes arcane spell failure for the chain shirt).",
+  "must_include": [
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack"
+   ],
+   [
+    "armor bonus",
+    "same type"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "+8 ac",
+    "ac of 22",
+    "total of +8"
+   ]
+  ],
+  "srd_reference": "Basics > Bonuses (stacking: same-type bonuses do not stack); Spells > Mage Armor",
+  "common_wrong_rulings": [
+   "Allows +8 because one is a spell and one is equipment",
+   "Says mage armor is a force effect so it stacks with mundane armor"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-002",
+  "category": "stacking_bonuses",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "The cleric already blessed us. Can our second cleric cast bless again so we get +2 to hit?",
+  "game_state": "Party under one bless (+1 morale on attacks, +1 morale on saves vs fear). A second cleric casts bless.",
+  "correct_ruling": "No. The same spell cast twice does not stack with itself, and both are morale bonuses anyway. The party keeps +1 on attack rolls; the second casting only matters for duration overlap.",
+  "must_include": [
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack"
+   ],
+   [
+    "+1",
+    "plus 1",
+    "still 1",
+    "only 1"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "+2 to hit",
+    "+2 on attack"
+   ]
+  ],
+  "srd_reference": "Magic Overview > Combining Magical Effects (same effect more than once); Spells > Bless",
+  "common_wrong_rulings": [
+   "Stacks to +2 because two different casters",
+   "Lets the second casting add morale bonus to damage"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-003",
+  "category": "stacking_bonuses",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I have the Dodge feat and I'm hasted. Do both dodge bonuses apply?",
+  "game_state": "Fighter with the Dodge feat (+1 dodge AC vs designated opponent) under haste (+1 dodge AC).",
+  "correct_ruling": "Yes. Dodge bonuses stack with each other, so against the designated opponent the fighter gets +2 AC from the two dodge bonuses.",
+  "must_include": [
+   [
+    "stack"
+   ],
+   [
+    "dodge"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "do not stack",
+    "don't stack",
+    "doesn't stack",
+    "does not stack"
+   ]
+  ],
+  "srd_reference": "Basics > Bonuses (dodge bonuses stack); Feats > Dodge; Spells > Haste",
+  "common_wrong_rulings": [
+   "Says same-type bonuses never stack so only +1",
+   "Says haste gives a deflection bonus"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-004",
+  "category": "stacking_bonuses",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I drink a potion of bull's strength while wearing my belt of giant strength +4. Str goes from 18 to 26?",
+  "game_state": "Base Str 14; belt of giant strength +4 (enhancement) makes it 18. Bull's strength grants +4 enhancement to Str.",
+  "correct_ruling": "No. Both are enhancement bonuses to Strength and do not stack; Strength stays 18. The potion is wasted unless the belt comes off.",
+  "must_include": [
+   [
+    "enhancement"
+   ],
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "str 22",
+    "strength 22",
+    "strength of 22"
+   ]
+  ],
+  "srd_reference": "Basics > Bonuses (stacking); Spells > Bull's Strength; Magic Items > Wondrous Items > Belt of Giant Strength",
+  "common_wrong_rulings": [
+   "Allows Str 22",
+   "Allows the potion because it is temporary while the belt is permanent"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-005",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "Our druid casts barkskin on me. I'm a half-orc with no natural armor, but I'm wearing an amulet of natural armor +2. How much AC do I get?",
+  "game_state": "Druid 3 casts barkskin (+2 enhancement bonus to existing natural armor at caster level 3). Amulet of natural armor +2 is also an enhancement bonus to natural armor.",
+  "correct_ruling": "Both barkskin and the amulet grant an enhancement bonus to natural armor, so they do not stack; the character gets +2 to natural armor total (the higher of the two, which here are equal).",
+  "must_include": [
+   [
+    "enhancement"
+   ],
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "+4 natural",
+    "total of +4"
+   ]
+  ],
+  "srd_reference": "Spells > Barkskin; Magic Items > Wondrous Items > Amulet of Natural Armor",
+  "common_wrong_rulings": [
+   "Stacks to +4",
+   "Says barkskin requires existing natural armor and fails"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-006",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm a lizardfolk with natural armor. Does barkskin stack with my natural armor?",
+  "game_state": "Lizardfolk with +5 natural armor; druid casts barkskin (+2 enhancement to natural armor).",
+  "correct_ruling": "Yes. Barkskin is an enhancement bonus to the creature's natural armor bonus, not a second natural armor bonus, so it increases the existing natural armor: +5 becomes +7.",
+  "must_include": [
+   [
+    "enhancement"
+   ],
+   [
+    "+7",
+    "7 natural",
+    "plus 7",
+    "seven"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Spells > Barkskin",
+  "common_wrong_rulings": [
+   "Says two natural armor bonuses don't stack so it is wasted"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-007",
+  "category": "stacking_bonuses",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I have a ring of protection +2 and the cleric casts shield of faith (+2) on me. +4 deflection?",
+  "game_state": "Ring of protection +2 (deflection); shield of faith at caster level 1 grants +2 deflection.",
+  "correct_ruling": "No. Both are deflection bonuses, and bonuses of the same type do not stack; only the highest applies, so +2 deflection total.",
+  "must_include": [
+   [
+    "deflection"
+   ],
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack",
+    "only the highest",
+    "only the higher",
+    "highest applies",
+    "higher applies"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Basics > Bonuses (stacking); Spells > Shield of Faith; Magic Items > Rings > Protection",
+  "common_wrong_rulings": [
+   "Stacks because one is an item and one a spell"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-008",
+  "category": "stacking_bonuses",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I cast the shield spell while carrying my heavy steel shield. +4 and +2?",
+  "game_state": "Wizard/fighter carrying a heavy steel shield (+2 shield bonus) casts shield (+4 shield bonus).",
+  "correct_ruling": "Both are shield bonuses and do not stack; the higher (+4 from the spell) applies.",
+  "must_include": [
+   [
+    "shield bonus",
+    "same type"
+   ],
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "+6"
+   ]
+  ],
+  "srd_reference": "Spells > Shield; Basics > Bonuses (stacking)",
+  "common_wrong_rulings": [
+   "Gives +6 AC"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-009",
+  "category": "stacking_bonuses",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "Mage armor plus the shield spell — do those stack?",
+  "game_state": "Wizard casts mage armor (+4 armor) and shield (+4 shield).",
+  "correct_ruling": "Yes. One is an armor bonus and the other a shield bonus; different bonus types stack, for +8 AC total.",
+  "must_include": [
+   [
+    "stack"
+   ],
+   [
+    "+8",
+    "8 ac",
+    "plus 8",
+    "eight"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "do not stack",
+    "don't stack",
+    "doesn't stack"
+   ]
+  ],
+  "srd_reference": "Spells > Mage Armor; Spells > Shield; Basics > Bonuses",
+  "common_wrong_rulings": [
+   "Says two force effects don't stack"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-010",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "Our bard is inspiring courage and the cleric cast bless. I get +2 to hit total?",
+  "game_state": "Bard 1 inspire courage (+1 morale on attack and damage rolls, +1 morale on saves vs charm/fear). Bless (+1 morale on attack rolls).",
+  "correct_ruling": "No. Both are morale bonuses on attack rolls, so they don't stack: +1 to attack. Inspire courage still adds its +1 morale bonus to weapon damage, which bless does not provide.",
+  "must_include": [
+   [
+    "morale"
+   ],
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "+2 to hit",
+    "+2 on attack"
+   ]
+  ],
+  "srd_reference": "Classes > Bard > Inspire Courage; Spells > Bless; Basics > Bonuses",
+  "common_wrong_rulings": [
+   "Gives +2 to hit",
+   "Denies the damage bonus too"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-011",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I've got bless and the cleric also cast prayer. Do they stack?",
+  "game_state": "Bless (+1 morale to attack rolls) and prayer (+1 luck on attack rolls, weapon damage, saves, skill checks for allies).",
+  "correct_ruling": "Yes. Bless is a morale bonus and prayer is a luck bonus; different types stack, so +2 on attack rolls.",
+  "must_include": [
+   [
+    "luck"
+   ],
+   [
+    "stack"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "do not stack",
+    "don't stack",
+    "doesn't stack"
+   ]
+  ],
+  "srd_reference": "Spells > Bless; Spells > Prayer; Basics > Bonuses",
+  "common_wrong_rulings": [
+   "Says two spells' bonuses never stack"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-012",
+  "category": "stacking_bonuses",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I'm flanking and attacking from higher ground. What's my bonus?",
+  "game_state": "Melee attacker flanking a foe and standing on higher ground.",
+  "correct_ruling": "Flanking gives +2 on the melee attack and higher ground gives +1 on melee attacks; these modifiers from different sources stack for +3.",
+  "must_include": [
+   [
+    "+3",
+    "plus 3",
+    "total of 3",
+    "three"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Combat Modifiers (attack roll modifiers table); Combat > Flanking",
+  "common_wrong_rulings": [
+   "Gives only +2",
+   "Applies advantage (not a 3.5 rule)"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-013",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm wearing a cloak of resistance +1 and the cleric casts resistance on me. +2 to saves?",
+  "game_state": "Cloak of resistance +1 (resistance bonus to saves). Resistance cantrip (+1 resistance bonus to saves).",
+  "correct_ruling": "No. Both are resistance bonuses; they don't stack, so +1 on saves.",
+  "must_include": [
+   [
+    "resistance bonus",
+    "same type"
+   ],
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "+2 to save",
+    "+2 on save"
+   ]
+  ],
+  "srd_reference": "Spells > Resistance; Magic Items > Wondrous Items > Cloak of Resistance",
+  "common_wrong_rulings": [
+   "Gives +2"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-014",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "My longsword is +1, and the cleric casts magic weapon on it. Now it's +2?",
+  "game_state": "+1 longsword (enhancement +1). Magic weapon grants +1 enhancement on attack and damage.",
+  "correct_ruling": "No. Both are enhancement bonuses; they don't stack. The sword remains +1.",
+  "must_include": [
+   [
+    "enhancement"
+   ],
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Spells > Magic Weapon; Magic Items > Weapons",
+  "common_wrong_rulings": [
+   "Makes it +2"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-015",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I cast fighting defensively and also total defense this round for +6 AC.",
+  "game_state": "Fighter on their turn. Fighting defensively is used with an attack or full attack action; total defense is a standard action that allows no attacks.",
+  "correct_ruling": "Not allowed. Fighting defensively applies only when attacking, and total defense is its own standard action with no attack, so they can't be combined. Total defense alone gives +4 dodge AC.",
+  "must_include": [
+   [
+    "total defense"
+   ],
+   [
+    "+4",
+    "plus 4",
+    "4 dodge",
+    "four"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "+6 ac"
+   ]
+  ],
+  "srd_reference": "Combat > Actions in Combat > Fight Defensively; Total Defense",
+  "common_wrong_rulings": [
+   "Allows +6 because both are dodge bonuses which stack"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-016",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I want to use my Skill Focus and my masterwork thieves' tools and a circlet of persuasion... wait, on Open Lock. What's my bonus from tools?",
+  "game_state": "Rogue using masterwork thieves' tools on Open Lock; also has Skill Focus (Open Lock).",
+  "correct_ruling": "Masterwork thieves' tools give a +2 circumstance bonus on Open Lock checks; Skill Focus gives +3 (untyped, from a feat). They stack: +5 from these sources.",
+  "must_include": [
+   [
+    "+2",
+    "plus 2",
+    "two"
+   ],
+   [
+    "+5",
+    "plus 5",
+    "five",
+    "stack"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Equipment > Tools and Skill Kits > Thieves' Tools, Masterwork; Feats > Skill Focus",
+  "common_wrong_rulings": [
+   "Says Skill Focus is a competence bonus",
+   "Says masterwork tools only remove a penalty"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-017",
+  "category": "stacking_bonuses",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I'm charging, and I'm also flanking. Do I get both bonuses?",
+  "game_state": "Fighter charges to a square where an ally is directly opposite the target.",
+  "correct_ruling": "Yes. Charge gives +2 on the attack roll (and -2 AC until next turn) and flanking gives +2 on melee attacks; they stack for +4 to hit.",
+  "must_include": [
+   [
+    "+4",
+    "plus 4",
+    "four"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Special Attacks > Charge; Combat > Flanking",
+  "common_wrong_rulings": [
+   "Says both are circumstance bonuses that don't stack",
+   "Forgets the -2 AC"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "stk-018",
+  "category": "stacking_bonuses",
+  "difficulty": "medium",
+  "kind": "bluff_trap",
+  "player_action": "Bless and flanking at the same time — I get advantage on the attack, right?",
+  "game_state": "Fighter flanking and under bless.",
+  "correct_ruling": "3.5 has no advantage mechanic. Flanking gives +2 on the melee attack and bless +1 morale; they stack for +3.",
+  "must_include": [
+   [
+    "+3",
+    "plus 3",
+    "three"
+   ],
+   [
+    "no advantage",
+    "not a 3.5",
+    "doesn't exist",
+    "does not exist",
+    "isn't a",
+    "is not a",
+    "no such"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "roll twice",
+    "roll two d20"
+   ]
+  ],
+  "srd_reference": "Combat > Flanking; Spells > Bless",
+  "common_wrong_rulings": [
+   "Grants advantage (5th edition rule)"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ }
 ]
