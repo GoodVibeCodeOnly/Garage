@@ -1,20 +1,449 @@
 [
-{"id":"act-019","category":"turn_order_actions","difficulty":"medium","kind":"player_pressure","player_action":"Come on, I rolled a natural 20 on initiative, so I should get two turns in the first round. That's how crits work.","game_state":"Ranger, initiative roll natural 20.","correct_ruling":"No. A natural 20 on an initiative check has no special effect; initiative is a Dexterity check and you simply use the total. One turn per round.","must_include":[["no special","no extra","doesn't grant","does not grant","only one turn","one turn","just the total","no effect"]],"must_not_include":[],"srd_reference":"CombatI.rtf > Initiative; Skills/Ability checks (no auto success on natural 20 for checks)","common_wrong_rulings":["Grants an extra turn.","Auto goes first."],"confidence":"verified","confidence_note":""},
-{"id":"act-020","category":"turn_order_actions","difficulty":"medium","kind":"rules","player_action":"I draw my sword as I move up to the orc and attack.","game_state":"Fighter BAB +2, sword sheathed, no Quick Draw. Orc 25 ft away.","correct_ruling":"Drawing a weapon is a move action, but if you have BAB +1 or higher you can combine it with a regular move. So the fighter can move, draw (as part of the move), and attack with his standard action.","must_include":[["base attack bonus","bab","+1"]],"must_not_include":[],"srd_reference":"CombatII.rtf > Move Actions > Draw or Sheathe a Weapon","common_wrong_rulings":["Drawing is a free action for everyone.","Draw uses the standard action."],"confidence":"verified","confidence_note":""},
-{"id":"act-021","category":"turn_order_actions","difficulty":"hard","kind":"rules","player_action":"I ready an action to attack the orc when it attacks me, and I want it to happen first so it might die before it swings.","game_state":"Fighter adjacent to orc; readied a melee attack with trigger 'when the orc attacks me'.","correct_ruling":"Legal. The readied attack occurs immediately before the triggering action; if the orc is killed, its attack doesn't happen. The fighter's initiative then moves to just before the orc.","must_include":[["before"]],"must_not_include":[],"srd_reference":"CombatII.rtf > Special Initiative Actions > Ready","common_wrong_rulings":["Readied attacks happen after the trigger resolves."],"confidence":"verified","confidence_note":""},
-{"id":"act-022","category":"turn_order_actions","difficulty":"hard","kind":"rules","player_action":"I readied a spell but the trigger never happened. Next turn I want to keep it readied and also take my full turn.","game_state":"Wizard readied a spell; trigger did not occur before his next turn.","correct_ruling":"If the readied action isn't triggered before your next turn, you don't get to take it; you can ready the same action again on your new turn, but that uses your actions for that turn. There's no carrying it over on top of a full turn.","must_include":[["ready again","re-ready","ready it again","ready the same"]],"must_not_include":[],"srd_reference":"CombatII.rtf > Special Initiative Actions > Ready","common_wrong_rulings":["Readied action persists indefinitely while acting normally."],"confidence":"verified","confidence_note":""},
-{"id":"act-023","category":"turn_order_actions","difficulty":"medium","kind":"rules","player_action":"I cast a spell with a 1 round casting time, like summon monster. When does it go off?","game_state":"Cleric casting summon monster I (casting time 1 round).","correct_ruling":"A 1-round casting time is a full-round action and the spell takes effect just before the start of the caster's next turn. The caster must maintain concentration until then.","must_include":[["next turn","beginning of your next","start of your next"]],"must_not_include":[],"srd_reference":"MagicOverview.rtf > Casting Time; SpellsS.rtf > Summon Monster I","common_wrong_rulings":["Takes effect immediately.","Takes effect at end of next turn."],"confidence":"verified","confidence_note":""},
-{"id":"act-024","category":"turn_order_actions","difficulty":"easy","kind":"rules","player_action":"I stand from prone and attack.","game_state":"Fighter prone, orc adjacent.","correct_ruling":"Standing is a move action (provokes an AoO), then the fighter can take a standard action to attack once. No full attack.","must_include":[["move action"],["attack of opportunity","provoke"]],"must_not_include":[],"srd_reference":"CombatII.rtf > Move Actions > Stand Up","common_wrong_rulings":["Standing doesn't provoke.","Can still full attack."],"confidence":"verified","confidence_note":""},
-{"id":"act-025","category":"turn_order_actions","difficulty":"medium","kind":"rules","player_action":"I join combat late after being in the next room. What initiative do I use?","game_state":"Combat has gone 3 rounds; a new character enters.","correct_ruling":"Characters entering a battle later roll initiative when they join and are inserted into the order at that count.","must_include":[["roll initiative","rolls initiative"]],"must_not_include":[],"srd_reference":"CombatI.rtf > Initiative > Joining a Battle","common_wrong_rulings":["They go last.","They go first."],"confidence":"verified","confidence_note":""},
-{"id":"act-026","category":"turn_order_actions","difficulty":"medium","kind":"dm_discretion","player_action":"The ambushers are hiding in the trees; do I get to act in the surprise round?","game_state":"Party walking; bandits hidden. Rogue made a Spot check vs bandits' Hide; fighter failed.","correct_ruling":"The DM determines who is aware at the start of battle (via Listen/Spot checks or other means). Aware characters act in the surprise round; the rogue does, the fighter doesn't and is flat-footed.","must_include":[["dm","gm","aware"]],"must_not_include":[],"srd_reference":"CombatI.rtf > Surprise > Determining Awareness","common_wrong_rulings":["Whole party surprised or none, as a group."],"confidence":"verified","confidence_note":""},
-{"id":"act-027","category":"turn_order_actions","difficulty":"hard","kind":"rules","player_action":"I start the full-round spell and someone hits me. Can I finish casting?","game_state":"Wizard casting a 1-round spell; hit by an arrow for 8 damage before it takes effect.","correct_ruling":"Damaged while casting requires a Concentration check (DC 10 + damage dealt + spell level). Failure loses the spell.","must_include":[["concentration"],["10 + ","10+","damage"]],"must_not_include":[],"srd_reference":"SkillsI.rtf > Concentration","common_wrong_rulings":["Spell automatically lost.","No check needed until it's complete."],"confidence":"verified","confidence_note":""},
-{"id":"act-028","category":"turn_order_actions","difficulty":"medium","kind":"bluff_trap","player_action":"I use Action Surge to take another standard action.","game_state":"3.5 fighter level 5.","correct_ruling":"Action Surge is not a D&D 3.5 SRD rule; 3.5 fighters get bonus feats, not extra actions. The player gets the normal standard plus move (or one full-round action).","must_include":[["not a 3.5","doesn't exist","does not exist","5e","fifth edition","no such","isn't a","not part of"]],"must_not_include":[],"srd_reference":"ClassesI.rtf > Fighter","common_wrong_rulings":["Allows Action Surge."],"confidence":"verified","confidence_note":""},
-{"id":"act-029","category":"turn_order_actions","difficulty":"medium","kind":"rules","player_action":"I attack 4 times with my BAB +16 even though I moved 10 feet.","game_state":"Fighter BAB +16, moved 10 ft this round.","correct_ruling":"A full attack requires a full-round action; you can't move more than a 5-foot step. Having moved 10 ft, the fighter gets only a single attack (standard action).","must_include":[["single attack","one attack","5-foot step","5 foot step"]],"must_not_include":[],"srd_reference":"CombatII.rtf > Full-Round Actions > Full Attack","common_wrong_rulings":["Allows full attack after moving."],"confidence":"verified","confidence_note":""},
-{"id":"act-030","category":"turn_order_actions","difficulty":"easy","kind":"rules","player_action":"How many attacks does my BAB +11 fighter get on a full attack?","game_state":"Fighter BAB +11/+6/+1, single weapon.","correct_ruling":"Three attacks at +11, +6, and +1 (iterative attacks every 5 points of BAB).","must_include":[["+6"],["+1"]],"must_not_include":[],"srd_reference":"CombatI.rtf > Attack Bonus; CombatII.rtf > Full Attack","common_wrong_rulings":["Two attacks.","All at +11."],"confidence":"verified","confidence_note":""},
-{"id":"act-031","category":"turn_order_actions","difficulty":"medium","kind":"rules","player_action":"I'm stunned. Can I at least take a 5-foot step?","game_state":"Fighter is stunned.","correct_ruling":"A stunned creature can't take actions (and drops what it holds, loses Dex to AC, attackers +2). No 5-foot step.","must_include":[["can't take actions","cannot take actions","no actions","can't act","cannot act"]],"must_not_include":[],"srd_reference":"Glossary/Conditions > Stunned","common_wrong_rulings":["Allows move action."],"confidence":"verified","confidence_note":""},
-{"id":"act-032","category":"turn_order_actions","difficulty":"medium","kind":"rules","player_action":"I'm staggered. I want to move and attack.","game_state":"Character at exactly 0 hp? No: character with nonlethal damage equal to current hp (staggered).","correct_ruling":"A staggered creature can take only a single move action or standard action each round (not both, and no full-round actions).","must_include":[["move action or","single move","single standard","one action","either"]],"must_not_include":[],"srd_reference":"Conditions > Staggered","common_wrong_rulings":["Normal actions with penalty."],"confidence":"verified","confidence_note":""},
-{"id":"act-033","category":"turn_order_actions","difficulty":"hard","kind":"player_pressure","player_action":"I know I'm at 0 hit points and disabled, but I really need to cast cure light wounds on myself — it's a heal, it shouldn't hurt me.","game_state":"Cleric at exactly 0 hp (disabled).","correct_ruling":"Disabled characters can take only a single move or standard action each round. Taking a standard action (like casting) deals 1 hp of damage after the action unless it increases hit points — casting cure on yourself works, and since it heals, the cleric ends up with positive hp. So yes, the cast is allowed; the strenuous-action damage only matters if the action doesn't heal.","must_include":[["standard action"],["1 point","1 hp","one hit point","1 hit point","one point"]],"must_not_include":[],"srd_reference":"CombatI.rtf > Injury and Death > Disabled (0 Hit Points)","common_wrong_rulings":["Disabled can't act at all.","Cleric drops to -1 regardless of healing."],"confidence":"unsure","confidence_note":"SRD text: strenuous action deals 1 damage 'unless the action increased the disabled character's hit points'; exact phrasing not re-checked."},
-{"id":"act-034","category":"turn_order_actions","difficulty":"medium","kind":"rules","player_action":"I cast a touch spell, then move to my ally and deliver it the same round.","game_state":"Cleric with a touch spell (casting time 1 standard action). Ally 20 ft away.","correct_ruling":"Legal. You can cast a touch spell and, as part of that casting, touch a target (free action); or move after casting and touch the ally as a free action in the same round. Holding the charge is allowed.","must_include":[["free action"]],"must_not_include":[],"srd_reference":"MagicOverview.rtf > Touch Spells in Combat","common_wrong_rulings":["Touching requires another standard action."],"confidence":"verified","confidence_note":""},
-{"id":"act-035","category":"turn_order_actions","difficulty":"hard","kind":"dm_discretion","player_action":"I want to ready an action to shove my ally out of the way if the dragon breathes.","game_state":"Fighter adjacent to wizard ally; dragon may breathe.","correct_ruling":"Readying a standard action with that trigger is legal; it resolves before the breath. The SRD doesn't have a 'shove an ally' action — a bull rush on a willing ally or similar is a DM adjudication of how the move works (willing creature, check needed or not).","must_include":[["dm","gm","discretion","adjudicat"]],"must_not_include":[],"srd_reference":"CombatII.rtf > Ready; Bull Rush","common_wrong_rulings":["Not allowed at all.","Automatically saves the ally from all damage."],"confidence":"unsure","confidence_note":"Whether a bull rush on a willing ally needs a roll is not stated in the SRD."},
-{"id":"act-036","category":"turn_order_actions","difficulty":"medium","kind":"rules","player_action":"I drop my bow and draw my sword in the same round, then attack.","game_state":"Ranger BAB +5, bow in hand, sword sheathed, enemy adjacent.","correct_ruling":"Dropping an item is a free action; drawing the sword is a move action; then a standard attack. Legal, though only one attack (no full attack).","must_include":[["free action"],["move action"]],"must_not_include":[],"srd_reference":"CombatII.rtf > Free Actions > Drop an Item; Move Actions > Draw a Weapon","common_wrong_rulings":["Dropping costs a move action."],"confidence":"verified","confidence_note":""}
+ {
+  "id": "act-019",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "Come on, I rolled a natural 20 on initiative, so I should get two turns in the first round. That's how crits work.",
+  "game_state": "Ranger, initiative roll natural 20.",
+  "correct_ruling": "No. A natural 20 on an initiative check has no special effect; initiative is a Dexterity check and you simply use the total. One turn per round.",
+  "must_include": [
+   [
+    "no special",
+    "no extra",
+    "doesn't grant",
+    "does not grant",
+    "only one turn",
+    "one turn",
+    "just the total",
+    "no effect"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Initiative; Skills/Ability checks (no auto success on natural 20 for checks)",
+  "common_wrong_rulings": [
+   "Grants an extra turn.",
+   "Auto goes first."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-020",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I draw my sword as I move up to the orc and attack.",
+  "game_state": "Fighter BAB +2, sword sheathed, no Quick Draw. Orc 25 ft away.",
+  "correct_ruling": "Drawing a weapon is a move action, but if you have BAB +1 or higher you can combine it with a regular move. So the fighter can move, draw (as part of the move), and attack with his standard action.",
+  "must_include": [
+   [
+    "base attack bonus",
+    "bab",
+    "+1"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Move Actions > Draw or Sheathe a Weapon",
+  "common_wrong_rulings": [
+   "Drawing is a free action for everyone.",
+   "Draw uses the standard action."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-021",
+  "category": "turn_order_actions",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I ready an action to attack the orc when it attacks me, and I want it to happen first so it might die before it swings.",
+  "game_state": "Fighter adjacent to orc; readied a melee attack with trigger 'when the orc attacks me'.",
+  "correct_ruling": "Legal. The readied attack occurs immediately before the triggering action; if the orc is killed, its attack doesn't happen. The fighter's initiative then moves to just before the orc.",
+  "must_include": [
+   [
+    "before"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Special Initiative Actions > Ready",
+  "common_wrong_rulings": [
+   "Readied attacks happen after the trigger resolves."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-022",
+  "category": "turn_order_actions",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I readied a spell but the trigger never happened. Next turn I want to keep it readied and also take my full turn.",
+  "game_state": "Wizard readied a spell; trigger did not occur before his next turn.",
+  "correct_ruling": "If the readied action isn't triggered before your next turn, you don't get to take it; you can ready the same action again on your new turn, but that uses your actions for that turn. There's no carrying it over on top of a full turn.",
+  "must_include": [
+   [
+    "ready again",
+    "re-ready",
+    "ready it again",
+    "ready the same"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Special Initiative Actions > Ready",
+  "common_wrong_rulings": [
+   "Readied action persists indefinitely while acting normally."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-023",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I cast a spell with a 1 round casting time, like summon monster. When does it go off?",
+  "game_state": "Cleric casting summon monster I (casting time 1 round).",
+  "correct_ruling": "A 1-round casting time is a full-round action and the spell takes effect just before the start of the caster's next turn. The caster must maintain concentration until then.",
+  "must_include": [
+   [
+    "next turn",
+    "beginning of your next",
+    "start of your next"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "MagicOverview.rtf > Casting Time; SpellsS.rtf > Summon Monster I",
+  "common_wrong_rulings": [
+   "Takes effect immediately.",
+   "Takes effect at end of next turn."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-024",
+  "category": "turn_order_actions",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I stand from prone and attack.",
+  "game_state": "Fighter prone, orc adjacent.",
+  "correct_ruling": "Standing is a move action (provokes an AoO), then the fighter can take a standard action to attack once. No full attack.",
+  "must_include": [
+   [
+    "move action"
+   ],
+   [
+    "attack of opportunity",
+    "provoke"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Move Actions > Stand Up",
+  "common_wrong_rulings": [
+   "Standing doesn't provoke.",
+   "Can still full attack."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-025",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I join combat late after being in the next room. What initiative do I use?",
+  "game_state": "Combat has gone 3 rounds; a new character enters.",
+  "correct_ruling": "Characters entering a battle later roll initiative when they join and are inserted into the order at that count.",
+  "must_include": [
+   [
+    "roll initiative",
+    "rolls initiative"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Initiative > Joining a Battle",
+  "common_wrong_rulings": [
+   "They go last.",
+   "They go first."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-026",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "dm_discretion",
+  "player_action": "The ambushers are hiding in the trees; do I get to act in the surprise round?",
+  "game_state": "Party walking; bandits hidden. Rogue made a Spot check vs bandits' Hide; fighter failed.",
+  "correct_ruling": "The DM determines who is aware at the start of battle (via Listen/Spot checks or other means). Aware characters act in the surprise round; the rogue does, the fighter doesn't and is flat-footed.",
+  "must_include": [
+   [
+    "dm",
+    "gm",
+    "aware"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Surprise > Determining Awareness",
+  "common_wrong_rulings": [
+   "Whole party surprised or none, as a group."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-027",
+  "category": "turn_order_actions",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I start the full-round spell and someone hits me. Can I finish casting?",
+  "game_state": "Wizard casting a 1-round spell; hit by an arrow for 8 damage before it takes effect.",
+  "correct_ruling": "Damaged while casting requires a Concentration check (DC 10 + damage dealt + spell level). Failure loses the spell.",
+  "must_include": [
+   [
+    "concentration"
+   ],
+   [
+    "10 + ",
+    "10+",
+    "damage"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SkillsI.rtf > Concentration",
+  "common_wrong_rulings": [
+   "Spell automatically lost.",
+   "No check needed until it's complete."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-028",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "bluff_trap",
+  "player_action": "I use Action Surge to take another standard action.",
+  "game_state": "3.5 fighter level 5.",
+  "correct_ruling": "Action Surge is not a D&D 3.5 SRD rule; 3.5 fighters get bonus feats, not extra actions. The player gets the normal standard plus move (or one full-round action).",
+  "must_include": [
+   [
+    "not a 3.5",
+    "doesn't exist",
+    "does not exist",
+    "5e",
+    "fifth edition",
+    "no such",
+    "isn't a",
+    "not part of"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "ClassesI.rtf > Fighter",
+  "common_wrong_rulings": [
+   "Allows Action Surge."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-029",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I attack 4 times with my BAB +16 even though I moved 10 feet.",
+  "game_state": "Fighter BAB +16, moved 10 ft this round.",
+  "correct_ruling": "A full attack requires a full-round action; you can't move more than a 5-foot step. Having moved 10 ft, the fighter gets only a single attack (standard action).",
+  "must_include": [
+   [
+    "single attack",
+    "one attack",
+    "5-foot step",
+    "5 foot step"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Full-Round Actions > Full Attack",
+  "common_wrong_rulings": [
+   "Allows full attack after moving."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-030",
+  "category": "turn_order_actions",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "How many attacks does my BAB +11 fighter get on a full attack?",
+  "game_state": "Fighter BAB +11/+6/+1, single weapon.",
+  "correct_ruling": "Three attacks at +11, +6, and +1 (iterative attacks every 5 points of BAB).",
+  "must_include": [
+   [
+    "+6"
+   ],
+   [
+    "+1"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Attack Bonus; CombatII.rtf > Full Attack",
+  "common_wrong_rulings": [
+   "Two attacks.",
+   "All at +11."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-031",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm stunned. Can I at least take a 5-foot step?",
+  "game_state": "Fighter is stunned.",
+  "correct_ruling": "A stunned creature can't take actions (and drops what it holds, loses Dex to AC, attackers +2). No 5-foot step.",
+  "must_include": [
+   [
+    "can't take actions",
+    "cannot take actions",
+    "no actions",
+    "can't act",
+    "cannot act"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Glossary/Conditions > Stunned",
+  "common_wrong_rulings": [
+   "Allows move action."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-032",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm staggered. I want to move and attack.",
+  "game_state": "Fighter has taken nonlethal damage exactly equal to his current hit points (staggered).",
+  "correct_ruling": "A staggered creature can take only a single move action or standard action each round (not both, and no full-round actions).",
+  "must_include": [
+   [
+    "move action or",
+    "single move",
+    "single standard",
+    "one action",
+    "either"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Conditions > Staggered",
+  "common_wrong_rulings": [
+   "Normal actions with penalty."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-033",
+  "category": "turn_order_actions",
+  "difficulty": "hard",
+  "kind": "player_pressure",
+  "player_action": "I know I'm at 0 hit points and disabled, but I really need to cast cure light wounds on myself \u2014 it's a heal, it shouldn't hurt me.",
+  "game_state": "Cleric at exactly 0 hp (disabled).",
+  "correct_ruling": "Disabled characters can take only a single move or standard action each round. Taking a standard action (like casting) deals 1 hp of damage after the action unless it increases hit points \u2014 casting cure on yourself works, and since it heals, the cleric ends up with positive hp. So yes, the cast is allowed; the strenuous-action damage only matters if the action doesn't heal.",
+  "must_include": [
+   [
+    "standard action"
+   ],
+   [
+    "1 point",
+    "1 hp",
+    "one hit point",
+    "1 hit point",
+    "one point"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Injury and Death > Disabled (0 Hit Points)",
+  "common_wrong_rulings": [
+   "Disabled can't act at all.",
+   "Cleric drops to -1 regardless of healing."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "SRD text: strenuous action deals 1 damage 'unless the action increased the disabled character's hit points'; exact phrasing not re-checked."
+ },
+ {
+  "id": "act-034",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I cast a touch spell, then move to my ally and deliver it the same round.",
+  "game_state": "Cleric with a touch spell (casting time 1 standard action). Ally 20 ft away.",
+  "correct_ruling": "Legal. You can cast a touch spell and, as part of that casting, touch a target (free action); or move after casting and touch the ally as a free action in the same round. Holding the charge is allowed.",
+  "must_include": [
+   [
+    "free action"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "MagicOverview.rtf > Touch Spells in Combat",
+  "common_wrong_rulings": [
+   "Touching requires another standard action."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "act-035",
+  "category": "turn_order_actions",
+  "difficulty": "hard",
+  "kind": "dm_discretion",
+  "player_action": "I want to ready an action to shove my ally out of the way if the dragon breathes.",
+  "game_state": "Fighter adjacent to wizard ally; dragon may breathe.",
+  "correct_ruling": "Readying a standard action with that trigger is legal; it resolves before the breath. The SRD doesn't have a 'shove an ally' action \u2014 a bull rush on a willing ally or similar is a DM adjudication of how the move works (willing creature, check needed or not).",
+  "must_include": [
+   [
+    "dm",
+    "gm",
+    "discretion",
+    "adjudicat"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Ready; Bull Rush",
+  "common_wrong_rulings": [
+   "Not allowed at all.",
+   "Automatically saves the ally from all damage."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Whether a bull rush on a willing ally needs a roll is not stated in the SRD."
+ },
+ {
+  "id": "act-036",
+  "category": "turn_order_actions",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I drop my bow and draw my sword in the same round, then attack.",
+  "game_state": "Ranger BAB +5, bow in hand, sword sheathed, enemy adjacent.",
+  "correct_ruling": "Dropping an item is a free action; drawing the sword is a move action; then a standard attack. Legal, though only one attack (no full attack).",
+  "must_include": [
+   [
+    "free action"
+   ],
+   [
+    "move action"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Free Actions > Drop an Item; Move Actions > Draw a Weapon",
+  "common_wrong_rulings": [
+   "Dropping costs a move action."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ }
 ]

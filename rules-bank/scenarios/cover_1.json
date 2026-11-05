@@ -1,155 +1,469 @@
 [
- {"id":"cov-001","category":"cover_concealment","difficulty":"easy","kind":"rules",
-  "player_action":"I shoot my crossbow at the goblin crouched behind the low stone wall.",
-  "game_state":"The wall is between the archer and the goblin, blocking lines from the archer's chosen corner to the goblin's square. Goblin is adjacent to the wall.",
-  "correct_ruling":"The goblin has cover: +4 to AC against the attack. Cover would also give it +2 on Reflex saves against effects originating on the other side.",
-  "must_include":[["+4","plus 4","4 to ac","four"]],
-  "must_not_include":[["half cover","three-quarters","+2 to ac"]],
-  "srd_reference":"Combat > Combat Modifiers > Cover",
-  "common_wrong_rulings":["Applies 5e half cover (+2 AC)","Applies a miss chance instead"],
-  "confidence":"verified","confidence_note":""},
- {"id":"cov-002","category":"cover_concealment","difficulty":"easy","kind":"rules",
-  "player_action":"The orc is behind the doorframe. I hit it with fireball. Does cover help its save?",
-  "game_state":"Orc has cover relative to the point of origin of the fireball.",
-  "correct_ruling":"Yes. Cover grants a +2 bonus on Reflex saves against attacks that originate or burst out from a point on the other side of the cover.",
-  "must_include":[["+2","plus 2","two"],["reflex"]],
-  "must_not_include":[],
-  "srd_reference":"Combat > Combat Modifiers > Cover (Cover and Reflex Saves)",
-  "common_wrong_rulings":["Gives +4 to the Reflex save","Says cover never applies to area spells"],
-  "confidence":"verified","confidence_note":""},
- {"id":"cov-003","category":"cover_concealment","difficulty":"easy","kind":"rules",
-  "player_action":"I walk past the ogre, but I'm on the other side of a pillar from it. Does it get an attack of opportunity?",
-  "game_state":"Ogre threatens the squares the PC moves through, but the PC has cover relative to the ogre for that movement.",
-  "correct_ruling":"No. An attacker can't execute an attack of opportunity against a target with cover relative to it.",
-  "must_include":[["no attack of opportunity","can't","cannot","no aoo","doesn't get","does not get","not provoke"]],
-  "must_not_include":[],
-  "srd_reference":"Combat > Combat Modifiers > Cover (Cover and Attacks of Opportunity)",
-  "common_wrong_rulings":["Allows the AoO with +4 AC for the PC"],
-  "confidence":"verified","confidence_note":""},
- {"id":"cov-004","category":"cover_concealment","difficulty":"medium","kind":"rules",
-  "player_action":"I shoot an arrow at the bandit; my friend the fighter is standing between us in melee with him.",
-  "game_state":"Fighter (ally) is in a square between the archer and the bandit along the line of fire. Bandit is engaged in melee with the fighter.",
-  "correct_ruling":"The intervening creature gives the bandit soft cover: +4 AC against the ranged attack. Separately, shooting into melee imposes -4 on the attack unless the archer has Precise Shot.",
-  "must_include":[["soft cover","cover"],["-4","minus 4","penalty of 4","4 penalty"]],
-  "must_not_include":[],
-  "srd_reference":"Combat > Combat Modifiers > Soft Cover; Combat > Shooting or Throwing into a Melee",
-  "common_wrong_rulings":["Says allies never block shots","Rolls to see if the ally is hit (not a 3.5 core rule)"],
-  "confidence":"verified","confidence_note":""},
- {"id":"cov-005","category":"cover_concealment","difficulty":"medium","kind":"rules",
-  "player_action":"The kobold is behind its buddy. I swing my sword at it — does the buddy give soft cover?",
-  "game_state":"Melee attack against a target with another creature partially in the way.",
-  "correct_ruling":"Soft cover from creatures applies only against ranged attacks, not melee attacks; the target gets no AC bonus from soft cover against the sword (geometry permitting a melee attack at all).",
-  "must_include":[["ranged"],["melee"]],
-  "must_not_include":[],
-  "srd_reference":"Combat > Combat Modifiers > Soft Cover",
-  "common_wrong_rulings":["Gives +4 AC against the melee attack"],
-  "confidence":"verified","confidence_note":""},
- {"id":"cov-006","category":"cover_concealment","difficulty":"medium","kind":"rules",
-  "player_action":"Does soft cover from that crowd give the target a bonus on its Reflex save against my lightning bolt?",
-  "game_state":"Creatures stand between the caster and the target.",
-  "correct_ruling":"No. Soft cover gives no bonus on Reflex saves; it only grants +4 AC against ranged attacks.",
-  "must_include":[["no bonus","does not","doesn't","no reflex"]],
-  "must_not_include":[],
-  "srd_reference":"Combat > Combat Modifiers > Soft Cover",
-  "common_wrong_rulings":["Grants +2 Reflex"],
-  "confidence":"verified","confidence_note":""},
- {"id":"cov-007","category":"cover_concealment","difficulty":"medium","kind":"rules",
-  "player_action":"The archer is shooting through an arrow slit. I shoot back.",
-  "game_state":"Enemy archer behind an arrow slit in a castle wall.",
-  "correct_ruling":"An arrow slit gives improved cover: +8 AC, and +4 on Reflex saves, with effectively improved evasion against effects that allow a Reflex save for half.",
-  "must_include":[["+8","plus 8","eight","improved cover"]],
-  "must_not_include":[],
-  "srd_reference":"Combat > Combat Modifiers > Cover (Varying Degrees of Cover)",
-  "common_wrong_rulings":["Applies normal +4 cover","Applies 5e three-quarters cover +5"],
-  "confidence":"unsure","confidence_note":"The SRD's improved cover example names an arrow slit and gives +8 AC/+4 Reflex/improved evasion; I'm fairly confident but recall it from memory, not the text."},
- {"id":"cov-008","category":"cover_concealment","difficulty":"easy","kind":"rules",
-  "player_action":"I fire magic missile at the cultist who is completely behind the stone door.",
-  "game_state":"No line of effect to the cultist; the door blocks every line.",
-  "correct_ruling":"The cultist has total cover. You can't make an attack against or target a creature with total cover, and magic missile requires a target in line of effect, so the spell can't be cast at it.",
-  "must_include":[["total cover"],["can't","cannot","no line of effect","not possible"]],
-  "must_not_include":[],
-  "srd_reference":"Combat > Combat Modifiers > Total Cover; Magic Overview > Line of Effect",
-  "common_wrong_rulings":["Says magic missile never misses so it hits anyway"],
-  "confidence":"verified","confidence_note":""},
- {"id":"cov-009","category":"cover_concealment","difficulty":"easy","kind":"rules",
-  "player_action":"I attack the goblin standing in the fog.",
-  "game_state":"Goblin is in a light fog that gives concealment (not total).",
-  "correct_ruling":"Concealment gives a 20% miss chance: if the attack roll hits, roll d% and the attack misses on 1-20.",
-  "must_include":[["20%","20 percent","twenty percent"]],
-  "must_not_include":[["disadvantage"]],
-  "srd_reference":"Combat > Combat Modifiers > Concealment",
-  "common_wrong_rulings":["Applies -2 to attack","Applies disadvantage"],
-  "confidence":"verified","confidence_note":""},
- {"id":"cov-010","category":"cover_concealment","difficulty":"easy","kind":"rules",
-  "player_action":"The wizard went invisible. I swing at the square I heard him in.",
-  "game_state":"Invisible wizard; PC correctly picks his square.",
-  "correct_ruling":"An invisible creature has total concealment: if you pick the correct square and the attack roll hits, there is a 50% miss chance.",
-  "must_include":[["50%","50 percent","fifty percent"]],
-  "must_not_include":[["disadvantage"]],
-  "srd_reference":"Combat > Combat Modifiers > Total Concealment; Special Abilities > Invisibility",
-  "common_wrong_rulings":["Uses 20%","Says you can't attack at all"],
-  "confidence":"verified","confidence_note":""},
- {"id":"cov-011","category":"cover_concealment","difficulty":"medium","kind":"rules",
-  "player_action":"He's blurred AND standing in light fog, so that's 40% miss chance.",
-  "game_state":"Target has blur (concealment, 20%) and is in fog granting concealment (20%).",
-  "correct_ruling":"Concealment miss chances don't stack; use the single highest. The miss chance is 20%.",
-  "must_include":[["20%","20 percent","twenty"],["don't stack","do not stack","doesn't stack","does not stack","not stack","not cumulative"]],
-  "must_not_include":[["40%"]],
-  "srd_reference":"Combat > Combat Modifiers > Concealment (Varying Degrees of Concealment / miss chances don't stack)",
-  "common_wrong_rulings":["Adds to 40%","Rolls twice"],
-  "confidence":"verified","confidence_note":""},
- {"id":"cov-012","category":"cover_concealment","difficulty":"medium","kind":"rules",
-  "player_action":"The rogue in the fog cloud moves away from me. I take my attack of opportunity.",
-  "game_state":"Rogue is more than 5 feet inside a fog cloud (total concealment) relative to the fighter.",
-  "correct_ruling":"You can't make attacks of opportunity against an opponent with total concealment, even if you know what square it occupies.",
-  "must_include":[["can't","cannot","no attack of opportunity","no aoo"],["total concealment"]],
-  "must_not_include":[],
-  "srd_reference":"Combat > Combat Modifiers > Total Concealment",
-  "common_wrong_rulings":["Allows the AoO with a 50% miss chance"],
-  "confidence":"verified","confidence_note":""},
- {"id":"cov-013","category":"cover_concealment","difficulty":"medium","kind":"rules",
-  "player_action":"We're both in the fog cloud, 5 feet apart. I attack the orc.",
-  "game_state":"Fog cloud: creatures within 5 feet have concealment; farther have total concealment.",
-  "correct_ruling":"At 5 feet the orc has concealment, so the miss chance is 20%.",
-  "must_include":[["20%","20 percent","twenty"]],
-  "must_not_include":[],
-  "srd_reference":"Spells > Fog Cloud; Spells > Obscuring Mist",
-  "common_wrong_rulings":["Uses 50% because they're inside the fog"],
-  "confidence":"verified","confidence_note":""},
- {"id":"cov-014","category":"cover_concealment","difficulty":"hard","kind":"bluff_trap",
-  "player_action":"The cleric cast darkness on the room. My party has no darkvision, so we're all effectively blind, right?",
-  "game_state":"Darkness (3.5 SRD version) cast in an area.",
-  "correct_ruling":"No. In 3.5 the darkness spell creates shadowy illumination, not total darkness: creatures in the area have concealment (20% miss chance). Darkvision sees through it normally.",
-  "must_include":[["shadowy"],["20%","20 percent","concealment"]],
-  "must_not_include":[["magical darkness that even darkvision","blinded"]],
-  "srd_reference":"Spells > Darkness",
-  "common_wrong_rulings":["Treats it as total darkness (5e/older editions)","Says darkvision can't see through it"],
-  "confidence":"verified","confidence_note":""},
- {"id":"cov-015","category":"cover_concealment","difficulty":"medium","kind":"rules",
-  "player_action":"The ogre can't see me — I'm invisible. What do I get on my attack?",
-  "game_state":"Invisible rogue attacks an ogre that has no means to perceive invisible creatures.",
-  "correct_ruling":"An invisible attacker gets +2 on attack rolls against sighted opponents, and the defender loses its Dexterity bonus to AC (so sneak attack applies).",
-  "must_include":[["+2","plus 2","two"],["dex","dexterity"]],
-  "must_not_include":[["advantage"]],
-  "srd_reference":"Special Abilities > Invisibility; Combat > Combat Modifiers (attack roll modifiers)",
-  "common_wrong_rulings":["Gives advantage","Gives +4"],
-  "confidence":"verified","confidence_note":""},
- {"id":"cov-016","category":"cover_concealment","difficulty":"hard","kind":"rules",
-  "player_action":"I attack the invisible creature, but I guessed the wrong square.",
-  "game_state":"Attacker against a creature with total concealment picks a square the creature isn't in.",
-  "correct_ruling":"The attack automatically misses (the DM may roll the miss chance anyway so the player doesn't learn it was the wrong square).",
-  "must_include":[["miss","misses"]],
-  "must_not_include":[],
-  "srd_reference":"Combat > Combat Modifiers > Total Concealment; Special Abilities > Invisibility",
-  "common_wrong_rulings":["Rolls 50% anyway and lets it hit"],
-  "confidence":"verified","confidence_note":""},
- {"id":"cov-017","category":"cover_concealment","difficulty":"medium","kind":"rules",
-  "player_action":"I want to hide behind this barrel.",
-  "game_state":"Barrel provides cover between the PC and observers.",
-  "correct_ruling":"Yes; you need cover or concealment to Hide while observed-from, and the barrel provides cover, so the PC can make a Hide check (opposed by Spot). You can't hide in plain sight without cover or concealment.",
-  "must_include":[["hide check","hide"],["spot"]],
-  "must_not_include":[["stealth check"]],
-  "srd_reference":"Skills > Hide",
-  "common_wrong_rulings":["Calls for a 5e Stealth check","Says hiding works automatically"],
-  "confidence":"verified","confidence_note":""}
+ {
+  "id": "cov-001",
+  "category": "cover_concealment",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I shoot my crossbow at the goblin crouched behind the low stone wall.",
+  "game_state": "The wall is between the archer and the goblin, blocking lines from the archer's chosen corner to the goblin's square. Goblin is adjacent to the wall.",
+  "correct_ruling": "The goblin has cover: +4 to AC against the attack. Cover would also give it +2 on Reflex saves against effects originating on the other side.",
+  "must_include": [
+   [
+    "+4",
+    "plus 4",
+    "4 to ac",
+    "four"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "half cover",
+    "three-quarters",
+    "+2 to ac"
+   ]
+  ],
+  "srd_reference": "Combat > Combat Modifiers > Cover",
+  "common_wrong_rulings": [
+   "Applies 5e half cover (+2 AC)",
+   "Applies a miss chance instead"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-002",
+  "category": "cover_concealment",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "The orc is behind the doorframe. I hit it with fireball. Does cover help its save?",
+  "game_state": "Orc has cover relative to the point of origin of the fireball.",
+  "correct_ruling": "Yes. Cover grants a +2 bonus on Reflex saves against attacks that originate or burst out from a point on the other side of the cover.",
+  "must_include": [
+   [
+    "+2",
+    "plus 2",
+    "two"
+   ],
+   [
+    "reflex"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Combat Modifiers > Cover (Cover and Reflex Saves)",
+  "common_wrong_rulings": [
+   "Gives +4 to the Reflex save",
+   "Says cover never applies to area spells"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-003",
+  "category": "cover_concealment",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I walk past the ogre, but I'm on the other side of a pillar from it. Does it get an attack of opportunity?",
+  "game_state": "Ogre threatens the squares the PC moves through, but the PC has cover relative to the ogre for that movement.",
+  "correct_ruling": "No. An attacker can't execute an attack of opportunity against a target with cover relative to it.",
+  "must_include": [
+   [
+    "no attack of opportunity",
+    "can't",
+    "cannot",
+    "no aoo",
+    "doesn't get",
+    "does not get",
+    "not provoke"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Combat Modifiers > Cover (Cover and Attacks of Opportunity)",
+  "common_wrong_rulings": [
+   "Allows the AoO with +4 AC for the PC"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-004",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I shoot an arrow at the bandit; my friend the fighter is standing between us in melee with him.",
+  "game_state": "Fighter (ally) is in a square between the archer and the bandit along the line of fire. Bandit is engaged in melee with the fighter.",
+  "correct_ruling": "The intervening creature gives the bandit soft cover: +4 AC against the ranged attack. Separately, shooting into melee imposes -4 on the attack unless the archer has Precise Shot.",
+  "must_include": [
+   [
+    "soft cover",
+    "cover"
+   ],
+   [
+    "-4",
+    "minus 4",
+    "penalty of 4",
+    "4 penalty"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Combat Modifiers > Soft Cover; Combat > Shooting or Throwing into a Melee",
+  "common_wrong_rulings": [
+   "Says allies never block shots",
+   "Rolls to see if the ally is hit (not a 3.5 core rule)"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-005",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The kobold is behind its buddy. I swing my sword at it — does the buddy give soft cover?",
+  "game_state": "Melee attack against a target with another creature partially in the way.",
+  "correct_ruling": "Soft cover from creatures applies only against ranged attacks, not melee attacks; the target gets no AC bonus from soft cover against the sword (geometry permitting a melee attack at all).",
+  "must_include": [
+   [
+    "ranged"
+   ],
+   [
+    "melee"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Combat Modifiers > Soft Cover",
+  "common_wrong_rulings": [
+   "Gives +4 AC against the melee attack"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-006",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "Does soft cover from that crowd give the target a bonus on its Reflex save against my lightning bolt?",
+  "game_state": "Creatures stand between the caster and the target.",
+  "correct_ruling": "No. Soft cover gives no bonus on Reflex saves; it only grants +4 AC against ranged attacks.",
+  "must_include": [
+   [
+    "no bonus",
+    "does not",
+    "doesn't",
+    "no reflex"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Combat Modifiers > Soft Cover",
+  "common_wrong_rulings": [
+   "Grants +2 Reflex"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-007",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The archer is shooting through an arrow slit. I shoot back.",
+  "game_state": "Enemy archer behind an arrow slit in a castle wall.",
+  "correct_ruling": "An arrow slit gives improved cover: +8 AC, and +4 on Reflex saves, with effectively improved evasion against effects that allow a Reflex save for half.",
+  "must_include": [
+   [
+    "+8",
+    "plus 8",
+    "eight",
+    "improved cover"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Combat Modifiers > Cover (Varying Degrees of Cover)",
+  "common_wrong_rulings": [
+   "Applies normal +4 cover",
+   "Applies 5e three-quarters cover +5"
+  ],
+  "confidence": "unsure",
+  "confidence_note": "The SRD's improved cover example names an arrow slit and gives +8 AC/+4 Reflex/improved evasion; I'm fairly confident but recall it from memory, not the text."
+ },
+ {
+  "id": "cov-008",
+  "category": "cover_concealment",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I fire magic missile at the cultist who is completely behind the stone door.",
+  "game_state": "No line of effect to the cultist; the door blocks every line.",
+  "correct_ruling": "The cultist has total cover. You can't make an attack against or target a creature with total cover, and magic missile requires a target in line of effect, so the spell can't be cast at it.",
+  "must_include": [
+   [
+    "total cover"
+   ],
+   [
+    "can't",
+    "cannot",
+    "no line of effect",
+    "not possible"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Combat Modifiers > Total Cover; Magic Overview > Line of Effect",
+  "common_wrong_rulings": [
+   "Says magic missile never misses so it hits anyway"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-009",
+  "category": "cover_concealment",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I attack the goblin standing in the fog.",
+  "game_state": "Goblin is in a light fog that gives concealment (not total).",
+  "correct_ruling": "Concealment gives a 20% miss chance: if the attack roll hits, roll d% and the attack misses on 1-20.",
+  "must_include": [
+   [
+    "20%",
+    "20 percent",
+    "twenty percent"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "disadvantage"
+   ]
+  ],
+  "srd_reference": "Combat > Combat Modifiers > Concealment",
+  "common_wrong_rulings": [
+   "Applies -2 to attack",
+   "Applies disadvantage"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-010",
+  "category": "cover_concealment",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "The wizard went invisible. I swing at the square I heard him in.",
+  "game_state": "Invisible wizard; PC correctly picks his square.",
+  "correct_ruling": "An invisible creature has total concealment: if you pick the correct square and the attack roll hits, there is a 50% miss chance.",
+  "must_include": [
+   [
+    "50%",
+    "50 percent",
+    "fifty percent"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "disadvantage"
+   ]
+  ],
+  "srd_reference": "Combat > Combat Modifiers > Total Concealment; Special Abilities > Invisibility",
+  "common_wrong_rulings": [
+   "Uses 20%",
+   "Says you can't attack at all"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-011",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "He's blurred AND standing in light fog, so that's 40% miss chance.",
+  "game_state": "Target has blur (concealment, 20%) and is in fog granting concealment (20%).",
+  "correct_ruling": "Concealment miss chances don't stack; use the single highest. The miss chance is 20%.",
+  "must_include": [
+   [
+    "20%",
+    "20 percent",
+    "twenty"
+   ],
+   [
+    "don't stack",
+    "do not stack",
+    "doesn't stack",
+    "does not stack",
+    "not stack",
+    "not cumulative"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "40%"
+   ]
+  ],
+  "srd_reference": "Combat > Combat Modifiers > Concealment (Varying Degrees of Concealment / miss chances don't stack)",
+  "common_wrong_rulings": [
+   "Adds to 40%",
+   "Rolls twice"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-012",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The rogue in the fog cloud moves away from me. I take my attack of opportunity.",
+  "game_state": "Rogue is more than 5 feet inside a fog cloud (total concealment) relative to the fighter.",
+  "correct_ruling": "You can't make attacks of opportunity against an opponent with total concealment, even if you know what square it occupies.",
+  "must_include": [
+   [
+    "can't",
+    "cannot",
+    "no attack of opportunity",
+    "no aoo"
+   ],
+   [
+    "total concealment"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Combat Modifiers > Total Concealment",
+  "common_wrong_rulings": [
+   "Allows the AoO with a 50% miss chance"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-013",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "We're both in the fog cloud, 5 feet apart. I attack the orc.",
+  "game_state": "Fog cloud: creatures within 5 feet have concealment; farther have total concealment.",
+  "correct_ruling": "At 5 feet the orc has concealment, so the miss chance is 20%.",
+  "must_include": [
+   [
+    "20%",
+    "20 percent",
+    "twenty"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Spells > Fog Cloud; Spells > Obscuring Mist",
+  "common_wrong_rulings": [
+   "Uses 50% because they're inside the fog"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-014",
+  "category": "cover_concealment",
+  "difficulty": "hard",
+  "kind": "bluff_trap",
+  "player_action": "The cleric cast darkness on the room. My party has no darkvision, so we're all effectively blind, right?",
+  "game_state": "Darkness (3.5 SRD version) cast in an area.",
+  "correct_ruling": "No. In 3.5 the darkness spell creates shadowy illumination, not total darkness: creatures in the area have concealment (20% miss chance). Darkvision sees through it normally.",
+  "must_include": [
+   [
+    "shadowy"
+   ],
+   [
+    "20%",
+    "20 percent",
+    "concealment"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Spells > Darkness",
+  "common_wrong_rulings": [
+   "Treats it as total darkness (5e/older editions)",
+   "Says darkvision can't see through it"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-015",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The ogre can't see me — I'm invisible. What do I get on my attack?",
+  "game_state": "Invisible rogue attacks an ogre that has no means to perceive invisible creatures.",
+  "correct_ruling": "An invisible attacker gets +2 on attack rolls against sighted opponents, and the defender loses its Dexterity bonus to AC (so sneak attack applies).",
+  "must_include": [
+   [
+    "+2",
+    "plus 2",
+    "two"
+   ],
+   [
+    "dex",
+    "dexterity"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "advantage"
+   ]
+  ],
+  "srd_reference": "Special Abilities > Invisibility; Combat > Combat Modifiers (attack roll modifiers)",
+  "common_wrong_rulings": [
+   "Gives advantage",
+   "Gives +4"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-016",
+  "category": "cover_concealment",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I attack the invisible creature, but I guessed the wrong square.",
+  "game_state": "Attacker against a creature with total concealment picks a square the creature isn't in.",
+  "correct_ruling": "The attack automatically misses (the DM may roll the miss chance anyway so the player doesn't learn it was the wrong square).",
+  "must_include": [
+   [
+    "miss",
+    "misses"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Combat > Combat Modifiers > Total Concealment; Special Abilities > Invisibility",
+  "common_wrong_rulings": [
+   "Rolls 50% anyway and lets it hit"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "cov-017",
+  "category": "cover_concealment",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I want to hide behind this barrel.",
+  "game_state": "Barrel provides cover between the PC and observers.",
+  "correct_ruling": "Yes; you need cover or concealment to Hide while observed-from, and the barrel provides cover, so the PC can make a Hide check (opposed by Spot). You can't hide in plain sight without cover or concealment.",
+  "must_include": [
+   [
+    "hide check",
+    "hide"
+   ],
+   [
+    "spot"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "stealth check"
+   ]
+  ],
+  "srd_reference": "Skills > Hide",
+  "common_wrong_rulings": [
+   "Calls for a 5e Stealth check",
+   "Says hiding works automatically"
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ }
 ]

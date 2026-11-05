@@ -164,8 +164,8 @@
   "difficulty": "medium",
   "kind": "player_pressure",
   "player_action": "I'm only moving 5 feet as part of my move action, so it's basically a 5-foot step and shouldn't provoke.",
-  "game_state": "Fighter moved 5 ft then attacks \u2014 he plans to move 20 more ft later? No: he moves 5 ft out of threat as a move action, then wants to cast? (Fighter used move action to move 5 ft away from an orc and then take a standard action.)",
-  "correct_ruling": "Moving 5 feet as a normal move action out of a threatened square provokes; only a true 5-foot step (taken when you make no other movement that round) avoids the AoO. If he truly moves only 5 ft total and does nothing else involving movement, he can declare it a 5-foot step instead.",
+  "game_state": "Fighter adjacent to an orc. He plans to move 5 ft away as a move action and then move another 20 ft with his standard action (a double move).",
+  "correct_ruling": "Because he is moving more than 5 feet this round, the first 5 feet is ordinary movement, not a 5-foot step; leaving the orc's threatened square provokes. A 5-foot step is only possible in a round with no other movement.",
   "must_include": [
    [
     "5-foot step",
@@ -217,21 +217,23 @@
   "kind": "rules",
   "player_action": "I activate my wand of magic missile next to the goblin.",
   "game_state": "Wizard adjacent to goblin.",
-  "correct_ruling": "Activating a spell trigger item such as a wand is a standard action that provokes an attack of opportunity (it's a spell trigger, which provokes).",
+  "correct_ruling": "Activating a spell trigger item such as a wand is a standard action and does not provoke an attack of opportunity (unlike spell completion items such as scrolls, which provoke as spellcasting does).",
   "must_include": [
    [
-    "provoke",
-    "attack of opportunity",
-    "aoo"
+    "does not provoke",
+    "doesn't provoke",
+    "not provoke",
+    "no attack of opportunity",
+    "no aoo"
    ]
   ],
   "must_not_include": [],
   "srd_reference": "MagicItems > Using Items > Spell Trigger; Actions in Combat table (Use spell-like ability / activate magic item)",
   "common_wrong_rulings": [
-   "Wands don't provoke because no spell is cast."
+   "Wands provoke just like casting the spell."
   ],
   "confidence": "unsure",
-  "confidence_note": "Actions table says 'Activate magic item other than potion or oil' does not provoke; but spell trigger items say 'Activating a spell trigger item ... provokes'? Conflicting memories \u2014 needs check."
+  "confidence_note": "Fairly confident the SRD Spell Trigger text says it does not provoke; not checked against the text in this session."
  },
  {
   "id": "aoo-028",

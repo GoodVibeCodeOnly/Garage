@@ -1,0 +1,515 @@
+[
+ {
+  "id": "rst-001",
+  "category": "resting_spell_prep",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "We sleep for 8 hours. I wake up and I'm ready to cast my full spell list.",
+  "game_state": "Wizard 5 used all spell slots yesterday. Slept 8 uninterrupted hours.",
+  "correct_ruling": "After 8 hours of rest the wizard must also spend 1 hour studying the spellbook to prepare a full day's spells. Spells aren't available just from waking up.",
+  "must_include": [
+   [
+    "1 hour",
+    "one hour"
+   ],
+   [
+    "spellbook",
+    "study",
+    "studying",
+    "prepare"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Preparing Wizard Spells (Rest, Preparation)",
+  "common_wrong_rulings": [
+   "Slots return automatically on a long rest (5e).",
+   "No rest needed, only study."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "rst-002",
+  "category": "resting_spell_prep",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I only need two spells back, so I'll study for 10 minutes.",
+  "game_state": "Wizard rested 8 hours and has a few open slots to fill.",
+  "correct_ruling": "Preparing a smaller portion of the daily capacity takes a proportionally smaller amount of time, but always at least 15 minutes. Ten minutes isn't enough.",
+  "must_include": [
+   [
+    "15 minutes",
+    "fifteen minutes"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Preparing Wizard Spells (Preparation)",
+  "common_wrong_rulings": [
+   "Requires the full hour regardless.",
+   "Allows 1 minute per spell."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "rst-003",
+  "category": "resting_spell_prep",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I cast my last fireball at 2 AM, then rested until 10 AM and I prepare all my slots.",
+  "game_state": "Wizard cast spells at 2 AM; 8 hours of rest end at 10 AM; then prepares.",
+  "correct_ruling": "Recent casting limit: spells cast within the last 8 hours count against the day's slots. The fireball at 2 AM was 8 hours before 10 AM, so it's at the boundary; anything cast within 8 hours before preparation still uses up that slot.",
+  "must_include": [
+   [
+    "8 hours",
+    "eight hours"
+   ],
+   [
+    "count against",
+    "counts against",
+    "recent casting"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Preparing Wizard Spells (Recent Casting Limit)",
+  "common_wrong_rulings": [
+   "Spells cast before rest never matter.",
+   "Uses 24-hour cooldown per spell."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Boundary case at exactly 8 hours isn't explicitly resolved by the SRD; grading focuses on the rule's existence."
+ },
+ {
+  "id": "rst-004",
+  "category": "resting_spell_prep",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "Our watch was interrupted twice by wolves, 10 minutes each. I still prepare spells at dawn after 8 hours in camp.",
+  "game_state": "Wizard's 8-hour rest interrupted twice.",
+  "correct_ruling": "Each interruption adds 1 hour to the total rest required, so the wizard needs 10 hours total, and must have at least 1 hour of uninterrupted rest immediately before preparing.",
+  "must_include": [
+   [
+    "1 hour",
+    "one hour",
+    "an hour"
+   ],
+   [
+    "10 hours",
+    "ten hours",
+    "additional hour",
+    "adds"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Preparing Wizard Spells (Rest)",
+  "common_wrong_rulings": [
+   "Interruptions reset rest entirely.",
+   "Interruptions under an hour don't matter (5e)."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "rst-005",
+  "category": "resting_spell_prep",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I'm a sorcerer, I just need to sleep to get my slots back, right?",
+  "game_state": "Sorcerer at end of day with depleted slots.",
+  "correct_ruling": "Sorcerers need 8 hours of rest and then 15 minutes of concentration to regain their daily spell slots. They don't prepare specific spells.",
+  "must_include": [
+   [
+    "15 minutes",
+    "fifteen minutes"
+   ],
+   [
+    "8 hours",
+    "eight hours"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Sorcerers and Bards (Daily Readying of Spells)",
+  "common_wrong_rulings": [
+   "Sleep alone restores slots.",
+   "Sorcerers need a full hour like wizards."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "rst-006",
+  "category": "resting_spell_prep",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I'm a cleric, I pray for my spells at dawn. We only got 4 hours of sleep. I can still get spells?",
+  "game_state": "Cleric with a chosen prayer time of dawn; party slept only 4 hours.",
+  "correct_ruling": "Yes. Divine casters don't need rest to prepare spells; they pray at their chosen time of day for 1 hour. (Lack of sleep may cause fatigue under other rules, but doesn't block preparation.)",
+  "must_include": [
+   [
+    "1 hour",
+    "one hour",
+    "an hour"
+   ],
+   [
+    "don't need",
+    "does not need",
+    "doesn't need",
+    "no rest",
+    "not require"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Divine Spells (Preparing Divine Spells)",
+  "common_wrong_rulings": [
+   "Clerics need 8 hours rest like wizards.",
+   "Clerics need a long rest (5e)."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "rst-007",
+  "category": "resting_spell_prep",
+  "difficulty": "easy",
+  "kind": "bluff_trap",
+  "player_action": "We take a short rest for an hour, so I spend hit dice to heal.",
+  "game_state": "Party of 3.5 characters after a fight.",
+  "correct_ruling": "There are no short rests or hit dice spending in 3.5. Natural healing comes from 8 hours of rest (1 hp per character level per night) or from magic/Heal checks.",
+  "must_include": [
+   [
+    "no short rest",
+    "no such thing",
+    "doesn't exist",
+    "does not exist",
+    "isn't a rule",
+    "not a rule",
+    "not in 3.5",
+    "5e"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "spend hit dice",
+    "roll your hit dice"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 CombatII > Healing (Natural Healing)",
+  "common_wrong_rulings": [
+   "Allows hit dice healing (5e short rest).",
+   "Restores half HP after 1 hour."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "rst-008",
+  "category": "resting_spell_prep",
+  "difficulty": "easy",
+  "kind": "bluff_trap",
+  "player_action": "After a long rest I'm back to full hit points.",
+  "game_state": "Fighter 6, 20 hp below max, rests 8 hours.",
+  "correct_ruling": "No. Natural healing restores 1 hit point per character level per full night of rest (6 hp). Complete bed rest for a full day restores 2 per level.",
+  "must_include": [
+   [
+    "1 hit point per",
+    "1 hp per",
+    "one hit point per",
+    "6 hit points",
+    "6 hp"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "full hit points",
+    "back to full"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 CombatII > Healing (Natural Healing)",
+  "common_wrong_rulings": [
+   "Full HP on a long rest (5e).",
+   "Heals Con modifier per day."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "rst-009",
+  "category": "resting_spell_prep",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I stay in bed all day at the inn, no adventuring. How much do I heal?",
+  "game_state": "Rogue 4 takes a full day of complete bed rest.",
+  "correct_ruling": "Complete bed rest for an entire day and night restores 2 hit points per character level: 8 hp.",
+  "must_include": [
+   [
+    "8",
+    "2 hit points per",
+    "2 hp per",
+    "twice"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 CombatII > Healing (Natural Healing)",
+  "common_wrong_rulings": [
+   "Full heal.",
+   "Only 1 hp/level regardless."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "rst-010",
+  "category": "resting_spell_prep",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The shadow did 3 Strength damage. I sleep a night; how much comes back?",
+  "game_state": "Fighter with 3 points of Strength damage (not drain).",
+  "correct_ruling": "Ability damage heals at 1 point per day of rest (8 hours) per affected ability; complete bed rest heals 2 points per day. So 1 point back after one night.",
+  "must_include": [
+   [
+    "1 point",
+    "one point"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "all of it returns"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 SpecialAbilities > Ability Score Loss (Ability Damage)",
+  "common_wrong_rulings": [
+   "All ability damage returns after a long rest.",
+   "Never heals without restoration (confusing damage with drain)."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "rst-011",
+  "category": "resting_spell_prep",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "The specter-like thing drained 2 points of my Constitution. I'll rest a week to get it back.",
+  "game_state": "Character with 2 points of Constitution drain.",
+  "correct_ruling": "Ability drain is permanent and does not heal naturally with rest; it requires magic such as restoration.",
+  "must_include": [
+   [
+    "permanent",
+    "doesn't heal",
+    "does not heal",
+    "won't heal",
+    "not heal"
+   ],
+   [
+    "restoration"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 SpecialAbilities > Ability Score Loss (Ability Drain)",
+  "common_wrong_rulings": [
+   "Drain heals at 1 point per day like damage."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "rst-012",
+  "category": "resting_spell_prep",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I took 15 nonlethal damage from the bar fight. How long until it's gone?",
+  "game_state": "Fighter 5 with 15 nonlethal damage.",
+  "correct_ruling": "Nonlethal damage heals at 1 hit point per character level per hour: 5 per hour, so 3 hours.",
+  "must_include": [
+   [
+    "per hour"
+   ],
+   [
+    "3 hours",
+    "three hours"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 CombatII > Nonlethal Damage (Healing Nonlethal Damage)",
+  "common_wrong_rulings": [
+   "Heals only with rest like lethal damage.",
+   "Gone after combat ends."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "rst-013",
+  "category": "resting_spell_prep",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "The cleric gives me long-term care with Heal while I rest overnight. How much do I recover?",
+  "game_state": "Fighter 6 resting 8 hours; cleric succeeds on a DC 15 Heal check for long-term care.",
+  "correct_ruling": "Long-term care doubles natural healing: 2 hit points per level for 8 hours of rest (12 hp), or 4 per level for complete bed rest; ability damage also recovers at double rate.",
+  "must_include": [
+   [
+    "12",
+    "2 hit points per",
+    "2 hp per",
+    "double",
+    "twice"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 Skills > Heal (Provide Long-Term Care)",
+  "common_wrong_rulings": [
+   "Heal check restores 1d4 hp instantly.",
+   "Heal stabilizes only."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "rst-014",
+  "category": "resting_spell_prep",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm a cleric with cure light wounds not prepared. I give up my prepared bless to cast cure light wounds.",
+  "game_state": "Good cleric with bless (1st level) prepared.",
+  "correct_ruling": "Allowed. A good cleric (or neutral cleric who chose cure) can spontaneously convert any prepared spell (not a domain spell) into a cure spell of the same level or lower. Bless (1st) converts to cure light wounds (1st).",
+  "must_include": [
+   [
+    "spontaneous"
+   ],
+   [
+    "same level",
+    "1st",
+    "first"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 Classes > Cleric (Spontaneous Casting)",
+  "common_wrong_rulings": [
+   "Must have cure prepared.",
+   "Domain spells can be converted too."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "rst-015",
+  "category": "resting_spell_prep",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I convert my domain spell into a cure spell.",
+  "game_state": "Good cleric wants to spontaneously convert a domain-slot spell into cure moderate wounds.",
+  "correct_ruling": "Not allowed. Spontaneous conversion to cure spells cannot use domain spells (spells in domain slots).",
+  "must_include": [
+   [
+    "domain"
+   ],
+   [
+    "can't",
+    "cannot",
+    "not allowed",
+    "no"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 Classes > Cleric (Spontaneous Casting)",
+  "common_wrong_rulings": [
+   "Any prepared spell can be converted."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "rst-016",
+  "category": "resting_spell_prep",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I lost my spellbook in the river. I prepare my spells from memory.",
+  "game_state": "Wizard 7 without spellbook after 8 hours rest.",
+  "correct_ruling": "A wizard can't prepare spells without a spellbook, except read magic, which all wizards can prepare from memory.",
+  "must_include": [
+   [
+    "read magic"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 Classes > Wizard (Spellbooks); MagicOverview > Preparing Wizard Spells",
+  "common_wrong_rulings": [
+   "Can prepare known spells from memory.",
+   "Can prepare cantrips from memory."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "rst-017",
+  "category": "resting_spell_prep",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I left two slots open this morning. Now, at noon, I prepare knock in one of them.",
+  "game_state": "Wizard rested and left two slots unfilled during morning preparation.",
+  "correct_ruling": "Allowed. A wizard can leave slots open and later prepare spells into them by studying, which takes at least 15 minutes (proportional time). No additional rest is needed for slots left open.",
+  "must_include": [
+   [
+    "15 minutes",
+    "fifteen minutes"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 MagicOverview > Preparing Wizard Spells (Spell Slots)",
+  "common_wrong_rulings": [
+   "Slots can only be filled after a full rest.",
+   "Preparation of one spell takes 1 minute."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Wording that later filling needs no new rest is recalled, not quoted."
+ },
+ {
+  "id": "rst-018",
+  "category": "resting_spell_prep",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm fatigued from the forced march. We camp 8 hours.",
+  "game_state": "Fighter fatigued.",
+  "correct_ruling": "Fatigue is removed after 8 hours of complete rest.",
+  "must_include": [
+   [
+    "8 hours",
+    "eight hours"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "exhaustion level"
+   ]
+  ],
+  "srd_reference": "SRD 3.5 Conditions > Fatigued",
+  "common_wrong_rulings": [
+   "Removes one level of exhaustion (5e).",
+   "Fatigue ends after 1 hour."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "rst-019",
+  "category": "resting_spell_prep",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I'm exhausted. I rest for an hour.",
+  "game_state": "Ranger exhausted after a long run.",
+  "correct_ruling": "After 1 hour of complete rest, an exhausted character becomes fatigued (not fully recovered). Removing fatigue then takes 8 hours of rest.",
+  "must_include": [
+   [
+    "fatigued"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SRD 3.5 Conditions > Exhausted",
+  "common_wrong_rulings": [
+   "One level of exhaustion removed per long rest (5e).",
+   "Fully recovered after an hour."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ }
+]

@@ -1,0 +1,430 @@
+[
+ {
+  "id": "mov-019",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "The rubble is just a little bit of rubble, it shouldn't cost double. Can I just move my full speed through it?",
+  "game_state": "Area designated as difficult terrain (dense rubble). Speed 30.",
+  "correct_ruling": "Once the DM has established the area as difficult terrain, each square costs double (2 squares). The ruling holds; the player can move 15 ft through it with a single move action.",
+  "must_include": [
+   [
+    "double",
+    "2 squares",
+    "two squares",
+    "twice"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Movement > Difficult Terrain",
+  "common_wrong_rulings": [
+   "Waives the cost because the player argues."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-020",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I charge through a square of difficult terrain.",
+  "game_state": "Fighter, straight line to target passes through shallow bog.",
+  "correct_ruling": "You can't charge if the path is hindered by difficult terrain (or obstacles, or creatures).",
+  "must_include": [
+   [
+    "can't charge",
+    "cannot charge",
+    "no charge",
+    "not allowed",
+    "can't"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Full-Round Actions > Charge",
+  "common_wrong_rulings": [
+   "Charge at reduced distance through terrain."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-021",
+  "category": "movement_terrain",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I charge the orc chief, and my ally is standing in the path.",
+  "game_state": "Charge line passes through an ally's square.",
+  "correct_ruling": "Charging requires a path not blocked by creatures; per the SRD, if any line is blocked (including by an ally) you can't charge.",
+  "must_include": [
+   [
+    "can't charge",
+    "cannot charge",
+    "blocked"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Full-Round Actions > Charge",
+  "common_wrong_rulings": [
+   "Allies don't block charges."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "SRD says 'If any line from your starting space to the ending space passes through a square that blocks movement, slows movement, or contains a creature (even an ally), you can't charge.' Recalled from memory."
+ },
+ {
+  "id": "mov-022",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I move through my ally's square and end my turn there.",
+  "game_state": "Two Medium allies, normal grid.",
+  "correct_ruling": "You can move through an ally's square freely, but you generally can't end your movement in an occupied square.",
+  "must_include": [
+   [
+    "can't end",
+    "cannot end",
+    "not end"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Moving Through a Square > Ending Your Movement",
+  "common_wrong_rulings": [
+   "Can share a square with an ally."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-023",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I move 5 feet and that's my 5-foot step, then I move 25 more as my move action.",
+  "game_state": "Fighter speed 30.",
+  "correct_ruling": "No. A 5-foot step can only be taken in a round in which you don't otherwise move. You can just move 30 ft as a move action.",
+  "must_include": [
+   [
+    "no other movement",
+    "don't otherwise move",
+    "not otherwise move",
+    "any other movement",
+    "doesn't move",
+    "no movement"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatII.rtf > Take 5-Foot Step",
+  "common_wrong_rulings": [
+   "5-foot step stacks with movement."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-024",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I double move through the darkness while blinded.",
+  "game_state": "Fighter blinded, speed 30.",
+  "correct_ruling": "A blinded creature moves at half speed (and has -2 AC, loses Dex, etc.). Two move actions move only 30 ft total; it also can't run or charge.",
+  "must_include": [
+   [
+    "half speed",
+    "half"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Conditions > Blinded",
+  "common_wrong_rulings": [
+   "Normal speed with disadvantage."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-025",
+  "category": "movement_terrain",
+  "difficulty": "easy",
+  "kind": "bluff_trap",
+  "player_action": "I jump up 15 feet; I have Strength 18 so I can just do it.",
+  "game_state": "Human, Jump modifier +4, speed 30.",
+  "correct_ruling": "3.5 jumping uses the Jump skill: a high jump with running start has DC equal to 4 x feet (DC 60 for 15 ft), not a Strength-score distance. He'll need a check and will almost certainly fail.",
+  "must_include": [
+   [
+    "jump check",
+    "jump skill",
+    "jump"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "strength score in feet",
+    "equal to your strength score"
+   ]
+  ],
+  "srd_reference": "SkillsI.rtf > Jump",
+  "common_wrong_rulings": [
+   "5e Strength-based jumping distance."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-026",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I climb the castle wall at full speed.",
+  "game_state": "Rogue with Climb ranks, no climb speed, speed 30.",
+  "correct_ruling": "With a Climb check you move one-quarter speed as a move action (half speed as full-round), or accelerated climbing at half speed with -5. You lose Dex to AC while climbing (unless you have a climb speed).",
+  "must_include": [
+   [
+    "one-quarter",
+    "quarter",
+    "1/4"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SkillsI.rtf > Climb",
+  "common_wrong_rulings": [
+   "Climb at half speed with no check (5e).",
+   "Full speed."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-027",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I swim across the lake in my chainmail.",
+  "game_state": "Fighter in chain mail (armor check penalty -5), calm water, speed 30.",
+  "correct_ruling": "Swim checks (DC 10 calm water) take double the armor check penalty (-10 here). Success lets you swim one-quarter speed as a move action.",
+  "must_include": [
+   [
+    "double",
+    "twice",
+    "x2",
+    "-10"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SkillsII.rtf > Swim",
+  "common_wrong_rulings": [
+   "Normal armor penalty.",
+   "Half speed."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-028",
+  "category": "movement_terrain",
+  "difficulty": "hard",
+  "kind": "rules",
+  "player_action": "I'm Large. Can I flank with the halfling, and how big is my reach?",
+  "game_state": "Large (tall) ogre ally (polymorphed PC) with natural reach 10 ft.",
+  "correct_ruling": "A Large tall creature has 10-foot reach and a 10x10 space; flanking uses the line between the centers of the two creatures' spaces through opposite sides/corners of the target. If both threaten and line passes properly, they flank.",
+  "must_include": [
+   [
+    "10 feet",
+    "10 ft",
+    "10-foot"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Big and Little Creatures; CombatII.rtf > Flanking",
+  "common_wrong_rulings": [
+   "Large has 5 ft reach."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-029",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "dm_discretion",
+  "player_action": "I attack the ogre through my ally's square with my spear from 10 feet away.",
+  "game_state": "Fighter with longspear (reach), ally between him and ogre.",
+  "correct_ruling": "The reach attack is allowed: a reach weapon can strike a foe 10 ft away past an ally. Whether the intervening ally grants the ogre soft cover (+4 AC) against the reach attack is not clearly stated in the SRD, so the DM decides.",
+  "must_include": [
+   [
+    "allowed",
+    "legal",
+    "can attack",
+    "yes"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "CombatI.rtf > Reach Weapons; CombatII.rtf > Cover",
+  "common_wrong_rulings": [
+   "Ally completely blocks reach attacks."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Whether intervening ally grants soft cover against reach melee attacks is debated; SRD soft cover text references ranged attacks."
+ },
+ {
+  "id": "mov-030",
+  "category": "movement_terrain",
+  "difficulty": "easy",
+  "kind": "rules",
+  "player_action": "I'm a halfling. What's my speed?",
+  "game_state": "Halfling, no armor.",
+  "correct_ruling": "Halflings have a base land speed of 20 ft.",
+  "must_include": [
+   [
+    "20"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Races.rtf > Halflings",
+  "common_wrong_rulings": [
+   "25 ft (5e)."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-031",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "My dwarf is wearing full plate. How fast does he move?",
+  "game_state": "Dwarf, full plate, medium load.",
+  "correct_ruling": "Dwarves move 20 ft and keep that speed even in medium or heavy armor or when carrying a medium or heavy load.",
+  "must_include": [
+   [
+    "20"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "15"
+   ]
+  ],
+  "srd_reference": "Races.rtf > Dwarves",
+  "common_wrong_rulings": [
+   "Reduced to 15 ft."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-032",
+  "category": "movement_terrain",
+  "difficulty": "hard",
+  "kind": "dm_discretion",
+  "player_action": "I want to push the boulder down the slope onto the orcs.",
+  "game_state": "Boulder on hill; orcs below. No stats provided.",
+  "correct_ruling": "The SRD has no specific rolling-boulder rule; the DM decides the check (likely Strength), damage, and saves (often a Reflex save), possibly by analogy to falling objects or traps.",
+  "must_include": [
+   [
+    "dm",
+    "gm",
+    "game master",
+    "discretion"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "No specific rule; DM adjudication (Environment > Falling Objects for analogy)",
+  "common_wrong_rulings": [
+   "Citing a nonexistent boulder rule."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-033",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I fall 30 feet into the pit. How much damage?",
+  "game_state": "Fighter falls 30 ft onto stone.",
+  "correct_ruling": "Falling damage is 1d6 per 10 ft fallen, so 3d6.",
+  "must_include": [
+   [
+    "3d6"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Environment.rtf > Falling",
+  "common_wrong_rulings": [
+   "1d6 per 5 ft."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-034",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I jumped down 20 feet deliberately \u2014 that should reduce damage.",
+  "game_state": "Fighter jumps down 20 ft, makes DC 15 Jump or Tumble check.",
+  "correct_ruling": "Deliberately jumping makes the first 1d6 of falling damage nonlethal, and a successful DC 15 Jump or Tumble check lets you avoid damage from the first 10 ft. So from 20 ft the fighter takes damage only for the remaining 10 ft (1d6).",
+  "must_include": [
+   [
+    "nonlethal",
+    "first 10"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "Environment.rtf > Falling",
+  "common_wrong_rulings": [
+   "No reduction."
+  ],
+  "confidence": "unsure",
+  "confidence_note": "SRD: 'If you deliberately jump... first 1d6 is nonlethal'; and successful DC 15 Jump/Tumble also lets you ignore the first 10 feet \u2014 exact interplay not re-checked."
+ },
+ {
+  "id": "mov-035",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "rules",
+  "player_action": "I use Tumble to move through the ogre's square.",
+  "game_state": "Rogue with Tumble, ogre threatening.",
+  "correct_ruling": "Tumbling through an enemy's square is DC 25; success lets you move through at half speed without provoking for that move through. Failure: you stop before entering and provoke.",
+  "must_include": [
+   [
+    "25"
+   ]
+  ],
+  "must_not_include": [],
+  "srd_reference": "SkillsII.rtf > Tumble",
+  "common_wrong_rulings": [
+   "DC 15."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ },
+ {
+  "id": "mov-036",
+  "category": "movement_terrain",
+  "difficulty": "medium",
+  "kind": "player_pressure",
+  "player_action": "I'm only going around the orc, not away from it, so I don't provoke, right? In every game I've played that's how it works.",
+  "game_state": "Fighter moves from one square adjacent to the orc to another adjacent square (not a 5-foot step; moving 10 ft).",
+  "correct_ruling": "In 3.5, moving out of a threatened square provokes an AoO, even if you stay adjacent. Only a 5-foot step (or withdraw/tumble) avoids it.",
+  "must_include": [
+   [
+    "provoke",
+    "attack of opportunity"
+   ]
+  ],
+  "must_not_include": [
+   [
+    "only when leaving reach",
+    "only if you leave reach"
+   ]
+  ],
+  "srd_reference": "CombatII.rtf > Attacks of Opportunity > Provoking an AoO",
+  "common_wrong_rulings": [
+   "5e rule: only leaving reach provokes."
+  ],
+  "confidence": "verified",
+  "confidence_note": ""
+ }
+]
