@@ -16,6 +16,18 @@ norm = lambda s: re.sub(r"\s+", " ", str(s).strip().lower().rstrip("."))
 
 tasks = pd.read_csv(f"{res}/onet_task_statements.csv")
 tasks["key"] = tasks["Task"].map(norm)
+# Some rows in this O*NET task file have a blank occupation code (older O*NET titles such as
+# "Accountants"). Recover them by exact title via the official O*NET 2010->2019 crosswalk;
+# without this, ~6-10% of usage mass silently drops out (found during the first pass).
+xw = pd.read_csv(f"{res}/2010_to_2019_Crosswalk.csv")
+title2code = pd.concat([xw.set_index("O*NET-SOC 2010 Title")["O*NET-SOC 2019 Code"],
+                        xw.set_index("O*NET-SOC 2019 Title")["O*NET-SOC 2019 Code"]])
+title2code = title2code[~title2code.index.duplicated()]
+blank = tasks["O*NET-SOC Code"].isna()
+tasks.loc[blank, "O*NET-SOC Code"] = tasks.loc[blank, "Title"].map(title2code)
+print(f"task rows with blank code: {blank.sum()}; recovered via crosswalk title: "
+      f"{tasks.loc[blank, 'O*NET-SOC Code'].notna().sum()}")
+tasks = tasks.dropna(subset=["O*NET-SOC Code"])
 tasks["soc"] = tasks["O*NET-SOC Code"].str[:7]
 # one task text can belong to several occupations: split its usage equally among them
 t2o = tasks[["key", "soc"]].drop_duplicates()
@@ -28,7 +40,7 @@ def occ_shares(path, name):
     m = d.merge(t2o, on="key", how="left")
     matched = m["soc"].notna()
     print(f"{name}: {len(d)} tasks, {d['key'].isin(t2o['key']).mean():.1%} matched to O*NET text, "
-          f"{m.loc[matched,'pct'].sum()/d['pct'].sum():.1%} of usage mass matched")
+          f"{(m.loc[matched,'pct']*m.loc[matched,'w']).sum()/d['pct'].sum():.1%} of usage mass matched to an occupation")
     m = m[matched]
     s = (m["pct"] * m["w"]).groupby(m["soc"]).sum()
     extra = None
