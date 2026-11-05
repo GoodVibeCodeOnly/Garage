@@ -1,0 +1,45 @@
+{
+  "version": "1.4.2",
+  "starting_gold": 500,
+  "tax_rate": 0.15,
+  "factions": {
+    "Venice": {
+      "income_bonus": 0.2,
+      "capital": "Venice"
+    },
+    "Ottomans": {
+      "income_bonus": 0.05,
+      "capital": "Constantinople"
+    },
+    "Byzantium": {
+      "income_bonus": 0.0,
+      "capital": "Constantinople"
+    },
+    "Mongols": {
+      "income_bonus": -0.1,
+      "capital": "Karakorum"
+    }
+  },
+  "units": {
+    "levy": {
+      "cost": 20,
+      "upkeep": 1
+    },
+    "spearmen": {
+      "cost": 45,
+      "upkeep": 2
+    },
+    "crossbowmen": {
+      "cost": 60,
+      "upkeep": 3
+    },
+    "knights": {
+      "cost": 150,
+      "upkeep": 8
+    },
+    "horse_archers": {
+      "cost": 110,
+      "upkeep": 5
+    }
+  }
+}
