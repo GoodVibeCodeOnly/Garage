@@ -48,7 +48,7 @@ static const int PIN_RTC_SCL    = 14;
 static const uint8_t RTC_ADDR = 0x51;  // BM8563
 
 // ---- small helpers ---------------------------------------------------------
-static void logf(const char* fmt, ...) {
+static void note(const char* fmt, ...) {
   char buf[200];
   va_list ap;
   va_start(ap, fmt);
@@ -204,7 +204,7 @@ static bool cameraStart() {
   c.grab_mode = CAMERA_GRAB_LATEST;
   esp_err_t err = esp_camera_init(&c);
   if (err != ESP_OK) {
-    logf("camera init failed: 0x%x", err);
+    note("camera init failed: 0x%x", err);
     return false;
   }
   sensor_t* s = esp_camera_sensor_get();
@@ -228,7 +228,7 @@ static bool capturePhotoTo(const char* path, std::vector<uint8_t>* keepInRam) {
   camera_fb_t* fb = esp_camera_fb_get();
   bool ok = false;
   if (fb && fb->len > 0) {
-    logf("photo %ux%u, %u bytes", fb->width, fb->height, (unsigned)fb->len);
+    note("photo %ux%u, %u bytes", fb->width, fb->height, (unsigned)fb->len);
     if (keepInRam) {
       keepInRam->assign(fb->buf, fb->buf + fb->len);
       ok = true;
@@ -241,7 +241,7 @@ static bool capturePhotoTo(const char* path, std::vector<uint8_t>* keepInRam) {
       }
     }
   } else {
-    logf("no frame from camera");
+    note("no frame from camera");
   }
   if (fb) esp_camera_fb_return(fb);
   esp_camera_deinit();  // camera stops; full power-off happens with the board
@@ -266,7 +266,7 @@ static void makeRoom(size_t bytes) {
   while (LittleFS.totalBytes() - LittleFS.usedBytes() < bytes + margin) {
     std::vector<String> held = heldPhotos();
     if (held.empty()) return;
-    logf("flash full, dropping oldest held photo %s", held.front().c_str());
+    note("flash full, dropping oldest held photo %s", held.front().c_str());
     LittleFS.remove(held.front());
   }
 }
@@ -279,18 +279,18 @@ static bool wifiJoin() {
   int attempt = 0;
   while ((int32_t)(deadline - millis()) > 0) {
     attempt++;
-    logf("wifi attempt %d", attempt);
+    note("wifi attempt %d", attempt);
     WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
     uint32_t tryUntil = min(deadline, (uint32_t)(millis() + 8000));
     while (WiFi.status() != WL_CONNECTED && (int32_t)(tryUntil - millis()) > 0) delay(100);
     if (WiFi.status() == WL_CONNECTED) {
-      logf("wifi up, ip %s, rssi %d", WiFi.localIP().toString().c_str(), WiFi.RSSI());
+      note("wifi up, ip %s, rssi %d", WiFi.localIP().toString().c_str(), WiFi.RSSI());
       return true;
     }
     WiFi.disconnect(true);
     delay(200);
   }
-  logf("wifi failed");
+  note("wifi failed");
   return false;
 }
 
@@ -307,9 +307,9 @@ static bool syncClock() {
   bool ok = sntp_get_sync_status() == SNTP_SYNC_STATUS_COMPLETED && clockIsSane(time(nullptr));
   if (ok) {
     rtcSetUtc(time(nullptr));
-    logf("clock set from internet: %s", isoLocal(time(nullptr)).c_str());
+    note("clock set from internet: %s", isoLocal(time(nullptr)).c_str());
   } else {
-    logf("internet time not available");
+    note("internet time not available");
   }
   return ok;
 }
@@ -359,7 +359,7 @@ void setup() {
   digitalWrite(PIN_LED, LOW);
 
   Serial.begin(115200);
-  logf("lemon-camera awake");
+  note("lemon-camera awake");
 
   esp_timer_handle_t limit;
   esp_timer_create_args_t args = {};
@@ -376,19 +376,19 @@ void setup() {
   if (rtcNow) {
     struct timeval tv = {rtcNow, 0};
     settimeofday(&tv, nullptr);
-    logf("RTC time %s", isoLocal(rtcNow).c_str());
+    note("RTC time %s", isoLocal(rtcNow).c_str());
   } else {
-    logf("RTC time unknown (first start or battery was flat)");
+    note("RTC time unknown (first start or battery was flat)");
   }
 
-  if (!LittleFS.begin(true)) logf("flash storage could not be mounted");
+  if (!LittleFS.begin(true)) note("flash storage could not be mounted");
   LittleFS.mkdir("/held");
 
   const Settings cfg = settings();
   State state = loadState();
   const String fw = String(__DATE__ " " __TIME__);
   if (state.firmwareId != fw.c_str()) {
-    logf("new firmware: aiming mode for %d shots", AIM_MODE_SHOTS);
+    note("new firmware: aiming mode for %d shots", AIM_MODE_SHOTS);
     state.firmwareId = fw.c_str();
     state.aimShotsLeft = AIM_MODE_SHOTS;
     state.retriesUsedToday = 0;
@@ -407,7 +407,7 @@ void setup() {
   const bool daily = !aim && isDailyPhotoTime(time(nullptr), PHOTO_HOUR, PHOTO_MINUTE);
   const time_t taken = time(nullptr);
   const float battery = readBatteryVolts();  // before wifi loads the battery
-  logf("battery %.2f V, %s wake", battery, aim ? "aiming" : daily ? "daily" : "retry");
+  note("battery %.2f V, %s wake", battery, aim ? "aiming" : daily ? "daily" : "retry");
 
   std::vector<uint8_t> aimPhoto;
   String todayFile;
@@ -427,7 +427,7 @@ void setup() {
     if (aim && !aimPhoto.empty()) {
       UploadInfo u = {"aim", clockIsSane(taken) ? taken : time(nullptr), battery, state.boot, 0, ""};
       int code = postBody(uploadPath(u), nullptr, aimPhoto.data(), aimPhoto.size());
-      logf("aim photo upload -> %d", code);
+      note("aim photo upload -> %d", code);
     }
     std::vector<String> held = heldPhotos();
     for (size_t i = 0; i < held.size(); i++) {
@@ -442,7 +442,7 @@ void setup() {
                       (int)(held.size() - i - 1), ""};
       int code = postBody(uploadPath(u), &f, nullptr, f.size());
       f.close();
-      logf("upload %s -> %d", name.c_str(), code);
+      note("upload %s -> %d", name.c_str(), code);
       if (code >= 200 && code < 300) {
         LittleFS.remove(name);
       } else {
@@ -457,8 +457,8 @@ void setup() {
   Plan plan = planNextWake(now, state, cfg, !heldPhotos().empty());
   saveState(state);
   armPlan(plan, now);
-  if (plan.wakeAt) logf("next wake %s", isoLocal(plan.wakeAt).c_str());
-  else logf("next wake in %d s", plan.countdownSeconds);
+  if (plan.wakeAt) note("next wake %s", isoLocal(plan.wakeAt).c_str());
+  else note("next wake in %d s", plan.countdownSeconds);
   LittleFS.end();
   Serial.flush();
   powerOff();

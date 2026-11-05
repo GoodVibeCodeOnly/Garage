@@ -5,6 +5,7 @@
 // asks this file what to do.
 #pragma once
 
+#include <ctype.h>
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>
