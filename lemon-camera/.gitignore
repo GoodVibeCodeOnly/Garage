@@ -1,0 +1,6 @@
+# Real wifi password and receiver address live here. Never commit it.
+firmware/lemon_camera/config.h
+__pycache__/
+*.pyc
+tests/firmware/build/
+receiver/LemonPhotos/
