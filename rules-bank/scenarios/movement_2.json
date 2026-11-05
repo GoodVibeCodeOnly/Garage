@@ -20,7 +20,7 @@
   "common_wrong_rulings": [
    "Waives the cost because the player argues."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -45,7 +45,7 @@
   "common_wrong_rulings": [
    "Charge at reduced distance through terrain."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -91,7 +91,7 @@
   "common_wrong_rulings": [
    "Can share a square with an ally."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -117,7 +117,7 @@
   "common_wrong_rulings": [
    "5-foot step stacks with movement."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -139,7 +139,7 @@
   "common_wrong_rulings": [
    "Normal speed with disadvantage."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -167,7 +167,7 @@
   "common_wrong_rulings": [
    "5e Strength-based jumping distance."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -191,7 +191,7 @@
    "Climb at half speed with no check (5e).",
    "Full speed."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -216,7 +216,7 @@
    "Normal armor penalty.",
    "Half speed."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -239,7 +239,7 @@
   "common_wrong_rulings": [
    "Large has 5 ft reach."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -254,8 +254,7 @@
    [
     "allowed",
     "legal",
-    "can attack",
-    "yes"
+    "can attack"
    ]
   ],
   "must_not_include": [],
@@ -284,7 +283,7 @@
   "common_wrong_rulings": [
    "25 ft (5e)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -309,7 +308,7 @@
   "common_wrong_rulings": [
    "Reduced to 15 ft."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -322,10 +321,41 @@
   "correct_ruling": "The SRD has no specific rolling-boulder rule; the DM decides the check (likely Strength), damage, and saves (often a Reflex save), possibly by analogy to falling objects or traps.",
   "must_include": [
    [
-    "dm",
-    "gm",
     "game master",
-    "discretion"
+    "discretion",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ]
   ],
   "must_not_include": [],
@@ -333,7 +363,7 @@
   "common_wrong_rulings": [
    "Citing a nonexistent boulder rule."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -354,7 +384,7 @@
   "common_wrong_rulings": [
    "1d6 per 5 ft."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -362,7 +392,7 @@
   "category": "movement_terrain",
   "difficulty": "medium",
   "kind": "rules",
-  "player_action": "I jumped down 20 feet deliberately \u2014 that should reduce damage.",
+  "player_action": "I jumped down 20 feet deliberately — that should reduce damage.",
   "game_state": "Fighter jumps down 20 ft, makes DC 15 Jump or Tumble check.",
   "correct_ruling": "Deliberately jumping makes the first 1d6 of falling damage nonlethal, and a successful DC 15 Jump or Tumble check lets you avoid damage from the first 10 ft. So from 20 ft the fighter takes damage only for the remaining 10 ft (1d6).",
   "must_include": [
@@ -377,7 +407,7 @@
    "No reduction."
   ],
   "confidence": "unsure",
-  "confidence_note": "SRD: 'If you deliberately jump... first 1d6 is nonlethal'; and successful DC 15 Jump/Tumble also lets you ignore the first 10 feet \u2014 exact interplay not re-checked."
+  "confidence_note": "SRD: 'If you deliberately jump... first 1d6 is nonlethal'; and successful DC 15 Jump/Tumble also lets you ignore the first 10 feet — exact interplay not re-checked."
  },
  {
   "id": "mov-035",
@@ -397,7 +427,7 @@
   "common_wrong_rulings": [
    "DC 15."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -424,7 +454,7 @@
   "common_wrong_rulings": [
    "5e rule: only leaving reach provokes."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  }
 ]

@@ -26,7 +26,7 @@
    "You must take the 5-foot step before the full attack.",
    "The step provokes from the second orc."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -51,7 +51,7 @@
    "Dropping prone provokes.",
    "Prone gives disadvantage on ranged attacks against you (5e)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -103,7 +103,7 @@
   "common_wrong_rulings": [
    "Attacking one enemy provokes from the other."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -134,7 +134,7 @@
    "Use Acrobatics (Pathfinder/5e).",
    "Tumble DC is opponent's CMD."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -155,7 +155,7 @@
   "common_wrong_rulings": [
    "DC 15 to tumble through an occupied square."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -180,7 +180,7 @@
   "common_wrong_rulings": [
    "Any movement of 5 ft never provokes."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -198,8 +198,17 @@
     "isn't a 3.5",
     "does not exist",
     "doesn't exist",
-    "5e",
-    "fifth edition"
+    "that's a 5e",
+    "is a 5e",
+    "5e rule",
+    "5e mechanic",
+    "from 5e",
+    "from fifth edition",
+    "not in 3.5",
+    "isn't in 3.5",
+    "3.5 has no",
+    "3.5 doesn't have",
+    "3.5 does not have"
    ]
   ],
   "must_not_include": [],
@@ -207,7 +216,7 @@
   "common_wrong_rulings": [
    "Sentinel works as in 5e."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -245,9 +254,41 @@
   "correct_ruling": "Rules don't specifically cover swinging; movement out of threatened squares generally provokes regardless of the method, but the DM decides how the stunt resolves (e.g., a Jump/Tumble/Climb check and whether the orc can reach).",
   "must_include": [
    [
-    "dm",
     "game master",
-    "gm"
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "discretion",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ]
   ],
   "must_not_include": [],
@@ -256,7 +297,7 @@
    "Swinging movement never provokes.",
    "Auto-success flavor."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -305,7 +346,7 @@
   "common_wrong_rulings": [
    "Loading is a free action."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -315,7 +356,7 @@
   "kind": "rules",
   "player_action": "Total defense: can I still take attacks of opportunity?",
   "game_state": "Fighter using total defense action.",
-  "correct_ruling": "No \u2014 while in total defense you can't make attacks of opportunity; you get +4 dodge bonus to AC for 1 round.",
+  "correct_ruling": "No — while in total defense you can't make attacks of opportunity; you get +4 dodge bonus to AC for 1 round.",
   "must_include": [
    [
     "+4"
@@ -330,7 +371,7 @@
   "common_wrong_rulings": [
    "Total defense still allows AoOs."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -355,7 +396,7 @@
   "common_wrong_rulings": [
    "Quickened spells provoke like normal casting."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  }
 ]

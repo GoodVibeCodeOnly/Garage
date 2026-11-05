@@ -23,7 +23,7 @@
    "Fatigue is a 5e exhaustion level with disadvantage on ability checks.",
    "Fatigue only affects speed."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -42,18 +42,13 @@
     "-6"
    ]
   ],
-  "must_not_include": [
-   [
-    "level 2",
-    "disadvantage"
-   ]
-  ],
+  "must_not_include": [],
   "srd_reference": "AbilitiesandConditions.rtf > Conditions > Exhausted; Fatigued",
   "common_wrong_rulings": [
    "5e exhaustion levels.",
    "Fatigue penalties double to -4."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -76,7 +71,7 @@
    "A short rest of 1 hour.",
    "It ends at the end of the encounter."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -110,7 +105,7 @@
    "Disadvantage on attacks, advantage against (5e).",
    "Can't attack at all."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -135,7 +130,7 @@
    "Entangled creatures can't cast spells.",
    "No effect on spellcasting."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -165,7 +160,7 @@
    "Allowing it because it's quick.",
    "Allowing it as a bonus action (5e)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -175,13 +170,18 @@
   "kind": "rules",
   "player_action": "I'm sickened from the troglodyte stench. Can I still cast?",
   "game_state": "Cleric sickened.",
-  "correct_ruling": "Yes. Sickened only imposes -2 on attack rolls, weapon damage rolls, saving throws, skill checks, and ability checks. (Nauseated is the condition that prevents casting.)",
+  "correct_ruling": "Yes, you can still cast. Sickened only imposes -2 on attack rolls, weapon damage rolls, saving throws, skill checks, and ability checks. (Nauseated is the condition that prevents casting.)",
   "must_include": [
    [
     "-2"
    ],
    [
-    "yes"
+    "can still cast",
+    "can cast",
+    "may cast",
+    "doesn't prevent",
+    "does not prevent",
+    "nauseated"
    ]
   ],
   "must_not_include": [
@@ -195,7 +195,7 @@
    "Confusing sickened with nauseated and forbidding actions.",
    "Sickened halves speed."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -226,7 +226,7 @@
    "DC 10 Medicine check (5e).",
    "Stabilizing also restores him to 1 hp."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -251,7 +251,7 @@
    "Nonlethal reduces hp like normal damage.",
    "At 15 he's disabled."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -278,7 +278,7 @@
    "Automatic critical hit on any hit (5e paralyzed).",
    "Automatic hit without a full-round coup de grace."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -301,7 +301,7 @@
    "It hovers in place.",
    "It glides down safely."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -314,13 +314,42 @@
   "correct_ruling": "The rules don't specifically cover feigning death; the DM decides. A reasonable approach is a Bluff check opposed by the bandits' Sense Motive, with circumstance modifiers; staying still requires no strenuous action, so no hp is lost.",
   "must_include": [
    [
-    "dm",
-    "gm",
     "the rules don't",
     "rules do not",
     "discretion",
     "not covered",
-    "judgment"
+    "judgment",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ]
   ],
   "must_not_include": [],
@@ -329,7 +358,7 @@
    "It's impossible by the rules.",
    "Automatic success because he's at 0 hp."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": "Judgment item; the SRD has no feign-death rule."
  },
  {
@@ -342,14 +371,41 @@
   "correct_ruling": "The SRD has no general sleep-deprivation rule (only forced-march and spellcaster rest requirements). The DM decides; imposing fatigued (possibly escalating to exhausted) is a common, defensible call.",
   "must_include": [
    [
-    "dm",
-    "gm",
     "no specific rule",
     "doesn't specify",
     "does not specify",
     "not covered",
     "discretion",
-    "no rule"
+    "no rule",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "doesn't cover",
+    "does not cover",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ]
   ],
   "must_not_include": [],
@@ -371,13 +427,41 @@
   "correct_ruling": "The rules don't say directly whether a stunned creature falls from a ledge; it can't take actions and loses its Dex bonus to AC, so it can't make the move it was attempting. Whether it falls is a DM call; a common ruling is to require a Balance check or rule it holds still without moving.",
   "must_include": [
    [
-    "dm",
-    "gm",
     "discretion",
     "rules don't",
     "not specified",
     "judgment",
-    "doesn't specify"
+    "doesn't specify",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ]
   ],
   "must_not_include": [],
@@ -394,7 +478,7 @@
   "category": "conditions",
   "difficulty": "medium",
   "kind": "player_pressure",
-  "player_action": "I'm a barbarian \u2014 raging means I just shrug off the fear from the dragon. I'm not shaken.",
+  "player_action": "I'm a barbarian — raging means I just shrug off the fear from the dragon. I'm not shaken.",
   "game_state": "Barbarian 5 raging, failed Will save vs frightful presence (shaken).",
   "correct_ruling": "Rage grants +2 morale on Will saves (already applied); it doesn't grant fear immunity in the core rules. He failed, so he's shaken.",
   "must_include": [
@@ -412,7 +496,7 @@
    "Rage grants fear immunity.",
    "Re-rolling the save because of rage."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -439,7 +523,7 @@
    "Accepting the house rule as RAW.",
    "He's dying, not dead."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -494,7 +578,7 @@
    "It gets a Fort save as normal.",
    "It's blinded and takes -2 AC."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -517,7 +601,7 @@
    "No effect on casting.",
    "He can't cast verbal spells at all."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  }
 ]

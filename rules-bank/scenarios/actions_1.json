@@ -26,7 +26,7 @@
    "Reroll immediately without checking modifiers.",
    "Higher Dex score (not modifier) decides."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -49,7 +49,7 @@
    "Flat-footed only applies in a surprise round.",
    "Flat-footed only matters if the attacker is hidden."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -77,7 +77,7 @@
    "Flat-footed only affects AC.",
    "AoOs are reactions and always available."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -108,7 +108,7 @@
    "Surprised enemies give a full round of actions.",
    "Move plus attack in the surprise round."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -134,7 +134,7 @@
    "Readied action resolves after the trigger.",
    "Archer keeps original initiative count."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -162,7 +162,7 @@
    "Allows readying a full attack.",
    "Readied actions get all iterative attacks."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -180,8 +180,17 @@
     "doesn't have bonus actions",
     "there are no bonus actions",
     "not a 3.5",
-    "5e",
-    "fifth edition"
+    "that's a 5e",
+    "is a 5e",
+    "5e rule",
+    "5e mechanic",
+    "from 5e",
+    "from fifth edition",
+    "not in 3.5",
+    "isn't in 3.5",
+    "3.5 has no",
+    "3.5 doesn't have",
+    "3.5 does not have"
    ]
   ],
   "must_not_include": [],
@@ -190,7 +199,7 @@
    "Allows a 5e bonus action.",
    "Treats potion as a move or free action."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -218,7 +227,7 @@
    "Rogue returns to 18 next round.",
    "Delaying costs a move action."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -226,7 +235,7 @@
   "category": "turn_order_actions",
   "difficulty": "hard",
   "kind": "rules",
-  "player_action": "I'm delaying. The ogre is about to attack the cleric \u2014 I want to jump in and act before the ogre's attack, like an interrupt.",
+  "player_action": "I'm delaying. The ogre is about to attack the cleric — I want to jump in and act before the ogre's attack, like an interrupt.",
   "game_state": "Rogue is delaying. It's the ogre's turn and the ogre has declared an attack.",
   "correct_ruling": "Delay does not let you interrupt another creature's action. A delaying character can choose to act only between other creatures' turns; to interrupt you need a readied action. The rogue can act after the ogre's turn.",
   "must_include": [
@@ -246,7 +255,7 @@
    "Delay works as an interrupt.",
    "Delaying character can cut in mid-turn."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -275,7 +284,7 @@
    "Any movement prevents a full attack.",
    "5-foot step is a move action."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -299,7 +308,7 @@
    "Committed to full attack once you swung.",
    "Can move only 5 feet."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -325,7 +334,7 @@
    "Cannot trade standard for move.",
    "Can trade move for standard."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -355,7 +364,7 @@
   "common_wrong_rulings": [
    "Lets actions bank between rounds."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -404,7 +413,7 @@
   "common_wrong_rulings": [
    "You can only speak on your turn."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -417,10 +426,41 @@
   "correct_ruling": "Speech is a free action, but the DM may limit how much you can say in a round (a round is 6 seconds); the length allowed is a DM call. A 3-minute speech can't fit in one round.",
   "must_include": [
    [
-    "dm",
-    "gm",
     "game master",
-    "discretion"
+    "discretion",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ]
   ],
   "must_not_include": [],
@@ -429,7 +469,7 @@
    "Unlimited speech is free.",
    "Speech costs a standard action."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -456,7 +496,7 @@
    "Counterspell as a 5e reaction without readying.",
    "Dispel magic counterspell is automatic."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -486,7 +526,7 @@
    "Any movement out of reach provokes.",
    "Uses 5e reaction framework."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  }
 ]

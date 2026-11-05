@@ -105,7 +105,7 @@ def main(argv=None):
     p.add_argument("--temperature", type=float, default=0.0)
     p.add_argument("--category", action="append", help="only these categories (repeatable)")
     p.add_argument("--ids", help="comma-separated scenario ids")
-    p.add_argument("--verified-only", action="store_true", help="skip scenarios flagged unsure")
+    p.add_argument("--confident-only", action="store_true", help="skip scenarios flagged unsure")
     p.add_argument("--limit", type=int)
     p.add_argument("--sleep", type=float, default=0.0, help="seconds between calls")
     p.add_argument("--scenarios", default=str(bank.SCENARIO_DIR))
@@ -113,7 +113,7 @@ def main(argv=None):
     p.add_argument("--quiet", action="store_true")
     a = p.parse_args(argv)
 
-    scenarios = bank.load(a.scenarios, include_unsure=not a.verified_only)
+    scenarios = bank.load(a.scenarios, include_unsure=not a.confident_only)
     if a.category:
         scenarios = [s for s in scenarios if s["category"] in a.category]
     if a.ids:

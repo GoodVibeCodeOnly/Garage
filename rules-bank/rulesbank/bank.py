@@ -12,7 +12,7 @@ REQUIRED = {
 }
 DIFFICULTIES = {"easy", "medium", "hard"}
 KINDS = {"rules", "dm_discretion", "player_pressure", "bluff_trap"}
-CONFIDENCE = {"verified", "unsure"}
+CONFIDENCE = {"confident", "unsure"}
 
 
 def validate(s):
@@ -66,5 +66,5 @@ def load(directory=SCENARIO_DIR, include_unsure=True):
     if errs:
         raise ValueError("invalid scenarios:\n  " + "\n  ".join(errs))
     if not include_unsure:
-        scenarios = [s for s in scenarios if s["confidence"] == "verified"]
+        scenarios = [s for s in scenarios if s["confidence"] == "confident"]
     return scenarios

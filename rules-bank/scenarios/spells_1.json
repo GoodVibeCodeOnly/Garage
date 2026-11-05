@@ -27,7 +27,7 @@
    "Ignores spell level in the DC.",
    "Rules the spell simply fails with no check."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -58,7 +58,7 @@
    "Uses DC 10 + spell level.",
    "Says magic missile doesn't provoke because it's a ranged spell that hits automatically."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -86,7 +86,7 @@
    "Allows it freely with disadvantage on the attack.",
    "Says grappled casters can't cast anything at all."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -110,7 +110,7 @@
    "No check needed for a verbal-only spell.",
    "Uses DC 15 + spell level (casting defensively DC)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -135,7 +135,7 @@
    "No check required.",
    "Rules a Ride check instead."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -180,7 +180,10 @@
     "don't require concentration",
     "doesn't require concentration",
     "no concentration",
-    "isn't a concentration"
+    "isn't a concentration",
+    "neither bless nor haste has a concentration",
+    "no rule limiting",
+    "not concentration"
    ]
   ],
   "must_not_include": [
@@ -196,7 +199,7 @@
    "Applies the 5e rule that a caster can concentrate on only one spell.",
    "Says bless ends because haste requires concentration."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -228,7 +231,7 @@
    "Concentrating takes the whole turn (full-round action).",
    "Moving breaks concentration."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -287,7 +290,7 @@
    "Lets them stack because one is magical.",
    "Says mage armor can't be cast while wearing armor."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -314,7 +317,7 @@
    "Rules only a proficiency penalty, as in 5e.",
    "Says magic missile is exempt because it never misses."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -330,7 +333,6 @@
     "light armor"
    ],
    [
-    "no ",
     "without"
    ]
   ],
@@ -345,7 +347,7 @@
    "Applies 20% failure.",
    "Says cure light wounds is divine so it's exempt (bard spells are arcane)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -380,7 +382,7 @@
    "Applies the 35% roll anyway.",
    "Says wizards can't cast in armor at all."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -411,7 +413,7 @@
    "SR replaces the saving throw.",
    "SR adds to the save DC."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -433,8 +435,7 @@
   ],
   "must_not_include": [
    [
-    "use your reaction",
-    "as a reaction"
+    "use your reaction"
    ]
   ],
   "srd_reference": "SRD 3.5 MagicOverview > Counterspells; CombatII > Ready",
@@ -443,7 +444,7 @@
    "Counterspell as an immediate action with no ready.",
    "No identification check required."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -468,7 +469,7 @@
    "Any spell of equal or higher level counters.",
    "Any spell of the same school counters."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -486,7 +487,9 @@
     "still invisible",
     "doesn't end",
     "does not end",
-    "remains"
+    "remains",
+    "persists",
+    "stays invisible"
    ]
   ],
   "must_not_include": [
@@ -500,7 +503,7 @@
    "Casting any spell ends invisibility.",
    "Invisibility ends at the end of the turn of any action."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -528,7 +531,7 @@
    "Only attack rolls end invisibility.",
    "The wizard stays invisible because the orcs made saves."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  }
 ]

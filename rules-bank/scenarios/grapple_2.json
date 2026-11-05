@@ -4,7 +4,7 @@
   "category": "grapple",
   "difficulty": "medium",
   "kind": "player_pressure",
-  "player_action": "I'm grappled, but grappled just means speed 0 \u2014 I'll attack the orc with my greatsword normally.",
+  "player_action": "I'm grappled, but grappled just means speed 0 — I'll attack the orc with my greatsword normally.",
   "game_state": "Barbarian grappled by an orc, holding a greatsword.",
   "correct_ruling": "That's the 5e grappled condition. In 3.5 a grappler can attack only with unarmed strikes, natural weapons, or light weapons (at -4); a greatsword can't be used in the grapple.",
   "must_include": [
@@ -17,7 +17,7 @@
   "common_wrong_rulings": [
    "Grappled only sets speed to 0."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -27,7 +27,7 @@
   "kind": "rules",
   "player_action": "I'm pinned. Can I cast a spell with only a verbal component?",
   "game_state": "Sorcerer pinned by an ogre.",
-  "correct_ruling": "A pinned character is held immobile and can't take most actions; the SRD allows a pinned creature to try to escape (grapple or Escape Artist) and to take some verbal/mental actions \u2014 but the safe answer is that a pinned character's options are essentially to escape; spellcasting rules for grappling (no somatic, Concentration DC 20 + level) would apply if allowed.",
+  "correct_ruling": "A pinned character is held immobile and can't take most actions; the SRD allows a pinned creature to try to escape (grapple or Escape Artist) and to take some verbal/mental actions — but the safe answer is that a pinned character's options are essentially to escape; spellcasting rules for grappling (no somatic, Concentration DC 20 + level) would apply if allowed.",
   "must_include": [
    [
     "escape"
@@ -64,7 +64,7 @@
   "common_wrong_rulings": [
    "Pinned creatures can be coup de grace'd."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -98,9 +98,41 @@
   "correct_ruling": "The SRD grapple rules have no 'gag' option (pin is the closest; it doesn't prevent speech by default). Whether a hand over the mouth stops a shout is a DM decision, typically requiring a pin or a successful grapple check.",
   "must_include": [
    [
-    "dm",
     "game master",
-    "gm"
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "discretion",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ],
    [
     "pin"
@@ -112,7 +144,7 @@
    "Grappling automatically silences.",
    "Can't stop him at all."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -135,7 +167,7 @@
   "common_wrong_rulings": [
    "Uses CMB vs CMD."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -153,7 +185,7 @@
    ]
   ],
   "must_not_include": [],
-  "srd_reference": "CombatII.rtf > Grapple > Starting a Grapple (Step 4: Maintain Grapple \u2014 move into target's space)",
+  "srd_reference": "CombatII.rtf > Grapple > Starting a Grapple (Step 4: Maintain Grapple — move into target's space)",
   "common_wrong_rulings": [
    "Can grapple from reach without moving."
   ],

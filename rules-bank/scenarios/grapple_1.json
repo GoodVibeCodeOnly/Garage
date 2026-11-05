@@ -31,7 +31,7 @@
    "Grapple is an Athletics check vs Athletics/Acrobatics (5e).",
    "Grappling does not provoke."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -45,13 +45,12 @@
   "must_include": [
    [
     "-4",
-    "\u22124",
+    "−4",
     "minus 4"
    ],
    [
     "+0",
-    "+ 0",
-    "0"
+    "+ 0"
    ]
   ],
   "must_not_include": [
@@ -65,7 +64,7 @@
    "Small creatures get +1 like on attack rolls.",
    "Dex is used instead of Str."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -92,7 +91,7 @@
    "You can cast normally with a Concentration check.",
    "Grappled only reduces speed to 0 (5e)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -109,7 +108,7 @@
    ],
    [
     "-4",
-    "\u22124",
+    "−4",
     "minus 4"
    ]
   ],
@@ -119,7 +118,7 @@
    "Any weapon can be used with disadvantage.",
    "No penalty."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -133,7 +132,7 @@
   "must_include": [
    [
     "-4",
-    "\u22124",
+    "−4",
     "precise shot"
    ]
   ],
@@ -168,7 +167,7 @@
   "common_wrong_rulings": [
    "Grappling has no effect on AC."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -194,7 +193,7 @@
    "Pinned is the same as helpless, allowing coup de grace.",
    "Pin lasts until escaped."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -223,7 +222,7 @@
    "Use Acrobatics vs Athletics (5e).",
    "Tumble DC 15 escapes."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -277,7 +276,7 @@
   "common_wrong_rulings": [
    "It provokes like a normal grapple."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -287,7 +286,7 @@
   "kind": "rules",
   "player_action": "I'm grappling the cultist. I move him 10 feet to push him off the ledge.",
   "game_state": "Fighter grappling a cultist, both Medium.",
-  "correct_ruling": "You can move while grappling by winning an opposed grapple check (standard action) to move up to half your speed, bringing the grappled creatures with you; you'd need to be able to move to the ledge; moving him into a square off the edge isn't a defined grapple option \u2014 it's a DM adjudication (bull rush is the usual way).",
+  "correct_ruling": "You can move while grappling by winning an opposed grapple check (standard action) to move up to half your speed, bringing the grappled creatures with you; you'd need to be able to move to the ledge; moving him into a square off the edge isn't a defined grapple option — it's a DM adjudication (bull rush is the usual way).",
   "must_include": [
    [
     "half your speed",
@@ -303,7 +302,7 @@
    "You can drag at full speed.",
    "You can just throw him."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -329,7 +328,7 @@
   "common_wrong_rulings": [
    "Improved Grapple grants advantage or auto-success."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -350,7 +349,7 @@
   "common_wrong_rulings": [
    "Yes, grappling doesn't affect threatened squares."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -369,7 +368,7 @@
    ],
    [
     "-4",
-    "\u22124",
+    "−4",
     "minus 4"
    ]
   ],
@@ -378,7 +377,7 @@
   "common_wrong_rulings": [
    "Normal lethal damage with no penalty."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -391,12 +390,44 @@
   "correct_ruling": "The SRD grapple rules don't generally exclude oozes; monster entries (e.g. engulf) specify interactions. Unless the creature entry grants immunity, it can be grappled, but the DM adjudicates odd anatomy and touching it may apply its acid/paralysis per its entry.",
   "must_include": [
    [
-    "dm",
     "game master",
-    "gm",
     "monster entry",
     "creature's entry",
-    "stat block"
+    "stat block",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "discretion",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ]
   ],
   "must_not_include": [],

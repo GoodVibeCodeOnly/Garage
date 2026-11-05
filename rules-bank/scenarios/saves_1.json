@@ -29,7 +29,7 @@
    "Total 19 beats DC 14, so the save succeeds.",
    "Natural 1 only matters on attack rolls."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -55,7 +55,7 @@
    "The total of 9 is below 22, so the save fails.",
    "Natural 20 only matters for attacks and criticals."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -87,7 +87,7 @@
    "DC 8 + proficiency + Int (5e formula) = 15.",
    "DC uses caster level, e.g. 10 + 5 + 4 = 19."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -117,7 +117,7 @@
    "She takes half damage as normal.",
    "She takes a quarter damage."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -136,17 +136,13 @@
     "half"
    ]
   ],
-  "must_not_include": [
-   [
-    "no damage"
-   ]
-  ],
+  "must_not_include": [],
   "srd_reference": "ClassesI.rtf > Rogue > Evasion",
   "common_wrong_rulings": [
    "Evasion always works on a successful Reflex save.",
    "Evasion only fails in heavy armor if the armor check penalty applies."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -164,7 +160,6 @@
   ],
   "must_not_include": [
    [
-    "full damage",
     "takes full"
    ]
   ],
@@ -173,7 +168,7 @@
    "Improved evasion only improves the successful-save case.",
    "He takes full damage because he failed."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -192,17 +187,13 @@
     "half"
    ]
   ],
-  "must_not_include": [
-   [
-    "no damage"
-   ]
-  ],
+  "must_not_include": [],
   "srd_reference": "ClassesI.rtf > Rogue > Evasion",
   "common_wrong_rulings": [
    "Evasion works on any save for half damage.",
    "Evasion lets the rogue roll Reflex instead."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -228,7 +219,7 @@
    "Every target must roll a save against every spell.",
    "Allies automatically fail saves against each other's spells."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -281,7 +272,7 @@
    "The skeleton gets a Will save as normal.",
    "Skeletons get +4 on the save."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -305,7 +296,7 @@
    "The spider makes a Will save.",
    "Hold person works but hold monster is better."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -331,7 +322,7 @@
    "He has plenty of hp so nothing happens.",
    "Massive damage only applies if damage exceeds half max hp (variant/5e-like)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -360,7 +351,7 @@
    "50 damage in a round triggers the save.",
    "Damage is totaled across the round."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -407,17 +398,13 @@
     "same type"
    ]
   ],
-  "must_not_include": [
-   [
-    "+3"
-   ]
-  ],
+  "must_not_include": [],
   "srd_reference": "MagicOverview.rtf > Combining Magical Effects > Stacking; Bonus Types",
   "common_wrong_rulings": [
    "Spell bonuses stack with item bonuses.",
    "They add to +3."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -430,8 +417,7 @@
   "correct_ruling": "Base save bonuses from different classes add together: +1 + +3 = +4 base Reflex, plus Dex modifier and other bonuses.",
   "must_include": [
    [
-    "+4",
-    "4"
+    "+4"
    ],
    [
     "add",
@@ -446,7 +432,7 @@
    "Use only the better class's save.",
    "Recalculate as if all six levels were rogue."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -476,7 +462,7 @@
    "Paralyzed creatures automatically fail Reflex saves (5e rule).",
    "He saves normally with his full Dex."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -495,17 +481,13 @@
     "half"
    ]
   ],
-  "must_not_include": [
-   [
-    "no damage"
-   ]
-  ],
+  "must_not_include": [],
   "srd_reference": "ClassesI.rtf > Rogue > Evasion",
   "common_wrong_rulings": [
    "Evasion still applies; no damage.",
    "He automatically fails the save."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -529,7 +511,7 @@
    "The golem saves as normal at +0 Con.",
    "Golems are immune to magic so it fails."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -544,7 +526,40 @@
    [
     "natural 1",
     "nat 1",
-    "dm"
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "discretion",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ]
   ],
   "must_not_include": [],
@@ -580,7 +595,7 @@
    "Granting a partial effect because the margin was close.",
    "Letting the player reroll."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -606,7 +621,7 @@
    "Dwarves get advantage on saves vs magic.",
    "The bonus applies only to poison."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  }
 ]

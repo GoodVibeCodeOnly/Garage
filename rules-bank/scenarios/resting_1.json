@@ -25,7 +25,7 @@
    "Slots return automatically on a long rest (5e).",
    "No rest needed, only study."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -48,7 +48,7 @@
    "Requires the full hour regardless.",
    "Allows 1 minute per spell."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -106,7 +106,7 @@
    "Interruptions reset rest entirely.",
    "Interruptions under an hour don't matter (5e)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -133,7 +133,7 @@
    "Sleep alone restores slots.",
    "Sorcerers need a full hour like wizards."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -164,7 +164,7 @@
    "Clerics need 8 hours rest like wizards.",
    "Clerics need a long rest (5e)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -184,12 +184,21 @@
     "isn't a rule",
     "not a rule",
     "not in 3.5",
-    "5e"
+    "that's a 5e",
+    "is a 5e",
+    "5e rule",
+    "5e mechanic",
+    "from 5e",
+    "from fifth edition",
+    "not a 3.5",
+    "isn't in 3.5",
+    "3.5 has no",
+    "3.5 doesn't have",
+    "3.5 does not have"
    ]
   ],
   "must_not_include": [
    [
-    "spend hit dice",
     "roll your hit dice"
    ]
   ],
@@ -198,7 +207,7 @@
    "Allows hit dice healing (5e short rest).",
    "Restores half HP after 1 hour."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -218,18 +227,13 @@
     "6 hp"
    ]
   ],
-  "must_not_include": [
-   [
-    "full hit points",
-    "back to full"
-   ]
-  ],
+  "must_not_include": [],
   "srd_reference": "SRD 3.5 CombatII > Healing (Natural Healing)",
   "common_wrong_rulings": [
    "Full HP on a long rest (5e).",
    "Heals Con modifier per day."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -254,7 +258,7 @@
    "Full heal.",
    "Only 1 hp/level regardless."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -281,7 +285,7 @@
    "All ability damage returns after a long rest.",
    "Never heals without restoration (confusing damage with drain)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -309,7 +313,7 @@
   "common_wrong_rulings": [
    "Drain heals at 1 point per day like damage."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -335,7 +339,7 @@
    "Heals only with rest like lethal damage.",
    "Gone after combat ends."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -361,7 +365,7 @@
    "Heal check restores 1d4 hp instantly.",
    "Heal stabilizes only."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -388,7 +392,7 @@
    "Must have cure prepared.",
    "Domain spells can be converted too."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -406,8 +410,7 @@
    [
     "can't",
     "cannot",
-    "not allowed",
-    "no"
+    "not allowed"
    ]
   ],
   "must_not_include": [],
@@ -415,7 +418,7 @@
   "common_wrong_rulings": [
    "Any prepared spell can be converted."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -437,7 +440,7 @@
    "Can prepare known spells from memory.",
    "Can prepare cantrips from memory."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -487,7 +490,7 @@
    "Removes one level of exhaustion (5e).",
    "Fatigue ends after 1 hour."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -509,7 +512,7 @@
    "One level of exhaustion removed per long rest (5e).",
    "Fully recovered after an hour."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  }
 ]

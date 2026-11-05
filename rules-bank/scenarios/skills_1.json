@@ -1,222 +1,544 @@
 [
  {
-  "id": "skl-001", "category": "skills_checks", "difficulty": "easy", "kind": "rules",
+  "id": "skl-001",
+  "category": "skills_checks",
+  "difficulty": "easy",
+  "kind": "rules",
   "player_action": "I rolled a natural 20 on my Climb check, so I automatically succeed, right?",
   "game_state": "Climb DC 25 wall, character's Climb modifier +2.",
   "correct_ruling": "No. A natural 20 is not an automatic success on a skill check (that rule applies to attack rolls and saving throws). The total is 22, which fails DC 25.",
-  "must_include": [["no","not an automatic","isn't an automatic","not automatic","doesn't automatically","does not automatically"], ["22"]],
-  "must_not_include": [["automatically succeed"]],
+  "must_include": [
+   [
+    "not an automatic",
+    "isn't an automatic",
+    "not automatic",
+    "doesn't automatically",
+    "does not automatically"
+   ],
+   [
+    "22"
+   ]
+  ],
+  "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Skill Checks (no automatic success on skill checks)",
-  "common_wrong_rulings": ["Natural 20 always succeeds", "Natural 20 is a 'critical success' with bonus effects"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Natural 20 always succeeds",
+   "Natural 20 is a 'critical success' with bonus effects"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-002", "category": "skills_checks", "difficulty": "easy", "kind": "rules",
+  "id": "skl-002",
+  "category": "skills_checks",
+  "difficulty": "easy",
+  "kind": "rules",
   "player_action": "I rolled a 1 on my Jump check. Do I automatically fail?",
   "game_state": "Jump modifier +15, DC 10 gap.",
   "correct_ruling": "No. Skill checks have no automatic failure on a natural 1; the total of 16 beats DC 10 and the jump succeeds.",
-  "must_include": [["no","not","doesn't","does not"], ["16","succeed"]],
-  "must_not_include": [["automatically fail"]],
+  "must_include": [
+   [
+    "doesn't",
+    "does not",
+    "no automatic failure",
+    "not an automatic failure",
+    "isn't an automatic failure",
+    "succeeds"
+   ],
+   [
+    "16",
+    "succeed"
+   ]
+  ],
+  "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Skill Checks",
-  "common_wrong_rulings": ["Natural 1 always fails", "Natural 1 means a fumble"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Natural 1 always fails",
+   "Natural 1 means a fumble"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-003", "category": "skills_checks", "difficulty": "medium", "kind": "rules",
+  "id": "skl-003",
+  "category": "skills_checks",
+  "difficulty": "medium",
+  "kind": "rules",
   "player_action": "I take 10 on my Climb check while the ogre is swinging at me.",
   "game_state": "Character is in melee, threatened by an ogre, climbing a rope.",
   "correct_ruling": "Not allowed. You can take 10 only when not being threatened or distracted; being in melee with an ogre prevents it. Roll the check.",
-  "must_include": [["can't take 10","cannot take 10","can not take 10","not allowed","no"], ["threaten","distract","combat","danger"]],
+  "must_include": [
+   [
+    "can't take 10",
+    "cannot take 10",
+    "can not take 10",
+    "not allowed"
+   ],
+   [
+    "threaten",
+    "distract",
+    "combat",
+    "danger"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Checks without Rolls > Taking 10",
-  "common_wrong_rulings": ["Taking 10 is always allowed", "Climb specifically allows take 10 in combat (it does not by default)"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Taking 10 is always allowed",
+   "Climb specifically allows take 10 in combat (it does not by default)"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-004", "category": "skills_checks", "difficulty": "medium", "kind": "rules",
+  "id": "skl-004",
+  "category": "skills_checks",
+  "difficulty": "medium",
+  "kind": "rules",
   "player_action": "I take 20 to disable the trap on the chest.",
   "game_state": "Rogue with Disable Device; the trap triggers if the check fails by 5 or more.",
   "correct_ruling": "Not allowed. Taking 20 assumes you fail many times before succeeding, so it can't be used when failure carries a penalty — failing Disable Device by 5+ springs the trap.",
-  "must_include": [["can't take 20","cannot take 20","not allowed","no"], ["penalty","consequence","trigger","spring","set off"]],
+  "must_include": [
+   [
+    "can't take 20",
+    "cannot take 20",
+    "not allowed"
+   ],
+   [
+    "penalty",
+    "consequence",
+    "trigger",
+    "spring",
+    "set off"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Taking 20; SkillsI/II > Disable Device",
-  "common_wrong_rulings": ["Allowing take 20 because there's no combat", "Allowing take 20 but at x10 time"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Allowing take 20 because there's no combat",
+   "Allowing take 20 but at x10 time"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-005", "category": "skills_checks", "difficulty": "easy", "kind": "rules",
+  "id": "skl-005",
+  "category": "skills_checks",
+  "difficulty": "easy",
+  "kind": "rules",
   "player_action": "I take 20 to Search the room. How long does it take?",
   "game_state": "Searching a 5x5 ft area normally takes a full-round action.",
   "correct_ruling": "Taking 20 takes 20 times as long as a single check: 20 full rounds (2 minutes) for that 5-foot square.",
-  "must_include": [["20 times","twenty times","20 rounds","2 minutes","two minutes","x20","×20"]],
+  "must_include": [
+   [
+    "20 times",
+    "twenty times",
+    "20 rounds",
+    "2 minutes",
+    "two minutes",
+    "x20",
+    "×20"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Taking 20",
-  "common_wrong_rulings": ["Taking 20 takes 10x time", "Take 20 takes one minute regardless"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Taking 20 takes 10x time",
+   "Take 20 takes one minute regardless"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-006", "category": "skills_checks", "difficulty": "easy", "kind": "rules",
+  "id": "skl-006",
+  "category": "skills_checks",
+  "difficulty": "easy",
+  "kind": "rules",
   "player_action": "I help the rogue search the room. What does that give her?",
   "game_state": "Both characters in the room; rogue making a Search check.",
   "correct_ruling": "Aid another: you make a Search check against DC 10; on success the rogue gets a +2 bonus on her check.",
-  "must_include": [["dc 10","dc of 10"], ["+2","plus 2","bonus of 2","2 bonus"]],
+  "must_include": [
+   [
+    "dc 10",
+    "dc of 10"
+   ],
+   [
+    "+2",
+    "plus 2",
+    "bonus of 2",
+    "2 bonus"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Combining Skill Attempts > Aid Another",
-  "common_wrong_rulings": ["Advantage on the roll (5e)", "+4 bonus", "Adding the helper's full modifier"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Advantage on the roll (5e)",
+   "+4 bonus",
+   "Adding the helper's full modifier"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-007", "category": "skills_checks", "difficulty": "medium", "kind": "rules",
+  "id": "skl-007",
+  "category": "skills_checks",
+  "difficulty": "medium",
+  "kind": "rules",
   "player_action": "I have 5 ranks in Tumble. Doesn't that help my Jump?",
   "game_state": "Character with 5 ranks in Tumble making a Jump check.",
   "correct_ruling": "Yes. 5 or more ranks in Tumble gives a +2 synergy bonus on Jump checks (and 5 ranks in Jump gives +2 on Tumble).",
-  "must_include": [["+2","plus 2","bonus of 2","2 bonus"], ["synergy"]],
+  "must_include": [
+   [
+    "+2",
+    "plus 2",
+    "bonus of 2",
+    "2 bonus"
+   ],
+   [
+    "synergy"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Skill Synergy table",
-  "common_wrong_rulings": ["No synergy between Tumble and Jump", "Synergy +1 per 5 ranks scaling"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "No synergy between Tumble and Jump",
+   "Synergy +1 per 5 ranks scaling"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-008", "category": "skills_checks", "difficulty": "easy", "kind": "rules",
+  "id": "skl-008",
+  "category": "skills_checks",
+  "difficulty": "easy",
+  "kind": "rules",
   "player_action": "I've never trained Open Lock, but I'll just roll Dex and try.",
   "game_state": "Fighter with 0 ranks in Open Lock.",
   "correct_ruling": "Not allowed. Open Lock is a trained-only skill; a character with no ranks can't attempt it.",
-  "must_include": [["trained only","trained-only","untrained","need ranks","requires ranks","no ranks"]],
+  "must_include": [
+   [
+    "trained only",
+    "trained-only",
+    "untrained",
+    "need ranks",
+    "requires ranks",
+    "no ranks"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsII.rtf > Open Lock (Trained Only)",
-  "common_wrong_rulings": ["Allowing a raw Dex check", "Allowing it at -4"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Allowing a raw Dex check",
+   "Allowing it at -4"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-009", "category": "skills_checks", "difficulty": "medium", "kind": "rules",
+  "id": "skl-009",
+  "category": "skills_checks",
+  "difficulty": "medium",
+  "kind": "rules",
   "player_action": "I've got no ranks in Knowledge (arcana), but I want to identify this demon. My Int is 18.",
   "game_state": "Identifying the creature is DC 10 + its HD = DC 17.",
   "correct_ruling": "Knowledge checks untrained can only answer really easy questions (DC 10 or lower). DC 17 can't be attempted untrained, so the character doesn't know.",
-  "must_include": [["dc 10","10 or lower","10 or less"]],
+  "must_include": [
+   [
+    "dc 10",
+    "10 or lower",
+    "10 or less"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsII.rtf > Knowledge > Untrained",
-  "common_wrong_rulings": ["Rolling Int with +4", "Knowledge is entirely trained-only with no exception"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Rolling Int with +4",
+   "Knowledge is entirely trained-only with no exception"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-010", "category": "skills_checks", "difficulty": "medium", "kind": "rules",
+  "id": "skl-010",
+  "category": "skills_checks",
+  "difficulty": "medium",
+  "kind": "rules",
   "player_action": "I tumble past the orc to get behind it. I'll move my full speed.",
   "game_state": "Rogue with ranks in Tumble, speed 30 ft, moving through an orc's threatened squares (not through its square).",
   "correct_ruling": "Tumbling through threatened squares without provoking requires a DC 15 Tumble check and you move at half speed. Moving at full speed while tumbling is possible only at -10 on the check.",
-  "must_include": [["dc 15","15"], ["half speed","half your speed","-10","−10"]],
+  "must_include": [
+   [
+    "dc 15",
+    "15"
+   ],
+   [
+    "half speed",
+    "half your speed",
+    "-10",
+    "−10"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsII.rtf > Tumble",
-  "common_wrong_rulings": ["DC 25 to pass a threatened area (that's through an enemy's square)", "Tumble at full speed with no penalty"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "DC 25 to pass a threatened area (that's through an enemy's square)",
+   "Tumble at full speed with no penalty"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-011", "category": "skills_checks", "difficulty": "medium", "kind": "rules",
+  "id": "skl-011",
+  "category": "skills_checks",
+  "difficulty": "medium",
+  "kind": "rules",
   "player_action": "I tumble right through the orc's square.",
   "game_state": "Rogue with ranks in Tumble; orc is a Medium enemy.",
   "correct_ruling": "Moving through an enemy's square with Tumble requires a DC 25 check (at half speed). On failure you stop in the square before the enemy and provoke as normal.",
-  "must_include": [["dc 25","25"]],
+  "must_include": [
+   [
+    "dc 25",
+    "25"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsII.rtf > Tumble",
-  "common_wrong_rulings": ["DC 15", "Tumbling through enemies is impossible"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "DC 15",
+   "Tumbling through enemies is impossible"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-012", "category": "skills_checks", "difficulty": "medium", "kind": "rules",
+  "id": "skl-012",
+  "category": "skills_checks",
+  "difficulty": "medium",
+  "kind": "rules",
   "player_action": "I'm 4th level. Can I put 8 ranks in Hide? It's a class skill.",
   "game_state": "4th-level rogue.",
   "correct_ruling": "No. Max ranks in a class skill is character level + 3 = 7 at 4th level. Cross-class maximum is half that (3.5).",
-  "must_include": [["7","seven"], ["level + 3","level +3","level plus 3","level plus three"]],
+  "must_include": [
+   [
+    "7",
+    "seven"
+   ],
+   [
+    "level + 3",
+    "level +3",
+    "level plus 3",
+    "level plus three"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Acquiring Skill Ranks",
-  "common_wrong_rulings": ["Max ranks = level", "Max ranks = level + 4"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Max ranks = level",
+   "Max ranks = level + 4"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-013", "category": "skills_checks", "difficulty": "medium", "kind": "rules",
+  "id": "skl-013",
+  "category": "skills_checks",
+  "difficulty": "medium",
+  "kind": "rules",
   "player_action": "I'm walking across the narrow ledge. The goblin archer shoots me — am I flat-footed?",
   "game_state": "Character with 2 ranks in Balance on a narrow surface.",
   "correct_ruling": "Yes. While balancing you're considered flat-footed (lose Dex bonus to AC) unless you have 5 or more ranks in Balance.",
-  "must_include": [["flat-footed","flat footed","lose dex","lose your dex"], ["5 ranks","five ranks","5 or more"]],
+  "must_include": [
+   [
+    "flat-footed",
+    "flat footed",
+    "lose dex",
+    "lose your dex"
+   ],
+   [
+    "5 ranks",
+    "five ranks",
+    "5 or more"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Balance > Being Attacked while Balancing",
-  "common_wrong_rulings": ["No AC change", "Balancing grants a -2 AC penalty only"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "No AC change",
+   "Balancing grants a -2 AC penalty only"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-014", "category": "skills_checks", "difficulty": "medium", "kind": "rules",
+  "id": "skl-014",
+  "category": "skills_checks",
+  "difficulty": "medium",
+  "kind": "rules",
   "player_action": "The guard is staring right at me. I hide behind nothing — I'm just really sneaky.",
   "game_state": "Open room, no cover or concealment, guard observing the PC.",
   "correct_ruling": "Not possible. You need cover or concealment to make a Hide check, and you can't hide while being observed unless you create a distraction with Bluff (or have an ability like hide in plain sight).",
-  "must_include": [["cover","concealment"]],
+  "must_include": [
+   [
+    "cover",
+    "concealment"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Hide",
-  "common_wrong_rulings": ["Allowing an opposed Hide vs Spot anywhere", "Hide at -10 in the open"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Allowing an opposed Hide vs Spot anywhere",
+   "Hide at -10 in the open"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-015", "category": "skills_checks", "difficulty": "hard", "kind": "rules",
+  "id": "skl-015",
+  "category": "skills_checks",
+  "difficulty": "hard",
+  "kind": "rules",
   "player_action": "I shoot from my hiding spot and then hide again immediately (sniping).",
   "game_state": "Ranger hidden 20 ft from targets.",
   "correct_ruling": "Sniping: if already hidden at least 10 ft away, you can make one ranged attack and then immediately Hide again as a move action, at a -20 penalty on the Hide check.",
-  "must_include": [["-20","−20","20 penalty","penalty of 20"]],
+  "must_include": [
+   [
+    "-20",
+    "−20",
+    "20 penalty",
+    "penalty of 20"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Hide > Sniping",
-  "common_wrong_rulings": ["-10 penalty", "Free re-hide with no penalty"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "-10 penalty",
+   "Free re-hide with no penalty"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-016", "category": "skills_checks", "difficulty": "medium", "kind": "rules",
+  "id": "skl-016",
+  "category": "skills_checks",
+  "difficulty": "medium",
+  "kind": "rules",
   "player_action": "I'm a fighter with a 25 Search. I search for the trap: the DC is 28.",
   "game_state": "Fighter (no trapfinding), magic trap with Search DC 28.",
   "correct_ruling": "Only characters with trapfinding (rogues) can use Search to find traps with a DC higher than 20, so the fighter cannot find it regardless of the roll.",
-  "must_include": [["trapfinding","rogue"], ["20"]],
+  "must_include": [
+   [
+    "trapfinding",
+    "rogue"
+   ],
+   [
+    "20"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 ClassesI.rtf > Rogue > Trapfinding; SkillsII.rtf > Search",
-  "common_wrong_rulings": ["Anyone can find any trap with a high enough roll"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Anyone can find any trap with a high enough roll"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-017", "category": "skills_checks", "difficulty": "easy", "kind": "rules",
+  "id": "skl-017",
+  "category": "skills_checks",
+  "difficulty": "easy",
+  "kind": "rules",
   "player_action": "I make a long jump across a 12-foot chasm with a running start.",
   "game_state": "Running start of 20 ft available.",
   "correct_ruling": "A running long jump's DC equals the distance in feet: DC 12. Without a 20-ft running start the DC is doubled.",
-  "must_include": [["dc 12","12"]],
+  "must_include": [
+   [
+    "dc 12",
+    "12"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsII.rtf > Jump > Long Jump",
-  "common_wrong_rulings": ["Distance = Strength score (5e)", "DC 15 flat"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Distance = Strength score (5e)",
+   "DC 15 flat"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-018", "category": "skills_checks", "difficulty": "medium", "kind": "rules",
+  "id": "skl-018",
+  "category": "skills_checks",
+  "difficulty": "medium",
+  "kind": "rules",
   "player_action": "My climb check failed by 6. I just try again next round, right?",
   "game_state": "Character halfway up a wall, Climb DC 15, rolled total 9.",
   "correct_ruling": "Failing a Climb check by 4 or less means no progress; failing by 5 or more means the character falls from the height already reached.",
-  "must_include": [["fall"], ["5 or more","by 5","five or more"]],
+  "must_include": [
+   [
+    "fall"
+   ],
+   [
+    "5 or more",
+    "by 5",
+    "five or more"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Climb",
-  "common_wrong_rulings": ["Any failure means falling", "Failure just means no progress"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Any failure means falling",
+   "Failure just means no progress"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-019", "category": "skills_checks", "difficulty": "medium", "kind": "rules",
+  "id": "skl-019",
+  "category": "skills_checks",
+  "difficulty": "medium",
+  "kind": "rules",
   "player_action": "I feint the bugbear so my next attack ignores its Dex.",
   "game_state": "Rogue in melee with a bugbear. Rogue lacks Improved Feint.",
   "correct_ruling": "Feinting is a standard action: Bluff opposed by the target's Sense Motive (target adds base attack bonus). On success the target is denied its Dex bonus against your next melee attack, which must be made on or before your next turn.",
-  "must_include": [["standard action"], ["sense motive"]],
+  "must_include": [
+   [
+    "standard action"
+   ],
+   [
+    "sense motive"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 CombatII.rtf > Feint; SkillsI.rtf > Bluff",
-  "common_wrong_rulings": ["Feint is a move action without Improved Feint", "Feint vs DC 10", "Feint grants advantage"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Feint is a move action without Improved Feint",
+   "Feint vs DC 10",
+   "Feint grants advantage"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "skl-020", "category": "skills_checks", "difficulty": "easy", "kind": "rules",
+  "id": "skl-020",
+  "category": "skills_checks",
+  "difficulty": "easy",
+  "kind": "rules",
   "player_action": "I stabilize the dying cleric with the Heal skill.",
   "game_state": "Cleric at -4 hp, dying.",
   "correct_ruling": "First aid to stabilize a dying character is a standard action requiring a DC 15 Heal check.",
-  "must_include": [["dc 15","15"]],
+  "must_include": [
+   [
+    "dc 15",
+    "15"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsII.rtf > Heal",
-  "common_wrong_rulings": ["DC 10 (5e Medicine)", "Stabilization is automatic"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "DC 10 (5e Medicine)",
+   "Stabilization is automatic"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  }
 ]

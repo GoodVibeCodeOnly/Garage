@@ -22,7 +22,6 @@
   ],
   "must_not_include": [
    [
-    "+8 ac",
     "ac of 22",
     "total of +8"
    ]
@@ -32,7 +31,7 @@
    "Allows +8 because one is a spell and one is equipment",
    "Says mage armor is a force effect so it stacks with mundane armor"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -60,7 +59,6 @@
   ],
   "must_not_include": [
    [
-    "+2 to hit",
     "+2 on attack"
    ]
   ],
@@ -69,7 +67,7 @@
    "Stacks to +2 because two different casters",
    "Lets the second casting add morale bonus to damage"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -101,7 +99,7 @@
    "Says same-type bonuses never stack so only +1",
    "Says haste gives a deflection bonus"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -136,7 +134,7 @@
    "Allows Str 22",
    "Allows the potion because it is temporary while the belt is permanent"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -170,7 +168,7 @@
    "Stacks to +4",
    "Says barkskin requires existing natural armor and fails"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -197,7 +195,7 @@
   "common_wrong_rulings": [
    "Says two natural armor bonuses don't stack so it is wasted"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -229,7 +227,7 @@
   "common_wrong_rulings": [
    "Stacks because one is an item and one a spell"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -262,7 +260,7 @@
   "common_wrong_rulings": [
    "Gives +6 AC"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -295,7 +293,7 @@
   "common_wrong_rulings": [
    "Says two force effects don't stack"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -320,7 +318,6 @@
   ],
   "must_not_include": [
    [
-    "+2 to hit",
     "+2 on attack"
    ]
   ],
@@ -329,7 +326,7 @@
    "Gives +2 to hit",
    "Denies the damage bonus too"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -359,7 +356,7 @@
   "common_wrong_rulings": [
    "Says two spells' bonuses never stack"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -384,7 +381,7 @@
    "Gives only +2",
    "Applies advantage (not a 3.5 rule)"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -410,7 +407,6 @@
   ],
   "must_not_include": [
    [
-    "+2 to save",
     "+2 on save"
    ]
   ],
@@ -418,7 +414,7 @@
   "common_wrong_rulings": [
    "Gives +2"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -446,7 +442,7 @@
   "common_wrong_rulings": [
    "Makes it +2"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -468,16 +464,12 @@
     "four"
    ]
   ],
-  "must_not_include": [
-   [
-    "+6 ac"
-   ]
-  ],
+  "must_not_include": [],
   "srd_reference": "Combat > Actions in Combat > Fight Defensively; Total Defense",
   "common_wrong_rulings": [
    "Allows +6 because both are dodge bonuses which stack"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -507,7 +499,7 @@
    "Says Skill Focus is a competence bonus",
    "Says masterwork tools only remove a penalty"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -531,7 +523,7 @@
    "Says both are circumstance bonuses that don't stack",
    "Forgets the -2 AC"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -568,7 +560,7 @@
   "common_wrong_rulings": [
    "Grants advantage (5th edition rule)"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  }
 ]

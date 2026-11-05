@@ -1,222 +1,679 @@
 [
  {
-  "id": "dmj-001", "category": "dm_adjudication", "difficulty": "medium", "kind": "dm_discretion",
+  "id": "dmj-001",
+  "category": "dm_adjudication",
+  "difficulty": "medium",
+  "kind": "dm_discretion",
   "player_action": "I swing from the chandelier and kick the bandit into the fireplace. What's the roll?",
   "game_state": "Tavern brawl; a chandelier hangs 10 ft up, fireplace behind the bandit.",
   "correct_ruling": "The SRD has no specific chandelier-swing rule. The DM decides how to resolve it, e.g. a Jump or Climb check to grab and swing, then a bull rush or similar opposed check to push the bandit, with any fire damage set by the DM.",
-  "must_include": [["dm's call","dm decides","dm discretion","up to the dm","gm's call","rules don't","rules do not","not covered","no specific rule","no rule","dm's discretion","judgment call","dm determines","dm will decide","no explicit"]],
+  "must_include": [
+   [
+    "dm's call",
+    "dm decides",
+    "dm discretion",
+    "up to the dm",
+    "gm's call",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "no specific rule",
+    "no rule",
+    "dm's discretion",
+    "judgment call",
+    "dm determines",
+    "dm will decide",
+    "no explicit",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI/II (Jump, Climb); CombatII.rtf > Bull Rush; no specific rule for the stunt",
-  "common_wrong_rulings": ["Inventing a precise 'swing' rule and presenting it as RAW", "Flatly forbidding the stunt"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Inventing a precise 'swing' rule and presenting it as RAW",
+   "Flatly forbidding the stunt"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "dmj-002", "category": "dm_adjudication", "difficulty": "medium", "kind": "player_pressure",
+  "id": "dmj-002",
+  "category": "dm_adjudication",
+  "difficulty": "medium",
+  "kind": "player_pressure",
   "player_action": "My last DM always gave me advantage when I attacked from higher ground, so roll twice and take the higher.",
   "game_state": "PC standing on a table, attacking an orc on the floor.",
   "correct_ruling": "3.5 has no advantage mechanic. Attacking from higher ground grants a +1 bonus on melee attack rolls. Prior DM house rules don't bind this table.",
-  "must_include": [["+1","plus 1","bonus of 1","1 bonus"]],
-  "must_not_include": [["roll twice and take"]],
+  "must_include": [
+   [
+    "+1",
+    "plus 1",
+    "bonus of 1",
+    "1 bonus"
+   ]
+  ],
+  "must_not_include": [],
   "srd_reference": "SRD 3.5 CombatII.rtf > Combat Modifiers table (higher ground +1 melee)",
-  "common_wrong_rulings": ["Granting 5e advantage", "Granting +2 for high ground"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Granting 5e advantage",
+   "Granting +2 for high ground"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "dmj-003", "category": "dm_adjudication", "difficulty": "easy", "kind": "player_pressure",
+  "id": "dmj-003",
+  "category": "dm_adjudication",
+  "difficulty": "easy",
+  "kind": "player_pressure",
   "player_action": "I take the Dodge action and everyone has disadvantage against me.",
   "game_state": "Fighter in melee.",
   "correct_ruling": "That's 5th edition. 3.5 has no Dodge action or disadvantage. The closest options are fighting defensively (-4 attack, +2 dodge AC) or the total defense standard action (+4 dodge AC, no attacks).",
-  "must_include": [["fighting defensively","total defense"]],
+  "must_include": [
+   [
+    "fighting defensively",
+    "total defense"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 CombatII.rtf > Fighting Defensively; Total Defense",
-  "common_wrong_rulings": ["Allowing the 5e Dodge action as written"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Allowing the 5e Dodge action as written"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "dmj-004", "category": "dm_adjudication", "difficulty": "medium", "kind": "player_pressure",
+  "id": "dmj-004",
+  "category": "dm_adjudication",
+  "difficulty": "medium",
+  "kind": "player_pressure",
   "player_action": "It's only realistic that a crossbow bolt to the neck kills him outright. I crit, so he's dead.",
   "game_state": "PC crits a 40 hp ogre with a light crossbow for 14 damage.",
   "correct_ruling": "3.5 has no called shots or instant-kill crits (aside from specific effects like vorpal or death attacks). A critical hit multiplies damage; the ogre takes 14 and is still up.",
-  "must_include": [["no called shot","not a called shot","hit points","14","doesn't kill","does not kill","not dead","still alive","still standing","still up"]],
+  "must_include": [
+   [
+    "no called shot",
+    "not a called shot",
+    "hit points",
+    "14",
+    "doesn't kill",
+    "does not kill",
+    "not dead",
+    "still alive",
+    "still standing",
+    "still up"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 CombatI.rtf > Critical Hits",
-  "common_wrong_rulings": ["Granting instant death for realism", "Allowing a called-shot penalty system as RAW"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Granting instant death for realism",
+   "Allowing a called-shot penalty system as RAW"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "dmj-005", "category": "dm_adjudication", "difficulty": "medium", "kind": "player_pressure",
+  "id": "dmj-005",
+  "category": "dm_adjudication",
+  "difficulty": "medium",
+  "kind": "player_pressure",
   "player_action": "The rules say a natural 20 on a save always succeeds, so a natural 20 on my Diplomacy check makes the king agree.",
   "game_state": "Diplomacy check to change a hostile king's attitude.",
   "correct_ruling": "Natural 20 auto-success applies to attack rolls and saving throws, not skill checks. Diplomacy changes an NPC's attitude per the attitude table; it doesn't mind-control.",
-  "must_include": [["not skill","doesn't apply to skill","does not apply to skill","skill checks","no automatic"]],
+  "must_include": [
+   [
+    "not skill",
+    "doesn't apply to skill",
+    "does not apply to skill",
+    "skill checks",
+    "no automatic"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Diplomacy; CombatI/SpecialAbilities (saves: natural 20)",
-  "common_wrong_rulings": ["Granting automatic agreement", "Treating nat 20 as automatic success on any d20 roll"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Granting automatic agreement",
+   "Treating nat 20 as automatic success on any d20 roll"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "dmj-006", "category": "dm_adjudication", "difficulty": "medium", "kind": "dm_discretion",
+  "id": "dmj-006",
+  "category": "dm_adjudication",
+  "difficulty": "medium",
+  "kind": "dm_discretion",
   "player_action": "I want to cut the rope bridge while the hobgoblins are crossing. How many hits?",
   "game_state": "Rope bridge, ropes are the anchor points.",
   "correct_ruling": "The SRD gives hardness and hit points for rope (0 hardness, 2 hp) and rules for sundering/breaking objects, but how many ropes must be cut and what happens to the bridge are the DM's call.",
-  "must_include": [["dm's call","dm decides","dm discretion","up to the dm","gm's call","rules don't","rules do not","not covered","dm's discretion","judgment","dm determines"]],
+  "must_include": [
+   [
+    "dm's call",
+    "dm decides",
+    "dm discretion",
+    "up to the dm",
+    "gm's call",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "dm's discretion",
+    "judgment",
+    "dm determines",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 CombatII.rtf > Attack an Object; Exploration > Breaking and Entering (substance hardness/hp)",
-  "common_wrong_rulings": ["Declaring a fixed number of hits as RAW", "Saying objects can't be attacked"],
-  "confidence": "unsure", "confidence_note": "Rope 0 hardness / 2 hp recalled from the object hardness table; the scored point is only that bridge collapse is DM adjudication."
+  "common_wrong_rulings": [
+   "Declaring a fixed number of hits as RAW",
+   "Saying objects can't be attacked"
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Rope 0 hardness / 2 hp recalled from the object hardness table; the scored point is only that bridge collapse is DM adjudication."
  },
  {
-  "id": "dmj-007", "category": "dm_adjudication", "difficulty": "hard", "kind": "player_pressure",
+  "id": "dmj-007",
+  "category": "dm_adjudication",
+  "difficulty": "hard",
+  "kind": "player_pressure",
   "player_action": "Inspiration! I did a cool thing, so I get to reroll.",
   "game_state": "Bard just failed a save.",
   "correct_ruling": "3.5 has no inspiration/reroll mechanic (the bard's inspire courage is a different ability). The failed save stands unless a specific feat, item, or class feature allows a reroll.",
-  "must_include": [["no inspiration","doesn't have inspiration","does not have inspiration","not a 3.5","isn't a 3.5","5e","fifth edition","5th edition","no such","no reroll"]],
+  "must_include": [
+   [
+    "no inspiration",
+    "doesn't have inspiration",
+    "does not have inspiration",
+    "not a 3.5",
+    "isn't a 3.5",
+    "no such",
+    "no reroll",
+    "that's a 5e",
+    "is a 5e",
+    "5e rule",
+    "5e mechanic",
+    "from 5e",
+    "from fifth edition",
+    "not in 3.5",
+    "isn't in 3.5",
+    "3.5 has no",
+    "3.5 doesn't have",
+    "3.5 does not have"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 (no such mechanic); ClassesI.rtf > Bard > Bardic Music",
-  "common_wrong_rulings": ["Granting a 5e inspiration reroll"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Granting a 5e inspiration reroll"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "dmj-008", "category": "dm_adjudication", "difficulty": "medium", "kind": "dm_discretion",
+  "id": "dmj-008",
+  "category": "dm_adjudication",
+  "difficulty": "medium",
+  "kind": "dm_discretion",
   "player_action": "Can I use prestidigitation to make the duke's soup taste like rotten fish, and does he notice it's magic?",
   "game_state": "Formal dinner; PC wizard knows prestidigitation.",
   "correct_ruling": "Prestidigitation can flavor nonliving material, so the soup can taste bad. Whether the duke notices the casting depends on Spellcraft/Spot and the DM's judgment of the scene; the rules don't automatically reveal it.",
-  "must_include": [["dm's call","dm decides","dm discretion","up to the dm","gm's call","rules don't","rules do not","not covered","dm's discretion","judgment","dm determines","spot","spellcraft"]],
+  "must_include": [
+   [
+    "dm's call",
+    "dm decides",
+    "dm discretion",
+    "up to the dm",
+    "gm's call",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "dm's discretion",
+    "judgment",
+    "dm determines",
+    "spot",
+    "spellcraft",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SpellsP.rtf > Prestidigitation",
-  "common_wrong_rulings": ["Prestidigitation can't affect food", "Spellcasting is automatically noticed by everyone"],
-  "confidence": "unsure", "confidence_note": "3.5 has no explicit rule that casting is noticed; noticing via Spot/Spellcraft is standard adjudication but not codified."
+  "common_wrong_rulings": [
+   "Prestidigitation can't affect food",
+   "Spellcasting is automatically noticed by everyone"
+  ],
+  "confidence": "unsure",
+  "confidence_note": "3.5 has no explicit rule that casting is noticed; noticing via Spot/Spellcraft is standard adjudication but not codified."
  },
  {
-  "id": "dmj-009", "category": "dm_adjudication", "difficulty": "easy", "kind": "player_pressure",
+  "id": "dmj-009",
+  "category": "dm_adjudication",
+  "difficulty": "easy",
+  "kind": "player_pressure",
   "player_action": "Short rest! We take an hour and I spend Hit Dice to heal.",
   "game_state": "Party after a fight, mid-dungeon.",
   "correct_ruling": "3.5 has no short rests or Hit Dice spending. Natural healing is 1 hp per character level per full night's rest (8 hours); 2 per level for a full day of complete bed rest.",
-  "must_include": [["no short rest","doesn't have short rest","does not have short rest","no hit dice","5e","fifth edition","5th edition","8 hours","eight hours","per level","per character level"]],
+  "must_include": [
+   [
+    "no short rest",
+    "doesn't have short rest",
+    "does not have short rest",
+    "no hit dice",
+    "8 hours",
+    "eight hours",
+    "per level",
+    "per character level",
+    "that's a 5e",
+    "is a 5e",
+    "5e rule",
+    "5e mechanic",
+    "from 5e",
+    "from fifth edition",
+    "not in 3.5",
+    "not a 3.5",
+    "isn't in 3.5",
+    "3.5 has no",
+    "3.5 doesn't have",
+    "3.5 does not have"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 CombatI.rtf > Healing > Natural Healing",
-  "common_wrong_rulings": ["Allowing Hit Dice spending", "Short rest heals half HP"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Allowing Hit Dice spending",
+   "Short rest heals half HP"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "dmj-010", "category": "dm_adjudication", "difficulty": "hard", "kind": "player_pressure",
+  "id": "dmj-010",
+  "category": "dm_adjudication",
+  "difficulty": "hard",
+  "kind": "player_pressure",
   "player_action": "In Pathfinder combat maneuvers use CMB vs CMD, so I trip using my CMB against his CMD of 15.",
   "game_state": "3.5 game; fighter trying to trip an orc.",
   "correct_ruling": "3.5 doesn't use CMB/CMD. A trip is a melee touch attack, then an opposed Strength check (defender may use Dex if higher), with size modifiers; failure lets the defender try to trip you back.",
-  "must_include": [["touch attack"], ["opposed"]],
+  "must_include": [
+   [
+    "touch attack"
+   ],
+   [
+    "opposed"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 CombatII.rtf > Trip",
-  "common_wrong_rulings": ["Using Pathfinder CMB/CMD", "Trip as Athletics vs Acrobatics (5e shove)"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Using Pathfinder CMB/CMD",
+   "Trip as Athletics vs Acrobatics (5e shove)"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "dmj-011", "category": "dm_adjudication", "difficulty": "medium", "kind": "dm_discretion",
+  "id": "dmj-011",
+  "category": "dm_adjudication",
+  "difficulty": "medium",
+  "kind": "dm_discretion",
   "player_action": "I try to convince the gate guard that we're merchants. What's the DC?",
   "game_state": "Guard is indifferent, has a Sense Motive modifier of +2.",
   "correct_ruling": "Bluff is opposed by the guard's Sense Motive, not a fixed DC. The DM sets circumstance modifiers based on how believable the lie is and how much the guard wants to believe it.",
-  "must_include": [["opposed","sense motive"]],
+  "must_include": [
+   [
+    "opposed",
+    "sense motive"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Bluff",
-  "common_wrong_rulings": ["Fixed DC 15 Deception", "Diplomacy check instead"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Fixed DC 15 Deception",
+   "Diplomacy check instead"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "dmj-012", "category": "dm_adjudication", "difficulty": "hard", "kind": "dm_discretion",
+  "id": "dmj-012",
+  "category": "dm_adjudication",
+  "difficulty": "hard",
+  "kind": "dm_discretion",
   "player_action": "We find a secret door. Can I tell what's behind it by putting my ear to it — what's the Listen DC through stone?",
   "game_state": "1-foot-thick stone door; orcs talking quietly beyond.",
   "correct_ruling": "Listen has modifiers for listening through a door (+5 DC) and through a stone wall (+15 per foot). The DM decides whether this door counts as a door or as stone wall, and sets the base DC for the conversation (people talking is about DC 0).",
-  "must_include": [["listen"], ["dm","gm","judgment"]],
+  "must_include": [
+   [
+    "listen"
+   ],
+   [
+    "judgment",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "discretion",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsII.rtf > Listen",
-  "common_wrong_rulings": ["Impossible to hear through stone", "Flat DC 15 Perception"],
-  "confidence": "unsure", "confidence_note": "Listen modifiers (+5 through door, +15 per foot of stone, DC 0 talking) are from memory of the Listen table; scoring only checks for Listen and DM judgment."
+  "common_wrong_rulings": [
+   "Impossible to hear through stone",
+   "Flat DC 15 Perception"
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Listen modifiers (+5 through door, +15 per foot of stone, DC 0 talking) are from memory of the Listen table; scoring only checks for Listen and DM judgment."
  },
  {
-  "id": "dmj-013", "category": "dm_adjudication", "difficulty": "medium", "kind": "player_pressure",
+  "id": "dmj-013",
+  "category": "dm_adjudication",
+  "difficulty": "medium",
+  "kind": "player_pressure",
   "player_action": "I'm the player, I know the rule: a 5-foot step never provokes, so I'll 5-foot step and then move my full 30.",
   "game_state": "Fighter in melee with a goblin, wants to step away then move.",
   "correct_ruling": "A 5-foot step is only allowed in a round in which you don't otherwise move. You can't take a 5-foot step and also take a move action to move.",
-  "must_include": [["can't","cannot","not allowed","no"], ["otherwise move","any other movement","doesn't move","don't move","not move","other movement"]],
+  "must_include": [
+   [
+    "can't",
+    "cannot",
+    "not allowed"
+   ],
+   [
+    "otherwise move",
+    "any other movement",
+    "doesn't move",
+    "don't move",
+    "not move",
+    "other movement"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 CombatII.rtf > 5-Foot Step",
-  "common_wrong_rulings": ["Allowing step + full move"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Allowing step + full move"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "dmj-014", "category": "dm_adjudication", "difficulty": "medium", "kind": "dm_discretion",
+  "id": "dmj-014",
+  "category": "dm_adjudication",
+  "difficulty": "medium",
+  "kind": "dm_discretion",
   "player_action": "I want to craft a fake royal seal so we can forge orders. What's my check?",
   "game_state": "Rogue with Forgery and Craft skills.",
   "correct_ruling": "Forgery covers forging documents and is opposed by Forgery checks of readers; it requires a sample of the handwriting/seal for best results. How the physical seal is made (e.g., Craft) and its DC are for the DM to set.",
-  "must_include": [["forgery"], ["dm","gm","judgment"]],
+  "must_include": [
+   [
+    "forgery"
+   ],
+   [
+    "judgment",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "discretion",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Forgery; Craft",
-  "common_wrong_rulings": ["No skill covers forgery", "Using Deception as in 5e"],
-  "confidence": "unsure", "confidence_note": "Forgery is opposed by the reader's Forgery check per SRD; the seal-crafting part is unspecified."
+  "common_wrong_rulings": [
+   "No skill covers forgery",
+   "Using Deception as in 5e"
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Forgery is opposed by the reader's Forgery check per SRD; the seal-crafting part is unspecified."
  },
  {
-  "id": "dmj-015", "category": "dm_adjudication", "difficulty": "hard", "kind": "player_pressure",
+  "id": "dmj-015",
+  "category": "dm_adjudication",
+  "difficulty": "hard",
+  "kind": "player_pressure",
   "player_action": "The PHB says sneak attack works on anything with a body, so I sneak attack the zombie.",
   "game_state": "Rogue flanking a human zombie (undead).",
   "correct_ruling": "Undead are immune to sneak attack (immune to critical hits/precision damage) in 3.5. The rogue deals normal weapon damage only.",
-  "must_include": [["immune","can't sneak attack","cannot sneak attack","no sneak attack"]],
+  "must_include": [
+   [
+    "immune",
+    "can't sneak attack",
+    "cannot sneak attack",
+    "no sneak attack"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 ClassesI.rtf > Rogue > Sneak Attack; TypesSubtypes.rtf > Undead traits",
-  "common_wrong_rulings": ["Allowing sneak attack on undead (Pathfinder/5e behavior)"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Allowing sneak attack on undead (Pathfinder/5e behavior)"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "dmj-016", "category": "dm_adjudication", "difficulty": "medium", "kind": "dm_discretion",
+  "id": "dmj-016",
+  "category": "dm_adjudication",
+  "difficulty": "medium",
+  "kind": "dm_discretion",
   "player_action": "How long does it take to dig a pit trap in this dirt floor?",
   "game_state": "Party has shovels, wants a 10-ft-deep pit.",
   "correct_ruling": "The core SRD has no general digging-rate rule. The DM decides the time (possibly using Strength or Craft checks).",
-  "must_include": [["dm's call","dm decides","dm discretion","up to the dm","gm's call","rules don't","rules do not","not covered","dm's discretion","judgment","dm determines","no rule","no specific"]],
+  "must_include": [
+   [
+    "dm's call",
+    "dm decides",
+    "dm discretion",
+    "up to the dm",
+    "gm's call",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "dm's discretion",
+    "judgment",
+    "dm determines",
+    "no rule",
+    "no specific",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 (no general digging rule)",
-  "common_wrong_rulings": ["Quoting an invented RAW digging rate as authoritative"],
-  "confidence": "unsure", "confidence_note": "I believe the core SRD has no digging rate (there are rules in other books); flag in case an SRD section covers it."
+  "common_wrong_rulings": [
+   "Quoting an invented RAW digging rate as authoritative"
+  ],
+  "confidence": "unsure",
+  "confidence_note": "I believe the core SRD has no digging rate (there are rules in other books); flag in case an SRD section covers it."
  },
  {
-  "id": "dmj-017", "category": "dm_adjudication", "difficulty": "medium", "kind": "player_pressure",
+  "id": "dmj-017",
+  "category": "dm_adjudication",
+  "difficulty": "medium",
+  "kind": "player_pressure",
   "player_action": "I'm a wizard so I can cast in full plate — the armor is just for show, there's no real penalty.",
   "game_state": "Wizard in full plate casting magic missile (somatic component).",
   "correct_ruling": "Full plate carries a 35% arcane spell failure chance for spells with somatic components. Roll d%; on 35 or less the spell fails and is lost.",
-  "must_include": [["35%","35 percent","35"], ["spell failure"]],
+  "must_include": [
+   [
+    "35%",
+    "35 percent",
+    "35"
+   ],
+   [
+    "spell failure"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 Equipment.rtf > Armor table; Arcane Spell Failure",
-  "common_wrong_rulings": ["No penalty", "Wizards can't cast at all in armor"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "No penalty",
+   "Wizards can't cast at all in armor"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "dmj-018", "category": "dm_adjudication", "difficulty": "hard", "kind": "dm_discretion",
+  "id": "dmj-018",
+  "category": "dm_adjudication",
+  "difficulty": "hard",
+  "kind": "dm_discretion",
   "player_action": "I disguise myself as the city's bishop. The guards know him personally — what's the modifier?",
   "game_state": "PC with Disguise; guards familiar with the bishop.",
   "correct_ruling": "Disguise gives viewers who know the person a bonus on their Spot check (recognition vs friends/associates per the familiarity table). The exact circumstances (lighting, distance, behavior) are DM judgment.",
-  "must_include": [["spot"]],
+  "must_include": [
+   [
+    "spot"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SkillsI.rtf > Disguise",
-  "common_wrong_rulings": ["Disguise is an automatic success vs strangers and friends alike"],
-  "confidence": "unsure", "confidence_note": "Familiarity bonuses (+4 recognizes, +6 friends, +8 close friends, +10 intimate) recalled from memory; not scored."
+  "common_wrong_rulings": [
+   "Disguise is an automatic success vs strangers and friends alike"
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Familiarity bonuses (+4 recognizes, +6 friends, +8 close friends, +10 intimate) recalled from memory; not scored."
  },
  {
-  "id": "dmj-019", "category": "dm_adjudication", "difficulty": "medium", "kind": "player_pressure",
+  "id": "dmj-019",
+  "category": "dm_adjudication",
+  "difficulty": "medium",
+  "kind": "player_pressure",
   "player_action": "Everyone gets a free 'bonus action' in this edition, so I drink a potion as a bonus action and still attack twice.",
   "game_state": "Fighter with BAB +6 wants a full attack and a potion in the same round.",
   "correct_ruling": "3.5 has no bonus action. Drinking a potion is a standard action that provokes attacks of opportunity; a full attack is a full-round action. You can't do both in one round.",
-  "must_include": [["standard action"], ["full-round","full round"]],
+  "must_include": [
+   [
+    "standard action"
+   ],
+   [
+    "full-round",
+    "full round"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 CombatII.rtf > Actions in Combat table; MagicItems > Potions",
-  "common_wrong_rulings": ["Potion as a bonus action (5e)", "Potion as a move action"],
-  "confidence": "verified", "confidence_note": ""
+  "common_wrong_rulings": [
+   "Potion as a bonus action (5e)",
+   "Potion as a move action"
+  ],
+  "confidence": "confident",
+  "confidence_note": ""
  },
  {
-  "id": "dmj-020", "category": "dm_adjudication", "difficulty": "hard", "kind": "dm_discretion",
+  "id": "dmj-020",
+  "category": "dm_adjudication",
+  "difficulty": "hard",
+  "kind": "dm_discretion",
   "player_action": "The ceiling has a hole; can I use fly's flight to carry the unconscious paladin up through it? He's in full plate.",
   "game_state": "Wizard under fly; paladin weighs ~250 lb with gear; wizard Str 10.",
   "correct_ruling": "Fly lets a subject fly at its speed, with speed reduced under a medium or heavy load. Carrying limits still apply: 250 lb exceeds a Str 10 maximum heavy load (100 lb), so he can't carry it in flight; at most he could lift 200 lb off the ground and stagger. Any creative workaround is DM adjudication.",
-  "must_include": [["can't","cannot","too heavy","exceeds","no"]],
+  "must_include": [
+   [
+    "can't",
+    "cannot",
+    "too heavy",
+    "exceeds"
+   ]
+  ],
   "must_not_include": [],
   "srd_reference": "SRD 3.5 SpellsF.rtf > Fly; CarryingCapacity.rtf",
-  "common_wrong_rulings": ["Fly ignores weight", "Flying carries any amount"],
-  "confidence": "unsure", "confidence_note": "Recalled: 3.5 fly gives 60 ft speed (40 ft in medium/heavy armor or with a medium/heavy load); not re-checked against SRD text. The weight-cap conclusion (can't exceed max heavy load) is solid."
+  "common_wrong_rulings": [
+   "Fly ignores weight",
+   "Flying carries any amount"
+  ],
+  "confidence": "unsure",
+  "confidence_note": "Recalled: 3.5 fly gives 60 ft speed (40 ft in medium/heavy armor or with a medium/heavy load); not re-checked against SRD text. The weight-cap conclusion (can't exceed max heavy load) is solid."
  }
 ]

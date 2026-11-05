@@ -12,7 +12,7 @@ GOOD = {
     "must_include": [["move action"], ["provokes", "attack of opportunity"]],
     "must_not_include": [["free action"]],
     "srd_reference": "CombatII > Actions in Combat", "common_wrong_rulings": ["Standing is a free action."],
-    "confidence": "verified",
+    "confidence": "confident",
 }
 
 

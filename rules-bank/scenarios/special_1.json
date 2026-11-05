@@ -29,7 +29,7 @@
    "Shove: Athletics vs Athletics (5e).",
    "Pushes only 5 ft no matter what."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -65,7 +65,7 @@
    "Trip isn't a combat option in 3.5.",
    "Failing has no consequence."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -82,7 +82,7 @@
    ],
    [
     "-4",
-    "\u22124",
+    "−4",
     "minus 4"
    ]
   ],
@@ -92,7 +92,7 @@
    "Disarm is an Athletics check.",
    "Light weapons get no penalty."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -119,7 +119,7 @@
    "The defender can't choose to avoid.",
    "Overrun is a free action."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -144,7 +144,7 @@
    "You just roll damage against the staff with no check.",
    "Sunder doesn't provoke."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -154,7 +154,7 @@
   "kind": "player_pressure",
   "player_action": "I'm a dwarf, so I'm basically immune to being tripped, right?",
   "game_state": "Dwarf fighter being tripped by an orc.",
-  "correct_ruling": "No; dwarves have stability, which gives +4 on ability checks to resist bull rush or trip while standing on the ground \u2014 a bonus, not immunity.",
+  "correct_ruling": "No; dwarves have stability, which gives +4 on ability checks to resist bull rush or trip while standing on the ground — a bonus, not immunity.",
   "must_include": [
    [
     "stability"
@@ -168,7 +168,7 @@
   "common_wrong_rulings": [
    "Dwarves can't be tripped."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -197,7 +197,7 @@
    "Anything can be tripped."
   ],
   "confidence": "unsure",
-  "confidence_note": "SRD says the defender gets +4 for each leg beyond two and that some creatures (e.g. oozes, legless) can't be tripped \u2014 wording of the latter not verified."
+  "confidence_note": "SRD says the defender gets +4 for each leg beyond two and that some creatures (e.g. oozes, legless) can't be tripped — wording of the latter not verified."
  },
  {
   "id": "spa-008",
@@ -213,7 +213,7 @@
    ],
    [
     "-2",
-    "\u22122",
+    "−2",
     "minus 2"
    ]
   ],
@@ -223,7 +223,7 @@
    "No AC penalty.",
    "Can charge around corners."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -250,7 +250,7 @@
   "common_wrong_rulings": [
    "Disarm with a penalty removes the eye."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -279,7 +279,7 @@
   "common_wrong_rulings": [
    "The ally gets advantage (5e Help)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -289,7 +289,7 @@
   "kind": "rules",
   "player_action": "I'm feinting the ogre with Bluff so my rogue can sneak attack.",
   "game_state": "Rogue, Bluff +8, attacking an ogre (Giant type, Sense Motive +2, BAB +3) together with a rogue ally.",
-  "correct_ruling": "Feint is a standard action: Bluff opposed by Sense Motive (target adds BAB). Success: target loses its Dex bonus against your next melee attack, which must be made on or before your next turn \u2014 only for you, not your ally. Against a nonhumanoid you take -4; against an Int 1-2 creature, -8.",
+  "correct_ruling": "Feint is a standard action: Bluff opposed by Sense Motive (target adds BAB). Success: target loses its Dex bonus against your next melee attack, which must be made on or before your next turn — only for you, not your ally. Against a nonhumanoid you take -4; against an Int 1-2 creature, -8.",
   "must_include": [
    [
     "sense motive"
@@ -306,7 +306,7 @@
    "Ally also benefits.",
    "Feint is a bonus action."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": "Ogre is a giant (not humanoid), so -4 applies; graders shouldn't require that."
  },
  {
@@ -314,7 +314,7 @@
   "category": "special_attacks",
   "difficulty": "hard",
   "kind": "player_pressure",
-  "player_action": "I charge the orc, but it's okay that I have to go around this pillar \u2014 the rule is just 'move toward it'.",
+  "player_action": "I charge the orc, but it's okay that I have to go around this pillar — the rule is just 'move toward it'.",
   "game_state": "Pillar blocks the straight line.",
   "correct_ruling": "Charge requires moving in a direct line to the closest space from which you can attack, with no obstacles (difficult terrain or creatures) in the path; you can't charge around the pillar.",
   "must_include": [
@@ -328,7 +328,7 @@
   "common_wrong_rulings": [
    "Any path works."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  }
 ]

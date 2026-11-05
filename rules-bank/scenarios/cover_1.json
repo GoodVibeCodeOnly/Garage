@@ -27,7 +27,7 @@
    "Applies 5e half cover (+2 AC)",
    "Applies a miss chance instead"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -54,7 +54,7 @@
    "Gives +4 to the Reflex save",
    "Says cover never applies to area spells"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -81,7 +81,7 @@
   "common_wrong_rulings": [
    "Allows the AoO with +4 AC for the PC"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -110,7 +110,7 @@
    "Says allies never block shots",
    "Rolls to see if the ally is hit (not a 3.5 core rule)"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -134,7 +134,7 @@
   "common_wrong_rulings": [
    "Gives +4 AC against the melee attack"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -158,7 +158,7 @@
   "common_wrong_rulings": [
    "Grants +2 Reflex"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -210,7 +210,7 @@
   "common_wrong_rulings": [
    "Says magic missile never misses so it hits anyway"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -238,7 +238,7 @@
    "Applies -2 to attack",
    "Applies disadvantage"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -266,7 +266,7 @@
    "Uses 20%",
    "Says you can't attack at all"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -292,17 +292,13 @@
     "not cumulative"
    ]
   ],
-  "must_not_include": [
-   [
-    "40%"
-   ]
-  ],
+  "must_not_include": [],
   "srd_reference": "Combat > Combat Modifiers > Concealment (Varying Degrees of Concealment / miss chances don't stack)",
   "common_wrong_rulings": [
    "Adds to 40%",
    "Rolls twice"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -329,7 +325,7 @@
   "common_wrong_rulings": [
    "Allows the AoO with a 50% miss chance"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -352,7 +348,7 @@
   "common_wrong_rulings": [
    "Uses 50% because they're inside the fog"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -379,7 +375,7 @@
    "Treats it as total darkness (5e/older editions)",
    "Says darkvision can't see through it"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -411,7 +407,7 @@
    "Gives advantage",
    "Gives +4"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -433,7 +429,7 @@
   "common_wrong_rulings": [
    "Rolls 50% anyway and lets it hit"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -463,7 +459,7 @@
    "Calls for a 5e Stealth check",
    "Says hiding works automatically"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  }
 ]

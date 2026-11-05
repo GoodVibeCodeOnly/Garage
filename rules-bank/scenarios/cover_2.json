@@ -23,7 +23,7 @@
   "common_wrong_rulings": [
    "Applies 5e half cover +2 as the default"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -36,11 +36,42 @@
   "correct_ruling": "Degrees of cover beyond the standard cases are the DM's judgment. The SRD lets the DM grant partial cover (half the normal bonuses, +2 AC/+1 Reflex) or improved cover; vines may instead count as concealment. The DM decides.",
   "must_include": [
    [
-    "dm",
-    "gm",
     "dungeon master",
     "judgment",
-    "discretion"
+    "discretion",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ]
   ],
   "must_not_include": [],
@@ -48,7 +79,7 @@
   "common_wrong_rulings": [
    "States a fixed rule that doesn't exist"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -97,7 +128,7 @@
   "common_wrong_rulings": [
    "Gives both sides disadvantage"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -120,7 +151,7 @@
   "common_wrong_rulings": [
    "Uses 20%"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -144,7 +175,7 @@
    "Uses 50%",
    "Gives disadvantage"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -168,7 +199,7 @@
   "common_wrong_rulings": [
    "Says a natural 20 bypasses concealment"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -192,7 +223,7 @@
   "common_wrong_rulings": [
    "Allows sneak attack if the miss chance is passed"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -232,11 +263,42 @@
   "correct_ruling": "Unless the adventure defines it, whether and how much the vegetation grants concealment is the DM's call (the SRD's terrain sections give guidance, e.g. undergrowth providing concealment). With concealment, the PC can attempt a Hide check.",
   "must_include": [
    [
-    "dm",
-    "gm",
     "dungeon master",
     "discretion",
-    "judgment"
+    "judgment",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ],
    [
     "hide"
@@ -252,7 +314,7 @@
    "Rules it impossible flatly",
    "Uses 5e lightly obscured"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -274,7 +336,7 @@
    "Uses centre-to-centre line",
    "Uses 5e degrees of obstruction"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -287,9 +349,11 @@
   "correct_ruling": "Yes. Area spells affect everything in the area; invisibility (total concealment) gives no miss chance or protection against an area effect. The PC still saves normally.",
   "must_include": [
    [
-    "yes",
     "still affected",
-    "affects"
+    "affects",
+    "affect everything",
+    "still caught",
+    "no protection"
    ]
   ],
   "must_not_include": [
@@ -301,7 +365,7 @@
   "common_wrong_rulings": [
    "Applies the 50% miss chance to the area spell"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -324,7 +388,7 @@
   "common_wrong_rulings": [
    "Grants automatic hidden status each turn"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -350,7 +414,7 @@
   "common_wrong_rulings": [
    "Gives total cover"
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  }
 ]

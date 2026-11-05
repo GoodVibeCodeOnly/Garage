@@ -20,7 +20,7 @@
    "Every diagonal costs 5 ft.",
    "Every diagonal costs 10 ft."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -45,7 +45,7 @@
    "Half speed rounding differently.",
    "Difficult terrain gives a penalty only to attacks."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -70,7 +70,7 @@
    "10 ft (just doubling 5).",
    "20 ft (doubling 10)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -104,7 +104,7 @@
   "category": "movement_terrain",
   "difficulty": "medium",
   "kind": "rules",
-  "player_action": "I charge the ogre \u2014 I'll go around the table to get to it.",
+  "player_action": "I charge the ogre — I'll go around the table to get to it.",
   "game_state": "Barbarian speed 40, ogre 30 ft away, a table blocks the straight line.",
   "correct_ruling": "A charge requires moving in a straight line directly toward the target to the closest square from which you can attack, with an unobstructed path. You can't charge around obstacles; the barbarian can't charge here.",
   "must_include": [
@@ -119,7 +119,7 @@
    "Charge can curve around obstacles.",
    "Charge just needs line of sight."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -144,7 +144,7 @@
    "+2 damage.",
    "Charge allows full attack."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -168,7 +168,7 @@
   "common_wrong_rulings": [
    "Charge any distance."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -182,7 +182,7 @@
   "must_include": [
    [
     "x3",
-    "\u00d73",
+    "×3",
     "times three",
     "three times",
     "90"
@@ -194,7 +194,7 @@
    "Always x4.",
    "Run as a move action."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -223,7 +223,7 @@
    "Withdraw prevents all AoOs during the move.",
    "Withdraw is a move action."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -273,7 +273,7 @@
    "No penalty to squeezing.",
    "-2 penalties."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -295,7 +295,7 @@
    "Advantage (5e).",
    "+4 bonus."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -316,7 +316,7 @@
   "common_wrong_rulings": [
    "Any two allies adjacent flank."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -337,7 +337,7 @@
   "common_wrong_rulings": [
    "Archers can flank by position alone."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -359,7 +359,7 @@
   "common_wrong_rulings": [
    "Move through enemies at double cost (5e rule)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -382,7 +382,7 @@
    "DC 10.",
    "Tumble always avoids AoOs."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -410,7 +410,7 @@
    "Standing costs half your speed (5e).",
    "Standing is free."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -423,10 +423,41 @@
   "correct_ruling": "The SRD has no specific chandelier-swinging rule; it's a DM call, typically resolved with an appropriate check (e.g., Jump, Climb, Tumble, or Dex) and DM-set DC and movement cost.",
   "must_include": [
    [
-    "dm",
-    "gm",
     "game master",
-    "discretion"
+    "discretion",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ]
   ],
   "must_not_include": [],
@@ -435,7 +466,7 @@
    "Claiming a specific swinging rule exists.",
    "Flat refusal as impossible."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  }
 ]

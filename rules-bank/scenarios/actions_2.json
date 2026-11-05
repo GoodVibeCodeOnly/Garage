@@ -25,7 +25,7 @@
    "Grants an extra turn.",
    "Auto goes first."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -49,7 +49,7 @@
    "Drawing is a free action for everyone.",
    "Draw uses the standard action."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -70,7 +70,7 @@
   "common_wrong_rulings": [
    "Readied attacks happen after the trigger resolves."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -94,7 +94,7 @@
   "common_wrong_rulings": [
    "Readied action persists indefinitely while acting normally."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -118,7 +118,7 @@
    "Takes effect immediately.",
    "Takes effect at end of next turn."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -144,7 +144,7 @@
    "Standing doesn't provoke.",
    "Can still full attack."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -167,7 +167,7 @@
    "They go last.",
    "They go first."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -180,9 +180,41 @@
   "correct_ruling": "The DM determines who is aware at the start of battle (via Listen/Spot checks or other means). Aware characters act in the surprise round; the rogue does, the fighter doesn't and is flat-footed.",
   "must_include": [
    [
-    "dm",
-    "gm",
-    "aware"
+    "aware",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "discretion",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ]
   ],
   "must_not_include": [],
@@ -190,7 +222,7 @@
   "common_wrong_rulings": [
    "Whole party surprised or none, as a group."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -217,7 +249,7 @@
    "Spell automatically lost.",
    "No check needed until it's complete."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -233,11 +265,23 @@
     "not a 3.5",
     "doesn't exist",
     "does not exist",
-    "5e",
-    "fifth edition",
     "no such",
     "isn't a",
-    "not part of"
+    "not part of",
+    "not a d&d 3.5",
+    "not a 3.5 rule",
+    "not a 3.5 srd",
+    "that's a 5e",
+    "is a 5e",
+    "5e rule",
+    "5e mechanic",
+    "from 5e",
+    "from fifth edition",
+    "not in 3.5",
+    "isn't in 3.5",
+    "3.5 has no",
+    "3.5 doesn't have",
+    "3.5 does not have"
    ]
   ],
   "must_not_include": [],
@@ -245,7 +289,7 @@
   "common_wrong_rulings": [
    "Allows Action Surge."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -269,7 +313,7 @@
   "common_wrong_rulings": [
    "Allows full attack after moving."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -294,7 +338,7 @@
    "Two attacks.",
    "All at +11."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -319,7 +363,7 @@
   "common_wrong_rulings": [
    "Allows move action."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -344,7 +388,7 @@
   "common_wrong_rulings": [
    "Normal actions with penalty."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -352,9 +396,9 @@
   "category": "turn_order_actions",
   "difficulty": "hard",
   "kind": "player_pressure",
-  "player_action": "I know I'm at 0 hit points and disabled, but I really need to cast cure light wounds on myself \u2014 it's a heal, it shouldn't hurt me.",
+  "player_action": "I know I'm at 0 hit points and disabled, but I really need to cast cure light wounds on myself — it's a heal, it shouldn't hurt me.",
   "game_state": "Cleric at exactly 0 hp (disabled).",
-  "correct_ruling": "Disabled characters can take only a single move or standard action each round. Taking a standard action (like casting) deals 1 hp of damage after the action unless it increases hit points \u2014 casting cure on yourself works, and since it heals, the cleric ends up with positive hp. So yes, the cast is allowed; the strenuous-action damage only matters if the action doesn't heal.",
+  "correct_ruling": "Disabled characters can take only a single move or standard action each round. Taking a standard action (like casting) deals 1 hp of damage after the action unless it increases hit points — casting cure on yourself works, and since it heals, the cleric ends up with positive hp. So yes, the cast is allowed; the strenuous-action damage only matters if the action doesn't heal.",
   "must_include": [
    [
     "standard action"
@@ -394,7 +438,7 @@
   "common_wrong_rulings": [
    "Touching requires another standard action."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -404,13 +448,43 @@
   "kind": "dm_discretion",
   "player_action": "I want to ready an action to shove my ally out of the way if the dragon breathes.",
   "game_state": "Fighter adjacent to wizard ally; dragon may breathe.",
-  "correct_ruling": "Readying a standard action with that trigger is legal; it resolves before the breath. The SRD doesn't have a 'shove an ally' action \u2014 a bull rush on a willing ally or similar is a DM adjudication of how the move works (willing creature, check needed or not).",
+  "correct_ruling": "Readying a standard action with that trigger is legal; it resolves before the breath. The SRD doesn't have a 'shove an ally' action — a bull rush on a willing ally or similar is a DM adjudication of how the move works (willing creature, check needed or not).",
   "must_include": [
    [
-    "dm",
-    "gm",
     "discretion",
-    "adjudicat"
+    "adjudicat",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ]
   ],
   "must_not_include": [],
@@ -443,7 +517,7 @@
   "common_wrong_rulings": [
    "Dropping costs a move action."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  }
 ]

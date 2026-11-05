@@ -25,7 +25,7 @@
    "Drinking a potion is a free or move action and does not provoke.",
    "Potions are a bonus action (5e rule)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -55,7 +55,7 @@
    "The 5-foot step gets you out of threat so the spell is safe.",
    "5-foot step provokes."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -87,7 +87,7 @@
    "Each square left provokes a separate attack from the same goblin.",
    "Only the first goblin gets an attack."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -116,7 +116,7 @@
    "Withdraw makes the entire movement safe from all attacks of opportunity.",
    "Withdraw is a move action (that's the 5e Disengage)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -144,7 +144,7 @@
    "Ranged attacks in melee have disadvantage (5e).",
    "Shooting doesn't provoke because it's an attack action."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -176,7 +176,7 @@
    "Standing up costs half your movement and doesn't provoke (5e).",
    "Standing is a free action."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -203,7 +203,7 @@
    "Drawing a weapon uses the whole move action, so you can't move too.",
    "Drawing a weapon is a free object interaction (5e)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -232,7 +232,7 @@
   "common_wrong_rulings": [
    "Each square left grants a separate AoO with Combat Reflexes."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -258,7 +258,7 @@
    "Flat-footed creatures can still make attacks of opportunity.",
    "The orc gets an AoO because it's adjacent."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -284,7 +284,7 @@
   "common_wrong_rulings": [
    "Punching is just a normal melee attack with no special drawback."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -315,7 +315,7 @@
    "Yes, with War Caster you can cast a spell instead (5e feat, not in 3.5).",
    "Anyone adjacent threatens even when unarmed."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -343,7 +343,7 @@
    "Entering a threatened square provokes.",
    "Reach weapons threaten adjacent squares too."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -376,7 +376,7 @@
    "0-level spells don't provoke.",
    "Ray spells don't provoke because they're attacks."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -407,7 +407,7 @@
   "common_wrong_rulings": [
    "Yes, AoO with 50% miss chance."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -434,7 +434,7 @@
    "Picking up an item is free.",
    "Being careful avoids the attack."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -442,7 +442,7 @@
   "category": "attacks_of_opportunity",
   "difficulty": "medium",
   "kind": "rules",
-  "player_action": "I make a full attack and I also want to use my attack of opportunity when the orc's ally runs past \u2014 but I already used it this round on the first orc.",
+  "player_action": "I make a full attack and I also want to use my attack of opportunity when the orc's ally runs past — but I already used it this round on the first orc.",
   "game_state": "Fighter without Combat Reflexes already made one AoO this round.",
   "correct_ruling": "Without Combat Reflexes you get only one attack of opportunity per round; the second opportunity is lost.",
   "must_include": [
@@ -463,7 +463,7 @@
    "One AoO per opponent per round.",
    "AoOs are unlimited."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -489,7 +489,7 @@
   "common_wrong_rulings": [
    "A 5-foot step costs 10 feet in difficult terrain but is still allowed."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -502,9 +502,41 @@
   "correct_ruling": "RAW, AoOs happen in combat against opponents; a creature not yet treating you as an enemy (and possibly flat-footed before acting) effectively won't take one. Whether a non-hostile guard reacts is a DM call based on the situation; the rules don't define 'ally until proven otherwise'.",
   "must_include": [
    [
-    "dm",
     "game master",
-    "gm"
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "discretion",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ],
    [
     "flat-footed",

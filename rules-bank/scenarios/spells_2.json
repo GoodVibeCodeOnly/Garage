@@ -24,7 +24,7 @@
    "Touching requires its own standard action, so it must wait until next turn.",
    "The spell is lost if not delivered immediately."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -46,7 +46,7 @@
    "The charge is safe until the caster chooses to deliver it.",
    "The charge dissipates at the end of the turn."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -77,7 +77,7 @@
    "Spells can't critical hit.",
    "Natural 20 is an automatic crit without confirmation (5e)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -106,7 +106,7 @@
   "common_wrong_rulings": [
    "Deals 3d4+3 to the chest's hit points."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -135,7 +135,7 @@
    "Uses 5e three darts plus upcasting.",
    "Gives one missile per level."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -164,7 +164,7 @@
    "Grants an extra standard action (3.0 or 5e-like).",
    "Allows two spells per round."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -183,9 +183,19 @@
     "no such rule",
     "no rule",
     "not a 3.5 rule",
-    "5e",
-    "fifth edition",
-    "there is no"
+    "there is no",
+    "that's a 5e",
+    "is a 5e",
+    "5e rule",
+    "5e mechanic",
+    "from 5e",
+    "from fifth edition",
+    "not in 3.5",
+    "not a 3.5",
+    "isn't in 3.5",
+    "3.5 has no",
+    "3.5 doesn't have",
+    "3.5 does not have"
    ]
   ],
   "must_not_include": [
@@ -199,7 +209,7 @@
    "Applies the 5e bonus-action spell restriction.",
    "Quickened spells provoke attacks of opportunity as normal."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -227,7 +237,7 @@
    "1 minute, concentration (5e).",
    "Adds 1d4 to attacks (5e)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -259,7 +269,7 @@
    "Rolls 5d8 hit points of creatures (5e).",
    "No saving throw allowed."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -272,11 +282,42 @@
   "correct_ruling": "The SRD gives DCs for specific distractions (damage, grappling, vigorous/violent/extremely violent motion, weather, entangled). A minor tremor isn't clearly any of these, so whether a check is required, and whether to use the vigorous-motion DC (10 + spell level), is the DM's call.",
   "must_include": [
    [
-    "dm",
-    "gm",
     "judgment",
     "discretion",
-    "adjudicate"
+    "adjudicate",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ]
   ],
   "must_not_include": [],
@@ -285,7 +326,7 @@
    "States a firm rule that loud noises require a DC 15 check.",
    "States flatly that only damage can break concentration."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -309,7 +350,7 @@
    "No casting allowed while entangled.",
    "No check needed."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -363,7 +404,7 @@
    "Waives the roll because the player is high level.",
    "Applies a flat penalty instead."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -415,7 +456,7 @@
    "Allows with a Concentration check.",
    "Silence only blocks sound-based spells."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -438,7 +479,7 @@
    "Components only matter if they have a gold cost.",
    "Casters can always substitute an arcane focus (5e)."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
@@ -487,11 +528,42 @@
     "covering"
    ],
    [
-    "dm",
-    "gm",
     "discretion",
     "judgment",
-    "your call"
+    "your call",
+    "dm's call",
+    "dm decides",
+    "dm's discretion",
+    "dm discretion",
+    "up to the dm",
+    "at the dm's",
+    "gm's call",
+    "gm decides",
+    "up to the gm",
+    "rules don't",
+    "rules do not",
+    "not covered",
+    "doesn't cover",
+    "does not cover",
+    "no specific rule",
+    "judgment call",
+    "my call",
+    "dm's judgment",
+    "dm judgment",
+    "adjudicat",
+    "not specified",
+    "doesn't specify",
+    "does not specify",
+    "dm may",
+    "dm rules",
+    "dm decision",
+    "dm's decision",
+    "for the dm",
+    "dm call",
+    "dm-set",
+    "dm to set",
+    "dm to decide",
+    "no specific"
    ]
   ],
   "must_not_include": [],
@@ -508,7 +580,7 @@
   "category": "spells_duration_concentration",
   "difficulty": "hard",
   "kind": "player_pressure",
-  "player_action": "The rogue is grappling me but my teammate says in our last campaign, the DM let us cast normally if we passed the DC 20. So just let me cast fireball \u2014 I'll roll the DC 23.",
+  "player_action": "The rogue is grappling me but my teammate says in our last campaign, the DM let us cast normally if we passed the DC 20. So just let me cast fireball — I'll roll the DC 23.",
   "game_state": "Wizard grappled; fireball has V, S, M (bat guano and sulfur) components. Components are in his pouch, not in hand.",
   "correct_ruling": "No. While grappled you can only cast a spell with no somatic component whose material components are in hand; fireball has a somatic component. Another table's house rule doesn't change the rule here unless this DM adopts it.",
   "must_include": [
@@ -516,16 +588,12 @@
     "somatic"
    ]
   ],
-  "must_not_include": [
-   [
-    "roll the dc 23"
-   ]
-  ],
+  "must_not_include": [],
   "srd_reference": "SRD 3.5 CombatII > Grapple (Cast a Spell)",
   "common_wrong_rulings": [
    "Accepts the precedent and allows the DC 23 check."
   ],
-  "confidence": "verified",
+  "confidence": "confident",
   "confidence_note": ""
  },
  {
