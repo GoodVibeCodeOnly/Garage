@@ -1,0 +1,85 @@
+task rows with blank code: 4253; recovered via crosswalk title: 4253
+v1: 3514 tasks, 100.0% matched to O*NET text, 99.5% of usage mass matched to an occupation
+v2: 3068 tasks, 100.0% matched to O*NET text, 94.8% of usage mass matched to an occupation
+v3: 3597 tasks, 100.0% matched to O*NET text, 96.1% of usage mass matched to an occupation
+detailed occupations with no usable median wage (dropped): 0
+usage mass not matched to an OEWS detailed occupation: {'v1': '1.4%', 'v2': '1.1%', 'v3': '1.1%'}
+
+Usage share and intensity by employment-weighted wage decile:
+         workers_share  median_wage_lo  median_wage_hi     v1     v2     v3  intensity_v1  intensity_v2  intensity_v3
+decile                                                                                                              
+1               0.100         30160.0         34550.0  0.008  0.009  0.011         0.076         0.088         0.108
+2               0.099         34580.0         36260.0  0.004  0.007  0.008         0.037         0.073         0.080
+3               0.101         36450.0         39270.0  0.014  0.011  0.011         0.143         0.110         0.105
+4               0.099         39340.0         44140.0  0.028  0.034  0.044         0.286         0.344         0.450
+5               0.102         44200.0         48640.0  0.039  0.049  0.050         0.384         0.475         0.487
+6               0.099         48660.0         60060.0  0.060  0.047  0.045         0.603         0.477         0.454
+7               0.102         60130.0         66260.0  0.095  0.078  0.067         0.931         0.768         0.654
+8               0.099         66280.0         81270.0  0.189  0.167  0.185         1.914         1.686         1.867
+9               0.108         81390.0        102950.0  0.248  0.230  0.216         2.285         2.125         1.995
+10              0.091        103300.0        239200.0  0.315  0.368  0.364         3.470         4.051         4.010
+
+v3 intensity 90% bootstrap band (resampling occupations):
+           lo    hi
+decile            
+1       0.04  0.21
+2       0.02  0.20
+3       0.06  0.19
+4       0.14  0.93
+5       0.23  0.88
+6       0.26  0.80
+7       0.40  1.08
+8       1.07  3.24
+9       1.02  3.96
+10      2.16  5.65
+Spearman occupation-share rank corr v1 vs v2: 0.89
+Spearman occupation-share rank corr v2 vs v3: 0.95
+Spearman occupation-share rank corr v1 vs v3: 0.87
+v1: Spearman(log wage, log intensity) among used occupations = 0.34; occupations with zero observed usage: 30% (holding 19% of workers)
+v2: Spearman(log wage, log intensity) among used occupations = 0.31; occupations with zero observed usage: 32% (holding 21% of workers)
+v3: Spearman(log wage, log intensity) among used occupations = 0.32; occupations with zero observed usage: 31% (holding 20% of workers)
+
+Usage-weighted directive share by decile:
+         directive_v2  directive_v3
+decile                            
+1              0.449         0.436
+2              0.480         0.517
+3              0.566         0.533
+4              0.513         0.449
+5              0.596         0.522
+6              0.548         0.484
+7              0.531         0.458
+8              0.537         0.489
+9              0.481         0.448
+10             0.486         0.427
+
+Top 15 occupations by v3 usage share:
+                                                                                OCC_TITLE        emp      wage      v1      v2      v3     int_v3
+soc                                                                                                                                             
+15-1252                                                              Software Developers  1654440.0  133080.0  0.0873  0.1367  0.1506    14.0397
+15-2099                                      Mathematical Science Occupations, All Other     4660.0   71490.0  0.0322  0.0339  0.0495  1636.8768
+15-1243                                                              Database Architects    64770.0  135980.0  0.0300  0.0598  0.0493   117.4232
+15-1251                                                             Computer Programmers   109870.0   98670.0  0.0625  0.0529  0.0421    59.0121
+15-1254                                                                   Web Developers    78860.0   90930.0  0.0276  0.0334  0.0360    70.3794
+15-1253                                  Software Quality Assurance Analysts and Testers   199800.0  102610.0  0.0278  0.0232  0.0316    24.4044
+15-1299                                                  Computer Occupations, All Other   439380.0  108970.0  0.0313  0.0394  0.0299    10.4948
+15-1211                                                        Computer Systems Analysts   497800.0  103790.0  0.0254  0.0257  0.0256     7.9151
+27-3043                                                              Writers and Authors    47800.0   72270.0  0.0244  0.0167  0.0197    63.7002
+25-3041                                                                           Tutors   174660.0   40090.0  0.0159  0.0119  0.0194    17.1049
+15-1242                                                          Database Administrators    73180.0  104620.0  0.0120  0.0132  0.0188    39.5177
+25-9031                                                       Instructional Coordinators   210850.0   74720.0  0.0099  0.0137  0.0166    12.1177
+15-1244                                      Network and Computer Systems Administrators   318570.0   96800.0  0.0173  0.0223  0.0152     7.3770
+27-3041                                                                          Editors    95480.0   75260.0  0.0130  0.0124  0.0125    20.2266
+43-6014  Secretaries and Administrative Assistants, Except Legal, Medical, and Executive  1737820.0   46290.0  0.0022  0.0130  0.0123     1.0880
+
+Intensity by median-wage band:
+                   emp_share     v1     v2     v3  intensity_v1  intensity_v2  intensity_v3
+wage                                                                                      
+(0, 40000]            0.314  0.027  0.029  0.032         0.087         0.093         0.101
+(40000, 60000]        0.285  0.126  0.128  0.137         0.440         0.448         0.480
+(60000, 80000]        0.189  0.262  0.235  0.241         1.383         1.241         1.274
+(80000, 103000]       0.121  0.271  0.241  0.227         2.237         1.990         1.874
+(103000, 125000]      0.031  0.136  0.125  0.118         4.329         3.988         3.743
+(125000, 150000]      0.031  0.150  0.219  0.226         4.796         6.994         7.226
+(150000, 200000]      0.020  0.019  0.016  0.014         0.935         0.771         0.678
+(200000, 240000]      0.008  0.009  0.007  0.006         1.250         0.970         0.780
