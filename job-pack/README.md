@@ -22,4 +22,22 @@ Every factual claim about a market, employer or pay rate has a link next to it. 
 
 ## The short version
 
-[Filled in below once the research files are done.]
+- **The market:** US unemployment is moderate at 4.2% (Sep 2026), but hiring is very slow. The hires rate was about 3.3% in August, and recent graduates and AI-exposed entry-level jobs are hit hardest. Sources are in `02`. Expect low response rates, and don't read them as a verdict on you.
+- **Local research employers shrank in 2025.** Duke, RTI, FHI 360 and UNC all cut staff (sources in `03`). Research-assistant roles fit you well on paper, but the odds are lower than they'd normally be.
+- **Most realistic near-term mix:**
+  - AI evaluation contract work for income and a résumé line. It's assessment-based, but unstable.
+  - A university temp pool (Duke or UNC) for a local foothold.
+  - Most of your applications aimed at implementation and customer-success roles at ordinary software companies, and at bachelor's-level research analyst roles.
+- **Long shots:** major AI labs (5–8+ years, office attendance) and policy fellowships (competitive and fixed-term). The one dated item worth deciding on soon is the **GovAI Summer Fellowship deadline, 22 Nov 2026**.
+- **Not for you:** Year Up, Multiverse Career Starter and Opportunity@Work target people without a BA, and Year Up caps at age 29.
+- **Biggest weakness:** your work history. Nobody outside has verified your AI work yet. The fixes are public write-ups, a reference from your business partner, and processes that test skills directly (work samples, assessments, take-homes), plus any referrals you can get.
+- **Biggest strength:** you've shipped something real to real users and operated an AI system for months, and you write well. Few entry-level applicants can show that. The portfolio plan is about making it checkable in five minutes.
+
+## Gaps I couldn't close
+
+- **Durham-metro BLS wage medians by occupation.** The BLS site wasn't reachable from the research environment. Look them up at https://data.bls.gov/oes, area code 20500.
+- **Durham unemployment for Aug–Oct 2026.**
+- **Employer and pay details not researched:** IQVIA, Labcorp, Cisco, Lenovo, Bandwidth, NC Central and Durham County.
+- **Pay for AI-ops roles at remote-first companies and for entry-level technical writing.**
+- **Hard data on whether portfolios, temp-to-perm or annotation work lead to full-time jobs.** I found none, so those are marked UNVERIFIED where they come up.
+- **Accuracy of the research.** Most employer details came from search-result text and job aggregators, not full reads of each employer's site. Treat every posting as possibly closed until you've checked it on the employer's own page.

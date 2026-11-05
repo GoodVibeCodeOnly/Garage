@@ -70,7 +70,7 @@ Keep one master copy and make three short variants. Only the summary line and th
 
 ## Where this resume is weak, plainly
 
-- **No employer has vouched for the AI work yet.** Self-directed projects are discounted unless the reviewer can see them. The portfolio plan (`05-portfolio-plan.md`) exists to fix this.
+- **No employer has vouched for the AI work yet.** Self-directed projects are discounted unless the reviewer can see them. The portfolio plan (`06-portfolio-plan.md`) exists to fix this.
 - **"Learning Python" will be tested.** Many AI-adjacent roles include a coding screen or a take-home. Claim only the level you can perform live, without AI help, in a timed setting.
 - **Directing AI coding is not yet a recognized credential.** Phrase it as outcomes (what got built and shipped), not as a skill label.
 - **The work history is the first thing a screener will question.** Answer it in one calm line in a cover letter or interview, not by padding the resume.
