@@ -485,7 +485,7 @@
   "category": "stacking_bonuses",
   "difficulty": "medium",
   "kind": "rules",
-  "player_action": "I want to use my Skill Focus and my masterwork thieves' tools and a circlet of persuasion... wait, on Open Lock. What's my bonus from tools?",
+  "player_action": "I'm picking this lock with my masterwork thieves' tools, and I have Skill Focus (Open Lock). What do those add to my check?",
   "game_state": "Rogue using masterwork thieves' tools on Open Lock; also has Skill Focus (Open Lock).",
   "correct_ruling": "Masterwork thieves' tools give a +2 circumstance bonus on Open Lock checks; Skill Focus gives +3 (untyped, from a feat). They stack: +5 from these sources.",
   "must_include": [
